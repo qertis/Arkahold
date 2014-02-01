@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GameOver</name>
+    <events>
+        <include>Points</include>
+        <include>Lifes</include>
+        <include>MENU</include>
+        <event-group description="" sid="7774795369285441" title="GameOverInit">
+            <sub-events>
+                <event-block collapsed="1" sid="8648529335218966">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="1951460548382873" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="1088529675281785">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Play" sid="2581766384525671" type="Audio">
+                                    <param id="0" name="Audio file">game_over</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>очищаем ненужное</comment>
+                        <event-block sid="3372631807883194">
+                            <conditions />
+                            <actions>
+                                <action id="-9" name="Destroy" sid="7092937459745802" type="Tooltip" />
+                                <action id="7" name="Set horizontal alignment" sid="6855111337224482" type="Info">
+                                    <param id="0" name="Horizontal alignment">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4087724842158336">
+                            <conditions>
+                                <condition id="-13" name="Pick nth instance" sid="8229498405339015" type="System">
+                                    <param id="0" name="Object">Info</param>
+                                    <param id="1" name="Instance">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="3691775126695381" type="Info">
+                                    <param id="0" name="Text">&quot;Your record: &quot; &amp; newline &amp; &#x0D;&#x0A;  Function.Call(&quot;GetGlobalPoints&quot;) &amp; &quot; points!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>очищаем данные</comment>
+                        <event-block sid="2810747097378387">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Call function" sid="3920156215123023" type="Function">
+                                    <param id="0" name="Name">&quot;ResetLifes&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="0" name="Call function" sid="8723604964799327" type="Function">
+                                    <param id="0" name="Name">&quot;ResetPoints&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="78039346025107">
+                            <conditions />
+                            <actions>
+                                <action id="-12" name="Set group active" sid="4309495874564769" type="System">
+                                    <param id="0" name="Group name">&quot;Exit&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="1048575057812681" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="8166081717768644" type="System">
+                                    <param id="0" name="Group name">&quot;Exit&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6973839015602636">
+                            <conditions />
+                            <actions>
+                                <action id="-15" name="Set visible" sid="6663022995349318" type="Cursor">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" inactive="1" sid="6032362416497295" title="Exit">
+            <sub-events>
+                <event-block any="1" sid="4480702016553972">
+                    <conditions>
+                        <condition id="1" name="On any click" sid="8256100003538194" type="Mouse" />
+                        <condition id="1" name="On any key pressed" sid="2343403336147388" type="Keyboard" />
+                        <condition id="9" name="On any button released" sid="4698482437796841" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="98513694001968" type="System">
+                            <param id="0" name="Layout">MainMenu</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

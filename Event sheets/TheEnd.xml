@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>TheEnd</name>
+    <events>
+        <include>Points</include>
+        <include>MENU</include>
+        <event-group description="" sid="7415889492040268" title="TheEndInit">
+            <sub-events>
+                <variable comment="время проведенное в игре" constant="0" name="GameTime" sid="7065575430171108" static="1" type="text"></variable>
+                <event-block sid="7694663518536789">
+                    <conditions>
+                        <condition id="0" name="On function" sid="852594406450359" type="Function">
+                            <param id="0" name="Name">&quot;GetGameTime&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="7974454235668478" type="Function">
+                            <param id="0" name="Value">&quot;min:&quot; &amp; (floor(time / 60)) &amp; &quot;, &quot;&#x0D;&#x0A;  &amp; &quot;sec:&quot; &amp; (time % 60)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3983020166463888">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="1016588992225331" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3679696228087695" type="Cursor">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>время в формате (mm, ss)</comment>
+                        <event-block sid="1978723397084522">
+                            <conditions />
+                            <actions>
+                                <action id="-9" name="Set value" sid="6179591328009631" type="System">
+                                    <param id="0" name="Variable">GameTime</param>
+                                    <param id="1" name="Value">Function.Call(&quot;GetGameTime&quot;)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9488734258522212">
+                            <conditions />
+                            <actions>
+                                <action id="-12" name="Set group active" sid="2987114633436752" type="System">
+                                    <param id="0" name="Group name">&quot;Exit&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="100858057656362" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="3891248667744342" type="System">
+                                    <param id="0" name="Group name">&quot;Exit&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>vkontakte</comment>
+                <event-block any="1" collapsed="1" sid="4592323778377044">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="6990794763286803" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">SocialBtn</param>
+                        </condition>
+                        <condition id="3" name="On key released" sid="5587341680854293" type="Keyboard">
+                            <param id="0" name="Key">86 (V)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="2865621644849351">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="9163796690866027" type="SocialBtn">
+                                    <param id="0" name="Animation">&quot;vk&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="8" name="Open URL in new window" sid="4140382311883073" type="Browser">
+                                    <param id="0" name="URL">&quot;//vk.com/share.php?url=&quot; &amp; Browser.URL&#x0D;&#x0A;&amp; &quot;&amp;title=Arkahold WebGL record!&quot; &#x0D;&#x0A;&amp; &quot;&amp;description=&quot; &#x0D;&#x0A;  &amp; &quot;  time: &quot; &amp; GameTime &#x0D;&#x0A;  &amp; &quot;;  My points: &quot; &amp; Function.Call(&quot;GetGlobalPoints&quot;)&#x0D;&#x0A;&amp; &quot;&amp;noparse=true&quot;</param>
+                                    <param id="1" name="Tag">&quot;VKRecord&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>facebook</comment>
+                <event-block any="1" collapsed="1" sid="180332578619588">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="7726958844455624" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">SocialBtn</param>
+                        </condition>
+                        <condition id="3" name="On key released" sid="4385650709646974" type="Keyboard">
+                            <param id="0" name="Key">70 (F)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="8325075729783241">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="3715990961060487" type="SocialBtn">
+                                    <param id="0" name="Animation">&quot;fb&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="8" name="Open URL in new window" sid="8113916709880395" type="Browser">
+                                    <param id="0" name="URL">&quot;//facebook.com/sharer.php?s=100&quot; &#x0D;&#x0A;&amp; &quot;&amp;p[url]=&quot; &amp; Browser.URL &#x0D;&#x0A;&amp; &quot;&amp;p[title]=&quot; &#x0D;&#x0A;  &amp; &quot;  time: &quot; &amp; GameTime &#x0D;&#x0A;  &amp; &quot;;  My points: &quot; &amp; Function.Call(&quot;GetGlobalPoints&quot;)</param>
+                                    <param id="1" name="Tag">&quot;FBRecord&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

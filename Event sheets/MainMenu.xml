@@ -1,0 +1,682 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MainMenu</name>
+    <events>
+        <include>MENU</include>
+        <event-group description="" sid="5629977273821357" title="Menu">
+            <sub-events>
+                <event-block sid="9051355421399732">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="2076054889725596" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="0" name="Set active" sid="8947667172665914" type="Sun">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>переделать через left, right, bottom, top!</comment>
+                        <event-block sid="9286356518029506">
+                            <conditions />
+                            <actions>
+                                <action id="-3" name="Set position" sid="6391443544659411" type="Text">
+                                    <param id="0" name="X">Function.Call(&quot;cx&quot;)</param>
+                                    <param id="1" name="Y">Function.Call(&quot;cy&quot;)</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="2505297548265729" type="Text">
+                                    <param id="0" name="Width">LayoutWidth</param>
+                                    <param id="1" name="Height">LayoutHeight</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1240757484407204">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="7246880006822787" type="System">
+                                    <param id="0" name="Object">Links</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="7142489738180172" type="Links">
+                                    <param id="0" name="Pin to">Orbita</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Начальная проверка. Определить первый ли запуск</comment>
+                        <event-block sid="5243529388880128">
+                            <conditions>
+                                <condition id="-15" inverted="1" name="Is group active" sid="5057637460441925" type="System">
+                                    <param id="0" name="Group name">&quot;SelectControl&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="11" name="Set collisions enabled" sid="2945607655753" type="Cursor">
+                                    <param id="0" name="Collisions">1</param>
+                                </action>
+                                <action id="-18" name="Set layer opacity" sid="8037522302626232" type="System">
+                                    <param id="0" name="Layer">&quot;game&quot;</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block collapsed="1" sid="4934716314157102">
+                            <conditions>
+                                <condition id="4" inverted="1" name="Has gamepads" sid="2854284652889882" type="Gamepad" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="4457253662748677">
+                                    <conditions>
+                                        <condition id="2" name="Is playing" sid="2937516620170434" type="SpriteControls">
+                                            <param id="0" name="Animation">&quot;Gamepad&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="9231380962454069" type="SpriteControls" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>TODO</comment>
+                        <event-block sid="5636995544584383">
+                            <conditions />
+                            <actions>
+                                <action id="-26" name="Move to layer" sid="3970839470993619" type="Cursor">
+                                    <param id="0" name="Layer">&quot;Cursor&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="4907911158091743" type="Cursor">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action disabled="1" id="-3" name="Set position" sid="7778943019015665" type="Cursor">
+                                    <param id="0" name="X">Function.Call(&quot;cx&quot;)</param>
+                                    <param id="1" name="Y">Function.Call(&quot;cy&quot;)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6384980665299683">
+                            <conditions />
+                            <actions />
+                        </event-block>
+                        <event-block sid="9439096052680915">
+                            <conditions>
+                                <condition id="3" name="Is silent" sid="7767777979712612" type="Audio" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="1097091185396543" type="PlayPauseBtn">
+                                    <param id="0" name="Animation">&quot;Off&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="текст" inactive="1" sid="5352166729458236" title="Timer">
+            <sub-events>
+                <variable constant="0" name="Timer" sid="409505064658076" static="1" type="number">2</variable>
+                <comment>исчезание основываясь на таймере</comment>
+                <event-block collapsed="1" sid="369">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="1350251785271687" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="4290175802872328" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Value">dt</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>загрузка уровня</comment>
+                        <comment>todo: сделать систему сохранений и переход через сохраненный уровень!</comment>
+                        <event-block sid="6831878805241282">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="2567834603055621" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="7592742419070581" type="Function">
+                                    <param id="0" name="Name">&quot;LoadLevel&quot;</param>
+                                    <param id="1" name="Parameter {n}">1{###}&quot;FadeIn&quot;{###}&quot;normal&quot;{###}Timer</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="378">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="9973637969022511" type="System">
+                                    <param id="0" name="Variable">Timer</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">2.0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="7389930560642541" type="System">
+                                    <param id="0" name="Variable">Timer</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">1.0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="4110252578771659" type="Text">
+                                    <param id="0" name="Text">&quot;GET READY!&quot;</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="382" type="Text">
+                                    <param id="0" name="Opacity">(Timer-1) * 100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="384">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="559049390043478" type="System" />
+                                <condition id="-14" name="Compare variable" sid="7739825336596266" type="System">
+                                    <param id="0" name="Variable">Timer</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">1.0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="390" type="Text">
+                                    <param id="0" name="Text">&quot;GO!&quot;</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="387" type="Text">
+                                    <param id="0" name="Opacity">Timer * 100 </param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="7906254776209905">
+                                    <conditions />
+                                    <actions>
+                                        <action id="3" name="Set font size" sid="383" type="Text">
+                                            <param id="0" name="Size (pt)">self.FaceSize + 1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>хак мод. дальнейшая проверка будет на -1</comment>
+                <event-block sid="388">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4936567510298597" type="System" />
+                        <condition id="-4" name="Trigger once while true" sid="6147660864171006" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8846035714504178" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6442569340435559">
+                    <conditions>
+                        <condition id="0" name="On function" sid="3263104581409518" type="Function">
+                            <param id="0" name="Name">&quot;ResetTimer&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7685705225873096" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="3727168964649977" type="System">
+                            <param id="0" name="Group name">&quot;Timer&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2092729354979085">
+                    <conditions>
+                        <condition id="0" name="On function" sid="2940783282244825" type="Function">
+                            <param id="0" name="Name">&quot;GetTimer&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="8463182357520127" type="Function">
+                            <param id="0" name="Value">Timer</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="8194908107586159" title="InfoDestroy">
+            <sub-events>
+                <event-block sid="8680356701062223">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="6431053620924222" type="System">
+                            <param id="0" name="Layer">&quot;info&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Set layer opacity" sid="9093233502314247" type="System">
+                            <param id="0" name="Layer">&quot;info&quot;</param>
+                            <param id="1" name="Opacity">LayerOpacity(&quot;info&quot;) - 4</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="2797397407219759">
+                            <conditions>
+                                <condition id="-17" name="Compare opacity" sid="4356600322549195" type="System">
+                                    <param id="0" name="Layer">&quot;info&quot;</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Opacity">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="8472083236653624" type="System">
+                                    <param id="0" name="Layer">&quot;info&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Выбор управления" sid="7636553625374258" title="SelectControl">
+            <sub-events>
+                <event-block sid="7186281269264141">
+                    <conditions>
+                        <condition id="0" name="On function" sid="9778540033690565" type="Function">
+                            <param id="0" name="Name">&quot;MainMenuActivate&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="4896631275027728" type="System">
+                            <param id="0" name="Layer">&quot;game&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="6923144733904819" type="System">
+                            <param id="0" name="Group name">&quot;Links&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="9398569271543349" type="System">
+                            <param id="0" name="Group name">&quot;AlterNavigate&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="7297849342474132" type="SpriteControls" />
+                        <action id="-9" name="Destroy" sid="7367638217435054" type="Info" />
+                        <action behavior="Sine" id="0" name="Set active" sid="4487477737125497" type="Sun">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="3122541851646978">
+                            <conditions />
+                            <actions>
+                                <action id="-12" name="Set group active" sid="3893156976068177" type="System">
+                                    <param id="0" name="Group name">&quot;InfoDestroy&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="5954241491518223" type="System">
+                                    <param id="0" name="Group name">Function.Param(0) &amp; &quot;Game&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="5627170478227194" type="System">
+                                    <param id="0" name="Group name">Function.Param(0) &amp; &quot;Cursor&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="5659990731119531" type="System">
+                                    <param id="0" name="Group name">&quot;SelectControl&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3747567085711047">
+                            <conditions />
+                            <actions>
+                                <action disabled="1" id="0" name="Call function" sid="2354705623018888" type="Function">
+                                    <param id="0" name="Name">&quot;BackgroundColor&quot;</param>
+                                    <param id="1" name="Parameter {n}">random(255){###}random(255){###}random(255)</param>
+                                </action>
+                                <action id="0" name="Call function" sid="7720714549577911" type="Function">
+                                    <param id="0" name="Name">&quot;LoadingFade&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>test</comment>
+                        <event-block sid="4291586875800743">
+                            <conditions />
+                            <actions>
+                                <action id="11" name="Set collisions enabled" sid="1554629828635684" type="Cursor">
+                                    <param id="0" name="Collisions">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Делаем активным клавиатуру</comment>
+                <event-block any="1" sid="1935608955498932">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3203535032723468" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                        <condition id="0" name="On key pressed" sid="4545401842998139" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="101837248708614" type="Function">
+                            <param id="0" name="Name">&quot;MainMenuActivate&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;Keyboard&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Делаем активным Геймпад</comment>
+                <event-block sid="581798387602278">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="6107434107601074" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="4341826263037243" type="Function">
+                            <param id="0" name="Name">&quot;MainMenuActivate&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;GamePad&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Изменяем надпись</comment>
+                <event-block sid="8472344133678743">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="444397780276572" type="Mouse">
+                            <param id="0" name="Object">SpriteControls</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block collapsed="1" sid="3776452107048916">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="5943221670639414" type="SpriteControls">
+                                    <param id="0" name="Animation">&quot;Keyboard&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="6142287122768968" type="Info">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="7765383535411583" type="Info">
+                                    <param id="0" name="Text">&quot;Keyboard&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="8829609062451393">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="6587184176115286" type="Mouse" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="3991663564337852" type="Function">
+                                            <param id="0" name="Name">&quot;MainMenuActivate&quot;</param>
+                                            <param id="1" name="Parameter {n}">&quot;Keyboard&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block collapsed="1" sid="1044019533873871">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="6616407986430348" type="System" />
+                                <condition id="2" name="Is playing" sid="4321147966707451" type="SpriteControls">
+                                    <param id="0" name="Animation">&quot;Mouse&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="9654501797351947" type="Info">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="3458002443269837" type="Info">
+                                    <param id="0" name="Text">&quot;Mouse&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="7003560780716806">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="2457246458388916" type="Mouse" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="7914344523189497" type="Function">
+                                            <param id="0" name="Name">&quot;MainMenuActivate&quot;</param>
+                                            <param id="1" name="Parameter {n}">&quot;Mouse&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block collapsed="1" sid="1973682430271084">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="4697642106216002" type="System" />
+                                <condition id="2" name="Is playing" sid="771462165847633" type="SpriteControls">
+                                    <param id="0" name="Animation">&quot;Gamepad&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="6656417760034833" type="Info">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="1536679390656628" type="Info">
+                                    <param id="0" name="Text">&quot;Gamepad&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="8586599156063862">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="400134504450533" type="Mouse" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="2104214239094496" type="Function">
+                                            <param id="0" name="Name">&quot;MainMenuActivate&quot;</param>
+                                            <param id="1" name="Parameter {n}">&quot;GamePad&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5132418798153357">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="815359359267491" type="System" />
+                        <condition id="-4" name="Trigger once while true" sid="3136180501466991" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="9753464522161756">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="9685871188191903" type="Info">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="6406784337942895" type="Info">
+                                    <param id="0" name="Text">&quot;Select control type&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="альтернативное управление" inactive="1" sid="4873995218015465" title="AlterNavigate">
+            <sub-events>
+                <comment>About</comment>
+                <event-block sid="6110714300706568">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3675801140372288" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="3774761327977186" type="Function">
+                            <param id="0" name="Name">&quot;LoadLevel&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;About&quot;{###}&quot;FadeOut&quot;{###}&quot;normal&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>More Games</comment>
+                <event-block any="1" sid="5376017253645718">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3694381686315559" type="Keyboard">
+                            <param id="0" name="Key">77 (M)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="8" name="Open URL in new window" sid="7826065866671377" type="Browser">
+                            <param id="0" name="URL">&quot;//games.baskovsky.ru/&quot;</param>
+                            <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>начать игру</comment>
+                <event-block any="1" sid="3973240755409328">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9820519012935517" type="Keyboard">
+                            <param id="0" name="Key">80 (P)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="8907215419343648" type="Function">
+                            <param id="0" name="Name">&quot;StartGame&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>How to play</comment>
+                <event-block any="1" sid="3138152468546584">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3952337785098532" type="Keyboard">
+                            <param id="0" name="Key">72 (H)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="3161495528791214" type="Function">
+                            <param id="0" name="Name">&quot;LoadLevel&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;Info&quot;{###}&quot;FadeIn&quot;{###}&quot;normal&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="1445362033901586" title="XML">
+            <sub-events>
+                <event-block sid="4468110324161785">
+                    <conditions>
+                        <condition id="0" name="On function" sid="2797192634825005" type="Function">
+                            <param id="0" name="Name">&quot;XMLaboutInit&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Load" sid="961045264799612" type="XMLabout">
+                            <param id="0" name="XML">&quot;&lt;?xml version=&quot;&quot;1.0&quot;&quot; encoding=&quot;&quot;UTF-8&quot;&quot;?&gt;&#x0D;&#x0A;&lt;about&gt;&#x0D;&#x0A;  &lt;developer url=&quot;&quot;//site.baskovsky.ru/&quot;&quot;&gt;Denis Baskovsky&#x0D;&#x0A;  &lt;/developer&gt;&#x0D;&#x0A;  &lt;game year=&quot;&quot;[2014]&quot;&quot;&gt;Arkahold WebGL&lt;/game&gt;&#x0D;&#x0A;  &lt;framework url=&quot;&quot;//www.scirra.com/&quot;&quot;&gt;Construct 2&lt;/framework&gt;&#x0D;&#x0A;&lt;/about&gt;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="6332313624024054" title="AboutInit">
+            <sub-events>
+                <event-block sid="4510756918261203">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="2795818639824789" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="4635142240513371" type="Info">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="9240518946019315" type="Function">
+                            <param id="0" name="Name">&quot;XMLaboutInit&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Set text" sid="2531463013466685" type="Info">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="6120052190653844">
+                            <conditions>
+                                <condition id="0" name="For each node" sid="5512507607871507" type="XMLabout">
+                                    <param id="0" name="XPath">&quot;developer&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="7653778968776097">
+                                    <conditions />
+                                    <actions>
+                                        <action id="1" name="Append text" sid="4709882483505845" type="Info">
+                                            <param id="0" name="Text">&quot;Developer: &quot; &amp;&#x0D;&#x0A;  XMLabout.StringValue(&quot;text()&quot;)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="487741515608997">
+                            <conditions>
+                                <condition id="0" name="For each node" sid="4077321520431155" type="XMLabout">
+                                    <param id="0" name="XPath">&quot;framework&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="1607396828804994">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="9344427622422171" type="Info">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="8958978893463308" type="Info">
+                                            <param id="0" name="Text">&quot;Create with &quot; &amp; &#x0D;&#x0A;  XMLabout.StringValue(&quot;text()&quot;)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="6704766889740535">
+                            <conditions>
+                                <condition id="0" name="For each node" sid="639348334276105" type="XMLabout">
+                                    <param id="0" name="XPath">&quot;game&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="2275805835962388">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="7945581584312499" type="Info">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="960579916812438" type="Info">
+                                            <param id="0" name="Text">newline &amp; XMLabout.StringValue(&quot;text()&quot;) &amp; &#x0D;&#x0A;  &quot; v&quot; &amp; projectversion </param>
+                                        </action>
+                                        <action id="1" name="Append text" sid="1919749278887751" type="Info">
+                                            <param id="0" name="Text">&quot; &quot; &amp; XMLabout.StringValue(&quot;@year&quot;)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

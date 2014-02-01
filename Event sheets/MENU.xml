@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MENU</name>
+    <events>
+        <include>Audio</include>
+        <include>MenuEffects</include>
+        <include>Global</include>
+        <include>Controls</include>
+        <include>Links</include>
+        <include>Camera</include>
+        <include>Cosmos</include>
+        <include>Loading</include>
+        <event-group description="" sid="7962437702440751" title="MenuInit">
+            <sub-events>
+                <event-block sid="5792703236058518">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="8919737752124712" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>Красивая анимация </comment>
+                        <event-block sid="5422505704900267">
+                            <conditions>
+                                <condition id="-15" name="Is group active" sid="9136837188820337" type="System">
+                                    <param id="0" name="Group name">&quot;MenuKey&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action disabled="1" id="0" name="Call function" sid="7479355931599415" type="Function">
+                                    <param id="0" name="Name">&quot;BackgroundColor&quot;</param>
+                                    <param id="1" name="Parameter {n}">random(255){###}random(255){###}random(255)</param>
+                                </action>
+                                <action id="0" name="Call function" sid="763539700771327" type="Function">
+                                    <param id="0" name="Name">&quot;LoadingFade&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>init</comment>
+                        <event-block sid="5034070372639336">
+                            <conditions />
+                            <actions>
+                                <action id="-15" name="Set visible" sid="3163949673624116" type="GameInfo">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="4704081477502531" type="System">
+                                    <param id="0" name="Group name">&quot;MenuKey&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="6387493214994443" type="line">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="7182400589251672" type="Cursor">
+                                    <param id="0" name="X">Function.Call(&quot;cx&quot;)</param>
+                                    <param id="1" name="Y">Function.Call(&quot;cy&quot;)</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="1666053611897153" type="Cursor">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-26" name="Move to layer" sid="5922261763945179" type="Cursor">
+                                    <param id="0" name="Layer">&quot;ui&quot;</param>
+                                </action>
+                                <action id="-24" name="Move to top" sid="7120872993957303" type="Cursor" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="8750175944907934">
+                            <conditions />
+                            <actions>
+                                <action id="-3" name="Create object" sid="9078979449582281" type="System">
+                                    <param id="0" name="Object to create">Sun</param>
+                                    <param id="1" name="Layer">&quot;back&quot;</param>
+                                    <param id="2" name="X">Function.Call(&quot;cx&quot;)</param>
+                                    <param id="3" name="Y">Function.Call(&quot;cy&quot;)</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="3728832067049625" type="System">
+                                    <param id="0" name="Object to create">TiledSpace</param>
+                                    <param id="1" name="Layer">&quot;back&quot;</param>
+                                    <param id="2" name="X">Function.Call(&quot;cx&quot;)</param>
+                                    <param id="3" name="Y">Function.Call(&quot;cy&quot;)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment></comment>
+                        <event-block sid="8965897411250569">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="5205313213278999" type="TiledSpace" />
+                            </conditions>
+                            <actions>
+                                <action id="-26" name="Move to layer" sid="5435603906051504" type="TiledSpace">
+                                    <param id="0" name="Layer">0</param>
+                                </action>
+                                <action id="-24" name="Move to top" sid="5058555087702196" type="TiledSpace" />
+                                <action id="-7" name="Set size" sid="1853033097852011" type="TiledSpace">
+                                    <param id="0" name="Width">LayoutWidth * 1.5</param>
+                                    <param id="1" name="Height">LayoutHeight * 1.5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>stars init</comment>
+                        <event-block sid="9562229481629804">
+                            <conditions>
+                                <condition id="-12" name="Repeat" sid="3508073736474695" type="System">
+                                    <param id="0" name="Count">200</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="3537776629833765" type="System">
+                                    <param id="0" name="Object to create">Stars</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">Function.Call(&quot;cx&quot;)</param>
+                                    <param id="3" name="Y">Function.Call(&quot;cy&quot;)</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="3491279743705222" type="Stars">
+                                    <param id="0" name="Width">2</param>
+                                    <param id="1" name="Height">2</param>
+                                </action>
+                                <action id="-25" name="Move to bottom" sid="2967030264689132" type="Stars" />
+                            </actions>
+                        </event-block>
+                        <comment>create line effect</comment>
+                        <event-block sid="5732620643656979">
+                            <conditions>
+                                <condition id="-12" name="Repeat" sid="4178453184003409" type="System">
+                                    <param id="0" name="Count">8</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="6999751986571327" type="System">
+                                    <param id="0" name="Object to create">line</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">Function.Call(&quot;cx&quot;)</param>
+                                    <param id="3" name="Y">Function.Call(&quot;cy&quot;)</param>
+                                </action>
+                                <action id="-5" name="Set width" sid="8018385042365423" type="line">
+                                    <param id="0" name="Width">LayoutWidth</param>
+                                </action>
+                                <action id="-18" name="Rotate clockwise" sid="1462016716543786" type="line">
+                                    <param id="0" name="Degrees">loopindex * 45</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="8626714693494272" type="line">
+                                    <param id="0" name="Opacity">20</param>
+                                </action>
+                                <action behavior="Rotate" id="0" name="Set speed" sid="1229654537253956" type="line">
+                                    <param id="0" name="Speed">10</param>
+                                </action>
+                                <action id="-25" name="Move to bottom" sid="7930423119376066" type="line" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="4953543648174502">
+                            <conditions>
+                                <condition id="-15" inverted="1" name="Is group active" sid="1356391898906471" type="System">
+                                    <param id="0" name="Group name">&quot;Cosmos&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="9041543832320361" type="System">
+                                    <param id="0" name="Group name">&quot;Cosmos&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

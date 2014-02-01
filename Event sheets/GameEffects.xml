@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GameEffects</name>
+    <events>
+        <event-block collapsed="1" sid="893275885817096">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3347733395975816" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="2256513953277938">
+                    <conditions />
+                    <actions>
+                        <action id="-32" name="Set layer effect parameter" sid="6388273736917542" type="System">
+                            <param id="0" name="Layer">&quot;back&quot;</param>
+                            <param id="1" name="Effect">&quot;Vignette&quot;</param>
+                            <param id="2" name="Parameter index">0</param>
+                            <param id="3" name="Value">60</param>
+                        </action>
+                        <action id="-32" name="Set layer effect parameter" sid="3675359235504205" type="System">
+                            <param id="0" name="Layer">&quot;back&quot;</param>
+                            <param id="1" name="Effect">&quot;Vignette&quot;</param>
+                            <param id="2" name="Parameter index">1</param>
+                            <param id="3" name="Value">95</param>
+                        </action>
+                        <action id="-30" name="Set layer effect enabled" sid="4884239884603867" type="System">
+                            <param id="0" name="Layer">&quot;back&quot;</param>
+                            <param id="1" name="Mode">1</param>
+                            <param id="2" name="Effect">&quot;Vignette&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group collapsed="1" description="" sid="4439008932082915" title="Tiled">
+            <sub-events>
+                <event-block sid="4168582775702655">
+                    <conditions>
+                        <condition id="0" name="On function" sid="4784574907374817" type="Function">
+                            <param id="0" name="Name">&quot;ShowBackDark&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="9791885529834588" type="System">
+                            <param id="0" name="Object to create">TiledBackground</param>
+                            <param id="1" name="Layer">&quot;back&quot;</param>
+                            <param id="2" name="X">Function.Call(&quot;cx&quot;)</param>
+                            <param id="3" name="Y">Function.Call(&quot;cy&quot;)</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="8603013075494712" type="TiledBackground">
+                            <param id="0" name="Width">LayoutWidth</param>
+                            <param id="1" name="Height">LayoutHeight</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2033403336910798">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="1343266160906172" type="TiledBackground" />
+                    </conditions>
+                    <actions>
+                        <action id="-28" name="Set effect parameter" sid="6387473925423898" type="TiledBackground">
+                            <param id="0" name="Effect">&quot;AdjustHSLMask&quot;</param>
+                            <param id="1" name="Parameter index">2</param>
+                            <param id="2" name="Value">lerp(0, 100, dt)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="3059559455478436" title="FadeLines">
+            <sub-events>
+                <event-block sid="6390272955796266">
+                    <conditions>
+                        <condition id="0" name="On function" sid="8121642882449624" type="Function">
+                            <param id="0" name="Name">&quot;FadeLines&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="0" name="Restart fade" sid="7631748867284282" type="line" />
+                        <action id="-27" name="Set effect enabled" sid="9840305391022571" type="line">
+                            <param id="0" name="Mode">1</param>
+                            <param id="1" name="Effect">&quot;WarpRadial&quot;</param>
+                        </action>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="6742135494532071" type="line">
+                            <param id="0" name="Speed">random(5, 10)</param>
+                        </action>
+                        <action id="3" name="Start" sid="530823944397745" type="line">
+                            <param id="0" name="From">0</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="3831599022786914" type="line">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="42934376229445">
+                    <conditions>
+                        <condition behavior="Fade" id="0" name="On fade out finished" sid="2665632395305155" type="line" />
+                    </conditions>
+                    <actions>
+                        <action id="-27" name="Set effect enabled" sid="7067904943195781" type="line">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;WarpRadial&quot;</param>
+                        </action>
+                        <action id="2" name="Stop" sid="6044454978981764" type="line" />
+                        <action behavior="Sine" id="0" name="Set active" sid="8428443191644461" type="line">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Global</name>
+    <events>
+        <event-group collapsed="1" description="" sid="2745034965042407" title="Coordinates">
+            <sub-events>
+                <variable comment="центр по x" constant="0" name="cx" sid="316" static="1" type="number">0</variable>
+                <variable comment="центр по y" constant="0" name="cy" sid="315" static="1" type="number">0</variable>
+                <event-block sid="2556640485948492">
+                    <conditions>
+                        <condition id="0" name="On function" sid="378369944966071" type="Function">
+                            <param id="0" name="Name">&quot;cx&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="1693574967104165" type="Function">
+                            <param id="0" name="Value">cx</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8532766308867274">
+                    <conditions>
+                        <condition id="0" name="On function" sid="2421245744736693" type="Function">
+                            <param id="0" name="Name">&quot;cy&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="5593445972803238" type="Function">
+                            <param id="0" name="Value">cy</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3065928675981608">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="1273733109206987" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>coor init</comment>
+                        <event-block sid="2074136058341888">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="6194277685175685" type="System">
+                                    <param id="0" name="Variable">cx</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="6268132959407369" type="System">
+                                    <param id="0" name="Variable">cy</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="5629766501865423" type="System">
+                                    <param id="0" name="Variable">cx</param>
+                                    <param id="1" name="Value">round((ViewportLeft(0) + ViewportRight(0)) / 2)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="3281945639587098" type="System">
+                                    <param id="0" name="Variable">cy</param>
+                                    <param id="1" name="Value">round((ViewportTop(0) + ViewportBottom(0)) / 2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="8527913527862421" title="Tooltip">
+            <sub-events>
+                <event-block collapsed="1" sid="9835291142708246">
+                    <conditions>
+                        <condition id="0" name="On function" sid="8936402771269883" type="Function">
+                            <param id="0" name="Name">&quot;TooltipText&quot;</param>
+                        </condition>
+                        <condition id="1" name="Compare parameter" sid="2373099711376775" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="1079540266297167">
+                            <conditions />
+                            <actions>
+                                <action id="-3" name="Create object" sid="3302379633975277" type="System">
+                                    <param id="0" name="Object to create">Tooltip</param>
+                                    <param id="1" name="Layer">&quot;game&quot;</param>
+                                    <param id="2" name="X">Function.ParamCount &gt; 1 &#x0D;&#x0A;  ? Function.Param(1)&#x0D;&#x0A;  :   Function.Call(&quot;cx&quot;)</param>
+                                    <param id="3" name="Y">Function.ParamCount &gt; 1 &#x0D;&#x0A;  ? Function.Param(2)&#x0D;&#x0A;  :   Function.Call(&quot;cy&quot;)</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="5530634699125456" type="Tooltip">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;HighlightShadow&quot;</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="1739015337475301" type="Tooltip">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;Difference&quot;</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="6361413577386476" type="Tooltip">
+                                    <param id="0" name="Width">LayoutWidth * 1.5</param>
+                                    <param id="1" name="Height">LayoutHeight * 1.5</param>
+                                </action>
+                                <action id="0" name="Set text" sid="2790746836977161" type="Tooltip">
+                                    <param id="0" name="Text">uppercase(str(Function.Param(0)))</param>
+                                </action>
+                                <action behavior="Fade" id="0" name="Restart fade" sid="8733113262580932" type="Tooltip" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment></comment>
+                <event-block sid="2358569446087963">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="8741064592366583" type="Tooltip" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set scale" sid="477468291984247" type="Tooltip">
+                            <param id="0" name="Scale">lerp(self.CharacterScale, 1, dt*2)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="4205335274242136" title="Background">
+            <sub-events>
+                <event-block sid="5307407948367602">
+                    <conditions>
+                        <condition id="0" name="On function" sid="7474644041584513" type="Function">
+                            <param id="0" name="Name">&quot;BackgroundColor&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-34" name="Set layer background color" sid="3368770786283154" type="System">
+                            <param id="0" name="Layer">&quot;back&quot;</param>
+                            <param id="1" name="Color">rgb(Function.Param(0), Function.Param(1), Function.Param(2))</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="7876765733080429" title="Loading">
+            <sub-events>
+                <event-block sid="6248668463341541">
+                    <conditions>
+                        <condition id="0" name="On function" sid="8623908503400788" type="Function">
+                            <param id="0" name="Name">&quot;LoadingFade&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="2538417375469931">
+                            <conditions />
+                            <actions>
+                                <action id="-9" name="Destroy" sid="1452967495642775" type="FadeMask" />
+                                <action id="-3" name="Create object" sid="5222302376063487" type="System">
+                                    <param id="0" name="Object to create">FadeMask</param>
+                                    <param id="1" name="Layer">&quot;ui&quot;</param>
+                                    <param id="2" name="X">Function.Call(&quot;cx&quot;)</param>
+                                    <param id="3" name="Y">Function.Call(&quot;cy&quot;)</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="7786595569823691" type="FadeMask">
+                                    <param id="0" name="Width">LayoutWidth</param>
+                                    <param id="1" name="Height">LayoutHeight</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="3788770760201992" title="GameOver">
+            <sub-events>
+                <event-block sid="3371349269904702">
+                    <conditions>
+                        <condition id="0" name="On function" sid="2518392860698601" type="Function">
+                            <param id="0" name="Name">&quot;GameOver&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="4042161995382197" type="Function">
+                            <param id="0" name="Name">&quot;FreezeObj&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Call function" sid="2208567498293362" type="Function">
+                            <param id="0" name="Name">&quot;LoadLevel&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;GameOver&quot;{###}&quot;FadeOut&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="998288781675158" title="StartGame">
+            <sub-events>
+                <event-block sid="8673265042904594">
+                    <conditions>
+                        <condition id="0" name="On function" sid="8739129737229485" type="Function">
+                            <param id="0" name="Name">&quot;StartGame&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="7150279274246863">
+                            <conditions />
+                            <actions>
+                                <action id="11" name="Set collisions enabled" sid="31229053430836" type="Cursor">
+                                    <param id="0" name="Collisions">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="6503321866235974" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="4221739246586946" type="System">
+                                    <param id="0" name="Group name">&quot;Timer&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>приостанавливаем объекты</comment>
+        <event-block collapsed="1" sid="8851810681036153">
+            <conditions>
+                <condition id="0" name="On function" sid="1299829370292335" type="Function">
+                    <param id="0" name="Name">&quot;FreezeObj&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5894929932464958">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="6972092337286391" type="ball" />
+                        <condition id="-11" name="For Each" sid="1817677310298375" type="System">
+                            <param id="0" name="Object">ball</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Set object time scale" sid="4997123944378115" type="System">
+                            <param id="0" name="Object">ball</param>
+                            <param id="1" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1790487226070521">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="504456234370597" type="Eye" />
+                        <condition id="-11" name="For Each" sid="9706341406761835" type="System">
+                            <param id="0" name="Object">Eye</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Set object time scale" sid="6985179623366889" type="System">
+                            <param id="0" name="Object">Eye</param>
+                            <param id="1" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2735469484473265">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="9534442796197072" type="Enemy" />
+                        <condition id="-11" name="For Each" sid="315712759209588" type="System">
+                            <param id="0" name="Object">Enemy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Set object time scale" sid="5751329837308688" type="System">
+                            <param id="0" name="Object">Enemy</param>
+                            <param id="1" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2884537870911076">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="6002235567561974" type="player" />
+                        <condition id="-11" name="For Each" sid="4639991812653223" type="System">
+                            <param id="0" name="Object">player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Set object time scale" sid="5784947848540806" type="System">
+                            <param id="0" name="Object">player</param>
+                            <param id="1" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7656533036670225">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="2349315911984801" type="block" />
+                        <condition id="-11" name="For Each" sid="4866519201658719" type="System">
+                            <param id="0" name="Object">block</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Set object time scale" sid="5600725201325213" type="System">
+                            <param id="0" name="Object">block</param>
+                            <param id="1" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8278924911692569">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="277683074637362" type="line" />
+                        <condition id="-11" name="For Each" sid="6105633785544999" type="System">
+                            <param id="0" name="Object">line</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Set object time scale" sid="9576747907614178" type="System">
+                            <param id="0" name="Object">line</param>
+                            <param id="1" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

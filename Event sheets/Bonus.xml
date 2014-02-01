@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Bonus</name>
+    <events>
+        <event-group description="" sid="1720919837924583" title="Bonus">
+            <sub-events>
+                <variable constant="1" name="BONUSGRAVITY" sid="9449380373326582" static="1" type="number">50</variable>
+                <event-block sid="1066025385698192">
+                    <conditions>
+                        <condition behavior="Fade" id="0" name="On fade out finished" sid="4652788803716079" type="Bonus" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="5611463303993261" type="Function">
+                            <param id="0" name="Name">&quot;UpdatePoints&quot;</param>
+                            <param id="1" name="Parameter {n}">25</param>
+                        </action>
+                        <action id="0" name="Call function" sid="639287450896733" type="Function">
+                            <param id="0" name="Name">&quot;TooltipText&quot;</param>
+                            <param id="1" name="Parameter {n}">Function.Call(&quot;Bonus!&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7822210212736785">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="8582380880420633" type="Bonus" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="4361236550452909">
+                            <conditions>
+                                <condition id="-15" name="Pick nearest/furthest" sid="7530163845414119" type="player">
+                                    <param id="0" name="Which">0</param>
+                                    <param id="1" name="X">Bonus.X</param>
+                                    <param id="2" name="Y">Bonus.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="8353596571885151" type="Bonus">
+                                    <param id="0" name="Frame number">random(self.AnimationFrameCount)</param>
+                                </action>
+                                <action behavior="Bullet" id="2" name="Set gravity" sid="9250179751495117" type="Bonus">
+                                    <param id="0" name="Gravity">player.Y &gt; Bonus.Y &#x0D;&#x0A;  ? BONUSGRAVITY&#x0D;&#x0A;  : -BONUSGRAVITY</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="3115554605275131" type="Bonus">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">5.0</param>
+                                </action>
+                                <action id="-25" name="Move to bottom" sid="6837269205985152" type="Bonus" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block collapsed="1" sid="526275716778922">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="3216071853390063" type="player">
+                            <param id="0" name="Object">Bonus</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="5260719256365624">
+                            <conditions />
+                            <actions>
+                                <action id="11" name="Set collisions enabled" sid="3278137469339907" type="Bonus">
+                                    <param id="0" name="Collisions">0</param>
+                                </action>
+                                <action id="1" name="Set blend mode" sid="2442191548185213" type="Bonus">
+                                    <param id="0" name="Blend mode">1</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="5076360493786843" type="Bonus" />
+                                <action behavior="Flash" id="0" name="Flash" sid="2156140874519718" type="player">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">0.6</param>
+                                </action>
+                                <action id="0" name="Call function" sid="2582425391536653" type="Function">
+                                    <param id="0" name="Name">&quot;Bonus&quot;</param>
+                                    <param id="1" name="Parameter {n}">Bonus.AnimationFrame</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="7604212830802857">
+                    <conditions>
+                        <condition id="0" name="On function" sid="2113168777861181" type="Function">
+                            <param id="0" name="Name">&quot;Bonus&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>увеличение игрока</comment>
+                        <event-block collapsed="1" sid="7391147600138269">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="3177125678150162" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="9921067103461251" type="Function">
+                                    <param id="0" name="Name">&quot;TooltipText&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;Big!&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <comment>встроить анимацию small&#x0D;&#x0A;refactor</comment>
+                                <event-block sid="9509401175119228">
+                                    <conditions>
+                                        <condition id="-3" name="Is on-screen" sid="7134886109096394" type="player" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="3466936928860996" type="player">
+                                            <param id="0" name="Animation">&quot;Big&quot;</param>
+                                            <param id="1" name="From">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="9307924527321989" type="System">
+                                            <param id="0" name="Seconds">30</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="8078476715070505" type="player">
+                                            <param id="0" name="Animation">&quot;Medium&quot;</param>
+                                            <param id="1" name="From">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="5106173206831014">
+                                    <conditions />
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="1545484734413737" type="Enemy">
+                                            <param id="0" name="Animation">player.AnimationName</param>
+                                            <param id="1" name="From">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>добавление ещё шаров на уровень</comment>
+                        <event-block collapsed="1" sid="3099026853698963">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="1535972588268732" type="System" />
+                                <condition id="1" name="Compare parameter" sid="3035456681572006" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="7717705633451169" type="Function">
+                                    <param id="0" name="Name">&quot;TooltipText&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;Ball!&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="9018762363750523">
+                                    <conditions>
+                                        <condition id="-16" name="Pick random instance" sid="6649347754612038" type="System">
+                                            <param id="0" name="Object">player</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="5193085995939929" type="Function">
+                                            <param id="0" name="Name">&quot;SpawnBall&quot;</param>
+                                            <param id="1" name="Parameter {n}">player.ImagePointX(&quot;ball&quot;){###}player.ImagePointY(&quot;ball&quot;)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>супер шар -пробивает блок сразу. </comment>
+                        <event-block collapsed="1" sid="7831673346934183">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="8404556654700004" type="System" />
+                                <condition id="1" name="Compare parameter" sid="9979335536281612" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="8800454521102347" type="Function">
+                                    <param id="0" name="Name">&quot;TooltipText&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;Super!&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="4825552754064618">
+                                    <conditions />
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="581290250576508" type="ball">
+                                            <param id="0" name="Animation">&quot;Super&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>замедление скорости шара</comment>
+                        <event-block sid="2053967127436948">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="4270464846624113" type="System" />
+                                <condition id="1" name="Compare parameter" sid="924288935729611" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="5337377263242608" type="Function">
+                                    <param id="0" name="Name">&quot;TooltipText&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;Slow!&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="2103026359307357">
+                                    <conditions />
+                                    <actions />
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>плюс одна жизнь</comment>
+                        <event-block sid="5195062561578447">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="1970235019327026" type="System" />
+                                <condition id="1" name="Compare parameter" sid="8721994085080342" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="7647955252594752" type="Function">
+                                    <param id="0" name="Name">&quot;TooltipText&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;Life!&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="7636988328636996">
+                                    <conditions />
+                                    <actions />
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>прилипают шары</comment>
+                        <comment>походу не работает?</comment>
+                        <event-block disabled="1" sid="8501694845309658">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="2410379242426086" type="System" />
+                                <condition id="1" name="Compare parameter" sid="9728813827405783" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="3823569615077381" type="Function">
+                                    <param id="0" name="Name">&quot;TooltipText&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;Hold On!&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <comment>думаю нужно обнулять какую-то переменную внутри плеера</comment>
+                                <event-block disabled="1" sid="1202762892850051">
+                                    <conditions>
+                                        <condition id="-19" name="Pick all" sid="2299300650182884" type="System">
+                                            <param id="0" name="Object">player</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="6838433779050521" type="player">
+                                            <param id="0" name="Instance variable">ballPrilipnut</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

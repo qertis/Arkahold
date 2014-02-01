@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Enemy</name>
+    <events>
+        <event-group collapsed="1" description="" sid="49407421008908" title="EnemyInit">
+            <sub-events>
+                <event-block collapsed="1" sid="7077926358256385">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="9599229592788344" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="3288310340040415">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="118561898184045" type="EnemyBorn" />
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="6339379384349233" type="System">
+                                    <param id="0" name="Group name">&quot;Enemy&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="613903159342855" type="EnemyBorn" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="7143812476871738">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="5314128947083578" type="EnemyBorn" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="5657809878750316" type="EnemyBorn">
+                            <param id="0" name="Object">Enemy</param>
+                            <param id="1" name="Layer">self.LayerNumber</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="6346791688640696" title="Enemy">
+            <sub-events>
+                <event-block sid="1618953955553685">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="2947427302653358" type="Enemy" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="8018462549546786">
+                            <conditions>
+                                <condition id="-15" name="Pick nearest/furthest" sid="3454451921242989" type="ball">
+                                    <param id="0" name="Which">0</param>
+                                    <param id="1" name="X">Enemy.X</param>
+                                    <param id="2" name="Y">Enemy.Y</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="212275974964126" type="ball">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">Enemy.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="6163224277826968">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="1899411552228061" type="ball">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="X co-ordinate">Enemy.X - Enemy.Width / 4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="1469053503121644" type="Enemy">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="2620159560397431">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="8217811474460516" type="System" />
+                                        <condition id="-1" name="Compare X" sid="8898438251473606" type="ball">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="X co-ordinate">Enemy.X + Enemy.Width / 4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="6112698157237765" type="Enemy">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="1937029898722531">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="6152959690191482" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="6230973978430285" type="Enemy" />
+                <action id="-12" name="Set group active" sid="7360818766693592" type="System">
+                    <param id="0" name="Group name">&quot;Enemy&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

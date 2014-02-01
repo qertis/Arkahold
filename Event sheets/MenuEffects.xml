@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MenuEffects</name>
+    <events>
+        <event-group description="" sid="394715524819263" title="Group">
+            <sub-events>
+                <event-block sid="6767533584579787">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="3228964219500556" type="System">
+                            <param id="0" name="Interval (seconds)">0.2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-32" name="Set layer effect parameter" sid="7688242608311219" type="System">
+                            <param id="0" name="Layer">&quot;blocks&quot;</param>
+                            <param id="1" name="Effect">&quot;RadialBlur&quot;</param>
+                            <param id="2" name="Parameter index">0</param>
+                            <param id="3" name="Value">round(random(50, 80))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1713909086096503">
+                    <conditions>
+                        <condition behavior="Fade" id="0" name="On fade out finished" sid="6662775910869679" type="line" />
+                        <condition id="-11" name="For Each" sid="9891944193322016" type="System">
+                            <param id="0" name="Object">line</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="913359809337646" type="System">
+                            <param id="0" name="Seconds">random(2)</param>
+                        </action>
+                        <action behavior="Fade" id="0" name="Restart fade" sid="3523565148704799" type="line" />
+                    </actions>
+                </event-block>
+                <event-block sid="3696589747667875">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="3252272477335675" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-32" name="Set layer effect parameter" sid="6779456200754719" type="System">
+                            <param id="0" name="Layer">&quot;back&quot;</param>
+                            <param id="1" name="Effect">&quot;Vignette&quot;</param>
+                            <param id="2" name="Parameter index">1</param>
+                            <param id="3" name="Value">80</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

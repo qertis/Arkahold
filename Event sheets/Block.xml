@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Block</name>
+    <events>
+        <variable comment="последний уровень. тупой хардкод" constant="1" name="FINALLEVEL" sid="106627287506924" static="0" type="text">20</variable>
+        <comment>TODO move to local</comment>
+        <variable comment="количество бонусов на уровень" constant="1" name="BONUSCOUNT" sid="5387046176008031" static="0" type="number">100</variable>
+        <event-group description="" sid="2821068537602053" title="BlockInit">
+            <sub-events>
+                <variable comment="количество блоков на уровне" constant="0" name="BlockCount" sid="2958337952286063" static="1" type="number">0</variable>
+                <event-block sid="8193097524030829">
+                    <conditions>
+                        <condition id="0" name="On function" sid="7908103497456931" type="Function">
+                            <param id="0" name="Name">&quot;GetBlockCount&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="9546088523540883" type="Function">
+                            <param id="0" name="Value">BlockCount</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2161746201476127">
+                    <conditions>
+                        <condition id="0" name="On function" sid="2778396245180324" type="Function">
+                            <param id="0" name="Name">&quot;SetBlockCount&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8650761385210416" type="System">
+                            <param id="0" name="Variable">BlockCount</param>
+                            <param id="1" name="Value">Function.Param(0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block collapsed="1" sid="6310530394551787">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="4269100013771889" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="2715467001067312">
+                            <conditions>
+                                <condition id="-12" name="Repeat" sid="4229325907515461" type="System">
+                                    <param id="0" name="Count">BONUSCOUNT</param>
+                                </condition>
+                                <condition id="-16" name="Pick random instance" sid="3329877114111824" type="System">
+                                    <param id="0" name="Object">block</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="9775880848092171" type="block">
+                                    <param id="0" name="Instance variable">isBonus</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="8997586753579356" type="block">
+                                    <param id="0" name="Instance variable">isBonus</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2282485639195009">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Call function" sid="5249138376281648" type="Function">
+                                    <param id="0" name="Name">&quot;SetBlockCount&quot;</param>
+                                    <param id="1" name="Parameter {n}">block.Count</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="5072101667892949" title="Blocks">
+            <sub-events>
+                <event-block collapsed="1" sid="2317429303885951">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="9794486999320709" type="block" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="8601064831691404" type="Function">
+                            <param id="0" name="Name">&quot;SetBlockCount&quot;</param>
+                            <param id="1" name="Parameter {n}">int(Function.Call(&quot;GetBlockCount&quot;)) - 1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>Game win</comment>
+                        <event-block collapsed="1" sid="4980467870540534">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="2566399120446106" type="System">
+                                    <param id="0" name="First value">Function.Call(&quot;GetBlockCount&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="7125324462966547">
+                                    <conditions />
+                                    <actions>
+                                        <action disabled="1" id="-12" name="Set group active" sid="9184431172516243" type="System">
+                                            <param id="0" name="Group name">&quot;Block&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action disabled="1" id="-12" name="Set group active" sid="2819399284824584" type="System">
+                                            <param id="0" name="Group name">&quot;Ball&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="1655237536671738" type="System">
+                                            <param id="0" name="Group name">&quot;Cosmos&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="1464675711055278">
+                                    <conditions />
+                                    <actions>
+                                        <action id="0" name="Call function" sid="9498654540646219" type="Function">
+                                            <param id="0" name="Name">&quot;FreezeObj&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>проверка - если последний уровень - тогда на finish</comment>
+                                <event-block sid="5351639896075012">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="484711052389943" type="System">
+                                            <param id="0" name="First value">str(LayoutName)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">str(FINALLEVEL)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="4007225610683111" type="System">
+                                            <param id="0" name="Layout">TheEnd</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>иначе - загружаем следующий уровень по-порядку</comment>
+                                <event-block sid="8450121524966046">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="1636558725174775" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="6429755186907106" type="Function">
+                                            <param id="0" name="Name">&quot;LoadLevel&quot;</param>
+                                            <param id="1" name="Parameter {n}">int(LayoutName)+1{###}&quot;FadeOut&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>инкрементируем количество очков. только у тех блоков которые действительно подверглись ударам шара</comment>
+                        <event-block sid="3942179512930331">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="5580684133182096" type="block">
+                                    <param id="0" name="Instance variable">kickCount</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="5425161820383163" type="Function">
+                                    <param id="0" name="Name">&quot;UpdatePoints&quot;</param>
+                                    <param id="1" name="Parameter {n}">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="5769874081017621" type="Function">
+                                    <param id="0" name="Name">&quot;TooltipText&quot;</param>
+                                    <param id="1" name="Parameter {n}">Function.Call(&quot;GetPoints&quot;){###}floor(block.X){###}floor(block.Y)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="2261503377657026">
+                    <conditions>
+                        <condition id="6" name="On frame changed" sid="868279043858248" type="block" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="5572813347701623" type="block">
+                            <param id="0" name="Instance variable">animatedTime</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>TODO OPTIMIZE</comment>
+                <event-block sid="2200340708975707">
+                    <conditions>
+                        <condition id="-23" name="While" sid="2964878651860651" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="4860579245876149" type="block">
+                            <param id="0" name="Instance variable">animatedTime</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="9836673548476337" type="block">
+                            <param id="0" name="Instance variable">animatedTime</param>
+                            <param id="1" name="Value">lerp(Self.animatedTime, 1.1, dt)</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="6263810816986635" type="block">
+                            <param id="0" name="Effect">&quot;Gamma&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">Self.animatedTime</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="3140229747681552">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="3805215715084828" type="System" />
+            </conditions>
+            <actions>
+                <action disabled="1" id="-12" name="Set group active" sid="7993163293491207" type="System">
+                    <param id="0" name="Group name">&quot;Blocks&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

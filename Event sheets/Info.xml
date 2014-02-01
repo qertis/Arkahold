@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Info</name>
+    <events>
+        <include>MENU</include>
+        <event-group collapsed="1" description="" sid="8407901303174222" title="InfoInit">
+            <sub-events>
+                <event-block collapsed="1" sid="5687808467504027">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="2555381400613563" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="9071858914123653">
+                            <conditions>
+                                <condition id="-15" name="Is group active" sid="4012808674126587" type="System">
+                                    <param id="0" name="Group name">&quot;KeyboardGame&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="732634743501841" type="KeyInfo">
+                                    <param id="0" name="Animation">&quot;Keyboard&quot;</param>
+                                    <param id="1" name="From">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4644692144638656">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="1678861163946449" type="System" />
+                                <condition id="-15" name="Is group active" sid="9534153889001567" type="System">
+                                    <param id="0" name="Group name">&quot;MouseGame&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="4034336357891229" type="KeyInfo">
+                                    <param id="0" name="Animation">&quot;Mouse&quot;</param>
+                                    <param id="1" name="From">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8278244181312699">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="3102294431683298" type="System" />
+                                <condition id="-15" name="Is group active" sid="1575047754050312" type="System">
+                                    <param id="0" name="Group name">&quot;GamePadGame&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="7699072446513015" type="KeyInfo">
+                                    <param id="0" name="Animation">&quot;Gamepad&quot;</param>
+                                    <param id="1" name="From">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="8533244393548711" title="Exit">
+            <sub-events>
+                <event-block any="1" sid="9031373193203337">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5840812546369487" type="Keyboard">
+                            <param id="0" name="Key">27 (Esc)</param>
+                        </condition>
+                        <condition id="0" name="On key pressed" sid="3826675467266836" type="Keyboard">
+                            <param id="0" name="Key">66 (B)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="4925295335226846" type="System">
+                            <param id="0" name="Layout">MainMenu</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

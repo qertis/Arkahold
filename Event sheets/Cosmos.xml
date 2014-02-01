@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Cosmos</name>
+    <events>
+        <event-group description="fake 3d" inactive="1" sid="8357331470037911" title="Cosmos">
+            <sub-events>
+                <variable comment="скорость звезд" constant="1" name="SPEED" sid="317" static="1" type="number">1.5</variable>
+                <variable constant="0" name="spread" sid="318" static="0" type="number">64</variable>
+                <comment>я не понимаю что это, но нужно переделать!</comment>
+                <variable constant="1" name="cosmosX" sid="7826139559674902" static="1" type="number">1000</variable>
+                <variable constant="1" name="cosmosY" sid="7411741421141804" static="1" type="number">2000</variable>
+                <comment>vz is a fake z coordinate</comment>
+                <event-block any="1" sid="327">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="328" type="Stars">
+                            <param id="0" name="Instance variable">sx</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="333" type="Stars">
+                            <param id="0" name="Instance variable">sx</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">WindowWidth</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="338" type="Stars">
+                            <param id="0" name="Instance variable">sy</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="343" type="Stars">
+                            <param id="0" name="Instance variable">sy</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">WindowHeight</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="330" type="Stars">
+                            <param id="0" name="Instance variable">vx</param>
+                            <param id="1" name="Value">random(COSMOSY)-COSMOSX</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="5974970483594318" type="Stars">
+                            <param id="0" name="Instance variable">vy</param>
+                            <param id="1" name="Value">random(COSMOSY)-COSMOSX</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="2786130423159216" type="Stars">
+                            <param id="0" name="Instance variable">vz</param>
+                            <param id="1" name="Value">int(random(150, 250))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>fake a 3D rendering with some mathematic calculations. </comment>
+                <event-block sid="353">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="354" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="3626318228598727" type="Stars">
+                            <param id="0" name="Instance variable">sx</param>
+                            <param id="1" name="Value">(Stars.vx * spread) / (Stars.vz) + Function.Call(&quot;cx&quot;)</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="356" type="Stars">
+                            <param id="0" name="Instance variable">sy</param>
+                            <param id="1" name="Value">(Stars.vy * spread) / (Stars.vz) + Function.Call(&quot;cy&quot;)</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="357" type="Stars">
+                            <param id="0" name="Instance variable">vz</param>
+                            <param id="1" name="Value">Stars.vz - SPEED</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="358" type="Stars">
+                            <param id="0" name="X">Stars.sx</param>
+                            <param id="1" name="Y">Stars.sy</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>stars come out of the screen</comment>
+                        <event-block sid="347">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="348" type="System">
+                                    <param id="0" name="First value">Stars.vz</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">SPEED</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="350" type="Stars">
+                                    <param id="0" name="Instance variable">vx</param>
+                                    <param id="1" name="Value">random(COSMOSY)-COSMOSX</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="351" type="Stars">
+                                    <param id="0" name="Instance variable">vy</param>
+                                    <param id="1" name="Value">random(COSMOSY)-COSMOSX</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="3805553735510556" type="Stars">
+                                    <param id="0" name="Instance variable">vz</param>
+                                    <param id="1" name="Value">int(random(150, 250))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

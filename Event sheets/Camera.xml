@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Camera</name>
+    <events>
+        <event-group collapsed="1" description="" sid="5350467961373489" title="Camera">
+            <sub-events>
+                <event-block sid="67">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="68" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="9038953065558592" type="Camera">
+                            <param id="0" name="X">Function.Call(&quot;cx&quot;)</param>
+                            <param id="1" name="Y">Function.Call(&quot;cy&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

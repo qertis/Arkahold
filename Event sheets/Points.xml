@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Points</name>
+    <events>
+        <event-group description="очки персонажа" sid="6614467640611257" title="Points">
+            <sub-events>
+                <variable comment="Глобальный рейтинг" constant="0" name="GlobalPoints" sid="391877562747495" static="1" type="number">0</variable>
+                <variable comment="рейтинг" constant="0" name="Points" sid="548" static="1" type="number">0</variable>
+                <event-block sid="2400006107484694">
+                    <conditions>
+                        <condition id="0" name="On function" sid="1982333578644173" type="Function">
+                            <param id="0" name="Name">&quot;GetPoints&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="5341519903915868" type="Function">
+                            <param id="0" name="Value">Points</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6697519485797794">
+                    <conditions>
+                        <condition id="0" name="On function" sid="1225877670621915" type="Function">
+                            <param id="0" name="Name">&quot;GetGlobalPoints&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="2359842399452925" type="Function">
+                            <param id="0" name="Value">GlobalPoints</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6071498062471543">
+                    <conditions>
+                        <condition id="0" name="On function" sid="2681085365604516" type="Function">
+                            <param id="0" name="Name">&quot;ResetPoints&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5225827577353515" type="System">
+                            <param id="0" name="Variable">GlobalPoints</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2729109216317274" type="System">
+                            <param id="0" name="Variable">Points</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5501166076847036">
+                    <conditions>
+                        <condition id="0" name="On function" sid="7814025380809973" type="Function">
+                            <param id="0" name="Name">&quot;UpdatePoints&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="5639751943797099">
+                            <conditions />
+                            <actions>
+                                <action id="-10" name="Add to" sid="8567230722888851" type="System">
+                                    <param id="0" name="Variable">Points</param>
+                                    <param id="1" name="Value">Function.Param(0)</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="4828436298959077" type="System">
+                                    <param id="0" name="Variable">GlobalPoints</param>
+                                    <param id="1" name="Value">Function.Param(0)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="6300991740361721">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="8297297338966728" type="System">
+                                            <param id="0" name="First value">Points</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Second value">100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="557573041486963" type="Function">
+                                            <param id="0" name="Name">&quot;UpdateLifes&quot;</param>
+                                            <param id="1" name="Parameter {n}">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="6727664111688474" type="System">
+                                            <param id="0" name="Variable">Points</param>
+                                            <param id="1" name="Value">Points%100</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="8103555337355195" type="Function">
+                                            <param id="0" name="Name">&quot;TooltipText&quot;</param>
+                                            <param id="1" name="Parameter {n}">Function.Call(&quot;GetGlobalPoints&quot;)</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="6448170694803353" type="Function">
+                                            <param id="0" name="Name">&quot;FadeLines&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

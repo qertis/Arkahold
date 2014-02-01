@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Loading</name>
+    <events>
+        <event-group collapsed="1" description="Виды загрузки уровней" sid="7070241593772392" title="LoadingLevel">
+            <sub-events>
+                <variable comment="Содержит номер уровня" constant="0" name="ToLevel" sid="3986355243152203" static="1" type="text"></variable>
+                <variable comment="Эффект перехода" constant="0" name="Effect" sid="2861431792704717" static="1" type="text"></variable>
+                <variable comment="скорость перехода" constant="0" name="Speed" sid="6463538197326967" static="1" type="number">0</variable>
+                <variable comment="Переход к другому уровню готов" constant="0" name="ToLevelFlag" sid="1040166041574791" static="1" type="number">0</variable>
+                <event-block sid="898872828964446">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="9032582922816843" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="824471553243938" type="System">
+                            <param id="0" name="Variable">ToLevel</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1730665752138618" type="System">
+                            <param id="0" name="Variable">Effect</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7897074750188331" type="System">
+                            <param id="0" name="Variable">Speed</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9316794013686535" type="System">
+                            <param id="0" name="Variable">ToLevelFlag</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="275169551067103" type="System">
+                            <param id="0" name="Group name">&quot;FadeIn&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="7495303865510706" type="System">
+                            <param id="0" name="Group name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="947558034033653">
+                    <conditions>
+                        <condition id="0" name="On function" sid="6255831823083322" type="Function">
+                            <param id="0" name="Name">&quot;GetLoadingSpeed&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="3378820992831226" type="Function">
+                            <param id="0" name="Value">Speed</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7556733222199956">
+                    <conditions>
+                        <condition id="0" name="On function" sid="9580489996999202" type="Function">
+                            <param id="0" name="Name">&quot;GetLoadingLevel&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="5087591963665377" type="Function">
+                            <param id="0" name="Value">ToLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5910371361659552">
+                    <conditions>
+                        <condition id="0" name="On function" sid="5168392417342157" type="Function">
+                            <param id="0" name="Name">&quot;LoadLevel&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>это вообще используется??</comment>
+                        <comment>имя перехода левела</comment>
+                        <event-block sid="6956144314764926">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="8099891799339602" type="System">
+                                    <param id="0" name="First value">Function.ParamCount</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="3907315083118445" type="System">
+                                    <param id="0" name="Variable">ToLevel</param>
+                                    <param id="1" name="Value">Function.Param(0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>появление</comment>
+                        <event-block sid="7819014524899853">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="5630470051582811" type="System">
+                                    <param id="0" name="First value">Function.ParamCount</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="717522582898866" type="System">
+                                    <param id="0" name="Group name">Function.Param(1)</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>эффект</comment>
+                        <event-block collapsed="1" sid="7660030465184771">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="5910697866767232" type="System">
+                                    <param id="0" name="First value">Function.ParamCount</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Second value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="759740474204393" type="System">
+                                    <param id="0" name="Variable">Effect</param>
+                                    <param id="1" name="Value">Function.Param(2)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="6998756614757218">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="9031202387793905" type="System">
+                                            <param id="0" name="Variable">Effect</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;black&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Set blend mode" sid="7066153521822053" type="LoadingLevel">
+                                            <param id="0" name="Blend mode">7</param>
+                                        </action>
+                                        <action id="-27" name="Set effect enabled" sid="3704719634934875" type="LoadingLevel">
+                                            <param id="0" name="Mode">0</param>
+                                            <param id="1" name="Effect">&quot;Hue&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="2498296689347795">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="861272364102043" type="System">
+                                            <param id="0" name="Variable">Effect</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;normal&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-27" name="Set effect enabled" sid="3454623118020684" type="LoadingLevel">
+                                            <param id="0" name="Mode">0</param>
+                                            <param id="1" name="Effect">&quot;TintMask&quot;</param>
+                                        </action>
+                                        <action id="1" name="Set blend mode" sid="9248701069322616" type="LoadingLevel">
+                                            <param id="0" name="Blend mode">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="1371482099142349">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="2184680644352749" type="System">
+                                            <param id="0" name="Variable">Effect</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;mask&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-28" name="Set effect parameter" sid="3827701031632799" type="LoadingLevel">
+                                            <param id="0" name="Effect">&quot;TintMask&quot;</param>
+                                            <param id="1" name="Parameter index">0</param>
+                                            <param id="2" name="Value">round(random(0, 100))</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="4702767137773616" type="LoadingLevel">
+                                            <param id="0" name="Effect">&quot;TintMask&quot;</param>
+                                            <param id="1" name="Parameter index">1</param>
+                                            <param id="2" name="Value">round(random(0, 100))</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="7940751406929718" type="LoadingLevel">
+                                            <param id="0" name="Effect">&quot;TintMask&quot;</param>
+                                            <param id="1" name="Parameter index">2</param>
+                                            <param id="2" name="Value">round(random(0, 100))</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>скорость перехода</comment>
+                        <event-block sid="1857520631224837">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="2202486660033738" type="System">
+                                    <param id="0" name="First value">Function.ParamCount</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Second value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="2405697277140268" type="System">
+                                    <param id="0" name="Variable">Speed</param>
+                                    <param id="1" name="Value">Function.Param(3)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>переход на др. уровень</comment>
+                <event-block sid="3845098696788489">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="1878976872521626" type="LoadingLevel" />
+                        <condition id="-14" name="Compare variable" sid="9771898254880241" type="System">
+                            <param id="0" name="Variable">ToLevelFlag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="742426401032682" type="System">
+                            <param id="0" name="First value">len(ToLevel)</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="1889885824079143" type="System">
+                            <param id="0" name="Variable">ToLevelFlag</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="1581012867109711" type="System">
+                            <param id="0" name="Layout">Function.Call(&quot;GetLoadingLevel&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="7310392314145114" title="FadeIn">
+            <sub-events>
+                <event-block collapsed="1" sid="3567619040257678">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="7925686765056788" type="LoadingLevel" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>переход между подуровнями</comment>
+                        <event-block sid="1778214775036913">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="7988847464389206" type="System" />
+                                <condition id="-15" inverted="1" name="Is group active" sid="3830000371371174" type="System">
+                                    <param id="0" name="Group name">&quot;Timer&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-25" name="Go to layout (by name)" sid="4010781782343515" type="System">
+                                    <param id="0" name="Layout">Function.Call(&quot;GetLoadingLevel&quot;)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7893204753411724">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="7057629510366787" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="9164755203887225" type="LoadingLevel">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="3482409234958166">
+                                    <conditions>
+                                        <condition id="-6" name="Compare height" sid="9035901042638056" type="LoadingLevel">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="Height">LayoutHeight</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-6" name="Set height" sid="6280482411751665" type="LoadingLevel">
+                                            <param id="0" name="Height">lerp(self.Height, LayoutHeight * 2, dt/2)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>таймер заканчивается</comment>
+                                <event-block sid="6049788570409678">
+                                    <conditions>
+                                        <condition id="-15" name="Is group active" sid="1767382001981495" type="System">
+                                            <param id="0" name="Group name">&quot;Timer&quot;</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="7438510386789323" type="System">
+                                            <param id="0" name="First value">Function.Call(&quot;GetTimer&quot;)</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="5919937145842134" type="LoadingLevel" />
+                                        <action id="0" name="Call function" sid="2460285749239966" type="Function">
+                                            <param id="0" name="Name">&quot;ResetTimer&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment></comment>
+                                <event-block sid="4546436435341909">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="9086890014064805" type="System">
+                                            <param id="0" name="First value">LayerOpacity(&quot;game&quot;)</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-18" name="Set layer opacity" sid="9356102416281547" type="System">
+                                            <param id="0" name="Layer">&quot;game&quot;</param>
+                                            <param id="1" name="Opacity">floor(Function.Call(&quot;GetTimer&quot;) / Function.Call(&quot;GetLoadingSpeed&quot;) * 100)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="710687895748881">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="1366592589974684" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="6193946693171185" type="System">
+                            <param id="0" name="Object to create">LoadingLevel</param>
+                            <param id="1" name="Layer">&quot;ui&quot;</param>
+                            <param id="2" name="X">Function.Call(&quot;cx&quot;)</param>
+                            <param id="3" name="Y">Function.Call(&quot;cy&quot;)</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="9273780068361793" type="LoadingLevel">
+                            <param id="0" name="Width">LayoutWidth</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="2253685720607894" type="LoadingLevel">
+                            <param id="0" name="Height">1</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="924170436838607" type="LoadingLevel">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;TintMask&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9264298126333711" type="LoadingLevel">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" inactive="1" sid="4331677629614402" title="FadeOut">
+            <sub-events>
+                <event-block collapsed="1" sid="211296876210546">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="3125335968384194" type="LoadingLevel" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="1064186151082109">
+                            <conditions>
+                                <condition id="-6" inverted="1" name="Compare height" sid="2610661629206217" type="LoadingLevel">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Height">LayoutHeight - 4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-6" name="Set height" sid="4290218601775" type="LoadingLevel">
+                                    <param id="0" name="Height">lerp(self.Height, LayoutHeight, dt*3)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7157079356316386">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="5209533218380512" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="2394434919498929" type="LoadingLevel" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block collapsed="1" sid="1972540670496876">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6577582217131053" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="3971761629412723">
+                            <conditions />
+                            <actions>
+                                <action id="-3" name="Create object" sid="6061779941843122" type="System">
+                                    <param id="0" name="Object to create">LoadingLevel</param>
+                                    <param id="1" name="Layer">&quot;ui&quot;</param>
+                                    <param id="2" name="X">Function.Call(&quot;cx&quot;)</param>
+                                    <param id="3" name="Y">ViewportTop(&quot;ui&quot;)</param>
+                                </action>
+                                <action id="-5" name="Set width" sid="961631748477088" type="LoadingLevel">
+                                    <param id="0" name="Width">LayoutWidth</param>
+                                </action>
+                                <action id="-6" name="Set height" sid="9878248124163216" type="LoadingLevel">
+                                    <param id="0" name="Height">1</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="396592896837153" type="LoadingLevel">
+                                    <param id="0" name="Mode">0</param>
+                                    <param id="1" name="Effect">&quot;Hue&quot;</param>
+                                </action>
+                                <action id="1" name="Set blend mode" sid="9328007481085436" type="LoadingLevel">
+                                    <param id="0" name="Blend mode">7</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2026656905762162">
+                            <conditions />
+                            <actions>
+                                <action id="-3" name="Create object" sid="43875137537815" type="System">
+                                    <param id="0" name="Object to create">LoadingLevel</param>
+                                    <param id="1" name="Layer">&quot;ui&quot;</param>
+                                    <param id="2" name="X">Function.Call(&quot;cx&quot;)</param>
+                                    <param id="3" name="Y">ViewportBottom(&quot;ui&quot;)</param>
+                                </action>
+                                <action id="-5" name="Set width" sid="4339445622789923" type="LoadingLevel">
+                                    <param id="0" name="Width">LayoutWidth</param>
+                                </action>
+                                <action id="-6" name="Set height" sid="3382580354736909" type="LoadingLevel">
+                                    <param id="0" name="Height">1</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="9143448640899456" type="LoadingLevel">
+                                    <param id="0" name="Mode">0</param>
+                                    <param id="1" name="Effect">&quot;Hue&quot;</param>
+                                </action>
+                                <action id="1" name="Set blend mode" sid="6286501821438468" type="LoadingLevel">
+                                    <param id="0" name="Blend mode">7</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

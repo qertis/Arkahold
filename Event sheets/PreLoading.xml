@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>PreLoading</name>
+    <events>
+        <event-group description="" sid="7326609307529562" title="Init">
+            <sub-events>
+                <variable constant="1" name="InfoText" sid="4523699395393778" static="1" type="text">Loading</variable>
+                <variable constant="0" name="Counter" sid="431448442404548" static="1" type="number">0</variable>
+                <event-block collapsed="1" sid="517740936889132">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="6519273127365325" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>cursor</comment>
+                        <comment>если эффекты не поддерживаются, показываем фак юзеру</comment>
+                        <event-block sid="8732094812048476">
+                            <conditions>
+                                <condition id="-27" inverted="1" name="Effects are supported" sid="2383369383222987" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Alert" sid="8857188040645162" type="Browser">
+                                    <param id="0" name="Message">&quot;Your browser don&apos;t support WebGL!&quot; &amp; newline&#x0D;&#x0A;&amp; &quot;Please use Firefox or Chrome&quot;</param>
+                                </action>
+                                <action id="7" name="Go to URL" sid="6197759357373075" type="Browser">
+                                    <param id="0" name="URL">&quot;http://www.mozilla.org/ru/firefox/&quot;</param>
+                                </action>
+                                <action id="1" name="Close" sid="7499454902567987" type="Browser" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="924213932302037">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="1037070136597653" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="6648041174433513" type="Mouse">
+                                    <param id="0" name="Cursor style">7</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2190535779281033">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="3445274733586695" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="4722213670365684" type="Audio">
+                                    <param id="0" name="Audio file">start-background</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5231068285276989">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="1445109012567282" type="System">
+                            <param id="0" name="Interval (seconds)">0.2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="3679172164242608" type="System">
+                            <param id="0" name="Variable">Counter</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="5424987746432991">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="4654733966447029" type="System">
+                                    <param id="0" name="Variable">Counter</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="9646831180748225" type="Info">
+                                    <param id="0" name="Text">INFOTEXT</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="2402045418265977" type="System">
+                                    <param id="0" name="Variable">Counter</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5723655848053302">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="8398547932219955" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Append text" sid="3461329472375525" type="Info">
+                                    <param id="0" name="Text">&quot;.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="7414821052051769" title="Complete">
+            <sub-events>
+                <event-block sid="5586904489308846">
+                    <conditions>
+                        <condition id="-25" name="On loader layout complete" sid="7566483755849124" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="4674771156217781" type="System">
+                            <param id="0" name="Layout">MainMenu</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Boss</name>
+    <events>
+        <event-group collapsed="1" description="" sid="2081194417046084" title="BossInit">
+            <sub-events>
+                <event-block collapsed="1" sid="5003748699369124">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="5519938991150894" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>refactor! добавить маску для босса</comment>
+                        <event-block sid="1328011500044726">
+                            <conditions />
+                            <actions>
+                                <action id="-12" name="Set group active" sid="9826989949040953" type="System">
+                                    <param id="0" name="Group name">&quot;Boss&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>TODO если маска разрушается - делать следующее</comment>
+                        <event-block sid="921">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="923" type="System">
+                                    <param id="0" name="Object">Eye</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="924" type="Pupil">
+                                    <param id="0" name="Object">Eye</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="926" type="Pupil">
+                                    <param id="0" name="Instance variable">EyeRadius</param>
+                                    <param id="1" name="Value">Eye.Width/2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="925" type="Pupil">
+                                    <param id="0" name="Instance variable">PupilRadius</param>
+                                    <param id="1" name="Value">Pupil.Width/ 2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="927" type="Pupil">
+                                    <param id="0" name="Instance variable">EyeX</param>
+                                    <param id="1" name="Value">Eye.X</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="928" type="Pupil">
+                                    <param id="0" name="Instance variable">EyeY</param>
+                                    <param id="1" name="Value">Eye.Y</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="929" type="Eye">
+                                    <param id="0" name="Width">self.Width+1</param>
+                                    <param id="1" name="Height">self.Height+1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="2426284632316626" title="Boss">
+            <sub-events>
+                <comment>запоминаем шар</comment>
+                <event-block collapsed="1" sid="628">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="777" type="System">
+                            <param id="0" name="Interval (seconds)">0.5</param>
+                        </condition>
+                        <condition id="-11" name="For Each" sid="843" type="System">
+                            <param id="0" name="Object">Pupil</param>
+                        </condition>
+                        <condition id="-19" name="Pick all" sid="905" type="System">
+                            <param id="0" name="Object">ball</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="908" type="ball">
+                            <param id="0" name="Instance variable">isFollow</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="909" type="Pupil">
+                            <param id="0" name="Instance variable">isFindBall</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="890">
+                            <conditions>
+                                <condition id="-15" name="Pick nearest/furthest" sid="797" type="ball">
+                                    <param id="0" name="Which">0</param>
+                                    <param id="1" name="X">Pupil.X</param>
+                                    <param id="2" name="Y">Pupil.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="785" type="ball">
+                                    <param id="0" name="Instance variable">isFollow</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="891">
+                            <conditions>
+                                <condition id="-15" name="Pick nearest/furthest" sid="818" type="Pupil">
+                                    <param id="0" name="Which">0</param>
+                                    <param id="1" name="X">ball.X</param>
+                                    <param id="2" name="Y">ball.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="819" type="Pupil">
+                                    <param id="0" name="Instance variable">isFindBall</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>получаем координаты взгляда</comment>
+                <event-block collapsed="1" sid="886">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="845" type="ball">
+                            <param id="0" name="Instance variable">isFollow</param>
+                        </condition>
+                        <condition id="-11" name="For Each" sid="842" type="System">
+                            <param id="0" name="Object">ball</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="846" type="Pupil">
+                            <param id="0" name="Instance variable">isFindBall</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="847" type="Pupil">
+                            <param id="0" name="Instance variable">dx</param>
+                            <param id="1" name="Value">ball.X - self.EyeX</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="848" type="Pupil">
+                            <param id="0" name="Instance variable">dy</param>
+                            <param id="1" name="Value">ball.Y - self.EyeY</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="849" type="Pupil">
+                            <param id="0" name="Instance variable">mlen</param>
+                            <param id="1" name="Value">sqrt(self.dX^2 + self.dY^2)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>перемещаем взгяд в одну сторону</comment>
+                        <event-block sid="850">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="851" type="Pupil">
+                                    <param id="0" name="Instance variable">mlen</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">(self.EyeRadius - self.PupilRadius)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="852" type="Pupil">
+                                    <param id="0" name="Instance variable">endX</param>
+                                    <param id="1" name="Value">(self.dX * (self.EyeRadius - self.PupilRadius) / self.mlen) + self.EyeX</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="853" type="Pupil">
+                                    <param id="0" name="Instance variable">endY</param>
+                                    <param id="1" name="Value">(self.dY * (self.EyeRadius - self.PupilRadius) / self.mlen) + self.EyeY</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>перемещаем разные взляды</comment>
+                        <event-block sid="854">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="855" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="856" type="Pupil">
+                                    <param id="0" name="Instance variable">dx</param>
+                                    <param id="1" name="Value">ball.X - self.EyeX</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="857" type="Pupil">
+                                    <param id="0" name="Instance variable">dy</param>
+                                    <param id="1" name="Value">ball.Y - self.EyeY</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="858" type="Pupil">
+                                    <param id="0" name="Instance variable">mlen</param>
+                                    <param id="1" name="Value">sqrt(self.dX^2 + self.dY^2)</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="859" type="Pupil">
+                                    <param id="0" name="Instance variable">endX</param>
+                                    <param id="1" name="Value">self.mlen &gt;= (self.EyeRadius - self.PupilRadius)&#x0D;&#x0A;  ? (self.dX * (self.EyeRadius - self.PupilRadius) / self.mlen) + self.EyeX&#x0D;&#x0A;  :  ball.X</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="860" type="Pupil">
+                                    <param id="0" name="Instance variable">endY</param>
+                                    <param id="1" name="Value">self.mlen &gt;= (self.EyeRadius - self.PupilRadius)&#x0D;&#x0A;  ? (self.dY * (self.EyeRadius - self.PupilRadius) / self.mlen) + self.EyeY&#x0D;&#x0A;  :  ball.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>плавное перемещение</comment>
+                        <event-block sid="861">
+                            <conditions />
+                            <actions>
+                                <action id="-3" name="Set position" sid="862" type="Pupil">
+                                    <param id="0" name="X">lerp(self.X, self.endX, dt*2) </param>
+                                    <param id="1" name="Y">lerp(self.Y, self.endY, dt*2) </param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="1645914758230966">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="5789377065671168" type="System" />
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="8919902179972232" type="System">
+                    <param id="0" name="Group name">&quot;Boss&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

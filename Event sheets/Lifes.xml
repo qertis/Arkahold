@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Lifes</name>
+    <events>
+        <event-group description="" sid="5885296841462732" title="Lifes">
+            <sub-events>
+                <comment>по-умолчанию число жизней</comment>
+                <variable comment="текущие Жизни" constant="0" name="CurrentLifes" sid="1013" static="1" type="number">3</variable>
+                <variable comment="Число жизней по-умолчанию" constant="1" name="DefaultLifes" sid="1121414283069601" static="1" type="number">3</variable>
+                <event-block sid="2220205770588426">
+                    <conditions>
+                        <condition id="0" name="On function" sid="6971279072621669" type="Function">
+                            <param id="0" name="Name">&quot;ResetLifes&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3203489090268315" type="System">
+                            <param id="0" name="Variable">CurrentLifes</param>
+                            <param id="1" name="Value">DEFAULTLIFES</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6703342191243523">
+                    <conditions>
+                        <condition id="0" name="On function" sid="3199395359578388" type="Function">
+                            <param id="0" name="Name">&quot;GetLifes&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="3597307110346036" type="Function">
+                            <param id="0" name="Value">CurrentLifes</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2577228522719521">
+                    <conditions>
+                        <condition id="0" name="On function" sid="2102345502264576" type="Function">
+                            <param id="0" name="Name">&quot;UpdateLifes&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <variable constant="0" name="tempLifes" sid="9139419810812363" static="0" type="number">0</variable>
+                        <event-block sid="7205827023045099">
+                            <conditions>
+                                <condition disabled="1" id="-8" name="Compare two values" sid="9394335751613306" type="System">
+                                    <param id="0" name="First value">Function.ParamCount</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="2168392005394273" type="System">
+                                    <param id="0" name="Variable">CurrentLifes</param>
+                                    <param id="1" name="Value">Function.Param(0)</param>
+                                </action>
+                                <action id="0" name="Call function" sid="1392904131965006" type="Function">
+                                    <param id="0" name="Name">&quot;TooltipText&quot;</param>
+                                    <param id="1" name="Parameter {n}">Function.Call(&quot;New life!&quot;)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4207876732156611">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="8048686784774501" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="8651188623808427" type="System">
+                                    <param id="0" name="Variable">tempLifes</param>
+                                    <param id="1" name="Value">Function.Call(&quot;GetLifes&quot;)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>обновляем текст</comment>
+                        <event-block sid="6175992068547085">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="3105744608034582" type="GameInfo">
+                                    <param id="0" name="Instance variable">name</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;lifes&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="7397066401664888" type="GameInfo">
+                                    <param id="0" name="Text">&quot;Left &quot; &amp; tempLifes &amp; &quot; lifes&quot; &amp; newline</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="2270936571451181">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="9701504106964392" type="System">
+                                            <param id="0" name="Variable">tempLifes</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="1385423253254783" type="GameInfo">
+                                            <param id="0" name="Text">&quot;B)&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="2855729597319056">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="1936887052721649" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="2447228219794344" type="System">
+                                            <param id="0" name="Variable">tempLifes</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="4859184687278165" type="GameInfo">
+                                            <param id="0" name="Text">&quot;:D&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="259102928410875">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="5932906109906906" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="3525373490215137" type="System">
+                                            <param id="0" name="Variable">tempLifes</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="6859617032817452" type="GameInfo">
+                                            <param id="0" name="Text">&quot;:)&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="8151165831303829">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="1795162347365745" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="297942117554202" type="System">
+                                            <param id="0" name="Variable">tempLifes</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="3388451089394431" type="GameInfo">
+                                            <param id="0" name="Text">&quot;:|&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="6501229145220164">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="540745748540651" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="8722405552106571" type="System">
+                                            <param id="0" name="Variable">tempLifes</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="5334221349835801" type="GameInfo">
+                                            <param id="0" name="Text">&quot;:(&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="3407344916704702">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="2527989091551114" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="576389853043451" type="GameInfo">
+                                            <param id="0" name="Text">&quot;:&apos;(&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="6734430491427807">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="7938773290299069" type="System">
+                                    <param id="0" name="First value">tempLifes</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="4346819357235342" type="Function">
+                                    <param id="0" name="Name">&quot;GameOver&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

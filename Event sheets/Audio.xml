@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Audio</name>
+    <events>
+        <event-group description="" sid="2982751167121964" title="Audio">
+            <sub-events>
+                <comment>звук удара об ракетку</comment>
+                <event-block disabled="1" sid="7487991946398452">
+                    <conditions>
+                        <condition id="2" name="Advanced audio supported" sid="6431489478514926" type="Audio" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
