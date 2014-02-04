@@ -7,13 +7,12 @@
             <sub-events>
                 <variable constant="1" name="InfoText" sid="4523699395393778" static="1" type="text">Loading</variable>
                 <variable constant="0" name="Counter" sid="431448442404548" static="1" type="number">0</variable>
-                <event-block collapsed="1" sid="517740936889132">
+                <event-block sid="517740936889132">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="6519273127365325" type="System" />
                     </conditions>
                     <actions />
                     <sub-events>
-                        <comment>cursor</comment>
                         <comment>если эффекты не поддерживаются, показываем фак юзеру</comment>
                         <event-block sid="8732094812048476">
                             <conditions>
@@ -37,18 +36,16 @@
                                 <action id="0" name="Set cursor style" sid="6648041174433513" type="Mouse">
                                     <param id="0" name="Cursor style">7</param>
                                 </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="2190535779281033">
-                            <conditions>
-                                <condition id="-4" name="Trigger once while true" sid="3445274733586695" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="4722213670365684" type="Audio">
-                                    <param id="0" name="Audio file">start-background</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                <action id="0" name="Set text" sid="5858487512823433" type="Text">
+                                    <param id="0" name="Text">INFOTEXT</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="6491387458827506" type="PauseFon">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Y">0</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="4577516238007654" type="PauseFon">
+                                    <param id="0" name="Width">ViewportRight(self.LayerNumber)</param>
+                                    <param id="1" name="Height">ViewportBottom(self.LayerNumber)</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -76,7 +73,7 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="9646831180748225" type="Info">
+                                <action id="0" name="Set text" sid="3733891717255701" type="Text">
                                     <param id="0" name="Text">INFOTEXT</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="2402045418265977" type="System">
@@ -90,7 +87,7 @@
                                 <condition id="-22" name="Else" sid="8398547932219955" type="System" />
                             </conditions>
                             <actions>
-                                <action id="1" name="Append text" sid="3461329472375525" type="Info">
+                                <action id="1" name="Append text" sid="3583202767053918" type="Text">
                                     <param id="0" name="Text">&quot;.&quot;</param>
                                 </action>
                             </actions>

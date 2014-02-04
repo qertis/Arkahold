@@ -41,9 +41,6 @@
                         <event-block sid="5034070372639336">
                             <conditions />
                             <actions>
-                                <action id="-15" name="Set visible" sid="3163949673624116" type="GameInfo">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
                                 <action id="-12" name="Set group active" sid="4704081477502531" type="System">
                                     <param id="0" name="Group name">&quot;MenuKey&quot;</param>
                                     <param id="1" name="State">1</param>
@@ -74,29 +71,31 @@
                                     <param id="2" name="X">Function.Call(&quot;cx&quot;)</param>
                                     <param id="3" name="Y">Function.Call(&quot;cy&quot;)</param>
                                 </action>
-                                <action id="-3" name="Create object" sid="3728832067049625" type="System">
-                                    <param id="0" name="Object to create">TiledSpace</param>
-                                    <param id="1" name="Layer">&quot;back&quot;</param>
-                                    <param id="2" name="X">Function.Call(&quot;cx&quot;)</param>
-                                    <param id="3" name="Y">Function.Call(&quot;cy&quot;)</param>
+                                <action id="-26" name="Move to layer" sid="857802752721193" type="PauseFon">
+                                    <param id="0" name="Layer">&quot;back&quot;</param>
                                 </action>
+                                <action id="-24" name="Move to top" sid="3553388706499456" type="PauseFon" />
                             </actions>
                         </event-block>
                         <comment></comment>
                         <event-block sid="8965897411250569">
                             <conditions>
-                                <condition id="-3" name="Is on-screen" sid="5205313213278999" type="TiledSpace" />
+                                <condition id="-3" name="Is on-screen" sid="5205313213278999" type="PauseFon" />
                             </conditions>
                             <actions>
-                                <action id="-26" name="Move to layer" sid="5435603906051504" type="TiledSpace">
+                                <action id="-26" name="Move to layer" sid="5435603906051504" type="PauseFon">
                                     <param id="0" name="Layer">0</param>
                                 </action>
-                                <action id="-24" name="Move to top" sid="5058555087702196" type="TiledSpace" />
-                                <action id="-7" name="Set size" sid="1853033097852011" type="TiledSpace">
+                                <action id="-24" name="Move to top" sid="5058555087702196" type="PauseFon" />
+                                <action id="-7" name="Set size" sid="1853033097852011" type="PauseFon">
                                     <param id="0" name="Width">LayoutWidth * 1.5</param>
                                     <param id="1" name="Height">LayoutHeight * 1.5</param>
                                 </action>
                             </actions>
+                        </event-block>
+                        <event-block sid="5786440349191901">
+                            <conditions />
+                            <actions />
                         </event-block>
                         <comment>stars init</comment>
                         <event-block sid="9562229481629804">

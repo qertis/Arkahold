@@ -58,6 +58,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <comment>TODO: add gamepad controls</comment>
                 <comment>vkontakte</comment>
                 <event-block any="1" collapsed="1" sid="4592323778377044">
                     <conditions>

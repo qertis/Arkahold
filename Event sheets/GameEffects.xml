@@ -33,7 +33,7 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-group collapsed="1" description="" sid="4439008932082915" title="Tiled">
+        <event-group description="" sid="4439008932082915" title="Tiled">
             <sub-events>
                 <event-block sid="4168582775702655">
                     <conditions>
@@ -49,8 +49,8 @@
                             <param id="3" name="Y">Function.Call(&quot;cy&quot;)</param>
                         </action>
                         <action id="-7" name="Set size" sid="8603013075494712" type="TiledBackground">
-                            <param id="0" name="Width">LayoutWidth</param>
-                            <param id="1" name="Height">LayoutHeight</param>
+                            <param id="0" name="Width">ViewportRight(Self.LayerNumber)</param>
+                            <param id="1" name="Height">ViewportBottom(Self.LayerNumber)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -68,7 +68,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="3059559455478436" title="FadeLines">
+        <event-group description="" sid="3059559455478436" title="FadeLines">
             <sub-events>
                 <event-block sid="6390272955796266">
                     <conditions>

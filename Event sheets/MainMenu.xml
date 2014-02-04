@@ -10,11 +10,7 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="2076054889725596" type="System" />
                     </conditions>
-                    <actions>
-                        <action behavior="Sine" id="0" name="Set active" sid="8947667172665914" type="Sun">
-                            <param id="0" name="State">1</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <comment>переделать через left, right, bottom, top!</comment>
                         <event-block sid="9286356518029506">
@@ -27,6 +23,19 @@
                                 <action id="-7" name="Set size" sid="2505297548265729" type="Text">
                                     <param id="0" name="Width">LayoutWidth</param>
                                     <param id="1" name="Height">LayoutHeight</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2508032182840886">
+                            <conditions>
+                                <condition id="4" inverted="1" name="Is any playing" sid="2768507566951043" type="Audio" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="9995071636538008" type="Audio">
+                                    <param id="0" name="Audio file">start-background</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -85,18 +94,14 @@
                                 <action id="-26" name="Move to layer" sid="3970839470993619" type="Cursor">
                                     <param id="0" name="Layer">&quot;Cursor&quot;</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="4907911158091743" type="Cursor">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
                                 <action disabled="1" id="-3" name="Set position" sid="7778943019015665" type="Cursor">
                                     <param id="0" name="X">Function.Call(&quot;cx&quot;)</param>
                                     <param id="1" name="Y">Function.Call(&quot;cy&quot;)</param>
                                 </action>
+                                <action id="-15" name="Set visible" sid="4907911158091743" type="Cursor">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
                             </actions>
-                        </event-block>
-                        <event-block sid="6384980665299683">
-                            <conditions />
-                            <actions />
                         </event-block>
                         <event-block sid="9439096052680915">
                             <conditions>
@@ -106,6 +111,14 @@
                                 <action id="4" name="Set animation" sid="1097091185396543" type="PlayPauseBtn">
                                     <param id="0" name="Animation">&quot;Off&quot;</param>
                                     <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8024656966444551">
+                            <conditions />
+                            <actions>
+                                <action behavior="Sine" id="0" name="Set active" sid="8947667172665914" type="Sun">
+                                    <param id="0" name="State">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -366,9 +379,13 @@
                     </actions>
                 </event-block>
                 <comment>Делаем активным Геймпад</comment>
-                <event-block sid="581798387602278">
+                <event-block any="1" sid="581798387602278">
                     <conditions>
                         <condition id="6" name="On button pressed" sid="6107434107601074" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">9</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="5003224328023128" type="Gamepad">
                             <param id="0" name="Gamepad">0</param>
                             <param id="1" name="Button">9</param>
                         </condition>
@@ -510,25 +527,15 @@
         </event-group>
         <event-group description="альтернативное управление" inactive="1" sid="4873995218015465" title="AlterNavigate">
             <sub-events>
-                <comment>About</comment>
-                <event-block sid="6110714300706568">
-                    <conditions>
-                        <condition id="0" name="On key pressed" sid="3675801140372288" type="Keyboard">
-                            <param id="0" name="Key">65 (A)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Call function" sid="3774761327977186" type="Function">
-                            <param id="0" name="Name">&quot;LoadLevel&quot;</param>
-                            <param id="1" name="Parameter {n}">&quot;About&quot;{###}&quot;FadeOut&quot;{###}&quot;normal&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <comment>More Games</comment>
                 <event-block any="1" sid="5376017253645718">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="3694381686315559" type="Keyboard">
                             <param id="0" name="Key">77 (M)</param>
+                        </condition>
+                        <condition disabled="1" id="6" name="On button pressed" sid="9171541526332941" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">3</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -544,6 +551,10 @@
                         <condition id="0" name="On key pressed" sid="9820519012935517" type="Keyboard">
                             <param id="0" name="Key">80 (P)</param>
                         </condition>
+                        <condition disabled="1" id="6" name="On button pressed" sid="3242464007586288" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Call function" sid="8907215419343648" type="Function">
@@ -558,6 +569,10 @@
                         <condition id="0" name="On key pressed" sid="3952337785098532" type="Keyboard">
                             <param id="0" name="Key">72 (H)</param>
                         </condition>
+                        <condition disabled="1" id="6" name="On button pressed" sid="1204580719687499" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">2</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Call function" sid="3161495528791214" type="Function">
@@ -565,6 +580,10 @@
                             <param id="1" name="Parameter {n}">&quot;Info&quot;{###}&quot;FadeIn&quot;{###}&quot;normal&quot;</param>
                         </action>
                     </actions>
+                </event-block>
+                <event-block any="1" sid="4752179348222713">
+                    <conditions />
+                    <actions />
                 </event-block>
             </sub-events>
         </event-group>

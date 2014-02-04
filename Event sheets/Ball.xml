@@ -515,6 +515,22 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <comment>FIXME</comment>
+                        <event-block sid="8413808502058818">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="9071599834020054" type="ball">
+                                    <param id="0" name="Object">ball</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="6894467303802566" type="ball">
+                                    <param id="0" name="Instance variable">isFly</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" disabled="1" id="3" name="Set angle of motion" sid="3498721655653199" type="ball">
+                                    <param id="0" name="Angle">angle(ball.X, ball.Y, Self.X, Self.Y) - 90</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-group>
                 <comment>анимация полет шара</comment>
@@ -530,7 +546,7 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block collapsed="1" sid="9802501866288515">
+                        <event-block sid="9802501866288515">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="339517250518973" type="ball">
                                     <param id="0" name="Animation">&quot;Super&quot;</param>
@@ -546,6 +562,7 @@
                                             <param id="1" name="Layer">Self.LayerNumber</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
+                                        <action id="-25" name="Move to bottom" sid="9643060425090279" type="BallFade" />
                                         <action id="-28" name="Set effect parameter" sid="4865545637056848" type="BallFade">
                                             <param id="0" name="Effect">&quot;SetColor&quot;</param>
                                             <param id="1" name="Parameter index">0</param>
@@ -582,6 +599,7 @@
                                             <param id="1" name="Layer">Self.LayerNumber</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
+                                        <action id="-25" name="Move to bottom" sid="7391259294977733" type="BallFade" />
                                         <action id="-28" name="Set effect parameter" sid="5090100295295279" type="BallFade">
                                             <param id="0" name="Effect">&quot;SetColor&quot;</param>
                                             <param id="1" name="Parameter index">0</param>

@@ -57,7 +57,11 @@
                                 </action>
                                 <action id="0" name="Call function" sid="1392904131965006" type="Function">
                                     <param id="0" name="Name">&quot;TooltipText&quot;</param>
-                                    <param id="1" name="Parameter {n}">Function.Call(&quot;New life!&quot;)</param>
+                                    <param id="1" name="Parameter {n}">Function.Call(&quot;Life!&quot;)</param>
+                                </action>
+                                <action disabled="1" id="0" name="Call function" sid="4135268187927769" type="Function">
+                                    <param id="0" name="Name">&quot;TooltipText&quot;</param>
+                                    <param id="1" name="Parameter {n}">Function.Call(&quot;GetPoints&quot;){###}floor(block.X){###}floor(block.Y)</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -74,15 +78,9 @@
                         </event-block>
                         <comment>обновляем текст</comment>
                         <event-block sid="6175992068547085">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="3105744608034582" type="GameInfo">
-                                    <param id="0" name="Instance variable">name</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;lifes&quot;</param>
-                                </condition>
-                            </conditions>
+                            <conditions />
                             <actions>
-                                <action id="0" name="Set text" sid="7397066401664888" type="GameInfo">
+                                <action id="0" name="Set text" sid="4920545834831375" type="Text">
                                     <param id="0" name="Text">&quot;Left &quot; &amp; tempLifes &amp; &quot; lifes&quot; &amp; newline</param>
                                 </action>
                             </actions>
@@ -96,7 +94,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="1" name="Append text" sid="1385423253254783" type="GameInfo">
+                                        <action id="1" name="Append text" sid="3273526123462277" type="Text">
                                             <param id="0" name="Text">&quot;B)&quot;</param>
                                         </action>
                                     </actions>
@@ -111,7 +109,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="1" name="Append text" sid="4859184687278165" type="GameInfo">
+                                        <action id="1" name="Append text" sid="9576807988864183" type="Text">
                                             <param id="0" name="Text">&quot;:D&quot;</param>
                                         </action>
                                     </actions>
@@ -126,7 +124,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="1" name="Append text" sid="6859617032817452" type="GameInfo">
+                                        <action id="1" name="Append text" sid="3552789819973426" type="Text">
                                             <param id="0" name="Text">&quot;:)&quot;</param>
                                         </action>
                                     </actions>
@@ -141,7 +139,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="1" name="Append text" sid="3388451089394431" type="GameInfo">
+                                        <action id="1" name="Append text" sid="9131981100560725" type="Text">
                                             <param id="0" name="Text">&quot;:|&quot;</param>
                                         </action>
                                     </actions>
@@ -156,7 +154,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="1" name="Append text" sid="5334221349835801" type="GameInfo">
+                                        <action id="1" name="Append text" sid="874466497348754" type="Text">
                                             <param id="0" name="Text">&quot;:(&quot;</param>
                                         </action>
                                     </actions>
@@ -166,7 +164,7 @@
                                         <condition id="-22" name="Else" sid="2527989091551114" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="1" name="Append text" sid="576389853043451" type="GameInfo">
+                                        <action id="1" name="Append text" sid="1036090248108751" type="Text">
                                             <param id="0" name="Text">&quot;:&apos;(&quot;</param>
                                         </action>
                                     </actions>

@@ -90,7 +90,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" inactive="1" sid="6032362416497295" title="Exit">
+        <event-group description="" inactive="1" sid="6032362416497295" title="Exit">
             <sub-events>
                 <event-block any="1" sid="4480702016553972">
                     <conditions>

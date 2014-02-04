@@ -67,6 +67,10 @@
                         <condition id="0" name="On key pressed" sid="3826675467266836" type="Keyboard">
                             <param id="0" name="Key">66 (B)</param>
                         </condition>
+                        <condition id="6" name="On button pressed" sid="6020680825324439" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">1</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="4925295335226846" type="System">

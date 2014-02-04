@@ -10,53 +10,54 @@
     <unique-id>3om4fqck6p5en</unique-id>
     <saved-with-version>15802</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
-        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
-        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
-        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="XML" version="1">XML</plugin>
-        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
-        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
-        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
-        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
-        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
-        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
-        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
-        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
     </used-behaviors>
     <used-effects>
-        <effect author="Scirra" id="hsladjustmask">Adjust HSL Mask</effect>
-        <effect author="Scirra" id="noisemask">Noise Mask</effect>
+        <effect author="Brad Larson" id="sharpen">Sharpen</effect>
         <effect author="Scirra" id="overlay">Overlay</effect>
-        <effect author="Brad Larson" id="highlightshadow">Highlight shadow</effect>
-        <effect author="Scirra" id="noise">Noise</effect>
-        <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
-        <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
-        <effect author="Scirra" id="hardlight">Hard Light</effect>
-        <effect author="Scirra" id="hueblend">Hue</effect>
-        <effect author="Scirra" id="grayscale">Grayscale</effect>
-        <effect author="Brad Larson" id="sketch">Sketch</effect>
         <effect author="Scirra" id="radialblur">Radial blur</effect>
         <effect author="Scirra" id="setcolor">Set color</effect>
+        <effect author="Brad Larson" id="sketch">Sketch</effect>
+        <effect author="Danguafer/Silexars" id="pulse">Pulse</effect>
         <effect author="Brad Larson" id="stretch">Stretch</effect>
+        <effect author="Scirra" id="warpradial">Warp Radial</effect>
+        <effect author="Brad Larson" id="vignette">Vignette</effect>
         <effect author="Scirra" id="tintmask">Tint Mask</effect>
         <effect author="Brad Larson" id="toon">Toon</effect>
-        <effect author="Brad Larson" id="vignette">Vignette</effect>
-        <effect author="Brad Larson" id="sharpen">Sharpen</effect>
-        <effect author="Scirra" id="warpradial">Warp Radial</effect>
         <effect author="Scirra" id="difference">Difference</effect>
+        <effect author="Scirra" id="grayscale">Grayscale</effect>
+        <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
+        <effect author="Scirra" id="hsladjustmask">Adjust HSL Mask</effect>
+        <effect author="Brad Larson" id="highlightshadow">Highlight shadow</effect>
+        <effect author="Scirra" id="hardlight">Hard Light</effect>
+        <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
+        <effect author="Scirra" id="noise">Noise</effect>
+        <effect author="Scirra" id="noisemask">Noise Mask</effect>
+        <effect author="Scirra" id="hueblend">Hue</effect>
         <effect author="Scirra" id="gamma">Gamma</effect>
     </used-effects>
     <configurations>
@@ -160,18 +161,14 @@
             </object-type>
             <object-type name="Text" sid="36">
                 <plugin id="Text" />
-            </object-type>
-            <object-type name="GameInfo" sid="8592017387633713">
-                <plugin id="Spritefont2" />
-                <instance-variables>
-                    <instance-variable name="name" sid="2427322619222504" type="string" />
-                </instance-variables>
-                <behaviors>
-                    <behavior-type name="Pin" sid="4289907093251668">
-                        <behavior id="Pin" />
-                    </behavior-type>
-                </behaviors>
-                <texture />
+                <effects>
+                    <effect-type name="GlowHorizontal">
+                        <effect id="glowhorizontal" />
+                    </effect-type>
+                    <effect-type name="GlowVertical">
+                        <effect id="glowvertical" />
+                    </effect-type>
+                </effects>
             </object-type>
             <object-type name="Tooltip" sid="4413529747689936">
                 <plugin id="Spritefont2" />
@@ -200,6 +197,9 @@
                     </effect-type>
                     <effect-type name="TintMask">
                         <effect id="tintmask" />
+                    </effect-type>
+                    <effect-type name="Pulse">
+                        <effect id="pulse" />
                     </effect-type>
                 </effects>
                 <animation-folder expanded="1">
@@ -523,7 +523,7 @@
                 </effects>
                 <texture />
             </object-type>
-            <object-type name="TiledSpace" sid="6480562278020102">
+            <object-type global="1" name="PauseFon" sid="6480562278020102">
                 <plugin id="TiledBg" />
                 <effects>
                     <effect-type name="NoiseMask">
@@ -654,34 +654,30 @@
             <object-type name="KeyInfo" sid="4019278805352543">
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
-                    <animation framecount="5" loop="0" name="Keyboard" pingpong="0" repeatcount="1" repeatto="0" sid="8260276861188832" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.504132">
+                    <animation framecount="4" loop="0" name="Keyboard" pingpong="0" repeatcount="1" repeatto="0" sid="8260276861188832" speed="0">
+                        <frame duration="1" hotspotX="0.504202" hotspotY="0.504202" />
+                        <frame duration="1" hotspotX="0.504202" hotspotY="0.504202" />
+                        <frame duration="1" hotspotX="0.504202" hotspotY="0.504202" />
+                        <frame duration="1" hotspotX="0.504202" hotspotY="0.504202" />
+                    </animation>
+                    <animation framecount="4" loop="0" name="Mouse" pingpong="0" repeatcount="1" repeatto="0" sid="177611587533973" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="4" loop="0" name="Gamepad" pingpong="0" repeatcount="1" repeatto="0" sid="2110921843951748" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.508197" hotspotY="0.508197" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.491803" hotspotY="0.491803">
                             <collision-poly>
-                                <point x="1" y="0.710744" />
-                                <point x="1" y="0" />
-                                <point x="1" y="0.710744" />
                                 <point x="1" y="1" />
-                                <point x="0.0327869" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.504" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.504132" />
-                        <frame duration="1" hotspotX="0.503704" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.503704" hotspotY="0.5" />
-                    </animation>
-                    <animation framecount="5" loop="0" name="Mouse" pingpong="0" repeatcount="1" repeatto="0" sid="177611587533973" speed="0">
-                        <frame duration="1" hotspotX="1.00763" hotspotY="0.506579" />
-                        <frame duration="1" hotspotX="1.00763" hotspotY="0.506579" />
-                        <frame duration="1" hotspotX="1.00763" hotspotY="0.506579" />
-                        <frame duration="1" hotspotX="1.00763" hotspotY="0.506579" />
-                        <frame duration="1" hotspotX="1.00763" hotspotY="0.506579" />
-                    </animation>
-                    <animation framecount="5" loop="0" name="Gamepad" pingpong="0" repeatcount="1" repeatto="0" sid="2110921843951748" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -700,14 +696,18 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder expanded="1">
-                    <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="47" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="47" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.5" y="0.0483871" />
+                                <point x="0.758065" y="0.241935" />
+                                <point x="0.903226" y="0.5" />
+                                <point x="0.887097" y="0.887097" />
+                                <point x="0.5" y="0.903226" />
+                                <point x="0.225806" y="0.774194" />
+                                <point x="0.0645161" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -837,7 +837,7 @@
             </effects>
             <texture />
         </object-type>
-        <object-type name="PlayerUnder" sid="484601939374768">
+        <object-type name="LevelFloor" sid="484601939374768">
             <plugin id="TiledBg" />
             <effects>
                 <effect-type name="HardLight">
@@ -854,30 +854,30 @@
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="On" pingpong="0" repeatcount="1" repeatto="0" sid="1405539511458252" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.504" hotspotY="0.504">
                         <collision-poly>
-                            <point x="0.15625" y="0.15625" />
-                            <point x="0.5" y="0.015625" />
-                            <point x="0.84375" y="0.15625" />
-                            <point x="0.984375" y="0.5" />
-                            <point x="0.84375" y="0.84375" />
-                            <point x="0.5" y="0.984375" />
-                            <point x="0.15625" y="0.84375" />
-                            <point x="0.015625" y="0.5" />
+                            <point x="0.144" y="0.144" />
+                            <point x="0.496" y="0" />
+                            <point x="0.856" y="0.144" />
+                            <point x="1" y="0.496" />
+                            <point x="0.856" y="0.856" />
+                            <point x="0.496" y="1" />
+                            <point x="0.144" y="0.856" />
+                            <point x="0" y="0.496" />
                         </collision-poly>
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Off" pingpong="0" repeatcount="1" repeatto="0" sid="8589327767553677" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.504" hotspotY="0.504">
                         <collision-poly>
-                            <point x="0.15625" y="0.15625" />
-                            <point x="0.5" y="0.015625" />
-                            <point x="0.84375" y="0.15625" />
-                            <point x="0.984375" y="0.5" />
-                            <point x="0.84375" y="0.84375" />
-                            <point x="0.5" y="0.984375" />
-                            <point x="0.15625" y="0.84375" />
-                            <point x="0.015625" y="0.5" />
+                            <point x="0.144" y="0.144" />
+                            <point x="0.496" y="0" />
+                            <point x="0.856" y="0.144" />
+                            <point x="1" y="0.496" />
+                            <point x="0.856" y="0.856" />
+                            <point x="0.496" y="1" />
+                            <point x="0.144" y="0.856" />
+                            <point x="0" y="0.496" />
                         </collision-poly>
                     </frame>
                 </animation>

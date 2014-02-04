@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Global</name>
     <events>
+        <variable comment="последний уровень. тупой хардкод" constant="1" name="FINALLEVEL" sid="106627287506924" static="0" type="text">20</variable>
         <event-group collapsed="1" description="" sid="2745034965042407" title="Coordinates">
             <sub-events>
                 <variable comment="центр по x" constant="0" name="cx" sid="316" static="1" type="number">0</variable>

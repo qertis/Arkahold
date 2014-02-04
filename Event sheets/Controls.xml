@@ -10,12 +10,15 @@
                         <condition id="1" name="On any click" sid="9341014313467943" type="Mouse" />
                         <condition id="6" name="On button pressed" sid="4216985188553778" type="Gamepad">
                             <param id="0" name="Gamepad">0</param>
-                            <param id="1" name="Button">9</param>
+                            <param id="1" name="Button">0</param>
+                        </condition>
+                        <condition id="0" name="On key pressed" sid="1028418345950963" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block any="1" sid="292077297469456">
+                        <event-block any="1" collapsed="1" sid="292077297469456">
                             <conditions>
                                 <condition id="1" name="Is overlapping another object" sid="4950153284821895" type="Cursor">
                                     <param id="0" name="Object">Links</param>
@@ -75,6 +78,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <comment>TODO СДЕЛАТЬ И ДЛЯ ГЕЙМПАДА</comment>
                         <event-block sid="7949177247916498">
                             <conditions>
                                 <condition id="1" name="Is overlapping another object" sid="4653387142157805" type="Cursor">
@@ -87,17 +91,10 @@
                                     <param id="0" name="Animation">Self.AnimationName = &quot;On&quot; ? &quot;Off&quot; : &quot;On&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
+                                <action id="8" name="Set silent" sid="1160086505337364" type="Audio">
+                                    <param id="0" name="Mode">2</param>
+                                </action>
                             </actions>
-                            <sub-events>
-                                <event-block sid="7804496484397921">
-                                    <conditions />
-                                    <actions>
-                                        <action id="8" name="Set silent" sid="1160086505337364" type="Audio">
-                                            <param id="0" name="Mode">2</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -194,7 +191,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="Управление геймпадом (xbox 360)" inactive="1" sid="1249656894869304" title="GamePadGame">
+        <event-group description="Управление геймпадом (xbox 360)" inactive="1" sid="1249656894869304" title="GamePadGame">
             <sub-events>
                 <comment>LEFT</comment>
                 <event-block any="1" sid="9826463481818341">
@@ -260,7 +257,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block any="1" sid="4283180690238436">
+                <event-block disabled="1" sid="4283180690238436">
                     <conditions>
                         <condition id="2" name="On gamepad disconnected" sid="6805746231819302" type="Gamepad" />
                     </conditions>
@@ -269,6 +266,16 @@
                             <param id="0" name="Message">&quot;GamePad disconnected! Please Connect it&quot;</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <comment>xxx</comment>
+                        <event-block disabled="1" sid="3786658297441621">
+                            <conditions>
+                                <condition id="-23" name="While" sid="9944319377539583" type="System" />
+                                <condition id="4" inverted="1" name="Has gamepads" sid="4006585020541688" type="Gamepad" />
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <comment>Start Ball</comment>
                 <event-block any="1" sid="9699536255108712">
@@ -276,10 +283,6 @@
                         <condition id="6" name="On button pressed" sid="8718390933085603" type="Gamepad">
                             <param id="0" name="Gamepad">0</param>
                             <param id="1" name="Button">0</param>
-                        </condition>
-                        <condition id="6" name="On button pressed" sid="724073721553335" type="Gamepad">
-                            <param id="0" name="Gamepad">0</param>
-                            <param id="1" name="Button">1</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -294,7 +297,7 @@
                     <conditions>
                         <condition id="6" name="On button pressed" sid="5577403704781735" type="Gamepad">
                             <param id="0" name="Gamepad">0</param>
-                            <param id="1" name="Button">8</param>
+                            <param id="1" name="Button">9</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -306,7 +309,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="6320964123323039" title="PlayerControls">
+        <event-group description="" sid="6320964123323039" title="PlayerControls">
             <sub-events>
                 <variable comment="Умножитель (вида val * this)" constant="1" name="MaxSpeedIndex" sid="384242051234757" static="0" type="number">2</variable>
                 <comment>запуск шара</comment>
@@ -441,64 +444,55 @@
                     </sub-events>
                 </event-block>
                 <comment>пауза игры</comment>
-                <event-block sid="5509329600620397">
+                <event-block sid="7645953257969669">
                     <conditions>
-                        <condition id="0" name="On function" sid="4585103586050366" type="Function">
+                        <condition id="0" name="On function" sid="950043867539732" type="Function">
                             <param id="0" name="Name">&quot;Pause&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="8501465475117754">
+                        <event-block sid="6107484431318877">
                             <conditions>
-                                <condition id="-8" name="Compare two values" sid="1531119728071121" type="System">
+                                <condition id="-8" name="Compare two values" sid="8407969974129254" type="System">
                                     <param id="0" name="First value">timescale</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Second value">1.0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-13" name="Set time scale" sid="3868481150903228" type="System">
+                                <action id="-13" name="Set time scale" sid="4361707192091769" type="System">
                                     <param id="0" name="Time scale">0</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="9776875068772798" type="GameInfo">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                                <action id="-3" name="Create object" sid="7281070049177114" type="System">
-                                    <param id="0" name="Object to create">PauseBackground</param>
-                                    <param id="1" name="Layer">GameInfo.LayerNumber</param>
-                                    <param id="2" name="X">0</param>
-                                    <param id="3" name="Y">0</param>
-                                </action>
-                                <action id="-7" name="Set size" sid="5896504389400513" type="PauseBackground">
+                                <action id="-9" name="Destroy" sid="8681367383481396" type="PauseBackground" />
+                                <action id="-7" name="Set size" sid="5081028369989674" type="PauseBackground">
                                     <param id="0" name="Width">LayoutWidth</param>
                                     <param id="1" name="Height">LayoutHeight</param>
                                 </action>
+                                <action id="-15" name="Set visible" sid="1029493819679927" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
                             </actions>
                         </event-block>
-                        <event-block sid="9795811820154211">
+                        <event-block sid="8287624370859586">
                             <conditions>
-                                <condition id="-22" name="Else" sid="8789927341587687" type="System" />
+                                <condition id="-22" name="Else" sid="8718480851176375" type="System" />
                             </conditions>
                             <actions>
-                                <action id="0" name="Call function" sid="9107149410772271" type="Function">
+                                <action id="0" name="Call function" sid="9195857716676827" type="Function">
                                     <param id="0" name="Name">&quot;LoadingFade&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
-                                <action id="-13" name="Set time scale" sid="6429942415228604" type="System">
+                                <action id="-13" name="Set time scale" sid="4752710793203099" type="System">
                                     <param id="0" name="Time scale">1.0</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="8403147110179088" type="GameInfo">
+                                <action id="-9" name="Destroy" sid="9106452558727809" type="PauseBackground" />
+                                <action id="-15" name="Set visible" sid="2198352697393736" type="Text">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
-                                <action id="-9" name="Destroy" sid="8487055377208841" type="PauseBackground" />
                             </actions>
                         </event-block>
                     </sub-events>
-                </event-block>
-                <event-block sid="3787282454352313">
-                    <conditions />
-                    <actions />
                 </event-block>
             </sub-events>
         </event-group>
@@ -542,7 +536,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" inactive="1" sid="4219313757675232" title="GamePadCursor">
+        <event-group description="" inactive="1" sid="4219313757675232" title="GamePadCursor">
             <sub-events>
                 <event-block sid="7401527571672944">
                     <conditions>
@@ -558,10 +552,9 @@
                 <comment>gamepad</comment>
                 <event-block sid="6956610831180431">
                     <conditions>
-                        <condition id="-1" name="Every tick" sid="2529205018270477" type="System" />
+                        <condition id="-3" name="Is on-screen" sid="6139437441625913" type="Cursor" />
                     </conditions>
                     <actions>
-                        <action id="-24" name="Move to top" sid="9239310791839688" type="Cursor" />
                         <action id="-3" name="Set position" sid="5754374927209709" type="Cursor">
                             <param id="0" name="X">Function.Call(&quot;cx&quot;) + Gamepad.Axis(0,0)</param>
                             <param id="1" name="Y">Function.Call(&quot;cy&quot;) + Gamepad.Axis(0,1)</param>
