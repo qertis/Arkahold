@@ -10,55 +10,54 @@
     <unique-id>3om4fqck6p5en</unique-id>
     <saved-with-version>15802</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
-        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
-        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
         <plugin author="Scirra" id="XML" version="1">XML</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
-        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
-        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
-        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
-        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
     </used-behaviors>
     <used-effects>
-        <effect author="Brad Larson" id="sharpen">Sharpen</effect>
+        <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
+        <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
+        <effect author="Scirra" id="grayscale">Grayscale</effect>
+        <effect author="Scirra" id="hardlight">Hard Light</effect>
+        <effect author="Scirra" id="gamma">Gamma</effect>
+        <effect author="Scirra" id="difference">Difference</effect>
         <effect author="Scirra" id="overlay">Overlay</effect>
+        <effect author="Scirra" id="hueblend">Hue</effect>
+        <effect author="Scirra" id="noisemask">Noise Mask</effect>
         <effect author="Scirra" id="radialblur">Radial blur</effect>
-        <effect author="Scirra" id="setcolor">Set color</effect>
-        <effect author="Brad Larson" id="sketch">Sketch</effect>
-        <effect author="Danguafer/Silexars" id="pulse">Pulse</effect>
+        <effect author="Scirra" id="hsladjustmask">Adjust HSL Mask</effect>
+        <effect author="Scirra" id="noise">Noise</effect>
+        <effect author="Brad Larson" id="highlightshadow">Highlight shadow</effect>
+        <effect author="Scirra" id="tintmask">Tint Mask</effect>
         <effect author="Brad Larson" id="stretch">Stretch</effect>
         <effect author="Scirra" id="warpradial">Warp Radial</effect>
-        <effect author="Brad Larson" id="vignette">Vignette</effect>
-        <effect author="Scirra" id="tintmask">Tint Mask</effect>
+        <effect author="Scirra" id="setcolor">Set color</effect>
+        <effect author="Brad Larson" id="sketch">Sketch</effect>
         <effect author="Brad Larson" id="toon">Toon</effect>
-        <effect author="Scirra" id="difference">Difference</effect>
-        <effect author="Scirra" id="grayscale">Grayscale</effect>
-        <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
-        <effect author="Scirra" id="hsladjustmask">Adjust HSL Mask</effect>
-        <effect author="Brad Larson" id="highlightshadow">Highlight shadow</effect>
-        <effect author="Scirra" id="hardlight">Hard Light</effect>
-        <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
-        <effect author="Scirra" id="noise">Noise</effect>
-        <effect author="Scirra" id="noisemask">Noise Mask</effect>
-        <effect author="Scirra" id="hueblend">Hue</effect>
-        <effect author="Scirra" id="gamma">Gamma</effect>
+        <effect author="Brad Larson" id="vignette">Vignette</effect>
+        <effect author="Brad Larson" id="sharpen">Sharpen</effect>
     </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -150,7 +149,7 @@
             <object-type name="Info" sid="1555482681634661">
                 <plugin id="Spritefont2" />
                 <instance-variables>
-                    <instance-variable comment="тип текста" name="type" sid="6041662461383357" type="number" />
+                    <instance-variable comment="тип текста 9 - тип текста для звуков" name="type" sid="6041662461383357" type="number" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="Sine" sid="3317350016849781">
@@ -197,9 +196,6 @@
                     </effect-type>
                     <effect-type name="TintMask">
                         <effect id="tintmask" />
-                    </effect-type>
-                    <effect-type name="Pulse">
-                        <effect id="pulse" />
                     </effect-type>
                 </effects>
                 <animation-folder expanded="1">
@@ -630,10 +626,12 @@
                     </effect-type>
                 </effects>
                 <animation-folder expanded="1">
-                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="537582372373652" speed="0">
+                    <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="537582372373652" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.52381" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.52381" />
                         <frame duration="1" hotspotX="0.52381" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>

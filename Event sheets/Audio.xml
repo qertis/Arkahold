@@ -5,6 +5,25 @@
     <events>
         <event-group description="" sid="2982751167121964" title="Audio">
             <sub-events>
+                <event-block sid="4411981906715038">
+                    <conditions>
+                        <condition id="0" name="On function" sid="3410638108975809" type="Function">
+                            <param id="0" name="Name">&quot;ToggleSounds&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="4029047904259992" type="PlayPauseBtn">
+                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5069482578371438" type="PlayPauseBtn">
+                            <param id="0" name="Animation">Self.AnimationName = &quot;Off&quot; ? &quot;On&quot; : &quot;Off&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="8" name="Set silent" sid="5461151141449932" type="Audio">
+                            <param id="0" name="Mode">2</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <comment>звук удара об ракетку</comment>
                 <event-block disabled="1" sid="7487991946398452">
                     <conditions>

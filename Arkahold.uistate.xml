@@ -11,14 +11,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout>PreLoading</layout>
-        <layout>Objects</layout>
-        <layout>MainMenu</layout>
-        <layout active="1">Info</layout>
+        <layout>TheEnd</layout>
+        <event-sheet>Audio</event-sheet>
         <event-sheet>PreLoading</event-sheet>
-        <event-sheet>Controls</event-sheet>
-        <event-sheet>Loading</event-sheet>
         <event-sheet>MENU</event-sheet>
-        <event-sheet>MainMenu</event-sheet>
+        <event-sheet active="1">TheEnd</event-sheet>
+        <event-sheet>Links</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

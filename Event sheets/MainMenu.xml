@@ -126,7 +126,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="текст" inactive="1" sid="5352166729458236" title="Timer">
+        <event-group collapsed="1" description="текст" inactive="1" sid="5352166729458236" title="Timer">
             <sub-events>
                 <variable constant="0" name="Timer" sid="409505064658076" static="1" type="number">2</variable>
                 <comment>исчезание основываясь на таймере</comment>
@@ -254,7 +254,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" inactive="1" sid="8194908107586159" title="InfoDestroy">
+        <event-group collapsed="1" description="" inactive="1" sid="8194908107586159" title="InfoDestroy">
             <sub-events>
                 <event-block sid="8680356701062223">
                     <conditions>
@@ -288,7 +288,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Выбор управления" sid="7636553625374258" title="SelectControl">
+        <event-group collapsed="1" description="Выбор управления" sid="7636553625374258" title="SelectControl">
             <sub-events>
                 <event-block sid="7186281269264141">
                     <conditions>
@@ -310,7 +310,6 @@
                             <param id="1" name="State">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="7297849342474132" type="SpriteControls" />
-                        <action id="-9" name="Destroy" sid="7367638217435054" type="Info" />
                         <action behavior="Sine" id="0" name="Set active" sid="4487477737125497" type="Sun">
                             <param id="0" name="State">0</param>
                         </action>
@@ -335,6 +334,18 @@
                                     <param id="0" name="Group name">&quot;SelectControl&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5259512680194893">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="5466870893481997" type="Info">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">9</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="7367638217435054" type="Info" />
                             </actions>
                         </event-block>
                         <event-block sid="3747567085711047">
@@ -527,33 +538,15 @@
         </event-group>
         <event-group description="альтернативное управление" inactive="1" sid="4873995218015465" title="AlterNavigate">
             <sub-events>
-                <comment>More Games</comment>
-                <event-block any="1" sid="5376017253645718">
-                    <conditions>
-                        <condition id="0" name="On key pressed" sid="3694381686315559" type="Keyboard">
-                            <param id="0" name="Key">77 (M)</param>
-                        </condition>
-                        <condition disabled="1" id="6" name="On button pressed" sid="9171541526332941" type="Gamepad">
-                            <param id="0" name="Gamepad">0</param>
-                            <param id="1" name="Button">3</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="8" name="Open URL in new window" sid="7826065866671377" type="Browser">
-                            <param id="0" name="URL">&quot;//games.baskovsky.ru/&quot;</param>
-                            <param id="1" name="Tag">&quot;NewWindow&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <comment>начать игру</comment>
                 <event-block any="1" sid="3973240755409328">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="9820519012935517" type="Keyboard">
                             <param id="0" name="Key">80 (P)</param>
                         </condition>
-                        <condition disabled="1" id="6" name="On button pressed" sid="3242464007586288" type="Gamepad">
+                        <condition id="6" name="On button pressed" sid="3242464007586288" type="Gamepad">
                             <param id="0" name="Gamepad">0</param>
-                            <param id="1" name="Button">0</param>
+                            <param id="1" name="Button">9</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -563,21 +556,57 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>More Games</comment>
+                <event-block any="1" sid="5376017253645718">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3694381686315559" type="Keyboard">
+                            <param id="0" name="Key">77 (M)</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="9171541526332941" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="8" name="Open URL in new window" sid="7826065866671377" type="Browser">
+                            <param id="0" name="URL">&quot;//games.baskovsky.ru/&quot;</param>
+                            <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <comment>How to play</comment>
                 <event-block any="1" sid="3138152468546584">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="3952337785098532" type="Keyboard">
                             <param id="0" name="Key">72 (H)</param>
                         </condition>
-                        <condition disabled="1" id="6" name="On button pressed" sid="1204580719687499" type="Gamepad">
+                        <condition id="6" name="On button pressed" sid="1204580719687499" type="Gamepad">
                             <param id="0" name="Gamepad">0</param>
-                            <param id="1" name="Button">2</param>
+                            <param id="1" name="Button">1</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Call function" sid="3161495528791214" type="Function">
                             <param id="0" name="Name">&quot;LoadLevel&quot;</param>
                             <param id="1" name="Parameter {n}">&quot;Info&quot;{###}&quot;FadeIn&quot;{###}&quot;normal&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Sounds off/on</comment>
+                <event-block any="1" sid="2082184377865182">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4770515614080609" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="260004043021559" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="908179074706971" type="Function">
+                            <param id="0" name="Name">&quot;ToggleSounds&quot;</param>
+                            <param id="1" name="Parameter {n}">PlayPauseBtn.UID</param>
                         </action>
                     </actions>
                 </event-block>

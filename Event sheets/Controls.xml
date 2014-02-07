@@ -3,9 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Controls</name>
     <events>
-        <event-group description="Управление в меню" inactive="1" sid="3832131130592746" title="MenuKey">
+        <event-group collapsed="1" description="Управление в меню" inactive="1" sid="3832131130592746" title="MenuKey">
             <sub-events>
-                <event-block any="1" sid="4583720583695985">
+                <event-block any="1" collapsed="1" sid="4583720583695985">
                     <conditions>
                         <condition id="1" name="On any click" sid="9341014313467943" type="Mouse" />
                         <condition id="6" name="On button pressed" sid="4216985188553778" type="Gamepad">
@@ -18,67 +18,20 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block any="1" collapsed="1" sid="292077297469456">
+                        <event-block sid="292077297469456">
                             <conditions>
                                 <condition id="1" name="Is overlapping another object" sid="4950153284821895" type="Cursor">
                                     <param id="0" name="Object">Links</param>
                                 </condition>
+                                <condition id="-9" name="Is visible" sid="4916083492143163" type="Links" />
                             </conditions>
-                            <actions />
-                            <sub-events>
-                                <comment>Переходим по ссылкам</comment>
-                                <event-block sid="3044650893068902">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="9514299512021866" type="Links">
-                                            <param id="0" name="Instance variable">url</param>
-                                            <param id="1" name="Comparison">1</param>
-                                            <param id="2" name="Value">&quot;&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="8" name="Open URL in new window" sid="6110350127377991" type="Browser">
-                                            <param id="0" name="URL">Links.url</param>
-                                            <param id="1" name="Tag">&quot;NewWindow&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <comment>Переходим по меню</comment>
-                                <event-block sid="2948843507710667">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="6503593536951578" type="System" />
-                                        <condition id="-7" name="Compare instance variable" sid="5071170812008854" type="Links">
-                                            <param id="0" name="Instance variable">ToLayout</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;START&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Call function" sid="7363757376102634" type="Function">
-                                            <param id="0" name="Name">&quot;StartGame&quot;</param>
-                                            <param id="1" name="Parameter {n}"></param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <comment>Переходим по уровням</comment>
-                                <event-block sid="103592706473028">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="7127726320703276" type="System" />
-                                        <condition id="-7" inverted="1" name="Compare instance variable" sid="6086920565968861" type="Links">
-                                            <param id="0" name="Instance variable">ToLayout</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;START&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Call function" sid="3698316391214756" type="Function">
-                                            <param id="0" name="Name">&quot;LoadLevel&quot;</param>
-                                            <param id="1" name="Parameter {n}">Links.ToLayout{###}&quot;FadeIn&quot;{###}&quot;normal&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
+                            <actions>
+                                <action id="0" name="Call function" sid="7185488677168649" type="Function">
+                                    <param id="0" name="Name">&quot;ToggleLinks&quot;</param>
+                                    <param id="1" name="Parameter {n}">Links.UID</param>
+                                </action>
+                            </actions>
                         </event-block>
-                        <comment>TODO СДЕЛАТЬ И ДЛЯ ГЕЙМПАДА</comment>
                         <event-block sid="7949177247916498">
                             <conditions>
                                 <condition id="1" name="Is overlapping another object" sid="4653387142157805" type="Cursor">
@@ -87,12 +40,9 @@
                                 <condition id="-9" name="Is visible" sid="6342314212708204" type="PlayPauseBtn" />
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="1834338308431906" type="PlayPauseBtn">
-                                    <param id="0" name="Animation">Self.AnimationName = &quot;On&quot; ? &quot;Off&quot; : &quot;On&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="8" name="Set silent" sid="1160086505337364" type="Audio">
-                                    <param id="0" name="Mode">2</param>
+                                <action id="0" name="Call function" sid="1467986923430495" type="Function">
+                                    <param id="0" name="Name">&quot;ToggleSounds&quot;</param>
+                                    <param id="1" name="Parameter {n}">PlayPauseBtn.UID</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -143,7 +93,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Управление мышью" inactive="1" sid="5624084333658723" title="MouseGame">
+        <event-group collapsed="1" description="Управление мышью" inactive="1" sid="5624084333658723" title="MouseGame">
             <sub-events>
                 <event-block sid="1477958093469799">
                     <conditions>
@@ -191,7 +141,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Управление геймпадом (xbox 360)" inactive="1" sid="1249656894869304" title="GamePadGame">
+        <event-group collapsed="1" description="Управление геймпадом (xbox 360)" inactive="1" sid="1249656894869304" title="GamePadGame">
             <sub-events>
                 <comment>LEFT</comment>
                 <event-block any="1" sid="9826463481818341">
@@ -309,7 +259,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="6320964123323039" title="PlayerControls">
+        <event-group collapsed="1" description="" sid="6320964123323039" title="PlayerControls">
             <sub-events>
                 <variable comment="Умножитель (вида val * this)" constant="1" name="MaxSpeedIndex" sid="384242051234757" static="0" type="number">2</variable>
                 <comment>запуск шара</comment>
@@ -536,7 +486,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" inactive="1" sid="4219313757675232" title="GamePadCursor">
+        <event-group collapsed="1" description="" inactive="1" sid="4219313757675232" title="GamePadCursor">
             <sub-events>
                 <event-block sid="7401527571672944">
                     <conditions>

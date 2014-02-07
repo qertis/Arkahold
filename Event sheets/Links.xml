@@ -32,7 +32,70 @@
         </event-group>
         <event-group description="" inactive="1" sid="7222785826118328" title="Links">
             <sub-events>
-                <event-block sid="1377124683568492">
+                <event-block collapsed="1" sid="3818854639190762">
+                    <conditions>
+                        <condition id="0" name="On function" sid="4755180417567423" type="Function">
+                            <param id="0" name="Name">&quot;ToggleLinks&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="4251802983141822" type="Links">
+                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>Переходим по ссылкам</comment>
+                        <event-block sid="7484580484371836">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="8300503424117563" type="Links">
+                                    <param id="0" name="Instance variable">url</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">&quot;&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="8" name="Open URL in new window" sid="2347813977798853" type="Browser">
+                                    <param id="0" name="URL">Links.url</param>
+                                    <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Переходим по меню</comment>
+                        <event-block sid="3059615145032125">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="2438982841261708" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="9962545908352495" type="Links">
+                                    <param id="0" name="Instance variable">ToLayout</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;START&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="9513500750686602" type="Function">
+                                    <param id="0" name="Name">&quot;StartGame&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Переходим по уровням</comment>
+                        <event-block sid="8202026116150337">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="5529911791328788" type="System" />
+                                <condition id="-7" inverted="1" name="Compare instance variable" sid="1300962870775429" type="Links">
+                                    <param id="0" name="Instance variable">ToLayout</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;START&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="2640182354152012" type="Function">
+                                    <param id="0" name="Name">&quot;LoadLevel&quot;</param>
+                                    <param id="1" name="Parameter {n}">Links.ToLayout{###}&quot;FadeIn&quot;{###}&quot;normal&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block collapsed="1" sid="1377124683568492">
                     <conditions>
                         <condition id="-11" name="For Each" sid="3322872486707763" type="System">
                             <param id="0" name="Object">Links</param>

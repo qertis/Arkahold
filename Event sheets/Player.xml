@@ -5,7 +5,8 @@
     <events>
         <event-group description="" sid="9672368698934245" title="PlayerInit">
             <sub-events>
-                <event-block sid="970424618041259">
+                <variable constant="1" name="LEVELFLOORPADDING" sid="9953545356360056" static="1" type="number">30</variable>
+                <event-block collapsed="1" sid="970424618041259">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="4703631623024658" type="System" />
                     </conditions>
@@ -25,7 +26,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="2534556170925141">
+                <event-block collapsed="1" sid="2534556170925141">
                     <conditions>
                         <condition id="-19" name="On destroyed" sid="7957456248876494" type="PlayerBorn" />
                     </conditions>
@@ -94,9 +95,8 @@
                                 </action>
                                 <action id="-7" name="Set size" sid="1693879994159713" type="LevelFloor">
                                     <param id="0" name="Width">LayoutWidth</param>
-                                    <param id="1" name="Height">30</param>
+                                    <param id="1" name="Height">LEVELFLOORPADDING</param>
                                 </action>
-                                <action id="-24" name="Move to top" sid="9006137257289721" type="LevelFloor" />
                             </actions>
                         </event-block>
                         <comment>создание прозрачного фона вверху</comment>
@@ -117,8 +117,13 @@
                                 </action>
                                 <action id="-7" name="Set size" sid="7899984354357213" type="LevelFloor">
                                     <param id="0" name="Width">LayoutWidth</param>
-                                    <param id="1" name="Height">30</param>
+                                    <param id="1" name="Height">LEVELFLOORPADDING</param>
                                 </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6396390266756554">
+                            <conditions />
+                            <actions>
                                 <action id="-24" name="Move to top" sid="559058744246604" type="LevelFloor" />
                             </actions>
                         </event-block>
@@ -128,6 +133,74 @@
         </event-group>
         <event-group description="игрок (ракетка)" inactive="1" sid="6490523143365113" title="Player">
             <sub-events>
+                <event-block sid="2279749819265155">
+                    <conditions>
+                        <condition id="0" name="On function" sid="6450907883317004" type="Function">
+                            <param id="0" name="Name">&quot;PlayerKickAnim&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="572444144049133" type="player">
+                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <variable constant="0" name="playerStateY" sid="607454510834965" static="1" type="number">0</variable>
+                        <comment>Эффект &quot;приседания&quot; ракетки от удара</comment>
+                        <event-block sid="2834083043007151">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="7372448566361189" type="player">
+                                    <param id="0" name="Instance variable">isKick</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="6068985214311983" type="player">
+                                    <param id="0" name="Instance variable">isKick</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="471777730445508" type="System">
+                                    <param id="0" name="Variable">playerStateY</param>
+                                    <param id="1" name="Value">player.Y</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="2904102661290032" type="player">
+                                    <param id="0" name="Y">player.Y + Function.Param(1)</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="774736369078371" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="5679314087038513" type="player">
+                                    <param id="0" name="Instance variable">isKick</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="3922826706453674" type="player">
+                                    <param id="0" name="Y">playerStateY</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>эффект прилипания</comment>
+                        <event-block sid="4895229373348929">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="6160867740367555" type="player">
+                                    <param id="0" name="Instance variable">ballPrilipnut</param>
+                                </condition>
+                                <condition id="-15" name="Pick nearest/furthest" sid="8018377399620148" type="ball">
+                                    <param id="0" name="Which">0</param>
+                                    <param id="1" name="X">player.X</param>
+                                    <param id="2" name="Y">player.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="5701865347332609" type="ball">
+                                    <param id="0" name="Instance variable">isFly</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="5145997399151761" type="ball">
+                                    <param id="0" name="Pin to">player</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <variable constant="1" name="PLAYER_ANIM_MOVE" sid="9220722373669635" static="0" type="number">2</variable>
                 <event-block sid="1065638413253438">
                     <conditions>
@@ -161,7 +234,6 @@
                     </actions>
                 </event-block>
                 <comment>ударение об ракетку</comment>
-                <comment>TODO: убрать дублирование</comment>
                 <event-block sid="199">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="200" type="player">
@@ -277,68 +349,6 @@
                     <param id="1" name="State">0</param>
                 </action>
             </actions>
-        </event-block>
-        <event-block sid="2279749819265155">
-            <conditions>
-                <condition id="0" name="On function" sid="6450907883317004" type="Function">
-                    <param id="0" name="Name">&quot;PlayerKickAnim&quot;</param>
-                </condition>
-                <condition id="-14" name="Pick by unique ID" sid="572444144049133" type="player">
-                    <param id="0" name="Unique ID">Function.Param(0)</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <variable constant="0" name="playerStateY" sid="607454510834965" static="1" type="number">0</variable>
-                <comment>Эффект &quot;приседания&quot; ракетки от удара</comment>
-                <event-block sid="2834083043007151">
-                    <conditions>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="7372448566361189" type="player">
-                            <param id="0" name="Instance variable">isKick</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set boolean" sid="6068985214311983" type="player">
-                            <param id="0" name="Instance variable">isKick</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="471777730445508" type="System">
-                            <param id="0" name="Variable">playerStateY</param>
-                            <param id="1" name="Value">player.Y</param>
-                        </action>
-                        <action id="-2" name="Set Y" sid="2904102661290032" type="player">
-                            <param id="0" name="Y">player.Y + Function.Param(1)</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="774736369078371" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action id="-13" name="Set boolean" sid="5679314087038513" type="player">
-                            <param id="0" name="Instance variable">isKick</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-2" name="Set Y" sid="3922826706453674" type="player">
-                            <param id="0" name="Y">playerStateY</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="4895229373348929">
-                    <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="8018377399620148" type="player">
-                            <param id="0" name="Instance variable">ballPrilipnut</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set boolean" sid="5701865347332609" type="ball">
-                            <param id="0" name="Instance variable">isFly</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="5145997399151761" type="ball">
-                            <param id="0" name="Pin to">player</param>
-                            <param id="1" name="Mode">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

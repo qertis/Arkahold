@@ -28,6 +28,9 @@
                         <action id="-15" name="Set visible" sid="3679696228087695" type="Cursor">
                             <param id="0" name="Visibility">1</param>
                         </action>
+                        <action id="11" name="Set collisions enabled" sid="8613830609694799" type="Cursor">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <comment>время в формате (mm, ss)</comment>
@@ -59,61 +62,56 @@
                     </sub-events>
                 </event-block>
                 <comment>TODO: add gamepad controls</comment>
-                <comment>vkontakte</comment>
-                <event-block any="1" collapsed="1" sid="4592323778377044">
+                <event-block any="1" sid="2284786038545358">
                     <conditions>
-                        <condition id="6" name="On object clicked" sid="6990794763286803" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">SocialBtn</param>
+                        <condition id="1" name="On any click" sid="6874636639445419" type="Mouse" />
+                        <condition id="6" name="On button pressed" sid="6983572511729447" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">0</param>
                         </condition>
-                        <condition id="3" name="On key released" sid="5587341680854293" type="Keyboard">
-                            <param id="0" name="Key">86 (V)</param>
+                        <condition id="0" name="On key pressed" sid="8553733413148827" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="2865621644849351">
+                        <event-block sid="3614455151064927">
                             <conditions>
-                                <condition id="2" name="Is playing" sid="9163796690866027" type="SocialBtn">
-                                    <param id="0" name="Animation">&quot;vk&quot;</param>
+                                <condition id="1" name="Is overlapping another object" sid="6047702204766549" type="Cursor">
+                                    <param id="0" name="Object">SocialBtn</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="8" name="Open URL in new window" sid="4140382311883073" type="Browser">
-                                    <param id="0" name="URL">&quot;//vk.com/share.php?url=&quot; &amp; Browser.URL&#x0D;&#x0A;&amp; &quot;&amp;title=Arkahold WebGL record!&quot; &#x0D;&#x0A;&amp; &quot;&amp;description=&quot; &#x0D;&#x0A;  &amp; &quot;  time: &quot; &amp; GameTime &#x0D;&#x0A;  &amp; &quot;;  My points: &quot; &amp; Function.Call(&quot;GetGlobalPoints&quot;)&#x0D;&#x0A;&amp; &quot;&amp;noparse=true&quot;</param>
-                                    <param id="1" name="Tag">&quot;VKRecord&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <comment>facebook</comment>
-                <event-block any="1" collapsed="1" sid="180332578619588">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="7726958844455624" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">SocialBtn</param>
-                        </condition>
-                        <condition id="3" name="On key released" sid="4385650709646974" type="Keyboard">
-                            <param id="0" name="Key">70 (F)</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="8325075729783241">
-                            <conditions>
-                                <condition id="2" name="Is playing" sid="3715990961060487" type="SocialBtn">
-                                    <param id="0" name="Animation">&quot;fb&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="8" name="Open URL in new window" sid="8113916709880395" type="Browser">
-                                    <param id="0" name="URL">&quot;//facebook.com/sharer.php?s=100&quot; &#x0D;&#x0A;&amp; &quot;&amp;p[url]=&quot; &amp; Browser.URL &#x0D;&#x0A;&amp; &quot;&amp;p[title]=&quot; &#x0D;&#x0A;  &amp; &quot;  time: &quot; &amp; GameTime &#x0D;&#x0A;  &amp; &quot;;  My points: &quot; &amp; Function.Call(&quot;GetGlobalPoints&quot;)</param>
-                                    <param id="1" name="Tag">&quot;FBRecord&quot;</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <comment>facebook</comment>
+                                <event-block sid="1420258885979989">
+                                    <conditions>
+                                        <condition id="2" name="Is playing" sid="6117051755056911" type="SocialBtn">
+                                            <param id="0" name="Animation">&quot;fb&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="8" name="Open URL in new window" sid="1660279067908011" type="Browser">
+                                            <param id="0" name="URL">&quot;//facebook.com/sharer.php?s=100&quot; &#x0D;&#x0A;&amp; &quot;&amp;p[url]=&quot; &amp; Browser.URL &#x0D;&#x0A;&amp; &quot;&amp;p[title]=&quot; &#x0D;&#x0A;  &amp; &quot;  time: &quot; &amp; GameTime &#x0D;&#x0A;  &amp; &quot;;  My points: &quot; &amp; Function.Call(&quot;GetGlobalPoints&quot;)</param>
+                                            <param id="1" name="Tag">&quot;FBRecord&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>vkontakte</comment>
+                                <event-block sid="8731254895873715">
+                                    <conditions>
+                                        <condition id="2" name="Is playing" sid="1691475452014223" type="SocialBtn">
+                                            <param id="0" name="Animation">&quot;vk&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="8" name="Open URL in new window" sid="8761135985291477" type="Browser">
+                                            <param id="0" name="URL">&quot;//vk.com/share.php?url=&quot; &amp; Browser.URL&#x0D;&#x0A;&amp; &quot;&amp;title=Arkahold WebGL record!&quot; &#x0D;&#x0A;&amp; &quot;&amp;description=&quot; &#x0D;&#x0A;  &amp; &quot;  time: &quot; &amp; GameTime &#x0D;&#x0A;  &amp; &quot;;  My points: &quot; &amp; Function.Call(&quot;GetGlobalPoints&quot;)&#x0D;&#x0A;&amp; &quot;&amp;noparse=true&quot;</param>
+                                            <param id="1" name="Tag">&quot;VKRecord&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>

@@ -213,3 +213,6 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+*.backup1
+*.backup2
+Arkahold.capx.backup2

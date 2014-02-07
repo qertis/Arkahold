@@ -49,6 +49,27 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="7229175112423401">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="5628032256540635" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Preload" sid="3438388880354837" type="Audio">
+                                    <param id="0" name="Audio file">start-background</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2464212314203558">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="3252118710364323" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Focus" sid="4713296459208106" type="Browser" />
+                                <action disabled="1" id="10" name="Request fullscreen" sid="4376403655475525" type="Browser">
+                                    <param id="0" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="5231068285276989">

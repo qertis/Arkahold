@@ -214,9 +214,29 @@
                                 </action>
                             </actions>
                             <sub-events>
+                                <variable constant="0" name="speedState" sid="8449327036888433" static="1" type="number">0</variable>
                                 <event-block sid="2103026359307357">
-                                    <conditions />
-                                    <actions />
+                                    <conditions>
+                                        <condition behavior="Bullet" id="0" name="Compare speed" sid="7401752541654935" type="ball">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="Speed">100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="3805815666944166" type="System">
+                                            <param id="0" name="Variable">speedState</param>
+                                            <param id="1" name="Value">ball.Bullet.Speed</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="115126584391275" type="ball">
+                                            <param id="0" name="Speed">speedState * 0.5</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="5103157398059754" type="System">
+                                            <param id="0" name="Seconds">5.0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="2736225917013483" type="ball">
+                                            <param id="0" name="Speed">speedState</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -239,7 +259,12 @@
                             <sub-events>
                                 <event-block sid="7636988328636996">
                                     <conditions />
-                                    <actions />
+                                    <actions>
+                                        <action id="0" name="Call function" sid="9339735353500305" type="Function">
+                                            <param id="0" name="Name">&quot;UpdateLifes&quot;</param>
+                                            <param id="1" name="Parameter {n}">1</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
