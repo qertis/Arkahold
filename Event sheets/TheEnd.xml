@@ -31,6 +31,10 @@
                         <action id="11" name="Set collisions enabled" sid="8613830609694799" type="Cursor">
                             <param id="0" name="Collisions">1</param>
                         </action>
+                        <action id="0" name="Call function" sid="5534371690123976" type="Function">
+                            <param id="0" name="Name">&quot;XMLkeysDescr&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
                     </actions>
                     <sub-events>
                         <comment>время в формате (mm, ss)</comment>

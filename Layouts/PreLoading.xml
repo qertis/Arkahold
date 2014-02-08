@@ -180,6 +180,7 @@
     </layers>
     <nonworld-instances>
         <instance type="XMLabout" uid="1705" />
+        <instance type="XMLkeys" uid="204" />
     </nonworld-instances>
     <effects />
 </c2layout>

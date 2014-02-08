@@ -12,52 +12,52 @@
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
-        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
-        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
-        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
         <plugin author="Scirra" id="XML" version="1">XML</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
-        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
-        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
-        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
-        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
-        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
-        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
-        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
     </used-behaviors>
     <used-effects>
+        <effect author="Scirra" id="gamma">Gamma</effect>
+        <effect author="Scirra" id="difference">Difference</effect>
+        <effect author="Scirra" id="hueblend">Hue</effect>
+        <effect author="Brad Larson" id="highlightshadow">Highlight shadow</effect>
+        <effect author="Scirra" id="noisemask">Noise Mask</effect>
+        <effect author="Scirra" id="hardlight">Hard Light</effect>
+        <effect author="Scirra" id="hsladjustmask">Adjust HSL Mask</effect>
+        <effect author="Scirra" id="overlay">Overlay</effect>
         <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
         <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
         <effect author="Scirra" id="grayscale">Grayscale</effect>
-        <effect author="Scirra" id="hardlight">Hard Light</effect>
-        <effect author="Scirra" id="gamma">Gamma</effect>
-        <effect author="Scirra" id="difference">Difference</effect>
-        <effect author="Scirra" id="overlay">Overlay</effect>
-        <effect author="Scirra" id="hueblend">Hue</effect>
-        <effect author="Scirra" id="noisemask">Noise Mask</effect>
-        <effect author="Scirra" id="radialblur">Radial blur</effect>
-        <effect author="Scirra" id="hsladjustmask">Adjust HSL Mask</effect>
         <effect author="Scirra" id="noise">Noise</effect>
-        <effect author="Brad Larson" id="highlightshadow">Highlight shadow</effect>
-        <effect author="Scirra" id="tintmask">Tint Mask</effect>
-        <effect author="Brad Larson" id="stretch">Stretch</effect>
-        <effect author="Scirra" id="warpradial">Warp Radial</effect>
-        <effect author="Scirra" id="setcolor">Set color</effect>
-        <effect author="Brad Larson" id="sketch">Sketch</effect>
         <effect author="Brad Larson" id="toon">Toon</effect>
-        <effect author="Brad Larson" id="vignette">Vignette</effect>
+        <effect author="Scirra" id="setcolor">Set color</effect>
         <effect author="Brad Larson" id="sharpen">Sharpen</effect>
+        <effect author="Brad Larson" id="vignette">Vignette</effect>
+        <effect author="Brad Larson" id="sketch">Sketch</effect>
+        <effect author="Brad Larson" id="stretch">Stretch</effect>
+        <effect author="Scirra" id="radialblur">Radial blur</effect>
+        <effect author="Scirra" id="tintmask">Tint Mask</effect>
+        <effect author="Scirra" id="warpradial">Warp Radial</effect>
     </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -77,7 +77,7 @@
         <prop name="Hide address bar">Yes</prop>
         <prop name="Loader style">Progress bar &amp; logo</prop>
         <prop name="Orientations">Landscape</prop>
-        <prop name="Pause on unfocus">Yes</prop>
+        <prop name="Pause on unfocus">No</prop>
         <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use iOS retina display">All devices</prop>
@@ -138,6 +138,7 @@
                 <instance-variables>
                     <instance-variable name="ToLayout" sid="2243163194287676" type="string" />
                     <instance-variable name="url" sid="8417952147283587" type="string" />
+                    <instance-variable name="keyDescr" sid="5003650822030045" type="string" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="Pin" sid="6633789840948162">
@@ -913,6 +914,9 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type global="1" name="XMLkeys" sid="8841479364534234">
+            <plugin id="XML" />
         </object-type>
     </object-folder>
     <families />

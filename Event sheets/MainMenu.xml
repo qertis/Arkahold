@@ -122,6 +122,15 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="1773078360369831">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Call function" sid="5008905460177815" type="Function">
+                                    <param id="0" name="Name">&quot;XMLkeysDescr&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
@@ -288,7 +297,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="Выбор управления" sid="7636553625374258" title="SelectControl">
+        <event-group description="Выбор управления" sid="7636553625374258" title="SelectControl">
             <sub-events>
                 <event-block sid="7186281269264141">
                     <conditions>
@@ -361,6 +370,15 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="2340123485251856">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Call function" sid="539259307103198" type="Function">
+                                    <param id="0" name="Name">&quot;XMLkeysDescr&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <comment>test</comment>
                         <event-block sid="4291586875800743">
                             <conditions />
@@ -394,11 +412,7 @@
                     <conditions>
                         <condition id="6" name="On button pressed" sid="6107434107601074" type="Gamepad">
                             <param id="0" name="Gamepad">0</param>
-                            <param id="1" name="Button">9</param>
-                        </condition>
-                        <condition id="6" name="On button pressed" sid="5003224328023128" type="Gamepad">
-                            <param id="0" name="Gamepad">0</param>
-                            <param id="1" name="Button">9</param>
+                            <param id="1" name="Button">0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -616,23 +630,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="1445362033901586" title="XML">
-            <sub-events>
-                <event-block sid="4468110324161785">
-                    <conditions>
-                        <condition id="0" name="On function" sid="2797192634825005" type="Function">
-                            <param id="0" name="Name">&quot;XMLaboutInit&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Load" sid="961045264799612" type="XMLabout">
-                            <param id="0" name="XML">&quot;&lt;?xml version=&quot;&quot;1.0&quot;&quot; encoding=&quot;&quot;UTF-8&quot;&quot;?&gt;&#x0D;&#x0A;&lt;about&gt;&#x0D;&#x0A;  &lt;developer url=&quot;&quot;//site.baskovsky.ru/&quot;&quot;&gt;Denis Baskovsky&#x0D;&#x0A;  &lt;/developer&gt;&#x0D;&#x0A;  &lt;game year=&quot;&quot;[2014]&quot;&quot;&gt;Arkahold WebGL&lt;/game&gt;&#x0D;&#x0A;  &lt;framework url=&quot;&quot;//www.scirra.com/&quot;&quot;&gt;Construct 2&lt;/framework&gt;&#x0D;&#x0A;&lt;/about&gt;&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group collapsed="1" description="" sid="6332313624024054" title="AboutInit">
+        <event-group description="" sid="6332313624024054" title="AboutInit">
             <sub-events>
                 <event-block sid="4510756918261203">
                     <conditions>
@@ -644,85 +642,14 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Set text" sid="2531463013466685" type="Info">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
                         <action id="0" name="Call function" sid="9240518946019315" type="Function">
                             <param id="0" name="Name">&quot;XMLaboutInit&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
-                        <action id="0" name="Set text" sid="2531463013466685" type="Info">
-                            <param id="0" name="Text">&quot;&quot;</param>
-                        </action>
                     </actions>
-                    <sub-events>
-                        <event-block sid="6120052190653844">
-                            <conditions>
-                                <condition id="0" name="For each node" sid="5512507607871507" type="XMLabout">
-                                    <param id="0" name="XPath">&quot;developer&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="7653778968776097">
-                                    <conditions />
-                                    <actions>
-                                        <action id="1" name="Append text" sid="4709882483505845" type="Info">
-                                            <param id="0" name="Text">&quot;Developer: &quot; &amp;&#x0D;&#x0A;  XMLabout.StringValue(&quot;text()&quot;)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="487741515608997">
-                            <conditions>
-                                <condition id="0" name="For each node" sid="4077321520431155" type="XMLabout">
-                                    <param id="0" name="XPath">&quot;framework&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="1607396828804994">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="9344427622422171" type="Info">
-                                            <param id="0" name="Instance variable">type</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="1" name="Append text" sid="8958978893463308" type="Info">
-                                            <param id="0" name="Text">&quot;Create with &quot; &amp; &#x0D;&#x0A;  XMLabout.StringValue(&quot;text()&quot;)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="6704766889740535">
-                            <conditions>
-                                <condition id="0" name="For each node" sid="639348334276105" type="XMLabout">
-                                    <param id="0" name="XPath">&quot;game&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="2275805835962388">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="7945581584312499" type="Info">
-                                            <param id="0" name="Instance variable">type</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="1" name="Append text" sid="960579916812438" type="Info">
-                                            <param id="0" name="Text">newline &amp; XMLabout.StringValue(&quot;text()&quot;) &amp; &#x0D;&#x0A;  &quot; v&quot; &amp; projectversion </param>
-                                        </action>
-                                        <action id="1" name="Append text" sid="1919749278887751" type="Info">
-                                            <param id="0" name="Text">&quot; &quot; &amp; XMLabout.StringValue(&quot;@year&quot;)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

@@ -12,7 +12,12 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="1951460548382873" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Call function" sid="5510968157012798" type="Function">
+                            <param id="0" name="Name">&quot;XMLkeysDescr&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="1088529675281785">
                             <conditions />

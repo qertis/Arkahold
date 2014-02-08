@@ -71,5 +71,11 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="1857651979308607">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="282721157866482" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
     </events>
 </c2eventsheet>

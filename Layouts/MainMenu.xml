@@ -4050,7 +4050,7 @@
                         <character-width>16</character-width>
                         <character-height>16</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>more Games   [M]</text>
+                        <text>more games</text>
                         <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Center</horizontal-alignment>
@@ -4063,6 +4063,7 @@
                     <instance-variables>
                         <ToLayout></ToLayout>
                         <url>http://games.baskovsky.ru</url>
+                        <keyDescr>more games</keyDescr>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -4070,8 +4071,8 @@
                     <blend-mode>6</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>253</x>
-                        <y>132</y>
+                        <x>385</x>
+                        <y>176</y>
                         <z>0</z>
                         <width>220</width>
                         <height>88</height>
@@ -4087,7 +4088,7 @@
                         <character-width>16</character-width>
                         <character-height>16</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>how to play    [H]</text>
+                        <text>how to play</text>
                         <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Center</horizontal-alignment>
@@ -4100,6 +4101,7 @@
                     <instance-variables>
                         <ToLayout>Info</ToLayout>
                         <url></url>
+                        <keyDescr>how to play</keyDescr>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -4108,7 +4110,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>253</x>
-                        <y>374</y>
+                        <y>375</y>
                         <z>0</z>
                         <width>242</width>
                         <height>88</height>
@@ -4124,7 +4126,7 @@
                         <character-width>16</character-width>
                         <character-height>16</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>PLAY     [P]</text>
+                        <text>PLAY</text>
                         <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Center</horizontal-alignment>
@@ -4137,6 +4139,7 @@
                     <instance-variables>
                         <ToLayout>START</ToLayout>
                         <url></url>
+                        <keyDescr>play</keyDescr>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -4217,50 +4220,40 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Info" uid="134">
+                <instance type="Links" uid="134">
                     <properties>
                         <character-width>16</character-width>
                         <character-height>16</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>press [S] to off/on sounds</text>
+                        <text>sound</text>
                         <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
-                        <horizontal-alignment>Left</horizontal-alignment>
+                        <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
+                        <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
-                        <character-spacing>-1</character-spacing>
+                        <character-spacing>1</character-spacing>
                         <line-height>1</line-height>
                     </properties>
                     <instance-variables>
-                        <type>9</type>
+                        <ToLayout></ToLayout>
+                        <url></url>
+                        <keyDescr>sound</keyDescr>
                     </instance-variables>
                     <behavior-instances>
-                        <behavior-instance type="Sine">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Forwards/backwards</movement>
-                                <wave>Reverse sawtooth</wave>
-                                <period>60</period>
-                                <period-random>0</period-random>
-                                <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
-                            </properties>
-                        </behavior-instance>
+                        <behavior-instance type="Pin" />
                     </behavior-instances>
                     <blend-mode>6</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>77</x>
-                        <y>429</y>
+                        <x>169</x>
+                        <y>169</y>
                         <z>0</z>
-                        <width>198</width>
-                        <height>66</height>
+                        <width>242</width>
+                        <height>88</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

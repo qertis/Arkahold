@@ -3,9 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Controls</name>
     <events>
-        <event-group collapsed="1" description="Управление в меню" inactive="1" sid="3832131130592746" title="MenuKey">
+        <event-group description="Управление в меню" inactive="1" sid="3832131130592746" title="MenuKey">
             <sub-events>
-                <event-block any="1" collapsed="1" sid="4583720583695985">
+                <event-block any="1" sid="4583720583695985">
                     <conditions>
                         <condition id="1" name="On any click" sid="9341014313467943" type="Mouse" />
                         <condition id="6" name="On button pressed" sid="4216985188553778" type="Gamepad">
@@ -41,6 +41,25 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Call function" sid="1467986923430495" type="Function">
+                                    <param id="0" name="Name">&quot;ToggleSounds&quot;</param>
+                                    <param id="1" name="Parameter {n}">PlayPauseBtn.UID</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3946146601663323">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="4251475025181453" type="Cursor">
+                                    <param id="0" name="Object">Links</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="4510143317748069" type="Links">
+                                    <param id="0" name="Instance variable">keyDescr</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;sound&quot;</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="4957842475776956" type="PlayPauseBtn" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="8986618957490271" type="Function">
                                     <param id="0" name="Name">&quot;ToggleSounds&quot;</param>
                                     <param id="1" name="Parameter {n}">PlayPauseBtn.UID</param>
                                 </action>
@@ -259,7 +278,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="6320964123323039" title="PlayerControls">
+        <event-group description="" inactive="1" sid="6320964123323039" title="PlayerControls">
             <sub-events>
                 <variable comment="Умножитель (вида val * this)" constant="1" name="MaxSpeedIndex" sid="384242051234757" static="0" type="number">2</variable>
                 <comment>запуск шара</comment>
@@ -402,13 +421,35 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="6107484431318877">
+                        <event-block sid="8287624370859586">
                             <conditions>
-                                <condition id="-8" name="Compare two values" sid="8407969974129254" type="System">
+                                <condition id="-8" name="Compare two values" sid="4069849433444393" type="System">
                                     <param id="0" name="First value">timescale</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">1.0</param>
+                                    <param id="2" name="Second value">0.0</param>
                                 </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="9195857716676827" type="Function">
+                                    <param id="0" name="Name">&quot;LoadingFade&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-13" name="Set time scale" sid="4752710793203099" type="System">
+                                    <param id="0" name="Time scale">1.0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="9106452558727809" type="PauseBackground" />
+                                <action id="-15" name="Set visible" sid="2198352697393736" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="22" name="Set paused" sid="6267323279843504" type="Audio">
+                                    <param id="0" name="Tag">&quot;&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6107484431318877">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="8718480851176375" type="System" />
                             </conditions>
                             <actions>
                                 <action id="-13" name="Set time scale" sid="4361707192091769" type="System">
@@ -422,23 +463,9 @@
                                 <action id="-15" name="Set visible" sid="1029493819679927" type="Text">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="8287624370859586">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="8718480851176375" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Call function" sid="9195857716676827" type="Function">
-                                    <param id="0" name="Name">&quot;LoadingFade&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                                <action id="-13" name="Set time scale" sid="4752710793203099" type="System">
-                                    <param id="0" name="Time scale">1.0</param>
-                                </action>
-                                <action id="-9" name="Destroy" sid="9106452558727809" type="PauseBackground" />
-                                <action id="-15" name="Set visible" sid="2198352697393736" type="Text">
-                                    <param id="0" name="Visibility">0</param>
+                                <action id="22" name="Set paused" sid="2610321996475368" type="Audio">
+                                    <param id="0" name="Tag">&quot;&quot;</param>
+                                    <param id="1" name="State">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -486,7 +513,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" inactive="1" sid="4219313757675232" title="GamePadCursor">
+        <event-group description="" inactive="1" sid="4219313757675232" title="GamePadCursor">
             <sub-events>
                 <event-block sid="7401527571672944">
                     <conditions>
@@ -506,8 +533,8 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Set position" sid="5754374927209709" type="Cursor">
-                            <param id="0" name="X">Function.Call(&quot;cx&quot;) + Gamepad.Axis(0,0)</param>
-                            <param id="1" name="Y">Function.Call(&quot;cy&quot;) + Gamepad.Axis(0,1)</param>
+                            <param id="0" name="X">Function.Call(&quot;cx&quot;) + Gamepad.Axis(0, 0) / 0.6</param>
+                            <param id="1" name="Y">Function.Call(&quot;cy&quot;) + Gamepad.Axis(0, 1) / 0.6</param>
                         </action>
                     </actions>
                 </event-block>
