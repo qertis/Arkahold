@@ -5,6 +5,7 @@
     <events>
         <event-group description="" sid="2982751167121964" title="Audio">
             <sub-events>
+                <comment>переключение звука</comment>
                 <event-block sid="4411981906715038">
                     <conditions>
                         <condition id="0" name="On function" sid="3410638108975809" type="Function">
@@ -23,13 +24,6 @@
                             <param id="0" name="Mode">2</param>
                         </action>
                     </actions>
-                </event-block>
-                <comment>звук удара об ракетку</comment>
-                <event-block disabled="1" sid="7487991946398452">
-                    <conditions>
-                        <condition id="2" name="Advanced audio supported" sid="6431489478514926" type="Audio" />
-                    </conditions>
-                    <actions />
                 </event-block>
             </sub-events>
         </event-group>

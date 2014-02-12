@@ -3,9 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Lifes</name>
     <events>
-        <event-group description="" sid="5885296841462732" title="Lifes">
+        <event-group collapsed="1" description="" sid="5885296841462732" title="Lifes">
             <sub-events>
-                <comment>по-умолчанию число жизней</comment>
                 <variable comment="текущие Жизни" constant="0" name="CurrentLifes" sid="1013" static="1" type="number">3</variable>
                 <variable comment="Число жизней по-умолчанию" constant="1" name="DefaultLifes" sid="1121414283069601" static="1" type="number">3</variable>
                 <event-block sid="2220205770588426">

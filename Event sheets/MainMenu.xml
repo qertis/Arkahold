@@ -26,29 +26,40 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="9439096052680915">
+                            <conditions>
+                                <condition id="3" name="Is silent" sid="7767777979712612" type="Audio" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="3651071183666344" type="PlayPauseBtn">
+                                    <param id="0" name="Animation">&quot;On&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6349159170588049">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="4033006291058124" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="1097091185396543" type="PlayPauseBtn">
+                                    <param id="0" name="Animation">&quot;Off&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="2508032182840886">
                             <conditions>
-                                <condition id="4" inverted="1" name="Is any playing" sid="2768507566951043" type="Audio" />
+                                <condition id="5" inverted="1" name="Is tag playing" sid="2768507566951043" type="Audio">
+                                    <param id="0" name="Tag">&quot;start-background&quot;</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="0" name="Play" sid="9995071636538008" type="Audio">
                                     <param id="0" name="Audio file">start-background</param>
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="1240757484407204">
-                            <conditions>
-                                <condition id="-11" name="For Each" sid="7246880006822787" type="System">
-                                    <param id="0" name="Object">Links</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="Pin" id="0" name="Pin to object" sid="7142489738180172" type="Links">
-                                    <param id="0" name="Pin to">Orbita</param>
-                                    <param id="1" name="Mode">1</param>
+                                    <param id="1" name="Tag (optional)">&quot;start-background&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -87,30 +98,14 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <comment>TODO</comment>
                         <event-block sid="5636995544584383">
                             <conditions />
                             <actions>
                                 <action id="-26" name="Move to layer" sid="3970839470993619" type="Cursor">
                                     <param id="0" name="Layer">&quot;Cursor&quot;</param>
                                 </action>
-                                <action disabled="1" id="-3" name="Set position" sid="7778943019015665" type="Cursor">
-                                    <param id="0" name="X">Function.Call(&quot;cx&quot;)</param>
-                                    <param id="1" name="Y">Function.Call(&quot;cy&quot;)</param>
-                                </action>
                                 <action id="-15" name="Set visible" sid="4907911158091743" type="Cursor">
                                     <param id="0" name="Visibility">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="9439096052680915">
-                            <conditions>
-                                <condition id="3" name="Is silent" sid="7767777979712612" type="Audio" />
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="1097091185396543" type="PlayPauseBtn">
-                                    <param id="0" name="Animation">&quot;Off&quot;</param>
-                                    <param id="1" name="From">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -297,9 +292,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Выбор управления" sid="7636553625374258" title="SelectControl">
+        <event-group collapsed="1" description="Выбор управления" sid="7636553625374258" title="SelectControl">
             <sub-events>
-                <event-block sid="7186281269264141">
+                <event-block collapsed="1" sid="7186281269264141">
                     <conditions>
                         <condition id="0" name="On function" sid="9778540033690565" type="Function">
                             <param id="0" name="Name">&quot;MainMenuActivate&quot;</param>
@@ -550,7 +545,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="альтернативное управление" inactive="1" sid="4873995218015465" title="AlterNavigate">
+        <event-group collapsed="1" description="альтернативное управление" inactive="1" sid="4873995218015465" title="AlterNavigate">
             <sub-events>
                 <comment>начать игру</comment>
                 <event-block any="1" sid="3973240755409328">
@@ -630,7 +625,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="6332313624024054" title="AboutInit">
+        <event-group collapsed="1" description="" sid="6332313624024054" title="AboutInit">
             <sub-events>
                 <event-block sid="4510756918261203">
                     <conditions>

@@ -11,19 +11,25 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout>PreLoading</layout>
-        <layout>Info</layout>
-        <layout>MainMenu</layout>
-        <event-sheet>MENU</event-sheet>
-        <event-sheet>MainMenu</event-sheet>
-        <event-sheet>TheEnd</event-sheet>
-        <event-sheet>Info</event-sheet>
-        <event-sheet>GameOver</event-sheet>
-        <event-sheet active="1">Controls</event-sheet>
-        <event-sheet>Links</event-sheet>
-        <event-sheet>Loading</event-sheet>
+        <layout>5</layout>
+        <layout>6</layout>
+        <layout>7</layout>
+        <layout>8</layout>
+        <layout>9</layout>
+        <layout>10</layout>
+        <layout>11</layout>
+        <layout>12</layout>
+        <layout>13</layout>
+        <layout>14</layout>
+        <layout>15</layout>
+        <layout>16</layout>
+        <layout>17</layout>
+        <layout active="1">18</layout>
+        <layout>19</layout>
+        <event-sheet>Block</event-sheet>
+        <event-sheet>Ball</event-sheet>
         <event-sheet>Global</event-sheet>
-        <event-sheet>GAME</event-sheet>
-        <event-sheet>Player</event-sheet>
+        <event-sheet>TEST</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

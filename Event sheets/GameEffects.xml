@@ -3,37 +3,41 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GameEffects</name>
     <events>
-        <event-block collapsed="1" sid="893275885817096">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="3347733395975816" type="System" />
-            </conditions>
-            <actions />
+        <event-group collapsed="1" description="" sid="879410623448362" title="GameEffectsInit">
             <sub-events>
-                <event-block sid="2256513953277938">
-                    <conditions />
-                    <actions>
-                        <action id="-32" name="Set layer effect parameter" sid="6388273736917542" type="System">
-                            <param id="0" name="Layer">&quot;back&quot;</param>
-                            <param id="1" name="Effect">&quot;Vignette&quot;</param>
-                            <param id="2" name="Parameter index">0</param>
-                            <param id="3" name="Value">60</param>
-                        </action>
-                        <action id="-32" name="Set layer effect parameter" sid="3675359235504205" type="System">
-                            <param id="0" name="Layer">&quot;back&quot;</param>
-                            <param id="1" name="Effect">&quot;Vignette&quot;</param>
-                            <param id="2" name="Parameter index">1</param>
-                            <param id="3" name="Value">95</param>
-                        </action>
-                        <action id="-30" name="Set layer effect enabled" sid="4884239884603867" type="System">
-                            <param id="0" name="Layer">&quot;back&quot;</param>
-                            <param id="1" name="Mode">1</param>
-                            <param id="2" name="Effect">&quot;Vignette&quot;</param>
-                        </action>
-                    </actions>
+                <event-block collapsed="1" sid="893275885817096">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="3347733395975816" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="2256513953277938">
+                            <conditions />
+                            <actions>
+                                <action id="-32" name="Set layer effect parameter" sid="6388273736917542" type="System">
+                                    <param id="0" name="Layer">&quot;back&quot;</param>
+                                    <param id="1" name="Effect">&quot;Vignette&quot;</param>
+                                    <param id="2" name="Parameter index">0</param>
+                                    <param id="3" name="Value">60</param>
+                                </action>
+                                <action id="-32" name="Set layer effect parameter" sid="3675359235504205" type="System">
+                                    <param id="0" name="Layer">&quot;back&quot;</param>
+                                    <param id="1" name="Effect">&quot;Vignette&quot;</param>
+                                    <param id="2" name="Parameter index">1</param>
+                                    <param id="3" name="Value">95</param>
+                                </action>
+                                <action id="-30" name="Set layer effect enabled" sid="4884239884603867" type="System">
+                                    <param id="0" name="Layer">&quot;back&quot;</param>
+                                    <param id="1" name="Mode">1</param>
+                                    <param id="2" name="Effect">&quot;Vignette&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-group description="" sid="4439008932082915" title="Tiled">
+        </event-group>
+        <event-group collapsed="1" description="" sid="4439008932082915" title="Tiled">
             <sub-events>
                 <event-block sid="4168582775702655">
                     <conditions>
@@ -68,7 +72,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="3059559455478436" title="FadeLines">
+        <event-group collapsed="1" description="" sid="3059559455478436" title="FadeLines">
             <sub-events>
                 <event-block sid="6390272955796266">
                     <conditions>

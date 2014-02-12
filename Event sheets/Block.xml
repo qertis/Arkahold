@@ -3,9 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Block</name>
     <events>
-        <comment>TODO move to local</comment>
-        <variable comment="количество бонусов на уровень" constant="1" name="BONUSCOUNT" sid="5387046176008031" static="0" type="number">100</variable>
-        <event-group description="" sid="2821068537602053" title="BlockInit">
+        <event-group collapsed="1" description="" sid="2821068537602053" title="BlocksInit">
             <sub-events>
                 <variable comment="количество блоков на уровне" constant="0" name="BlockCount" sid="2958337952286063" static="1" type="number">0</variable>
                 <event-block sid="8193097524030829">
@@ -164,10 +162,6 @@
                                     <param id="0" name="Name">&quot;UpdatePoints&quot;</param>
                                     <param id="1" name="Parameter {n}">1</param>
                                 </action>
-                                <action disabled="1" id="0" name="Call function" sid="5769874081017621" type="Function">
-                                    <param id="0" name="Name">&quot;TooltipText&quot;</param>
-                                    <param id="1" name="Parameter {n}">Function.Call(&quot;GetPoints&quot;){###}floor(block.X){###}floor(block.Y)</param>
-                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -183,6 +177,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>анимация загрузки блоков</comment>
                 <event-block sid="2200340708975707">
                     <conditions>
                         <condition id="-23" name="While" sid="2964878651860651" type="System" />
@@ -206,16 +201,15 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="3140229747681552">
-            <conditions>
-                <condition id="-3" name="On end of layout" sid="3805215715084828" type="System" />
-            </conditions>
-            <actions>
-                <action disabled="1" id="-12" name="Set group active" sid="7993163293491207" type="System">
-                    <param id="0" name="Group name">&quot;Blocks&quot;</param>
-                    <param id="1" name="State">0</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group collapsed="1" description="" sid="5938636814478972" title="BlocksExit">
+            <sub-events>
+                <event-block disabled="1" sid="3140229747681552">
+                    <conditions>
+                        <condition id="-3" name="On end of layout" sid="3805215715084828" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

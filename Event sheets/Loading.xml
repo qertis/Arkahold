@@ -230,7 +230,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" inactive="1" sid="7310392314145114" title="FadeIn">
+        <event-group collapsed="1" description="" inactive="1" sid="7310392314145114" title="FadeIn">
             <sub-events>
                 <event-block collapsed="1" sid="3567619040257678">
                     <conditions>

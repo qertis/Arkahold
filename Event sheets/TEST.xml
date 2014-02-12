@@ -3,66 +3,58 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>TEST</name>
     <events>
-        <event-block sid="4380548308973787">
-            <conditions>
-                <condition id="3" name="On key released" sid="9937931772573277" type="Keyboard">
-                    <param id="0" name="Key">54 (6)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="7637224535382358" type="System">
-                    <param id="0" name="Layout">TheEnd</param>
-                </action>
-            </actions>
-        </event-block>
-        <comment>TEST ONLY</comment>
-        <event-block sid="1219709148354795">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="7538788855833164" type="Keyboard">
-                    <param id="0" name="Key">57 (9)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Call function" sid="9064033761390989" type="Function">
-                    <param id="0" name="Name">&quot;SpawnBall&quot;</param>
-                    <param id="1" name="Parameter {n}">player.ImagePointX(&quot;ball&quot;){###}player.ImagePointY(&quot;ball&quot;)</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="9081140209055745">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="4941397145624275" type="Keyboard">
-                    <param id="0" name="Key">50 (2)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="FadeDestroy" id="1" name="Start fade" sid="4939812570895589" type="block" />
-            </actions>
-        </event-block>
-        <event-block sid="7626265232704034">
-            <conditions>
-                <condition id="3" name="On key released" sid="1883729840746536" type="Keyboard">
-                    <param id="0" name="Key">9 (Tab)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="2746347977059093" type="System">
-                    <param id="0" name="Layout">4</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="7759835614706178">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="2946014219477958" type="Keyboard">
-                    <param id="0" name="Key">16 (Shift)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Call function" sid="1926450261269279" type="Function">
-                    <param id="0" name="Name">&quot;UpdatePoints&quot;</param>
-                    <param id="1" name="Parameter {n}">45</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="3464561530984937" title="TEST">
+            <sub-events>
+                <comment>TEST ONLY</comment>
+                <event-block sid="1219709148354795">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="7538788855833164" type="Keyboard">
+                            <param id="0" name="Key">57 (9)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="9064033761390989" type="Function">
+                            <param id="0" name="Name">&quot;SpawnBall&quot;</param>
+                            <param id="1" name="Parameter {n}">player.ImagePointX(&quot;ball&quot;){###}player.ImagePointY(&quot;ball&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9081140209055745">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4941397145624275" type="Keyboard">
+                            <param id="0" name="Key">50 (2)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="FadeDestroy" id="1" name="Start fade" sid="4939812570895589" type="block" />
+                    </actions>
+                </event-block>
+                <event-block sid="7626265232704034">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="1883729840746536" type="Keyboard">
+                            <param id="0" name="Key">9 (Tab)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="2746347977059093" type="System">
+                            <param id="0" name="Layout">18</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7759835614706178">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="2946014219477958" type="Keyboard">
+                            <param id="0" name="Key">16 (Shift)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="1926450261269279" type="Function">
+                            <param id="0" name="Name">&quot;UpdatePoints&quot;</param>
+                            <param id="1" name="Parameter {n}">45</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

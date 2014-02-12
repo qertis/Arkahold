@@ -13,7 +13,7 @@
         <include>Loading</include>
         <event-group collapsed="1" description="" sid="7962437702440751" title="MenuInit">
             <sub-events>
-                <event-block sid="5792703236058518">
+                <event-block collapsed="1" sid="5792703236058518">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="8919737752124712" type="System" />
                     </conditions>
@@ -62,6 +62,7 @@
                                 <action id="-24" name="Move to top" sid="7120872993957303" type="Cursor" />
                             </actions>
                         </event-block>
+                        <comment></comment>
                         <event-block sid="8750175944907934">
                             <conditions />
                             <actions>
@@ -92,10 +93,6 @@
                                     <param id="1" name="Height">LayoutHeight * 1.5</param>
                                 </action>
                             </actions>
-                        </event-block>
-                        <event-block sid="5786440349191901">
-                            <conditions />
-                            <actions />
                         </event-block>
                         <comment>stars init</comment>
                         <event-block sid="9562229481629804">
@@ -147,6 +144,7 @@
                                 <action id="-25" name="Move to bottom" sid="7930423119376066" type="line" />
                             </actions>
                         </event-block>
+                        <comment></comment>
                         <event-block sid="4953543648174502">
                             <conditions>
                                 <condition id="-15" inverted="1" name="Is group active" sid="1356391898906471" type="System">
@@ -164,9 +162,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="8480919002378136" title="XML">
+        <event-group collapsed="1" description="" sid="8480919002378136" title="XML">
             <sub-events>
-                <event-block sid="4468110324161785">
+                <event-block collapsed="1" sid="4468110324161785">
                     <conditions>
                         <condition id="0" name="On function" sid="2797192634825005" type="Function">
                             <param id="0" name="Name">&quot;XMLaboutInit&quot;</param>
@@ -249,7 +247,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="4745626570899566">
+                <event-block collapsed="1" sid="4745626570899566">
                     <conditions>
                         <condition id="0" name="On function" sid="1272371709899618" type="Function">
                             <param id="0" name="Name">&quot;XMLkeysDescr&quot;</param>
@@ -261,11 +259,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="6135318700399906">
-                            <conditions />
-                            <actions />
-                        </event-block>
-                        <event-block sid="8282546582506445">
+                        <event-block collapsed="1" sid="8282546582506445">
                             <conditions>
                                 <condition id="0" name="For each node" sid="4912225696330997" type="XMLkeys">
                                     <param id="0" name="XPath">&quot;descr&quot;</param>

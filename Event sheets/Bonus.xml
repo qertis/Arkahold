@@ -198,7 +198,7 @@
                             </sub-events>
                         </event-block>
                         <comment>замедление скорости шара</comment>
-                        <event-block sid="2053967127436948">
+                        <event-block collapsed="1" sid="2053967127436948">
                             <conditions>
                                 <condition id="-22" name="Else" sid="4270464846624113" type="System" />
                                 <condition id="1" name="Compare parameter" sid="924288935729611" type="Function">
@@ -241,7 +241,7 @@
                             </sub-events>
                         </event-block>
                         <comment>плюс одна жизнь</comment>
-                        <event-block sid="5195062561578447">
+                        <event-block collapsed="1" sid="5195062561578447">
                             <conditions>
                                 <condition id="-22" name="Else" sid="1970235019327026" type="System" />
                                 <condition id="1" name="Compare parameter" sid="8721994085080342" type="Function">
@@ -268,6 +268,41 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <comment>увеличение скорости перемещения ракетки</comment>
+                        <event-block sid="5524435933649725">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="8955890404747869" type="System" />
+                                <condition id="1" name="Compare parameter" sid="4063485454980327" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="5385197638365948" type="Function">
+                                    <param id="0" name="Name">&quot;TooltipText&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;Move!&quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="2842768615567627">
+                                    <conditions>
+                                        <condition id="-3" name="Is on-screen" sid="5337934992241962" type="player" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="4" name="Set max speed" sid="6551732423223291" type="player">
+                                            <param id="0" name="Max Speed">self.8Direction.Speed * 1.5</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="9991682001442605" type="System">
+                                            <param id="0" name="Seconds">2.0</param>
+                                        </action>
+                                        <action behavior="8Direction" id="4" name="Set max speed" sid="1583122062378813" type="player">
+                                            <param id="0" name="Max Speed">Function.Call(&quot;GetPlayerDefaultSpeed&quot;)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
                         <comment>прилипают шары</comment>
                         <event-block sid="8501694845309658">
                             <conditions>
@@ -275,7 +310,7 @@
                                 <condition id="1" name="Compare parameter" sid="9728813827405783" type="Function">
                                     <param id="0" name="Index">0</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">5</param>
+                                    <param id="2" name="Value">6</param>
                                 </condition>
                             </conditions>
                             <actions>

@@ -65,9 +65,6 @@
                             </conditions>
                             <actions>
                                 <action id="2" name="Focus" sid="4713296459208106" type="Browser" />
-                                <action disabled="1" id="10" name="Request fullscreen" sid="4376403655475525" type="Browser">
-                                    <param id="0" name="Mode">0</param>
-                                </action>
                             </actions>
                         </event-block>
                     </sub-events>

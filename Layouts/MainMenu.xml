@@ -4072,7 +4072,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>385</x>
-                        <y>176</y>
+                        <y>187</y>
                         <z>0</z>
                         <width>220</width>
                         <height>88</height>
@@ -4109,8 +4109,8 @@
                     <blend-mode>6</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>253</x>
-                        <y>375</y>
+                        <x>198</x>
+                        <y>374</y>
                         <z>0</z>
                         <width>242</width>
                         <height>88</height>
@@ -4246,8 +4246,8 @@
                     <blend-mode>6</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>169</x>
-                        <y>169</y>
+                        <x>165</x>
+                        <y>154</y>
                         <z>0</z>
                         <width>242</width>
                         <height>88</height>
@@ -4311,10 +4311,10 @@
                     <blend-mode>6</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>231</x>
+                        <x>291.5</x>
                         <y>352</y>
                         <z>0</z>
-                        <width>495</width>
+                        <width>374</width>
                         <height>33</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -4449,10 +4449,10 @@
                     <blend-mode>6</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>11</x>
+                        <x>77</x>
                         <y>429</y>
                         <z>0</z>
-                        <width>484</width>
+                        <width>418</width>
                         <height>66</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>

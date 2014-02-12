@@ -179,10 +179,10 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-group collapsed="1" description="" sid="8984980558897284" title="BallCollision">
+                <event-group description="" sid="8984980558897284" title="BallCollision">
                     <sub-events>
                         <comment>эффект ударения</comment>
-                        <event-block any="1" sid="144">
+                        <event-block any="1" collapsed="1" sid="144">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="145" type="ball">
                                     <param id="0" name="Object">block</param>
@@ -217,7 +217,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block collapsed="1" sid="1132">
+                        <event-block sid="1132">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="1133" type="ball">
                                     <param id="0" name="Object">block</param>
@@ -246,87 +246,69 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="FadeDestroy" id="1" name="Start fade" sid="4629042724650163" type="block" />
-                                        <action behavior="Sine" id="0" name="Set active" sid="5238034354640599" type="block">
+                                        <action id="5" name="Set frame" sid="6879307254921577" type="block">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>обычный шар - уменьшаем его анимацию</comment>
+                                <event-block sid="4796415499118176">
+                                    <conditions>
+                                        <condition id="2" inverted="1" name="Is playing" sid="1429183562003474" type="ball">
+                                            <param id="0" name="Animation">&quot;Super&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="4004400179661826" type="block">
+                                            <param id="0" name="Frame number">self.AnimationFrame-1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="4931466285547836">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="5017712672419446" type="block">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="11" name="Set collisions enabled" sid="3125651865087605" type="block">
+                                            <param id="0" name="Collisions">0</param>
+                                        </action>
+                                        <action behavior="Sine" id="0" name="Set active" sid="3169827021159742" type="block">
                                             <param id="0" name="State">1</param>
                                         </action>
-                                        <action id="0" name="Spawn another object" sid="997861520939516" type="block">
+                                        <action behavior="FadeDestroy" id="1" name="Start fade" sid="6554007284724948" type="block" />
+                                        <action id="0" name="Spawn another object" sid="745932120626614" type="block">
                                             <param id="0" name="Object">BlockEffect</param>
                                             <param id="1" name="Layer">Self.LayerNumber</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                     </actions>
-                                </event-block>
-                                <event-block collapsed="1" sid="4796415499118176">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="8451795911873677" type="System" />
-                                    </conditions>
-                                    <actions />
                                     <sub-events>
-                                        <comment>переключение анимации на ступень ниже</comment>
-                                        <event-block sid="8693423764886662">
+                                        <comment>создание бонуса</comment>
+                                        <event-block sid="9511748210187666">
                                             <conditions>
-                                                <condition id="3" name="Compare frame" sid="1396663260549936" type="block">
-                                                    <param id="0" name="Comparison">4</param>
-                                                    <param id="1" name="Number">0</param>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="9839627722013912" type="block">
+                                                    <param id="0" name="Instance variable">isBonus</param>
+                                                </condition>
+                                                <condition id="-8" name="Compare two values" sid="4892572913448171" type="System">
+                                                    <param id="0" name="First value">block.Count</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">1</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="5" name="Set frame" sid="4004400179661826" type="block">
-                                                    <param id="0" name="Frame number">self.AnimationFrame-1</param>
+                                                <action id="0" name="Spawn another object" sid="2292842086387514" type="block">
+                                                    <param id="0" name="Object">Bonus</param>
+                                                    <param id="1" name="Layer">self.LayerNumber</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action id="-11" name="Add to" sid="6461911795939328" type="block">
+                                                    <param id="0" name="Instance variable">kickCount</param>
+                                                    <param id="1" name="Value">1</param>
                                                 </action>
                                             </actions>
-                                        </event-block>
-                                        <event-block sid="6532185409418179">
-                                            <conditions>
-                                                <condition id="-22" name="Else" sid="2303791768147086" type="System" />
-                                            </conditions>
-                                            <actions>
-                                                <action id="11" name="Set collisions enabled" sid="3125651865087605" type="block">
-                                                    <param id="0" name="Collisions">0</param>
-                                                </action>
-                                                <action behavior="FadeDestroy" id="1" name="Start fade" sid="6554007284724948" type="block" />
-                                            </actions>
-                                            <sub-events>
-                                                <event-block sid="249207047608005">
-                                                    <conditions>
-                                                        <condition id="-8" name="Is boolean instance variable set" sid="9401855089600997" type="block">
-                                                            <param id="0" name="Instance variable">isBonus</param>
-                                                        </condition>
-                                                    </conditions>
-                                                    <actions>
-                                                        <action id="0" name="Spawn another object" sid="7159220845057228" type="block">
-                                                            <param id="0" name="Object">Bonus</param>
-                                                            <param id="1" name="Layer">self.LayerNumber</param>
-                                                            <param id="2" name="Image point">0</param>
-                                                        </action>
-                                                        <action id="-11" name="Add to" sid="4716216704514434" type="block">
-                                                            <param id="0" name="Instance variable">kickCount</param>
-                                                            <param id="1" name="Value">1</param>
-                                                        </action>
-                                                    </actions>
-                                                </event-block>
-                                                <comment>анимация &quot;взрыва&quot;</comment>
-                                                <event-block sid="7824793534904584">
-                                                    <conditions>
-                                                        <condition id="-22" name="Else" sid="7841113100159575" type="System" />
-                                                    </conditions>
-                                                    <actions>
-                                                        <action behavior="Sine" id="0" name="Set active" sid="6238200384173768" type="block">
-                                                            <param id="0" name="State">1</param>
-                                                        </action>
-                                                        <action id="0" name="Spawn another object" sid="2039186747542382" type="block">
-                                                            <param id="0" name="Object">BlockEffect</param>
-                                                            <param id="1" name="Layer">Self.LayerNumber</param>
-                                                            <param id="2" name="Image point">0</param>
-                                                        </action>
-                                                    </actions>
-                                                </event-block>
-                                            </sub-events>
-                                        </event-block>
-                                        <event-block sid="4988515409384021">
-                                            <conditions />
-                                            <actions />
                                         </event-block>
                                     </sub-events>
                                 </event-block>
@@ -534,7 +516,7 @@
                     </sub-events>
                 </event-group>
                 <comment>анимация полет шара</comment>
-                <event-block sid="2443536278567051">
+                <event-block collapsed="1" sid="2443536278567051">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="9363214989394181" type="System">
                             <param id="0" name="Interval (seconds)">0.1</param>
@@ -552,35 +534,29 @@
                                     <param id="0" name="Animation">&quot;Super&quot;</param>
                                 </condition>
                             </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="2968090720276469">
-                                    <conditions />
-                                    <actions>
-                                        <action id="0" name="Spawn another object" sid="9429464051798291" type="ball">
-                                            <param id="0" name="Object">BallFade</param>
-                                            <param id="1" name="Layer">Self.LayerNumber</param>
-                                            <param id="2" name="Image point">0</param>
-                                        </action>
-                                        <action id="-25" name="Move to bottom" sid="9643060425090279" type="BallFade" />
-                                        <action id="-28" name="Set effect parameter" sid="4865545637056848" type="BallFade">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">0</param>
-                                            <param id="2" name="Value">100</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="5380172782836626" type="BallFade">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">1</param>
-                                            <param id="2" name="Value">0</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="2405734909931772" type="BallFade">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">2</param>
-                                            <param id="2" name="Value">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="9429464051798291" type="ball">
+                                    <param id="0" name="Object">BallFade</param>
+                                    <param id="1" name="Layer">Self.LayerNumber</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-25" name="Move to bottom" sid="9643060425090279" type="BallFade" />
+                                <action id="-28" name="Set effect parameter" sid="4865545637056848" type="BallFade">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">100</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="5380172782836626" type="BallFade">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="2405734909931772" type="BallFade">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                            </actions>
                         </event-block>
                         <event-block sid="2305016678162554">
                             <conditions>
@@ -589,35 +565,29 @@
                                     <param id="0" name="Animation">&quot;Normal&quot;</param>
                                 </condition>
                             </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="6998821054355894">
-                                    <conditions />
-                                    <actions>
-                                        <action id="0" name="Spawn another object" sid="8888501065523473" type="ball">
-                                            <param id="0" name="Object">BallFade</param>
-                                            <param id="1" name="Layer">Self.LayerNumber</param>
-                                            <param id="2" name="Image point">0</param>
-                                        </action>
-                                        <action id="-25" name="Move to bottom" sid="7391259294977733" type="BallFade" />
-                                        <action id="-28" name="Set effect parameter" sid="5090100295295279" type="BallFade">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">0</param>
-                                            <param id="2" name="Value">ball.color0</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="4028682936763983" type="BallFade">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">1</param>
-                                            <param id="2" name="Value">ball.color1</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="7768619379069618" type="BallFade">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">2</param>
-                                            <param id="2" name="Value">ball.color2</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="8888501065523473" type="ball">
+                                    <param id="0" name="Object">BallFade</param>
+                                    <param id="1" name="Layer">Self.LayerNumber</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-25" name="Move to bottom" sid="7391259294977733" type="BallFade" />
+                                <action id="-28" name="Set effect parameter" sid="5090100295295279" type="BallFade">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">ball.color0</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="4028682936763983" type="BallFade">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">ball.color1</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="7768619379069618" type="BallFade">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">ball.color2</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -664,13 +634,17 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="4807352996371672">
-            <conditions>
-                <condition id="-3" name="On end of layout" sid="2588291730482171" type="System" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="7583538887417817" type="ball" />
-            </actions>
-        </event-block>
+        <event-group collapsed="1" description="" sid="6395094091146767" title="BallExit">
+            <sub-events>
+                <event-block sid="4807352996371672">
+                    <conditions>
+                        <condition id="-3" name="On end of layout" sid="2588291730482171" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7583538887417817" type="ball" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

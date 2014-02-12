@@ -10,11 +10,30 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="4890744922802224" type="System" />
                     </conditions>
-                    <actions>
-                        <action behavior="Rotate" id="0" name="Set speed" sid="318346427145636" type="Orbita">
-                            <param id="0" name="Speed">MAXROTATESPEED</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="6336297073507778">
+                            <conditions />
+                            <actions>
+                                <action behavior="Rotate" id="0" name="Set speed" sid="318346427145636" type="Orbita">
+                                    <param id="0" name="Speed">MAXROTATESPEED</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9236129635644015">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="2660397232427853" type="System">
+                                    <param id="0" name="Object">Links</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="7242936954712717" type="Links">
+                                    <param id="0" name="Pin to">Orbita</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="8926118407951934">
                     <conditions>
@@ -30,7 +49,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" inactive="1" sid="7222785826118328" title="Links">
+        <event-group collapsed="1" description="" inactive="1" sid="7222785826118328" title="Links">
             <sub-events>
                 <event-block sid="3818854639190762">
                     <conditions>

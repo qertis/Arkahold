@@ -216,3 +216,4 @@ pip-log.txt
 *.backup1
 *.backup2
 Arkahold.capx.backup2
+*.autosave

@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Player</name>
     <events>
-        <event-group description="" sid="9672368698934245" title="PlayerInit">
+        <event-group collapsed="1" description="" sid="9672368698934245" title="PlayerInit">
             <sub-events>
                 <variable constant="1" name="LEVELFLOORPADDING" sid="9953545356360056" static="1" type="number">30</variable>
                 <event-block sid="970424618041259">
@@ -135,9 +135,11 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="игрок (ракетка)" inactive="1" sid="6490523143365113" title="Player">
+        <event-group collapsed="1" description="игрок (ракетка)" inactive="1" sid="6490523143365113" title="Player">
             <sub-events>
-                <event-block sid="2279749819265155">
+                <variable constant="1" name="defaultspeed" sid="6762276654270074" static="1" type="number">200</variable>
+                <variable constant="1" name="PLAYER_ANIM_MOVE" sid="9220722373669635" static="0" type="number">2</variable>
+                <event-block collapsed="1" sid="2279749819265155">
                     <conditions>
                         <condition id="0" name="On function" sid="6450907883317004" type="Function">
                             <param id="0" name="Name">&quot;PlayerKickAnim&quot;</param>
@@ -205,14 +207,16 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <variable constant="1" name="PLAYER_ANIM_MOVE" sid="9220722373669635" static="0" type="number">2</variable>
-                <event-block sid="1065638413253438">
+                <event-block sid="5591007800202958">
                     <conditions>
-                        <condition id="6" name="On frame changed" sid="5387023103214502" type="player" />
+                        <condition id="-18" name="On created" sid="3446564358136943" type="player" />
                     </conditions>
                     <actions>
-                        <action id="-5" name="Set width" sid="5848573904365115" type="PlayerMask">
-                            <param id="0" name="Width">player.Width - 10</param>
+                        <action behavior="8Direction" id="3" name="Set speed" sid="4783965159262439" type="player">
+                            <param id="0" name="Speed">DEFAULTSPEED</param>
+                        </action>
+                        <action behavior="8Direction" id="4" name="Set max speed" sid="4501374893174851" type="player">
+                            <param id="0" name="Max Speed">DEFAULTSPEED</param>
                         </action>
                     </actions>
                 </event-block>
@@ -237,8 +241,18 @@
                         <action behavior="Fade" id="0" name="Restart fade" sid="4850097565547896" type="PlayerMask" />
                     </actions>
                 </event-block>
+                <event-block sid="1065638413253438">
+                    <conditions>
+                        <condition id="6" name="On frame changed" sid="5387023103214502" type="player" />
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="5848573904365115" type="PlayerMask">
+                            <param id="0" name="Width">player.Width - 10</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <comment>ударение об ракетку</comment>
-                <event-block sid="199">
+                <event-block collapsed="1" sid="199">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="200" type="player">
                             <param id="0" name="Object">ball</param>
@@ -340,23 +354,39 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="1242982868980384">
+                    <conditions>
+                        <condition id="0" name="On function" sid="3016579119772342" type="Function">
+                            <param id="0" name="Name">&quot;GetPlayerDefaultSpeed&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="2253743413720896" type="Function">
+                            <param id="0" name="Value">DEFAULTSPEED</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="362794866180247">
-            <conditions>
-                <condition id="-3" name="On end of layout" sid="7469819837883948" type="System" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="3321360784045825" type="player" />
-                <action id="-12" name="Set group active" sid="5449466279148548" type="System">
-                    <param id="0" name="Group name">&quot;Player&quot;</param>
-                    <param id="1" name="State">0</param>
-                </action>
-                <action id="-12" name="Set group active" sid="1501810314857205" type="System">
-                    <param id="0" name="Group name">&quot;PlayerControls&quot;</param>
-                    <param id="1" name="State">0</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="2015709655880498" title="PlayerExit">
+            <sub-events>
+                <event-block sid="362794866180247">
+                    <conditions>
+                        <condition id="-3" name="On end of layout" sid="7469819837883948" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="3321360784045825" type="player" />
+                        <action id="-12" name="Set group active" sid="5449466279148548" type="System">
+                            <param id="0" name="Group name">&quot;Player&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="1501810314857205" type="System">
+                            <param id="0" name="Group name">&quot;PlayerControls&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

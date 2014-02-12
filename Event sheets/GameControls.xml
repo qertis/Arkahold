@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GameControls</name>
+    <events>
+        <event-group collapsed="1" description="Управление мышью" inactive="1" sid="9209006213200272" title="MouseGame">
+            <sub-events>
+                <event-block sid="1477958093469799">
+                    <conditions>
+                        <condition id="0" name="On click" sid="1049566278994807" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="1475444620558732" type="Function">
+                            <param id="0" name="Name">&quot;StartBall&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1945905987194557">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="6569658171768379" type="System">
+                            <param id="0" name="First value">Cursor.X</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">player.ImagePointX(&quot;Left&quot;)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="9679212909414684" type="Function">
+                            <param id="0" name="Name">&quot;PlayerLeft&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1210354388200274">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="4450530037006605" type="System">
+                            <param id="0" name="First value">Cursor.X</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">player.ImagePointX(&quot;Right&quot;)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="9602029551898051" type="Function">
+                            <param id="0" name="Name">&quot;PlayerRight&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="Управление клавиатурой" inactive="1" sid="6104087573860702" title="KeyboardGame">
+            <sub-events>
+                <event-block sid="115">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="116" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="6191857376046633" type="Function">
+                            <param id="0" name="Name">&quot;StartBall&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="127">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="128" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="6914118719891495" type="Function">
+                            <param id="0" name="Name">&quot;PlayerLeft&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="132">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="133" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="2803193332319204" type="Function">
+                            <param id="0" name="Name">&quot;PlayerRight&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="Управление геймпадом (xbox 360)" inactive="1" sid="6184650560304404" title="GamePadGame">
+            <sub-events>
+                <comment>LEFT</comment>
+                <event-block any="1" sid="9826463481818341">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="8744373380320261" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="7268727538968567" type="Function">
+                            <param id="0" name="Name">&quot;PlayerLeft&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7967311766558948">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="5817961773306951" type="System" />
+                        <condition id="5" name="Compare axis" sid="4098715934576989" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="7140571530286876" type="Function">
+                            <param id="0" name="Name">&quot;PlayerLeft&quot;</param>
+                            <param id="1" name="Parameter {n}">floor(abs(Gamepad.Axis(0, 0)))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>RIGHT</comment>
+                <event-block any="1" sid="7724559606883618">
+                    <conditions>
+                        <condition id="3" name="Is button down" sid="8184183192709966" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="912255292096071" type="Function">
+                            <param id="0" name="Name">&quot;PlayerRight&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1690680009560929">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="6474657037488204" type="System" />
+                        <condition id="5" name="Compare axis" sid="2619633573235225" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="9881517160681719" type="Function">
+                            <param id="0" name="Name">&quot;PlayerRight&quot;</param>
+                            <param id="1" name="Parameter {n}">floor(abs(Gamepad.Axis(0, 0)))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="4283180690238436">
+                    <conditions>
+                        <condition id="2" name="On gamepad disconnected" sid="6805746231819302" type="Gamepad" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Alert" sid="5865587272500141" type="Browser">
+                            <param id="0" name="Message">&quot;GamePad disconnected! Please Connect it&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>xxx</comment>
+                        <event-block disabled="1" sid="3786658297441621">
+                            <conditions>
+                                <condition id="-23" name="While" sid="9944319377539583" type="System" />
+                                <condition id="4" inverted="1" name="Has gamepads" sid="4006585020541688" type="Gamepad" />
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Start Ball</comment>
+                <event-block any="1" sid="9699536255108712">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="8718390933085603" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="7235988639376023" type="Function">
+                            <param id="0" name="Name">&quot;StartBall&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Pause</comment>
+                <event-block sid="3677622512914178">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="5577403704781735" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="4506019190401715" type="Function">
+                            <param id="0" name="Name">&quot;Pause&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="Управление ракеткой" inactive="1" sid="1884066006208781" title="PlayerControls">
+            <sub-events>
+                <event-block sid="7750380216641868">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5152784953316651" type="Keyboard">
+                            <param id="0" name="Key">27 (Esc)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="6103539553648177" type="Function">
+                            <param id="0" name="Name">&quot;Pause&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <variable comment="Умножитель (вида val * this)" constant="1" name="MaxSpeedIndex" sid="384242051234757" static="0" type="number">2</variable>
+                <comment>запуск шара</comment>
+                <event-block collapsed="1" sid="2265940895623925">
+                    <conditions>
+                        <condition id="0" name="On function" sid="6461685992590854" type="Function">
+                            <param id="0" name="Name">&quot;StartBall&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="4208049697937348" type="System">
+                            <param id="0" name="First value">timescale</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block collapsed="1" sid="4412282548227843">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="3934591253120106" type="player">
+                                    <param id="0" name="Instance variable">ballPrilipnut</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="3929641468314464" type="player">
+                                    <param id="0" name="Instance variable">ballPrilipnut</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="9803978927012424" type="player">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <comment>устанавливаем мяч центрируя его к середине экрана</comment>
+                                <event-block sid="7529604563980394">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="4316400674727623" type="System">
+                                            <param id="0" name="Object">ball</param>
+                                        </condition>
+                                        <condition behavior="Pin" id="0" name="Is pinned" sid="6064734512335693" type="ball" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="5059816013494387" type="ball">
+                                            <param id="0" name="Angle">int(angle(Function.Call(&quot;cx&quot;), &#x0D;&#x0A;  Function.Call(&quot;cy&quot;), &#x0D;&#x0A;  player.X, &#x0D;&#x0A;  player.Y) - 180)</param>
+                                        </action>
+                                        <action behavior="Pin" id="1" name="Unpin" sid="1377476437005697" type="ball" />
+                                        <action id="-13" name="Set boolean" sid="8990732322610298" type="ball">
+                                            <param id="0" name="Instance variable">isFly</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>шаг влево</comment>
+                <event-block collapsed="1" sid="4805098805118544">
+                    <conditions>
+                        <condition id="0" name="On function" sid="2738331251329781" type="Function">
+                            <param id="0" name="Name">&quot;PlayerLeft&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="7340922147175178">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="5644899856599765" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="6665131819939832" type="player">
+                                    <param id="0" name="Max Speed">Function.Param(0) * MAXSPEEDINDEX</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7916826689611596">
+                            <conditions>
+                                <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="5342087533414959" type="player" />
+                                <condition id="-8" name="Is boolean instance variable set" sid="509383005034009" type="player">
+                                    <param id="0" name="Instance variable">IsMove</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="6583793545217801" type="player">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>шаг вправо</comment>
+                <event-block collapsed="1" sid="4124734915202042">
+                    <conditions>
+                        <condition id="0" name="On function" sid="3972968672452599" type="Function">
+                            <param id="0" name="Name">&quot;PlayerRight&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="2729960113520113">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="5311351449756648" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="8467719120589784" type="player">
+                                    <param id="0" name="Max Speed">Function.Param(0) * MAXSPEEDINDEX</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6839030340425194">
+                            <conditions>
+                                <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="9803192818697962" type="player" />
+                                <condition id="-8" name="Is boolean instance variable set" sid="5611078515598709" type="player">
+                                    <param id="0" name="Instance variable">IsMove</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="9097841620800793" type="player">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>пауза игры</comment>
+                <event-block collapsed="1" sid="7645953257969669">
+                    <conditions>
+                        <condition id="0" name="On function" sid="950043867539732" type="Function">
+                            <param id="0" name="Name">&quot;Pause&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="8287624370859586">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="4069849433444393" type="System">
+                                    <param id="0" name="First value">timescale</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0.0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="9195857716676827" type="Function">
+                                    <param id="0" name="Name">&quot;LoadingFade&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-13" name="Set time scale" sid="4752710793203099" type="System">
+                                    <param id="0" name="Time scale">1.0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="9106452558727809" type="PauseBackground" />
+                                <action id="-15" name="Set visible" sid="2198352697393736" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="22" name="Set paused" sid="6267323279843504" type="Audio">
+                                    <param id="0" name="Tag">&quot;&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6107484431318877">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="8718480851176375" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set time scale" sid="4361707192091769" type="System">
+                                    <param id="0" name="Time scale">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="8681367383481396" type="PauseBackground" />
+                                <action id="-7" name="Set size" sid="5081028369989674" type="PauseBackground">
+                                    <param id="0" name="Width">LayoutWidth</param>
+                                    <param id="1" name="Height">LayoutHeight</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="1029493819679927" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="22" name="Set paused" sid="2610321996475368" type="Audio">
+                                    <param id="0" name="Tag">&quot;&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

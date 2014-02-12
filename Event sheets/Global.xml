@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Global</name>
     <events>
+        <variable comment="количество бонусов на уровень" constant="1" name="BONUSCOUNT" sid="5387046176008031" static="0" type="number">10</variable>
         <variable comment="последний уровень. тупой хардкод" constant="1" name="FINALLEVEL" sid="106627287506924" static="0" type="text">20</variable>
         <event-group collapsed="1" description="" sid="2745034965042407" title="Coordinates">
             <sub-events>
@@ -222,6 +223,7 @@
             </sub-events>
         </event-group>
         <comment>приостанавливаем объекты</comment>
+        <comment>TODO перенести</comment>
         <event-block collapsed="1" sid="8851810681036153">
             <conditions>
                 <condition id="0" name="On function" sid="1299829370292335" type="Function">
@@ -316,7 +318,7 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="5248439944778018">
+        <event-block disabled="1" sid="5248439944778018">
             <conditions>
                 <condition id="7" inverted="1" name="Page is visible" sid="7270868624371562" type="Browser" />
                 <condition id="-4" name="Trigger once while true" sid="8149852857918856" type="System" />
@@ -328,7 +330,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="2545709298168631">
+        <event-block disabled="1" sid="2545709298168631">
             <conditions>
                 <condition id="7" name="Page is visible" sid="2852065574762701" type="Browser" />
                 <condition id="-4" name="Trigger once while true" sid="5664828921408978" type="System" />
@@ -338,10 +340,6 @@
                     <param id="0" name="Time scale">1</param>
                 </action>
             </actions>
-        </event-block>
-        <event-block sid="5993202970609223">
-            <conditions />
-            <actions />
         </event-block>
     </events>
 </c2eventsheet>

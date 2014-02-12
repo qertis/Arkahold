@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>TextInfo</name>
     <events>
-        <event-group description="" sid="6064134714861906" title="TextInfoInit">
+        <event-group collapsed="1" description="" sid="6064134714861906" title="TextInfoInit">
             <sub-events>
                 <event-block sid="5226319090108434">
                     <conditions>
@@ -29,19 +29,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <comment>убрать в другое место! (в пределах GAME)</comment>
-        <event-block sid="1170427129808092">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="849202663042793" type="Keyboard">
-                    <param id="0" name="Key">27 (Esc)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Call function" sid="2777521232302908" type="Function">
-                    <param id="0" name="Name">&quot;Pause&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>

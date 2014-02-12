@@ -4,7 +4,7 @@
     <name>Info</name>
     <events>
         <include>MENU</include>
-        <event-group description="" sid="8407901303174222" title="InfoInit">
+        <event-group collapsed="1" description="" sid="8407901303174222" title="InfoInit">
             <sub-events>
                 <event-block sid="5687808467504027">
                     <conditions>
@@ -62,7 +62,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="8533244393548711" title="Exit">
+        <event-group description="" sid="8533244393548711" title="InfoExit">
             <sub-events>
                 <event-block any="1" sid="9031373193203337">
                     <conditions>
