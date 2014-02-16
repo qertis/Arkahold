@@ -5,6 +5,17 @@
     <events>
         <event-group description="" sid="3464561530984937" title="TEST">
             <sub-events>
+                <event-block sid="5879681738730643">
+                    <conditions>
+                        <condition id="-3" name="On end of layout" sid="8034451406665322" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="7628743830244244" type="Function">
+                            <param id="0" name="Name">&quot;UpdateLifes&quot;</param>
+                            <param id="1" name="Parameter {n}">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <comment>TEST ONLY</comment>
                 <event-block sid="1219709148354795">
                     <conditions>
@@ -36,8 +47,8 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" sid="2746347977059093" type="System">
-                            <param id="0" name="Layout">18</param>
+                        <action id="-25" name="Go to layout (by name)" sid="2746347977059093" type="System">
+                            <param id="0" name="Layout">str(int(LayoutName) + 1)</param>
                         </action>
                     </actions>
                 </event-block>

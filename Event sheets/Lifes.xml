@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Lifes</name>
     <events>
-        <event-group collapsed="1" description="" sid="5885296841462732" title="Lifes">
+        <event-group description="" sid="5885296841462732" title="Lifes">
             <sub-events>
                 <variable comment="текущие Жизни" constant="0" name="CurrentLifes" sid="1013" static="1" type="number">3</variable>
                 <variable comment="Число жизней по-умолчанию" constant="1" name="DefaultLifes" sid="1121414283069601" static="1" type="number">3</variable>
@@ -42,13 +42,7 @@
                     <sub-events>
                         <variable constant="0" name="tempLifes" sid="9139419810812363" static="0" type="number">0</variable>
                         <event-block sid="7205827023045099">
-                            <conditions>
-                                <condition disabled="1" id="-8" name="Compare two values" sid="9394335751613306" type="System">
-                                    <param id="0" name="First value">Function.ParamCount</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">0</param>
-                                </condition>
-                            </conditions>
+                            <conditions />
                             <actions>
                                 <action id="-10" name="Add to" sid="2168392005394273" type="System">
                                     <param id="0" name="Variable">CurrentLifes</param>
@@ -57,10 +51,6 @@
                                 <action id="0" name="Call function" sid="1392904131965006" type="Function">
                                     <param id="0" name="Name">&quot;TooltipText&quot;</param>
                                     <param id="1" name="Parameter {n}">Function.Call(&quot;Life!&quot;)</param>
-                                </action>
-                                <action disabled="1" id="0" name="Call function" sid="4135268187927769" type="Function">
-                                    <param id="0" name="Name">&quot;TooltipText&quot;</param>
-                                    <param id="1" name="Parameter {n}">Function.Call(&quot;GetPoints&quot;){###}floor(block.X){###}floor(block.Y)</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -75,9 +65,27 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="6734430491427807">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="7938773290299069" type="System">
+                                    <param id="0" name="First value">tempLifes</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="4346819357235342" type="Function">
+                                    <param id="0" name="Name">&quot;GameOver&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <comment>обновляем текст</comment>
                         <event-block sid="6175992068547085">
-                            <conditions />
+                            <conditions>
+                                <condition id="-22" name="Else" sid="6283936182567182" type="System" />
+                                <condition id="-3" name="Is on-screen" sid="6633671262370121" type="Text" />
+                            </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="4920545834831375" type="Text">
                                     <param id="0" name="Text">&quot;Left &quot; &amp; tempLifes &amp; &quot; lifes&quot; &amp; newline</param>
@@ -169,21 +177,6 @@
                                     </actions>
                                 </event-block>
                             </sub-events>
-                        </event-block>
-                        <event-block sid="6734430491427807">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="7938773290299069" type="System">
-                                    <param id="0" name="First value">tempLifes</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Call function" sid="4346819357235342" type="Function">
-                                    <param id="0" name="Name">&quot;GameOver&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>

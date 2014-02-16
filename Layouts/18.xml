@@ -5315,6 +5315,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5352,6 +5353,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5389,6 +5391,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5426,6 +5429,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5463,6 +5467,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5500,6 +5505,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5537,6 +5543,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5574,6 +5581,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5611,6 +5619,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5648,6 +5657,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5685,6 +5695,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5722,6 +5733,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5759,6 +5771,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5796,6 +5809,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5833,6 +5847,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5870,6 +5885,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5907,6 +5923,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5944,6 +5961,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -5981,6 +5999,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

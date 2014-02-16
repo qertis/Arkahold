@@ -17,47 +17,48 @@
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
-        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
-        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="XML" version="1">XML</plugin>
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
-        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
-        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
-        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
-        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
     </used-behaviors>
     <used-effects>
+        <effect author="Scirra" id="gamma">Gamma</effect>
         <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
-        <effect author="Scirra" id="grayscale">Grayscale</effect>
+        <effect author="Scirra" id="difference">Difference</effect>
         <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
         <effect author="Scirra" id="hardlight">Hard Light</effect>
-        <effect author="Scirra" id="difference">Difference</effect>
-        <effect author="Scirra" id="gamma">Gamma</effect>
-        <effect author="Scirra" id="noisemask">Noise Mask</effect>
+        <effect author="Scirra" id="grayscale">Grayscale</effect>
         <effect author="Scirra" id="hueblend">Hue</effect>
-        <effect author="Scirra" id="radialblur">Radial blur</effect>
-        <effect author="Scirra" id="noise">Noise</effect>
-        <effect author="Scirra" id="hsladjustmask">Adjust HSL Mask</effect>
         <effect author="Brad Larson" id="highlightshadow">Highlight shadow</effect>
         <effect author="Scirra" id="overlay">Overlay</effect>
+        <effect author="Scirra" id="noisemask">Noise Mask</effect>
+        <effect author="Scirra" id="hsladjustmask">Adjust HSL Mask</effect>
+        <effect author="Scirra" id="radialblur">Radial blur</effect>
+        <effect author="Scirra" id="noise">Noise</effect>
+        <effect author="Scirra" id="screen">Screen</effect>
+        <effect author="Scirra" id="tintmask">Tint Mask</effect>
         <effect author="Brad Larson" id="vignette">Vignette</effect>
-        <effect author="Scirra" id="setcolor">Set color</effect>
+        <effect author="Brad Larson" id="sketch">Sketch</effect>
+        <effect author="Scirra" id="warpradial">Warp Radial</effect>
         <effect author="Brad Larson" id="sharpen">Sharpen</effect>
         <effect author="Brad Larson" id="toon">Toon</effect>
-        <effect author="Brad Larson" id="stretch">Stretch</effect>
-        <effect author="Scirra" id="warpradial">Warp Radial</effect>
-        <effect author="Brad Larson" id="sketch">Sketch</effect>
-        <effect author="Scirra" id="tintmask">Tint Mask</effect>
+        <effect author="Scirra" id="setcolor">Set color</effect>
     </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -66,9 +67,9 @@
         <width>500</width>
         <height>500</height>
     </window-size>
-    <pixel-rounding>0</pixel-rounding>
+    <pixel-rounding>1</pixel-rounding>
     <first-layout>PreLoading</first-layout>
-    <use-loader-layout>0</use-loader-layout>
+    <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">No</prop>
         <prop name="Enable WebGL">On</prop>
@@ -76,7 +77,7 @@
         <prop name="Fullscreen scaling">High quality</prop>
         <prop name="Hide address bar">Yes</prop>
         <prop name="Loader style">Progress bar &amp; logo</prop>
-        <prop name="Orientations">Landscape</prop>
+        <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">Yes</prop>
         <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Linear</prop>
@@ -213,7 +214,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Particles">
+        <object-folder expanded="1" name="Particles">
             <object-type name="CollisionEffect" sid="38">
                 <plugin id="Particles" />
                 <texture />
@@ -304,7 +305,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Player">
+        <object-folder expanded="1" name="Player">
             <object-type name="player" sid="9">
                 <plugin id="Sprite" />
                 <instance-variables>
@@ -364,18 +365,6 @@
                         <frame duration="1" hotspotX="0.507692" hotspotY="0.538462" />
                     </animation>
                 </animation-folder>
-            </object-type>
-            <object-type name="PlayerEffect" sid="6853785623826151">
-                <plugin id="Particles" />
-                <effects>
-                    <effect-type name="Stretch">
-                        <effect id="stretch" />
-                    </effect-type>
-                    <effect-type name="Overlay">
-                        <effect id="overlay" />
-                    </effect-type>
-                </effects>
-                <texture />
             </object-type>
         </object-folder>
         <object-folder expanded="0" name="Enemy">
@@ -472,7 +461,7 @@
                 <texture />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Mask">
+        <object-folder expanded="1" name="Mask">
             <object-type name="FadeMask" sid="3808008819163664">
                 <plugin id="Sprite" />
                 <behaviors>
@@ -533,7 +522,7 @@
                 <texture />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Other">
+        <object-folder expanded="1" name="Other">
             <object-type global="1" name="Camera" sid="50">
                 <plugin id="Sprite" />
                 <behaviors>
@@ -749,6 +738,9 @@
                     <effect-type name="HighlightShadow">
                         <effect id="highlightshadow" />
                     </effect-type>
+                    <effect-type name="Screen">
+                        <effect id="screen" />
+                    </effect-type>
                 </effects>
                 <animation-folder expanded="1">
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8" speed="0">
@@ -922,6 +914,59 @@
         <object-type global="1" name="XMLkeys" sid="8841479364534234">
             <plugin id="XML" />
         </object-type>
+        <object-type name="BackgroundEffect" sid="7897448716365373">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Timer" sid="2995817345304879">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="Overlay">
+                    <effect id="overlay" />
+                </effect-type>
+            </effects>
+            <animation-folder expanded="1">
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2047857142478356" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.148936" y="0.148936" />
+                            <point x="0.496454" y="0.0070922" />
+                            <point x="0.851064" y="0.148936" />
+                            <point x="0.992908" y="0.496454" />
+                            <point x="0.851064" y="0.851064" />
+                            <point x="0.496454" y="0.992908" />
+                            <point x="0.148936" y="0.851064" />
+                            <point x="0.0070922" y="0.496454" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.143885" y="0.143885" />
+                            <point x="0.496403" y="0" />
+                            <point x="0.856115" y="0.143885" />
+                            <point x="1" y="0.496403" />
+                            <point x="0.856115" y="0.856115" />
+                            <point x="0.496403" y="1" />
+                            <point x="0.143885" y="0.856115" />
+                            <point x="0" y="0.496403" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.143885" y="0.143885" />
+                            <point x="0.496403" y="0" />
+                            <point x="0.856115" y="0.143885" />
+                            <point x="1" y="0.496403" />
+                            <point x="0.856115" y="0.856115" />
+                            <point x="0.496403" y="1" />
+                            <point x="0.143885" y="0.856115" />
+                            <point x="0" y="0.496403" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -977,7 +1022,7 @@
             <event-sheet>TextInfo.xml</event-sheet>
             <event-sheet>GameControls.xml</event-sheet>
         </event-folder>
-        <event-folder expanded="1" name="Animation">
+        <event-folder expanded="1" name="Effects">
             <event-sheet>Cosmos.xml</event-sheet>
             <event-sheet>Loading.xml</event-sheet>
             <event-sheet>GameEffects.xml</event-sheet>

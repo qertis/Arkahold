@@ -3636,6 +3636,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -3673,6 +3674,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -3682,43 +3684,6 @@
                         <z>0</z>
                         <width>540</width>
                         <height>12</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.53125</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="wall" uid="1199">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="HighlightShadow">
-                            <parameters>
-                                <highlight-factor>1</highlight-factor>
-                                <shadow-factor>0</shadow-factor>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>6</x>
-                        <y>264</y>
-                        <z>0</z>
-                        <width>12</width>
-                        <height>552</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.53125</hotspotY>
@@ -3747,6 +3712,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -3784,15 +3750,16 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>360</x>
-                        <y>132</y>
+                        <x>0</x>
+                        <y>273.375</y>
                         <z>0</z>
                         <width>36</width>
-                        <height>36</height>
+                        <height>528</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.53125</hotspotY>
@@ -3821,6 +3788,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -3858,12 +3826,51 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>396</x>
                         <y>132</y>
+                        <z>0</z>
+                        <width>36</width>
+                        <height>36</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.53125</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="wall" uid="47">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="HighlightShadow">
+                            <parameters>
+                                <highlight-factor>1</highlight-factor>
+                                <shadow-factor>0</shadow-factor>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Screen" />
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>396</x>
+                        <y>60</y>
                         <z>0</z>
                         <width>36</width>
                         <height>36</height>

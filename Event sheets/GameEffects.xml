@@ -114,5 +114,149 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group collapsed="1" description="" sid="2800154197089732" title="BackgroundEffect">
+            <sub-events>
+                <event-block collapsed="1" sid="2597910738546338">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="206236475316514" type="BackgroundEffect">
+                            <param id="0" name="Tag">&quot;FadeOut&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="1782917308609997" type="BackgroundEffect">
+                            <param id="0" name="Width">self.Width + 1</param>
+                            <param id="1" name="Height">self.Height + 1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="6619445591873339" type="BackgroundEffect">
+                            <param id="0" name="Opacity">Self.Opacity - 1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="7885507210937498">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="3491413342735337" type="BackgroundEffect">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Opacity">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Timer" id="1" name="Stop timer" sid="3750169521507569" type="BackgroundEffect">
+                                    <param id="0" name="Tag">&quot;FadeOut&quot;</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="175200507908154" type="BackgroundEffect" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="2887172812561958">
+                    <conditions>
+                        <condition id="0" name="On function" sid="7156117833181087" type="Function">
+                            <param id="0" name="Name">&quot;SpawnBackgroundEffect&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <variable constant="0" name="bgEffCount" sid="4462191681080692" static="0" type="number">1</variable>
+                        <event-block sid="1935266942212697">
+                            <conditions />
+                            <actions>
+                                <action id="-9" name="Set value" sid="9702379843022461" type="System">
+                                    <param id="0" name="Variable">bgEffCount</param>
+                                    <param id="1" name="Value">BackgroundEffect.Count</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5472254849098285">
+                            <conditions />
+                            <actions>
+                                <action id="-3" name="Create object" sid="2009321006204694" type="System">
+                                    <param id="0" name="Object to create">BackgroundEffect</param>
+                                    <param id="1" name="Layer">&quot;back&quot;</param>
+                                    <param id="2" name="X">Function.Param(0)</param>
+                                    <param id="3" name="Y">Function.Param(1)</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="3745123618159499" type="BackgroundEffect">
+                                    <param id="0" name="Width">bgEffCount</param>
+                                    <param id="1" name="Height">bgEffCount</param>
+                                </action>
+                                <action id="-25" name="Move to bottom" sid="9649459840543989" type="BackgroundEffect" />
+                                <action behavior="Timer" id="0" name="Start timer" sid="1918190508762687" type="BackgroundEffect">
+                                    <param id="0" name="Duration">0.01</param>
+                                    <param id="1" name="Type">1</param>
+                                    <param id="2" name="Tag">&quot;FadeOut&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="7550001064385214" title="LevelFloor">
+            <sub-events>
+                <variable constant="1" name="LVLFloorHeight" sid="3076953775876643" static="0" type="number">30</variable>
+                <event-block sid="4513110750661687">
+                    <conditions>
+                        <condition id="0" name="On function" sid="2889350819382472" type="Function">
+                            <param id="0" name="Name">&quot;SpawnLevelFloor&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>создание прозрачного фона снизу</comment>
+                        <event-block sid="3945753856941499">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="5245551330472765" type="System">
+                                    <param id="0" name="First value">Function.Param(0)</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">LayoutHeight / 2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="1573187266585642" type="System">
+                                    <param id="0" name="Object to create">LevelFloor</param>
+                                    <param id="1" name="Layer">&quot;game&quot;</param>
+                                    <param id="2" name="X">0</param>
+                                    <param id="3" name="Y">ViewportBottom(&quot;blocks&quot;) - LVLFLOORHEIGHT</param>
+                                </action>
+                                <action id="-7" name="Set size" sid="8700313577804217" type="LevelFloor">
+                                    <param id="0" name="Width">LayoutWidth</param>
+                                    <param id="1" name="Height">LVLFLOORHEIGHT</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>создание прозрачного фона вверху</comment>
+                        <event-block sid="659041108011113">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="617263803353467" type="System">
+                                    <param id="0" name="First value">Function.Param(0)</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">LayoutHeight / 2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="7558769816785093" type="System">
+                                    <param id="0" name="Object to create">LevelFloor</param>
+                                    <param id="1" name="Layer">&quot;blocks&quot;</param>
+                                    <param id="2" name="X">0</param>
+                                    <param id="3" name="Y">ViewportTop(&quot;blocks&quot;)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="8061942674472468">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="8047435608687482" type="LevelFloor" />
+                    </conditions>
+                    <actions>
+                        <action id="-24" name="Move to top" sid="713465137703189" type="LevelFloor" />
+                        <action id="-7" name="Set size" sid="3418866189068266" type="LevelFloor">
+                            <param id="0" name="Width">LayoutWidth</param>
+                            <param id="1" name="Height">LVLFLOORHEIGHT</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

@@ -52,10 +52,10 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block collapsed="1" sid="526275716778922">
+                <event-block sid="526275716778922">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="3216071853390063" type="player">
-                            <param id="0" name="Object">Bonus</param>
+                        <condition id="0" name="On collision with another object" sid="3216071853390063" type="Bonus">
+                            <param id="0" name="Object">player</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -78,6 +78,15 @@
                                 <action id="0" name="Call function" sid="2582425391536653" type="Function">
                                     <param id="0" name="Name">&quot;Bonus&quot;</param>
                                     <param id="1" name="Parameter {n}">Bonus.AnimationFrame</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8878380238275267">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Call function" sid="7815691078235093" type="Function">
+                                    <param id="0" name="Name">&quot;SpawnBackgroundEffect&quot;</param>
+                                    <param id="1" name="Parameter {n}">player.X{###}player.Y</param>
                                 </action>
                             </actions>
                         </event-block>

@@ -3,9 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Enemy</name>
     <events>
-        <event-group collapsed="1" description="" sid="49407421008908" title="EnemyInit">
+        <event-group description="" sid="49407421008908" title="EnemyInit">
             <sub-events>
-                <event-block collapsed="1" sid="7077926358256385">
+                <event-block sid="7077926358256385">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="9599229592788344" type="System" />
                     </conditions>
@@ -35,11 +35,15 @@
                             <param id="1" name="Layer">self.LayerNumber</param>
                             <param id="2" name="Image point">0</param>
                         </action>
+                        <action id="0" name="Call function" sid="8167055995007972" type="Function">
+                            <param id="0" name="Name">&quot;SpawnLevelFloor&quot;</param>
+                            <param id="1" name="Parameter {n}">EnemyBorn.Y</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" inactive="1" sid="6346791688640696" title="Enemy">
+        <event-group description="" inactive="1" sid="6346791688640696" title="Enemy">
             <sub-events>
                 <event-block sid="1618953955553685">
                     <conditions>
@@ -49,6 +53,10 @@
                     <sub-events>
                         <event-block sid="8018462549546786">
                             <conditions>
+                                <condition behavior="Pin" id="0" inverted="1" name="Is pinned" sid="2224511275393041" type="ball" />
+                                <condition id="-8" name="Is boolean instance variable set" sid="8309039647865647" type="ball">
+                                    <param id="0" name="Instance variable">isFly</param>
+                                </condition>
                                 <condition id="-15" name="Pick nearest/furthest" sid="3454451921242989" type="ball">
                                     <param id="0" name="Which">0</param>
                                     <param id="1" name="X">Enemy.X</param>

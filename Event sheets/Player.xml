@@ -3,10 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Player</name>
     <events>
-        <event-group collapsed="1" description="" sid="9672368698934245" title="PlayerInit">
+        <event-group description="" sid="9672368698934245" title="PlayerInit">
             <sub-events>
-                <variable constant="1" name="LEVELFLOORPADDING" sid="9953545356360056" static="1" type="number">30</variable>
-                <event-block sid="970424618041259">
+                <event-block collapsed="1" sid="970424618041259">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="4703631623024658" type="System" />
                     </conditions>
@@ -30,112 +29,85 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block collapsed="1" sid="2534556170925141">
+                <event-block sid="2534556170925141">
                     <conditions>
                         <condition id="-19" name="On destroyed" sid="7957456248876494" type="PlayerBorn" />
                     </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="3189061927275503" type="PlayerBorn">
+                            <param id="0" name="Object">player</param>
+                            <param id="1" name="Layer">self.LayerNumber</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="7818889416976101" type="Function">
+                            <param id="0" name="Name">&quot;SpawnLevelFloor&quot;</param>
+                            <param id="1" name="Parameter {n}">PlayerBorn.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1499215321927918">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="6970689513074069" type="PlayerMask" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="5291729238093932" type="PlayerMask">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-25" name="Move to bottom" sid="6204497043304242" type="PlayerMask" />
+                    </actions>
+                </event-block>
+                <event-block sid="1582210182607396">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="1299025396257546" type="player" />
+                    </conditions>
                     <actions />
                     <sub-events>
-                        <event-block collapsed="1" sid="1685591956311652">
+                        <event-block sid="8084516841798824">
                             <conditions />
                             <actions>
-                                <action id="0" name="Spawn another object" sid="3189061927275503" type="PlayerBorn">
-                                    <param id="0" name="Object">player</param>
-                                    <param id="1" name="Layer">self.LayerNumber</param>
-                                    <param id="2" name="Image point">0</param>
-                                </action>
-                                <action behavior="8Direction" id="8" name="Set enabled" sid="5331338900846155" type="player">
+                                <action behavior="8Direction" id="8" name="Set enabled" sid="1749557246471443" type="player">
                                     <param id="0" name="State">1</param>
                                 </action>
-                                <action id="-13" name="Set boolean" sid="6444624379650809" type="player">
+                                <action id="-13" name="Set boolean" sid="8390700703026029" type="player">
                                     <param id="0" name="Instance variable">ballPrilipnut</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
-                                <action id="-13" name="Set boolean" sid="4341389964738124" type="player">
+                                <action id="-13" name="Set boolean" sid="9161723009151908" type="player">
                                     <param id="0" name="Instance variable">IsMove</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
-                                <action id="0" name="Call function" sid="335377942998535" type="Function">
+                            </actions>
+                        </event-block>
+                        <event-block sid="3532486543994817">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="6555355759535812" type="player">
+                                    <param id="0" name="Object">PlayerMask</param>
+                                    <param id="1" name="Layer">self.LayerNumber</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="6718797577836967" type="PlayerMask">
+                                    <param id="0" name="Y">(player.Y &gt; LayoutHeight/2) &#x0D;&#x0A;  ? ViewportBottom(player.LayerNumber) &#x0D;&#x0A;  : ViewportTop(player.LayerNumber)</param>
+                                </action>
+                                <action id="-5" name="Set width" sid="9177796900719319" type="PlayerMask">
+                                    <param id="0" name="Width">player.Width</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9423074535195674">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Call function" sid="3459931684552311" type="Function">
                                     <param id="0" name="Name">&quot;SpawnBall&quot;</param>
                                     <param id="1" name="Parameter {n}">0{###}0{###}player.UID</param>
                                 </action>
-                            </actions>
-                            <sub-events>
-                                <event-block sid="4234973364707475">
-                                    <conditions />
-                                    <actions>
-                                        <action id="-3" name="Create object" sid="9216793857161784" type="System">
-                                            <param id="0" name="Object to create">PlayerMask</param>
-                                            <param id="1" name="Layer">player.LayerNumber</param>
-                                            <param id="2" name="X">player.X</param>
-                                            <param id="3" name="Y">(player.Y &gt; LayoutHeight/2) &#x0D;&#x0A;  ? ViewportBottom(player.LayerNumber) &#x0D;&#x0A;  : ViewportTop(player.LayerNumber)</param>
-                                        </action>
-                                        <action id="-5" name="Set width" sid="9680379016312738" type="PlayerMask">
-                                            <param id="0" name="Width">player.Width</param>
-                                        </action>
-                                        <action id="-16" name="Set opacity" sid="8992189684551446" type="PlayerMask">
-                                            <param id="0" name="Opacity">0</param>
-                                        </action>
-                                        <action id="-25" name="Move to bottom" sid="188542847604088" type="PlayerMask" />
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <comment>создание прозрачного фона снизу</comment>
-                        <event-block sid="1234424886664291">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="2684852245525577" type="System">
-                                    <param id="0" name="First value">PlayerBorn.Y</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">LayoutHeight/2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Create object" sid="4439336614954841" type="System">
-                                    <param id="0" name="Object to create">LevelFloor</param>
-                                    <param id="1" name="Layer">&quot;game&quot;</param>
-                                    <param id="2" name="X">0</param>
-                                    <param id="3" name="Y">ViewportBottom(&quot;blocks&quot;) - 30</param>
-                                </action>
-                                <action id="-7" name="Set size" sid="1693879994159713" type="LevelFloor">
-                                    <param id="0" name="Width">LayoutWidth</param>
-                                    <param id="1" name="Height">LEVELFLOORPADDING</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <comment>создание прозрачного фона вверху</comment>
-                        <event-block sid="3725169303111081">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="1915758431620704" type="System">
-                                    <param id="0" name="First value">PlayerBorn.Y</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">LayoutHeight/2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Create object" sid="9096225629648643" type="System">
-                                    <param id="0" name="Object to create">LevelFloor</param>
-                                    <param id="1" name="Layer">&quot;blocks&quot;</param>
-                                    <param id="2" name="X">0</param>
-                                    <param id="3" name="Y">ViewportTop(&quot;blocks&quot;)</param>
-                                </action>
-                                <action id="-7" name="Set size" sid="7899984354357213" type="LevelFloor">
-                                    <param id="0" name="Width">LayoutWidth</param>
-                                    <param id="1" name="Height">LEVELFLOORPADDING</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="6396390266756554">
-                            <conditions />
-                            <actions>
-                                <action id="-24" name="Move to top" sid="559058744246604" type="LevelFloor" />
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="игрок (ракетка)" inactive="1" sid="6490523143365113" title="Player">
+        <event-group description="игрок (ракетка)" inactive="1" sid="6490523143365113" title="Player">
             <sub-events>
                 <variable constant="1" name="defaultspeed" sid="6762276654270074" static="1" type="number">200</variable>
                 <variable constant="1" name="PLAYER_ANIM_MOVE" sid="9220722373669635" static="0" type="number">2</variable>

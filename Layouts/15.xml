@@ -124,7 +124,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>60</x>
-                        <y>180</y>
+                        <y>216</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -197,7 +197,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>72</x>
-                        <y>204</y>
+                        <y>240</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -270,7 +270,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>132</x>
-                        <y>156</y>
+                        <y>192</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -343,7 +343,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>168</x>
-                        <y>156</y>
+                        <y>192</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -416,7 +416,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>96</x>
-                        <y>180</y>
+                        <y>216</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -489,7 +489,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>96</x>
-                        <y>252</y>
+                        <y>288</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -562,7 +562,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>204</x>
-                        <y>156</y>
+                        <y>192</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -635,7 +635,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>132</x>
-                        <y>180</y>
+                        <y>216</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -708,7 +708,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>156</x>
-                        <y>228</y>
+                        <y>264</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -781,7 +781,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>108</x>
-                        <y>204</y>
+                        <y>240</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -854,7 +854,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>132</x>
-                        <y>252</y>
+                        <y>288</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -927,7 +927,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>120</x>
-                        <y>228</y>
+                        <y>264</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -1000,7 +1000,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>216</x>
-                        <y>120</y>
+                        <y>156</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -1073,7 +1073,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>144</x>
-                        <y>204</y>
+                        <y>240</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -1146,7 +1146,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>168</x>
-                        <y>252</y>
+                        <y>288</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -1219,7 +1219,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>240</x>
-                        <y>156</y>
+                        <y>192</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -1292,7 +1292,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>312</x>
-                        <y>120</y>
+                        <y>156</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -1365,7 +1365,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>168</x>
-                        <y>180</y>
+                        <y>216</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -1438,7 +1438,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>204</x>
-                        <y>252</y>
+                        <y>288</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -1511,7 +1511,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>288</x>
-                        <y>156</y>
+                        <y>192</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -1584,7 +1584,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>180</x>
-                        <y>204</y>
+                        <y>240</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -1657,7 +1657,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>396</x>
-                        <y>180</y>
+                        <y>216</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -1730,7 +1730,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>324</x>
-                        <y>156</y>
+                        <y>192</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -1803,7 +1803,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>204</x>
-                        <y>180</y>
+                        <y>216</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -1876,7 +1876,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>420</x>
-                        <y>204</y>
+                        <y>240</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -1949,7 +1949,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>360</x>
-                        <y>156</y>
+                        <y>192</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -2022,7 +2022,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>396</x>
-                        <y>156</y>
+                        <y>192</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -2095,7 +2095,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>432</x>
-                        <y>180</y>
+                        <y>216</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -2168,7 +2168,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>408</x>
-                        <y>228</y>
+                        <y>264</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -2241,7 +2241,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>396</x>
-                        <y>252</y>
+                        <y>288</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -2336,7 +2336,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>84</x>
-                        <y>228</y>
+                        <y>264</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -2409,7 +2409,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>240</x>
-                        <y>108</y>
+                        <y>144</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -2482,7 +2482,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>192</x>
-                        <y>228</y>
+                        <y>264</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -2554,8 +2554,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>265</x>
-                        <y>132</y>
+                        <x>264</x>
+                        <y>168</y>
                         <z>0</z>
                         <width>20</width>
                         <height>20</height>
@@ -2628,7 +2628,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>288</x>
-                        <y>108</y>
+                        <y>144</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -2701,7 +2701,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>384</x>
-                        <y>204</y>
+                        <y>240</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -2774,7 +2774,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>372</x>
-                        <y>228</y>
+                        <y>264</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -2847,7 +2847,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>360</x>
-                        <y>252</y>
+                        <y>288</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -2920,7 +2920,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>360</x>
-                        <y>180</y>
+                        <y>216</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -2993,7 +2993,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>348</x>
-                        <y>204</y>
+                        <y>240</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -3066,7 +3066,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>336</x>
-                        <y>228</y>
+                        <y>264</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -3139,7 +3139,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>324</x>
-                        <y>252</y>
+                        <y>288</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -3212,7 +3212,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>324</x>
-                        <y>180</y>
+                        <y>216</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -3285,7 +3285,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>312</x>
-                        <y>204</y>
+                        <y>240</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -3358,7 +3358,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>300</x>
-                        <y>228</y>
+                        <y>264</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -3431,7 +3431,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>288</x>
-                        <y>252</y>
+                        <y>288</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -3504,7 +3504,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>216</x>
-                        <y>204</y>
+                        <y>240</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -3577,7 +3577,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>228</x>
-                        <y>228</y>
+                        <y>264</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -3650,7 +3650,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>240</x>
-                        <y>252</y>
+                        <y>288</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -3723,7 +3723,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>240</x>
-                        <y>180</y>
+                        <y>216</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -3796,7 +3796,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>288</x>
-                        <y>180</y>
+                        <y>216</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -3869,7 +3869,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>252</x>
-                        <y>204</y>
+                        <y>240</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -3942,7 +3942,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>276</x>
-                        <y>204</y>
+                        <y>240</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -4015,80 +4015,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>264</x>
-                        <y>228</y>
-                        <z>0</z>
-                        <width>25</width>
-                        <height>25</height>
-                        <depth>0</depth>
-                        <hotspotX>0.519999981</hotspotX>
-                        <hotspotY>0.519999981</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="block" uid="575">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Medium</initial-animation>
-                        <initial-frame>1</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <bonus>0</bonus>
-                        <isBonus>false</isBonus>
-                        <animatedTime>0</animatedTime>
-                        <kickCount>0</kickCount>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="FadeStart">
-                            <properties>
-                                <active-at-start>Yes</active-at-start>
-                                <fade-in-time>0.4</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>0</fade-out-time>
-                                <destroy>No</destroy>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="FadeDestroy">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>0.5</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Sine">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
-                                <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="Gamma">
-                            <parameters>
-                                <gamma>1</gamma>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>264</x>
-                        <y>108</y>
+                        <y>264</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -4160,81 +4087,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>264</x>
-                        <y>84</y>
-                        <z>0</z>
-                        <width>25</width>
-                        <height>25</height>
-                        <depth>0</depth>
-                        <hotspotX>0.519999981</hotspotX>
-                        <hotspotY>0.519999981</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="block" uid="619">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Medium</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <bonus>0</bonus>
-                        <isBonus>false</isBonus>
-                        <animatedTime>0</animatedTime>
-                        <kickCount>0</kickCount>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="FadeStart">
-                            <properties>
-                                <active-at-start>Yes</active-at-start>
-                                <fade-in-time>0.4</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>0</fade-out-time>
-                                <destroy>No</destroy>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="FadeDestroy">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>0.5</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Sine">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
-                                <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="Gamma">
-                            <parameters>
-                                <gamma>1</gamma>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>264</x>
-                        <y>156</y>
+                        <x>252</x>
+                        <y>120</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -4307,7 +4161,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>432</x>
-                        <y>156</y>
+                        <y>192</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -4380,7 +4234,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>96</x>
-                        <y>156</y>
+                        <y>192</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -4453,7 +4307,2416 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>60</x>
+                        <y>192</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2300">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>204</x>
+                        <y>312</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2301">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>204</x>
+                        <y>336</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2302">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>204</x>
+                        <y>360</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2303">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>240</x>
+                        <y>312</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2304">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>240</x>
+                        <y>336</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2305">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>240</x>
+                        <y>360</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2306">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>288</x>
+                        <y>312</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2307">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>288</x>
+                        <y>336</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2308">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>288</x>
+                        <y>360</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2309">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>324</x>
+                        <y>312</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2310">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>324</x>
+                        <y>336</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2311">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>360</x>
+                        <y>312</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2312">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>168</x>
+                        <y>312</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2313">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>168</x>
+                        <y>336</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2314">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>168</x>
+                        <y>360</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2315">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>132</x>
+                        <y>312</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2316">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>132</x>
+                        <y>336</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2317">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>96</x>
+                        <y>312</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2318">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>1</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>168</x>
                         <y>156</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2319">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>1</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>180</x>
+                        <y>120</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2320">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>1</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>204</x>
+                        <y>84</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2321">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>1</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>240</x>
+                        <y>72</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2322">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>1</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>276</x>
+                        <y>72</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2323">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>1</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>312</x>
+                        <y>84</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2324">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>1</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>348</x>
+                        <y>120</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2325">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>1</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>360</x>
+                        <y>156</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2326">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>156</x>
+                        <y>132</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2327">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>180</x>
+                        <y>96</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2328">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>336</x>
+                        <y>96</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2329">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>372</x>
+                        <y>132</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2330">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>144</x>
+                        <y>168</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2331">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.4</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>384</x>
+                        <y>168</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.519999981</hotspotX>
+                        <hotspotY>0.519999981</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="block" uid="2332">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Medium</initial-animation>
+                        <initial-frame>1</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <bonus>0</bonus>
+                        <isBonus>false</isBonus>
+                        <animatedTime>0</animatedTime>
+                        <kickCount>0</kickCount>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeStart">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0.6</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeDestroy">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Gamma">
+                            <parameters>
+                                <gamma>1</gamma>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>276</x>
+                        <y>120</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -4512,6 +6775,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -4549,6 +6813,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -4586,6 +6851,7 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -4623,12 +6889,13 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>240</x>
-                        <y>132</y>
+                        <y>168</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -4660,12 +6927,89 @@
                                 <shadow-factor>0</shadow-factor>
                             </parameters>
                         </effect-instance>
+                        <effect-instance type="Screen" />
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>288</x>
-                        <y>132</y>
+                        <y>168</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.53125</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="wall" uid="153">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="HighlightShadow">
+                            <parameters>
+                                <highlight-factor>1</highlight-factor>
+                                <shadow-factor>0</shadow-factor>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Screen" />
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>264</x>
+                        <y>144</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.53125</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="wall" uid="159">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="HighlightShadow">
+                            <parameters>
+                                <highlight-factor>1</highlight-factor>
+                                <shadow-factor>0</shadow-factor>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Screen" />
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>264</x>
+                        <y>192</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>

@@ -211,5 +211,11 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="3255964214301309">
+            <conditions>
+                <condition id="11" name="Collisions enabled" sid="1989632926434725" type="block" />
+            </conditions>
+            <actions />
+        </event-block>
     </events>
 </c2eventsheet>

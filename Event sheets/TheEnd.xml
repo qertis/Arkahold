@@ -96,7 +96,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="8" name="Open URL in new window" sid="1660279067908011" type="Browser">
-                                            <param id="0" name="URL">&quot;//facebook.com/sharer.php?s=100&quot; &#x0D;&#x0A;&amp; &quot;&amp;p[url]=&quot; &amp; Browser.URL &#x0D;&#x0A;&amp; &quot;&amp;p[title]=&quot; &#x0D;&#x0A;  &amp; &quot;  time: &quot; &amp; GameTime &#x0D;&#x0A;  &amp; &quot;;  My points: &quot; &amp; Function.Call(&quot;GetGlobalPoints&quot;)</param>
+                                            <param id="0" name="URL">&quot;//facebook.com/sharer.php?s=100&quot; &#x0D;&#x0A;&amp; &quot;&amp;p[url]=&quot; &amp; Browser.URL &#x0D;&#x0A;&amp; &quot;&amp;p[title]=Arkahold WebGL record!&quot; &#x0D;&#x0A;  &amp; &quot;  time: &quot; &amp; GameTime &#x0D;&#x0A;  &amp; &quot;;  My points: &quot; &amp; Function.Call(&quot;GetGlobalPoints&quot;)</param>
                                             <param id="1" name="Tag">&quot;FBRecord&quot;</param>
                                         </action>
                                     </actions>
