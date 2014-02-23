@@ -123,10 +123,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -196,10 +196,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -269,10 +269,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -342,10 +342,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -415,10 +415,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -488,10 +488,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -561,10 +561,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -634,10 +634,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -707,10 +707,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -780,10 +780,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -853,10 +853,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -926,10 +926,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -999,10 +999,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -1072,10 +1072,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -1145,10 +1145,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -1218,10 +1218,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -1291,10 +1291,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -1364,10 +1364,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -1437,10 +1437,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -1510,10 +1510,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -1583,10 +1583,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -1656,10 +1656,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -1729,10 +1729,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -1802,10 +1802,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -1875,10 +1875,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -1948,10 +1948,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -2094,10 +2094,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -2167,10 +2167,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -2240,10 +2240,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -2313,10 +2313,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -2386,10 +2386,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -2459,10 +2459,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -2532,10 +2532,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -2605,10 +2605,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -2678,10 +2678,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -2751,10 +2751,10 @@
                         </behavior-instance>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>No</active-on-start>
-                                <movement>Size</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Forwards/backwards</movement>
+                                <wave>Reverse sawtooth</wave>
+                                <period>10</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
@@ -3327,7 +3327,35 @@
             <force-own-texture>0</force-own-texture>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="TextCheat" uid="2172">
+                    <properties>
+                        <text>SFISH</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-24,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>60</x>
+                        <y>396</y>
+                        <z>0</z>
+                        <width>96</width>
+                        <height>36</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
     </layers>

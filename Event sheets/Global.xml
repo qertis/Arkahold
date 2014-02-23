@@ -3,8 +3,10 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Global</name>
     <events>
-        <variable comment="количество бонусов на уровень" constant="1" name="BONUSCOUNT" sid="5387046176008031" static="0" type="number">10</variable>
-        <variable comment="последний уровень. тупой хардкод" constant="1" name="FINALLEVEL" sid="106627287506924" static="0" type="text">20</variable>
+        <variable comment="Число жизней по-умолчанию" constant="0" name="DefaultLifes" sid="1121414283069601" static="0" type="number">3</variable>
+        <variable comment="количество бонусов на уровень" constant="0" name="BonusCount" sid="5387046176008031" static="0" type="number">10</variable>
+        <variable comment="первый уровень" constant="0" name="FirstLevel" sid="7316894102549757" static="0" type="text">1</variable>
+        <variable comment="последний уровень." constant="1" name="FINALLEVEL" sid="106627287506924" static="0" type="text">20</variable>
         <event-group collapsed="1" description="" sid="2745034965042407" title="Coordinates">
             <sub-events>
                 <variable comment="центр по x" constant="0" name="cx" sid="316" static="1" type="number">0</variable>
@@ -127,6 +129,7 @@
         </event-group>
         <event-group collapsed="1" description="" sid="4205335274242136" title="Background">
             <sub-events>
+                <variable constant="0" name="backgroundColor" sid="734923025682833" static="1" type="text">rgb(0,0,0)</variable>
                 <event-block sid="5307407948367602">
                     <conditions>
                         <condition id="0" name="On function" sid="7474644041584513" type="Function">
@@ -134,9 +137,25 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="1290329642199067" type="System">
+                            <param id="0" name="Variable">backgroundColor</param>
+                            <param id="1" name="Value">rgb(Function.Param(0), Function.Param(1), Function.Param(2))</param>
+                        </action>
                         <action id="-34" name="Set layer background color" sid="3368770786283154" type="System">
                             <param id="0" name="Layer">&quot;back&quot;</param>
-                            <param id="1" name="Color">rgb(Function.Param(0), Function.Param(1), Function.Param(2))</param>
+                            <param id="1" name="Color">backgroundColor</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8826950838559033">
+                    <conditions>
+                        <condition id="0" name="On function" sid="2673937722163243" type="Function">
+                            <param id="0" name="Name">&quot;GetBackgroundColor&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="1441145542473726" type="Function">
+                            <param id="0" name="Value">backgroundColor</param>
                         </action>
                     </actions>
                 </event-block>
@@ -222,124 +241,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <comment>приостанавливаем объекты</comment>
-        <comment>TODO перенести</comment>
-        <event-block collapsed="1" sid="8851810681036153">
-            <conditions>
-                <condition id="0" name="On function" sid="1299829370292335" type="Function">
-                    <param id="0" name="Name">&quot;FreezeObj&quot;</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="5894929932464958">
-                    <conditions>
-                        <condition id="-3" name="Is on-screen" sid="6972092337286391" type="ball" />
-                        <condition id="-11" name="For Each" sid="1817677310298375" type="System">
-                            <param id="0" name="Object">ball</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-14" name="Set object time scale" sid="4997123944378115" type="System">
-                            <param id="0" name="Object">ball</param>
-                            <param id="1" name="Time scale">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="1790487226070521">
-                    <conditions>
-                        <condition id="-3" name="Is on-screen" sid="504456234370597" type="Eye" />
-                        <condition id="-11" name="For Each" sid="9706341406761835" type="System">
-                            <param id="0" name="Object">Eye</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-14" name="Set object time scale" sid="6985179623366889" type="System">
-                            <param id="0" name="Object">Eye</param>
-                            <param id="1" name="Time scale">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="2735469484473265">
-                    <conditions>
-                        <condition id="-3" name="Is on-screen" sid="9534442796197072" type="Enemy" />
-                        <condition id="-11" name="For Each" sid="315712759209588" type="System">
-                            <param id="0" name="Object">Enemy</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-14" name="Set object time scale" sid="5751329837308688" type="System">
-                            <param id="0" name="Object">Enemy</param>
-                            <param id="1" name="Time scale">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="2884537870911076">
-                    <conditions>
-                        <condition id="-3" name="Is on-screen" sid="6002235567561974" type="player" />
-                        <condition id="-11" name="For Each" sid="4639991812653223" type="System">
-                            <param id="0" name="Object">player</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-14" name="Set object time scale" sid="5784947848540806" type="System">
-                            <param id="0" name="Object">player</param>
-                            <param id="1" name="Time scale">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="7656533036670225">
-                    <conditions>
-                        <condition id="-3" name="Is on-screen" sid="2349315911984801" type="block" />
-                        <condition id="-11" name="For Each" sid="4866519201658719" type="System">
-                            <param id="0" name="Object">block</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-14" name="Set object time scale" sid="5600725201325213" type="System">
-                            <param id="0" name="Object">block</param>
-                            <param id="1" name="Time scale">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="8278924911692569">
-                    <conditions>
-                        <condition id="-3" name="Is on-screen" sid="277683074637362" type="line" />
-                        <condition id="-11" name="For Each" sid="6105633785544999" type="System">
-                            <param id="0" name="Object">line</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-14" name="Set object time scale" sid="9576747907614178" type="System">
-                            <param id="0" name="Object">line</param>
-                            <param id="1" name="Time scale">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block disabled="1" sid="5248439944778018">
-            <conditions>
-                <condition id="7" inverted="1" name="Page is visible" sid="7270868624371562" type="Browser" />
-                <condition id="-4" name="Trigger once while true" sid="8149852857918856" type="System" />
-            </conditions>
-            <actions>
-                <action id="33" name="Stop all" sid="7554784516544639" type="Audio" />
-                <action id="-13" name="Set time scale" sid="7186035581781758" type="System">
-                    <param id="0" name="Time scale">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block disabled="1" sid="2545709298168631">
-            <conditions>
-                <condition id="7" name="Page is visible" sid="2852065574762701" type="Browser" />
-                <condition id="-4" name="Trigger once while true" sid="5664828921408978" type="System" />
-            </conditions>
-            <actions>
-                <action id="-13" name="Set time scale" sid="6274201724150459" type="System">
-                    <param id="0" name="Time scale">1</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>

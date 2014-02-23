@@ -8,57 +8,57 @@
     <author-website>site.baskovsky.ru</author-website>
     <app-id></app-id>
     <unique-id>3om4fqck6p5en</unique-id>
-    <saved-with-version>15802</saved-with-version>
+    <saved-with-version>16300</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
-        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
-        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
-        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="XML" version="1">XML</plugin>
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
-        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
-        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
-        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
+        <effect author="Scirra" id="difference">Difference</effect>
         <effect author="Scirra" id="gamma">Gamma</effect>
         <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
-        <effect author="Scirra" id="difference">Difference</effect>
         <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
-        <effect author="Scirra" id="hardlight">Hard Light</effect>
         <effect author="Scirra" id="grayscale">Grayscale</effect>
-        <effect author="Scirra" id="hueblend">Hue</effect>
+        <effect author="Scirra" id="hardlight">Hard Light</effect>
         <effect author="Brad Larson" id="highlightshadow">Highlight shadow</effect>
-        <effect author="Scirra" id="overlay">Overlay</effect>
-        <effect author="Scirra" id="noisemask">Noise Mask</effect>
         <effect author="Scirra" id="hsladjustmask">Adjust HSL Mask</effect>
-        <effect author="Scirra" id="radialblur">Radial blur</effect>
+        <effect author="Scirra" id="hueblend">Hue</effect>
         <effect author="Scirra" id="noise">Noise</effect>
+        <effect author="Scirra" id="noisemask">Noise Mask</effect>
+        <effect author="Scirra" id="overlay">Overlay</effect>
+        <effect author="Scirra" id="radialblur">Radial blur</effect>
         <effect author="Scirra" id="screen">Screen</effect>
-        <effect author="Scirra" id="tintmask">Tint Mask</effect>
-        <effect author="Brad Larson" id="vignette">Vignette</effect>
-        <effect author="Brad Larson" id="sketch">Sketch</effect>
-        <effect author="Scirra" id="warpradial">Warp Radial</effect>
-        <effect author="Brad Larson" id="sharpen">Sharpen</effect>
-        <effect author="Brad Larson" id="toon">Toon</effect>
         <effect author="Scirra" id="setcolor">Set color</effect>
+        <effect author="Brad Larson" id="sharpen">Sharpen</effect>
+        <effect author="Brad Larson" id="sketch">Sketch</effect>
+        <effect author="Scirra" id="tintmask">Tint Mask</effect>
+        <effect author="Brad Larson" id="toon">Toon</effect>
+        <effect author="Brad Larson" id="vignette">Vignette</effect>
+        <effect author="Scirra" id="warpradial">Warp Radial</effect>
     </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -927,7 +927,7 @@
                 </effect-type>
             </effects>
             <animation-folder expanded="1">
-                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2047857142478356" speed="5">
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2047857142478356" speed="10">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.148936" y="0.148936" />
@@ -966,6 +966,9 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="TextCheat" sid="1802874716904278">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
@@ -1028,6 +1031,7 @@
             <event-sheet>GameEffects.xml</event-sheet>
             <event-sheet>Links.xml</event-sheet>
             <event-sheet>MenuEffects.xml</event-sheet>
+            <event-sheet>Pause.xml</event-sheet>
         </event-folder>
         <event-folder expanded="1" name="Layout">
             <event-sheet>GameOver.xml</event-sheet>

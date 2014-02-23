@@ -5,8 +5,7 @@
     <events>
         <event-group description="" sid="5885296841462732" title="Lifes">
             <sub-events>
-                <variable comment="текущие Жизни" constant="0" name="CurrentLifes" sid="1013" static="1" type="number">3</variable>
-                <variable comment="Число жизней по-умолчанию" constant="1" name="DefaultLifes" sid="1121414283069601" static="1" type="number">3</variable>
+                <variable comment="текущие Жизни" constant="0" name="CurrentLifes" sid="1013" static="1" type="number">0</variable>
                 <event-block sid="2220205770588426">
                     <conditions>
                         <condition id="0" name="On function" sid="6971279072621669" type="Function">
@@ -32,7 +31,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="2577228522719521">
+                <event-block collapsed="1" sid="2577228522719521">
                     <conditions>
                         <condition id="0" name="On function" sid="2102345502264576" type="Function">
                             <param id="0" name="Name">&quot;UpdateLifes&quot;</param>

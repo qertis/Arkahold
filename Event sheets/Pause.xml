@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Pause</name>
+    <events>
+        <comment>Pause</comment>
+        <event-block any="1" sid="151642712475117">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="3203084413149338" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+                <condition id="0" name="On click" sid="119187816388865" type="Mouse">
+                    <param id="0" name="Mouse button">1</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="6" name="On button pressed" sid="7168146954709902" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">9</param>
+                </condition>
+                <condition id="9" name="On suspended" sid="8985825258329575" type="Browser" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="367898674593288" type="Function">
+                    <param id="0" name="Name">&quot;Pause&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>пауза игры</comment>
+        <event-block sid="6514009528085197">
+            <conditions>
+                <condition id="0" name="On function" sid="2219270193721257" type="Function">
+                    <param id="0" name="Name">&quot;Pause&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4092747017146908">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="9809071822428424" type="System">
+                            <param id="0" name="First value">timescale</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="5015491927505498" type="Function">
+                            <param id="0" name="Name">&quot;LoadingFade&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="6779311039632202" type="System">
+                            <param id="0" name="Time scale">1.0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>cheat code</comment>
+                        <event-block sid="4680947021216744">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="9278840405591581" type="TextCheat" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="4859441209842069" type="TextCheat">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>user statistic</comment>
+                        <event-block sid="3731011015478136">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="4883699067807599" type="Text" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="3810945924573255" type="Text">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3230140872688324">
+                            <conditions />
+                            <actions>
+                                <action id="-35" name="Set layer transparent" sid="9410445757170421" type="System">
+                                    <param id="0" name="Layer">&quot;Game&quot;</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                                <action id="-18" name="Set layer opacity" sid="6163804486410004" type="System">
+                                    <param id="0" name="Layer">&quot;Game&quot;</param>
+                                    <param id="1" name="Opacity">100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="2556358712228142">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="7642662875845814" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="412925831093199" type="PauseBackground" />
+                        <action id="33" name="Stop all" sid="4829160249295018" type="Audio" />
+                        <action id="-13" name="Set time scale" sid="5813755021706149" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>cheat code</comment>
+                        <event-block sid="1457153963620962">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="7504768605254508" type="TextCheat" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="1012532727666075" type="TextCheat">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>user statistic</comment>
+                        <event-block sid="5578503645732991">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="5074022731472885" type="Text" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="4188433696672212" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3467508484440625">
+                            <conditions />
+                            <actions>
+                                <action id="-34" name="Set layer background color" sid="7752407422623477" type="System">
+                                    <param id="0" name="Layer">&quot;Game&quot;</param>
+                                    <param id="1" name="Color">rgb(0, 0, 0)</param>
+                                </action>
+                                <action id="-35" name="Set layer transparent" sid="6142459096163524" type="System">
+                                    <param id="0" name="Layer">&quot;Game&quot;</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                                <action id="-18" name="Set layer opacity" sid="3399801879899222" type="System">
+                                    <param id="0" name="Layer">&quot;Game&quot;</param>
+                                    <param id="1" name="Opacity">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
