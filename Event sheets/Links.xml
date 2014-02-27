@@ -49,7 +49,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" inactive="1" sid="7222785826118328" title="Links">
+        <event-group description="" inactive="1" sid="7222785826118328" title="Links">
             <sub-events>
                 <event-block sid="3818854639190762">
                     <conditions>
@@ -177,7 +177,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block collapsed="1" sid="4432268262126658">
+                        <event-block sid="4432268262126658">
                             <conditions>
                                 <condition id="1" name="Is overlapping another object" sid="5207316181117328" type="Cursor">
                                     <param id="0" name="Object">Links</param>

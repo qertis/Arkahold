@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Controls</name>
     <events>
-        <event-group collapsed="1" description="Управление в меню" inactive="1" sid="3832131130592746" title="MenuKey">
+        <event-group description="Управление в меню" inactive="1" sid="3832131130592746" title="MenuKey">
             <sub-events>
                 <event-block any="1" sid="4583720583695985">
                     <conditions>
@@ -29,6 +29,12 @@
                                 <action id="0" name="Call function" sid="7185488677168649" type="Function">
                                     <param id="0" name="Name">&quot;ToggleLinks&quot;</param>
                                     <param id="1" name="Parameter {n}">Links.UID</param>
+                                </action>
+                                <action id="0" name="Play" sid="9898579955547384" type="Audio">
+                                    <param id="0" name="Audio file">button</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -69,7 +75,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="8264070808543387" title="MouseCursor">
+        <event-group description="" sid="8264070808543387" title="MouseCursor">
             <sub-events>
                 <event-block sid="4282210029171764">
                     <conditions>
@@ -109,7 +115,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" inactive="1" sid="4219313757675232" title="GamePadCursor">
+        <event-group description="" inactive="1" sid="4219313757675232" title="GamePadCursor">
             <sub-events>
                 <event-block sid="7401527571672944">
                     <conditions>

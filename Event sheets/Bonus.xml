@@ -98,7 +98,14 @@
                             <param id="0" name="Name">&quot;Bonus&quot;</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="5507526679027033" type="Audio">
+                            <param id="0" name="Audio file">bonus</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <comment>увеличение игрока</comment>
                         <event-block collapsed="1" sid="7391147600138269">
@@ -250,7 +257,7 @@
                             </sub-events>
                         </event-block>
                         <comment>плюс одна жизнь</comment>
-                        <event-block collapsed="1" sid="5195062561578447">
+                        <event-block sid="5195062561578447">
                             <conditions>
                                 <condition id="-22" name="Else" sid="1970235019327026" type="System" />
                                 <condition id="1" name="Compare parameter" sid="8721994085080342" type="Function">

@@ -181,7 +181,7 @@
             <sub-events>
                 <variable comment="Умножитель (вида val * this)" constant="1" name="MaxSpeedIndex" sid="384242051234757" static="0" type="number">2</variable>
                 <comment>запуск шара</comment>
-                <event-block collapsed="1" sid="2265940895623925">
+                <event-block sid="2265940895623925">
                     <conditions>
                         <condition id="0" name="On function" sid="6461685992590854" type="Function">
                             <param id="0" name="Name">&quot;StartBall&quot;</param>
@@ -194,13 +194,19 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block collapsed="1" sid="4412282548227843">
+                        <event-block sid="4412282548227843">
                             <conditions>
                                 <condition id="-8" name="Is boolean instance variable set" sid="3934591253120106" type="player">
                                     <param id="0" name="Instance variable">ballPrilipnut</param>
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="9292212630174647" type="Audio">
+                                    <param id="0" name="Audio file">player-collision</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                                 <action id="-13" name="Set boolean" sid="3929641468314464" type="player">
                                     <param id="0" name="Instance variable">ballPrilipnut</param>
                                     <param id="1" name="Value">0</param>

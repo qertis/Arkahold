@@ -5,6 +5,7 @@
     <events>
         <include>Global</include>
         <include>Lifes</include>
+        <include>Cheats</include>
         <include>MENU</include>
         <event-group description="" sid="5629977273821357" title="Menu">
             <sub-events>
@@ -14,7 +15,6 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <comment>переделать через left, right, bottom, top!</comment>
                         <event-block sid="9286356518029506">
                             <conditions />
                             <actions>
@@ -101,7 +101,9 @@
                             </sub-events>
                         </event-block>
                         <event-block sid="5636995544584383">
-                            <conditions />
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="3062538264460222" type="Cursor" />
+                            </conditions>
                             <actions>
                                 <action id="-26" name="Move to layer" sid="3970839470993619" type="Cursor">
                                     <param id="0" name="Layer">&quot;Cursor&quot;</param>
@@ -112,7 +114,9 @@
                             </actions>
                         </event-block>
                         <event-block sid="8024656966444551">
-                            <conditions />
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="79016255533558" type="Sun" />
+                            </conditions>
                             <actions>
                                 <action behavior="Sine" id="0" name="Set active" sid="8947667172665914" type="Sun">
                                     <param id="0" name="State">1</param>
@@ -142,7 +146,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="текст" inactive="1" sid="5352166729458236" title="Timer">
+        <event-group collapsed="1" description="текст" inactive="1" sid="5352166729458236" title="Timer">
             <sub-events>
                 <variable constant="0" name="Timer" sid="409505064658076" static="1" type="number">2</variable>
                 <comment>исчезание основываясь на таймере</comment>
@@ -162,7 +166,6 @@
                     </actions>
                     <sub-events>
                         <comment>загрузка уровня</comment>
-                        <comment>todo: сделать систему сохранений и переход через сохраненный уровень!</comment>
                         <event-block sid="6831878805241282">
                             <conditions>
                                 <condition id="-4" name="Trigger once while true" sid="2567834603055621" type="System" />
@@ -171,6 +174,12 @@
                                 <action id="0" name="Call function" sid="7592742419070581" type="Function">
                                     <param id="0" name="Name">&quot;LoadLevel&quot;</param>
                                     <param id="1" name="Parameter {n}">FirstLevel{###}&quot;FadeIn&quot;{###}&quot;normal&quot;{###}Timer</param>
+                                </action>
+                                <action id="0" name="Play" sid="9075235965455636" type="Audio">
+                                    <param id="0" name="Audio file">loading-fade</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -304,9 +313,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Выбор управления" sid="7636553625374258" title="SelectControl">
+        <event-group collapsed="1" description="Выбор управления" sid="7636553625374258" title="SelectControl">
             <sub-events>
-                <event-block collapsed="1" sid="7186281269264141">
+                <event-block sid="7186281269264141">
                     <conditions>
                         <condition id="0" name="On function" sid="9778540033690565" type="Function">
                             <param id="0" name="Name">&quot;MainMenuActivate&quot;</param>
@@ -330,11 +339,22 @@
                             <param id="1" name="State">0</param>
                         </action>
                         <action id="-9" name="Destroy" sid="7297849342474132" type="SpriteControls" />
-                        <action behavior="Sine" id="0" name="Set active" sid="4487477737125497" type="Sun">
-                            <param id="0" name="State">0</param>
+                        <action id="0" name="Play" sid="3771957475287989" type="Audio">
+                            <param id="0" name="Audio file">button</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                     <sub-events>
+                        <event-block sid="5738086275095817">
+                            <conditions />
+                            <actions>
+                                <action behavior="Sine" id="0" name="Set active" sid="4487477737125497" type="Sun">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="3122541851646978">
                             <conditions />
                             <actions>
@@ -579,6 +599,12 @@
                             <param id="0" name="Name">&quot;StartGame&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
+                        <action id="0" name="Play" sid="4735150270933759" type="Audio">
+                            <param id="0" name="Audio file">button</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <comment>More Games</comment>
@@ -597,6 +623,12 @@
                             <param id="0" name="URL">&quot;//games.baskovsky.ru/&quot;</param>
                             <param id="1" name="Tag">&quot;NewWindow&quot;</param>
                         </action>
+                        <action id="0" name="Play" sid="3561398609489437" type="Audio">
+                            <param id="0" name="Audio file">button</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <comment>How to play</comment>
@@ -614,6 +646,12 @@
                         <action id="0" name="Call function" sid="3161495528791214" type="Function">
                             <param id="0" name="Name">&quot;LoadLevel&quot;</param>
                             <param id="1" name="Parameter {n}">&quot;Info&quot;{###}&quot;FadeIn&quot;{###}&quot;normal&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="1270765937228605" type="Audio">
+                            <param id="0" name="Audio file">button</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -659,127 +697,6 @@
                         <action id="0" name="Call function" sid="9240518946019315" type="Function">
                             <param id="0" name="Name">&quot;XMLaboutInit&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="1192688221068525" title="Cheat">
-            <sub-events>
-                <variable constant="0" name="keys" sid="1283670702296829" static="1" type="text"></variable>
-                <variable constant="0" name="timer" sid="9598754898584623" static="1" type="number">0</variable>
-                <event-block sid="5604158749659797">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="8054570971855864" type="System">
-                            <param id="0" name="Variable">timer</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                        <condition id="-6" name="Every X seconds" sid="4512617415927868" type="System">
-                            <param id="0" name="Interval (seconds)">0.1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-11" name="Subtract from" sid="9191123538149036" type="System">
-                            <param id="0" name="Variable">timer</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                    <sub-events>
-                        <comment>бессмертие</comment>
-                        <event-block sid="6079874141294015">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="6881992026655555" type="System">
-                                    <param id="0" name="Variable">keys</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;IDDQD&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="327055447446138" type="System">
-                                    <param id="0" name="Variable">timer</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="1019097452153764" type="System">
-                                    <param id="0" name="Variable">DefaultLifes</param>
-                                    <param id="1" name="Value">999</param>
-                                </action>
-                                <action id="0" name="Call function" sid="1152653474178344" type="Function">
-                                    <param id="0" name="Name">&quot;ResetLifes&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <comment>увеличение бонусов</comment>
-                        <event-block sid="7812959572094626">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="2841251787835754" type="System">
-                                    <param id="0" name="Variable">keys</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;MOAR&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="5376438132966559" type="System">
-                                    <param id="0" name="Variable">timer</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="8617168672559334" type="System">
-                                    <param id="0" name="Variable">BonusCount</param>
-                                    <param id="1" name="Value">20</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <comment>10 уровень</comment>
-                        <event-block sid="6504557922828613">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="1024236368205463" type="System">
-                                    <param id="0" name="Variable">keys</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;BIGBS&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="6238011861641425" type="System">
-                                    <param id="0" name="Variable">timer</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="4154060073193946" type="System">
-                                    <param id="0" name="Variable">FirstLevel</param>
-                                    <param id="1" name="Value">&quot;10&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <comment>ОЧИСТКА</comment>
-                        <event-block sid="3486271321296673">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="940700717713521" type="System">
-                                    <param id="0" name="Variable">timer</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="3051599239490006" type="System">
-                                    <param id="0" name="Variable">keys</param>
-                                    <param id="1" name="Value">&quot;&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="9133664478179452">
-                    <conditions>
-                        <condition id="7" name="On any key released" sid="8379773959905528" type="Keyboard" />
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Add to" sid="1898623462818939" type="System">
-                            <param id="0" name="Variable">keys</param>
-                            <param id="1" name="Value">uppercase(&#x0D;&#x0A;Keyboard.StringFromKeyCode(Keyboard.LastKeyCode)&#x0D;&#x0A;)</param>
-                        </action>
-                        <action id="-10" name="Add to" sid="1738262980778988" type="System">
-                            <param id="0" name="Variable">timer</param>
-                            <param id="1" name="Value">timer &gt; 10 ? 0 : 10</param>
                         </action>
                     </actions>
                 </event-block>

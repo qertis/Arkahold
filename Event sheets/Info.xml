@@ -78,6 +78,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="2496541478849203" type="Audio">
+                            <param id="0" name="Audio file">button</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="4925295335226846" type="System">
                             <param id="0" name="Layout">MainMenu</param>
                         </action>

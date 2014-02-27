@@ -147,7 +147,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block collapsed="1" sid="8278942519658146">
+                <event-block sid="8278942519658146">
                     <conditions>
                         <condition id="-19" name="On destroyed" sid="4410325482399201" type="ball" />
                     </conditions>
@@ -165,6 +165,12 @@
                                 <action id="0" name="Call function" sid="4240202258023841" type="Function">
                                     <param id="0" name="Name">&quot;UpdateLifes&quot;</param>
                                     <param id="1" name="Parameter {n}">-1</param>
+                                </action>
+                                <action id="0" name="Play" sid="6634558011832472" type="Audio">
+                                    <param id="0" name="Audio file">ball-lost</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -205,7 +211,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-group collapsed="1" description="" sid="8984980558897284" title="BallCollision">
+                <event-group description="" sid="8984980558897284" title="BallCollision">
                     <sub-events>
                         <comment>эффект ударения</comment>
                         <event-block any="1" sid="144">
@@ -349,7 +355,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block any="1" collapsed="1" sid="1105">
+                        <event-block any="1" sid="1105">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="1106" type="ball">
                                     <param id="0" name="Object">player</param>
@@ -391,8 +397,8 @@
                                 <event-block sid="5932380207556006">
                                     <conditions />
                                     <actions>
-                                        <action id="24" name="Play at position" sid="5699530350313574" type="Audio">
-                                            <param id="0" name="Audio file">ball_collision</param>
+                                        <action id="24" name="Play at position" sid="7135703126496831" type="Audio">
+                                            <param id="0" name="Audio file">wall_collision</param>
                                             <param id="1" name="Loop">0</param>
                                             <param id="2" name="Volume">0</param>
                                             <param id="3" name="X">ball.X</param>
@@ -461,6 +467,18 @@
                                         </action>
                                         <action behavior="Bullet" id="3" name="Set angle of motion" sid="7103464239665171" type="ball">
                                             <param id="0" name="Angle">angle(Pupil.X, Pupil.Y, Self.X, Self.Y)</param>
+                                        </action>
+                                        <action id="24" name="Play at position" sid="9117497680422062" type="Audio">
+                                            <param id="0" name="Audio file">block_collision</param>
+                                            <param id="1" name="Loop">0</param>
+                                            <param id="2" name="Volume">0</param>
+                                            <param id="3" name="X">ball.X</param>
+                                            <param id="4" name="Y">ball.Y</param>
+                                            <param id="5" name="Angle">0</param>
+                                            <param id="6" name="Inner angle">360</param>
+                                            <param id="7" name="Outer angle">360</param>
+                                            <param id="8" name="Outer gain">0</param>
+                                            <param id="9" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>

@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Loading</name>
     <events>
-        <event-group collapsed="1" description="Виды загрузки уровней" sid="7070241593772392" title="LoadingLevel">
+        <event-group description="Виды загрузки уровней" sid="7070241593772392" title="LoadingLevel">
             <sub-events>
                 <variable comment="Содержит номер уровня" constant="0" name="ToLevel" sid="3986355243152203" static="1" type="text"></variable>
                 <variable comment="Эффект перехода" constant="0" name="Effect" sid="2861431792704717" static="1" type="text"></variable>
@@ -70,7 +70,14 @@
                             <param id="0" name="Name">&quot;LoadLevel&quot;</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="6492682863300129" type="Audio">
+                            <param id="0" name="Audio file">loading-scene</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <comment>это вообще используется??</comment>
                         <comment>имя перехода левела</comment>
@@ -230,7 +237,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" inactive="1" sid="7310392314145114" title="FadeIn">
+        <event-group description="" inactive="1" sid="7310392314145114" title="FadeIn">
             <sub-events>
                 <event-block collapsed="1" sid="3567619040257678">
                     <conditions>

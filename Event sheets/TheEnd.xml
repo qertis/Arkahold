@@ -35,6 +35,7 @@
                             <param id="0" name="Name">&quot;XMLkeysDescr&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
+                        <action id="33" name="Stop all" sid="8969030402205374" type="Audio" />
                     </actions>
                     <sub-events>
                         <comment>время в формате (mm, ss)</comment>
@@ -63,6 +64,21 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="9824830233677725">
+                            <conditions>
+                                <condition id="5" inverted="1" name="Is tag playing" sid="4544994664953746" type="Audio">
+                                    <param id="0" name="Tag">&quot;out-game&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="6701412150292267" type="Audio">
+                                    <param id="0" name="Audio file">out-game</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;out-game&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <comment>TODO: add gamepad controls</comment>
@@ -87,6 +103,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
+                                <variable constant="0" name="textURL" sid="1504637317620306" static="1" type="text"></variable>
                                 <comment>facebook</comment>
                                 <event-block sid="1420258885979989">
                                     <conditions>
@@ -95,8 +112,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="-9" name="Set value" sid="644554557833006" type="System">
+                                            <param id="0" name="Variable">textURL</param>
+                                            <param id="1" name="Value">&quot;//facebook.com/sharer.php?s=100&quot; &#x0D;&#x0A;&amp; &quot;&amp;p[url]=&quot; &amp; Browser.URL &#x0D;&#x0A;&amp; &quot;&amp;p[title]=Arkahold&quot; &#x0D;&#x0A;  &amp; &quot;  time: &quot; &amp; GameTime &#x0D;&#x0A;  &amp; &quot;;  My points: &quot; &amp; Function.Call(&quot;GetGlobalPoints&quot;)&#x0D;&#x0A;  &amp; CheatCode &lt;&gt; &quot;&quot; ? &quot;; With Cheat Code: &quot; &amp; CheatCode : &quot;&quot;</param>
+                                        </action>
                                         <action id="8" name="Open URL in new window" sid="1660279067908011" type="Browser">
-                                            <param id="0" name="URL">&quot;//facebook.com/sharer.php?s=100&quot; &#x0D;&#x0A;&amp; &quot;&amp;p[url]=&quot; &amp; Browser.URL &#x0D;&#x0A;&amp; &quot;&amp;p[title]=Arkahold WebGL record!&quot; &#x0D;&#x0A;  &amp; &quot;  time: &quot; &amp; GameTime &#x0D;&#x0A;  &amp; &quot;;  My points: &quot; &amp; Function.Call(&quot;GetGlobalPoints&quot;)</param>
+                                            <param id="0" name="URL">textURL</param>
                                             <param id="1" name="Tag">&quot;FBRecord&quot;</param>
                                         </action>
                                     </actions>
@@ -109,8 +130,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="-9" name="Set value" sid="3702023085120959" type="System">
+                                            <param id="0" name="Variable">textURL</param>
+                                            <param id="1" name="Value">&quot;//vk.com/share.php?url=&quot; &amp; Browser.URL&#x0D;&#x0A;&amp; &quot;&amp;title=Arkahold WebGL record!&quot; &#x0D;&#x0A;&amp; &quot;&amp;description=&quot; &#x0D;&#x0A;  &amp; &quot;  time: &quot; &amp; GameTime &#x0D;&#x0A;  &amp; &quot;;  My points: &quot; &amp; Function.Call(&quot;GetGlobalPoints&quot;)&#x0D;&#x0A;&amp; &quot;&amp;noparse=true&quot;&#x0D;&#x0A;&amp; CheatCode &lt;&gt; &quot;&quot; ? &quot;; With Cheat Code: &quot; &amp; CheatCode : &quot;&quot;</param>
+                                        </action>
                                         <action id="8" name="Open URL in new window" sid="8761135985291477" type="Browser">
-                                            <param id="0" name="URL">&quot;//vk.com/share.php?url=&quot; &amp; Browser.URL&#x0D;&#x0A;&amp; &quot;&amp;title=Arkahold WebGL record!&quot; &#x0D;&#x0A;&amp; &quot;&amp;description=&quot; &#x0D;&#x0A;  &amp; &quot;  time: &quot; &amp; GameTime &#x0D;&#x0A;  &amp; &quot;;  My points: &quot; &amp; Function.Call(&quot;GetGlobalPoints&quot;)&#x0D;&#x0A;&amp; &quot;&amp;noparse=true&quot;</param>
+                                            <param id="0" name="URL">textURL</param>
                                             <param id="1" name="Tag">&quot;VKRecord&quot;</param>
                                         </action>
                                     </actions>

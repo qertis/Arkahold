@@ -22,6 +22,7 @@
                         <event-block sid="1088529675281785">
                             <conditions />
                             <actions>
+                                <action id="33" name="Stop all" sid="7106194180222684" type="Audio" />
                                 <action id="0" name="Play" sid="2581766384525671" type="Audio">
                                     <param id="0" name="Audio file">game_over</param>
                                     <param id="2" name="Loop">0</param>

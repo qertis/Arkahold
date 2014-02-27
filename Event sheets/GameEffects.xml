@@ -114,7 +114,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="2800154197089732" title="BackgroundEffect">
+        <event-group description="" sid="2800154197089732" title="BackgroundEffect">
             <sub-events>
                 <event-block sid="2597910738546338">
                     <conditions>
@@ -124,8 +124,8 @@
                     </conditions>
                     <actions>
                         <action id="-7" name="Set size" sid="1782917308609997" type="BackgroundEffect">
-                            <param id="0" name="Width">self.Width + 1</param>
-                            <param id="1" name="Height">self.Height + 1</param>
+                            <param id="0" name="Width">self.Width + 2</param>
+                            <param id="1" name="Height">self.Height + 2</param>
                         </action>
                         <action id="-16" name="Set opacity" sid="6619445591873339" type="BackgroundEffect">
                             <param id="0" name="Opacity">Self.Opacity - 1</param>
@@ -148,7 +148,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block collapsed="1" sid="2887172812561958">
+                <event-block sid="2887172812561958">
                     <conditions>
                         <condition id="0" name="On function" sid="7156117833181087" type="Function">
                             <param id="0" name="Name">&quot;SpawnBackgroundEffect&quot;</param>
@@ -176,18 +176,25 @@
                                     <param id="3" name="Y">Function.Param(1)</param>
                                 </action>
                                 <action id="-7" name="Set size" sid="3745123618159499" type="BackgroundEffect">
-                                    <param id="0" name="Width">bgEffCount</param>
-                                    <param id="1" name="Height">bgEffCount</param>
-                                </action>
-                                <action id="-25" name="Move to bottom" sid="9649459840543989" type="BackgroundEffect" />
-                                <action behavior="Timer" id="0" name="Start timer" sid="1918190508762687" type="BackgroundEffect">
-                                    <param id="0" name="Duration">0.01</param>
-                                    <param id="1" name="Type">1</param>
-                                    <param id="2" name="Tag">&quot;FadeOut&quot;</param>
+                                    <param id="0" name="Width">bgEffCount*2</param>
+                                    <param id="1" name="Height">bgEffCount*2</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="1144772729990249">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="1710881345775096" type="BackgroundEffect" />
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Move to bottom" sid="9649459840543989" type="BackgroundEffect" />
+                        <action behavior="Timer" id="0" name="Start timer" sid="1918190508762687" type="BackgroundEffect">
+                            <param id="0" name="Duration">0.01</param>
+                            <param id="1" name="Type">1</param>
+                            <param id="2" name="Tag">&quot;FadeOut&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>

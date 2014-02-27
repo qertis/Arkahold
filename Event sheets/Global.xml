@@ -7,6 +7,7 @@
         <variable comment="количество бонусов на уровень" constant="0" name="BonusCount" sid="5387046176008031" static="0" type="number">10</variable>
         <variable comment="первый уровень" constant="0" name="FirstLevel" sid="7316894102549757" static="0" type="text">1</variable>
         <variable comment="последний уровень." constant="1" name="FINALLEVEL" sid="106627287506924" static="0" type="text">20</variable>
+        <variable comment="какой чит был набран" constant="0" name="CheatCode" sid="667944663996196" static="0" type="text"></variable>
         <event-group collapsed="1" description="" sid="2745034965042407" title="Coordinates">
             <sub-events>
                 <variable comment="центр по x" constant="0" name="cx" sid="316" static="1" type="number">0</variable>
@@ -241,5 +242,101 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <comment>приостанавливаем объекты</comment>
+        <comment>TODO перенести</comment>
+        <event-block collapsed="1" sid="2974853274677007">
+            <conditions>
+                <condition id="0" name="On function" sid="8022572135215208" type="Function">
+                    <param id="0" name="Name">&quot;FreezeObj&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7419932785032076">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="9780225038142987" type="ball" />
+                        <condition id="-11" name="For Each" sid="5274005317975569" type="System">
+                            <param id="0" name="Object">ball</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Set object time scale" sid="422119145360573" type="System">
+                            <param id="0" name="Object">ball</param>
+                            <param id="1" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5479749570807364">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="732552905834474" type="Eye" />
+                        <condition id="-11" name="For Each" sid="2008046337023181" type="System">
+                            <param id="0" name="Object">Eye</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Set object time scale" sid="798543921696308" type="System">
+                            <param id="0" name="Object">Eye</param>
+                            <param id="1" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="268473741831976">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="9384944101404508" type="Enemy" />
+                        <condition id="-11" name="For Each" sid="7775410351419509" type="System">
+                            <param id="0" name="Object">Enemy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Set object time scale" sid="8599926272727534" type="System">
+                            <param id="0" name="Object">Enemy</param>
+                            <param id="1" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2685620617521254">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="5806472607017662" type="player" />
+                        <condition id="-11" name="For Each" sid="9491352407162614" type="System">
+                            <param id="0" name="Object">player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Set object time scale" sid="439047883924176" type="System">
+                            <param id="0" name="Object">player</param>
+                            <param id="1" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3425963591120254">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="8891130944080213" type="block" />
+                        <condition id="-11" name="For Each" sid="8997480513861224" type="System">
+                            <param id="0" name="Object">block</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Set object time scale" sid="1282186508617536" type="System">
+                            <param id="0" name="Object">block</param>
+                            <param id="1" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8909053178278625">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="5890011893047288" type="line" />
+                        <condition id="-11" name="For Each" sid="9074290370372369" type="System">
+                            <param id="0" name="Object">line</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Set object time scale" sid="2063665859740581" type="System">
+                            <param id="0" name="Object">line</param>
+                            <param id="1" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
