@@ -3,11 +3,26 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Ball</name>
     <events>
-        <event-group description="шарик" sid="1935630841217072" title="Ball">
+        <event-group collapsed="1" description="" sid="9791435482014037" title="BallInit">
+            <sub-events>
+                <event-block sid="7978122200502805">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="1492958575409984" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="8546488389391515" type="System">
+                            <param id="0" name="Group name">&quot;Ball&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" inactive="1" sid="1935630841217072" title="Ball">
             <sub-events>
                 <variable comment="скорость шара" constant="1" name="BALLSPEED" sid="64" static="1" type="number">150</variable>
                 <variable comment="гравитация шара" constant="1" name="BALLGRAVITY" sid="426347581381694" static="1" type="number">5</variable>
-                <event-block collapsed="1" sid="4729158524012856">
+                <event-block sid="4729158524012856">
                     <conditions>
                         <condition id="0" name="On function" sid="5020194215962577" type="Function">
                             <param id="0" name="Name">&quot;SpawnBall&quot;</param>
@@ -736,7 +751,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="6395094091146767" title="BallExit">
+        <event-group collapsed="1" description="" sid="6395094091146767" title="BallExit">
             <sub-events>
                 <event-block sid="4807352996371672">
                     <conditions>
@@ -744,6 +759,10 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="7583538887417817" type="ball" />
+                        <action id="-12" name="Set group active" sid="2346819824548803" type="System">
+                            <param id="0" name="Group name">&quot;Ball&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>

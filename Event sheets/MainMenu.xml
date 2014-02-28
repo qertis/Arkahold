@@ -130,6 +130,10 @@
                                     <param id="0" name="Name">&quot;XMLkeysDescr&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
+                                <action id="0" name="Call function" sid="8620735871904986" type="Function">
+                                    <param id="0" name="Name">&quot;XMLCheatsLoad&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
                             </actions>
                         </event-block>
                         <comment>сбрасываем состояние жизней</comment>

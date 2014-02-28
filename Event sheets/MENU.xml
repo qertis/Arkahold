@@ -176,7 +176,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="8480919002378136" title="XML">
+        <event-group description="" sid="8480919002378136" title="XML">
             <sub-events>
                 <event-block collapsed="1" sid="4468110324161785">
                     <conditions>
@@ -261,7 +261,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block collapsed="1" sid="4745626570899566">
+                <event-block sid="4745626570899566">
                     <conditions>
                         <condition id="0" name="On function" sid="1272371709899618" type="Function">
                             <param id="0" name="Name">&quot;XMLkeysDescr&quot;</param>
@@ -349,6 +349,18 @@
                             </sub-events>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="2411461328238809">
+                    <conditions>
+                        <condition id="0" name="On function" sid="1233462587138116" type="Function">
+                            <param id="0" name="Name">&quot;XMLCheatsLoad&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Load" sid="8314100460110534" type="XMLCheats">
+                            <param id="0" name="XML">&quot;&lt;?xml version=&quot;&quot;1.0&quot;&quot; encoding=&quot;&quot;UTF-8&quot;&quot;?&gt;&#x0D;&#x0A;&lt;cheats&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;LVLTW&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;2&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;SMLBS&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;3&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;MNYBL&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;4&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;RNDWD&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;5&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;TTRIS&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;6&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;HNYAN&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;7&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;MARIO&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;8&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;DBLPL&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;9&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;BIGBS&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;10&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;FUUCK&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;11&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;DAODA&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;12&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;MYLOV&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;13&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;RACIN&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;14&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;UTKRA&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;15&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;SFISH&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;16&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;KOLON&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;17&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;OLOLO&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;18&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;REMIT&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;19&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&lt;/cheats&gt;&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>

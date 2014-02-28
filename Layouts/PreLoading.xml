@@ -181,6 +181,7 @@
     <nonworld-instances>
         <instance type="XMLabout" uid="1705" />
         <instance type="XMLkeys" uid="204" />
+        <instance type="XMLCheats" uid="542" />
     </nonworld-instances>
     <effects />
 </c2layout>

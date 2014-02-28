@@ -14,11 +14,12 @@
         <include>Controls</include>
         <include>Bonus</include>
         <include>Points</include>
+        <comment>!!! ball должен быть объявлен раньше player&apos;a !!!</comment>
+        <include>Ball</include>
         <include>Player</include>
         <include>TextInfo</include>
         <include>GameEffects</include>
         <include>Boss</include>
-        <include>Ball</include>
         <include>Block</include>
         <include>TEST</include>
         <event-group description="" sid="3150244092362505" title="GameInit">

@@ -116,6 +116,7 @@
         </event-group>
         <event-group description="" sid="2800154197089732" title="BackgroundEffect">
             <sub-events>
+                <variable comment="число анимаций" constant="1" name="ANIMATIONSCOUNT" sid="8070171693835447" static="1" type="number">3</variable>
                 <event-block sid="2597910738546338">
                     <conditions>
                         <condition behavior="Timer" id="0" name="On timer" sid="206236475316514" type="BackgroundEffect">
@@ -183,11 +184,16 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <comment>TODO возможно последняя анимация не проигрывается</comment>
                 <event-block sid="1144772729990249">
                     <conditions>
                         <condition id="-18" name="On created" sid="1710881345775096" type="BackgroundEffect" />
                     </conditions>
                     <actions>
+                        <action id="4" name="Set animation" sid="7024241205400503" type="BackgroundEffect">
+                            <param id="0" name="Animation">&quot;Effect&quot; &amp; round(random(ANIMATIONSCOUNT))</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                         <action id="-25" name="Move to bottom" sid="9649459840543989" type="BackgroundEffect" />
                         <action behavior="Timer" id="0" name="Start timer" sid="1918190508762687" type="BackgroundEffect">
                             <param id="0" name="Duration">0.01</param>
@@ -195,6 +201,12 @@
                             <param id="2" name="Tag">&quot;FadeOut&quot;</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="6229973185042365">
+                            <conditions />
+                            <actions />
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

@@ -16,7 +16,7 @@
                     </conditions>
                     <actions>
                         <action id="1" name="Set return value" sid="7974454235668478" type="Function">
-                            <param id="0" name="Value">&quot;min:&quot; &amp; (floor(time / 60)) &amp; &quot;, &quot;&#x0D;&#x0A;  &amp; &quot;sec:&quot; &amp; (time % 60)</param>
+                            <param id="0" name="Value">&quot;min:&quot; &amp; (floor(time / 60)) &amp; &quot;;&quot;&#x0D;&#x0A;  &amp; &quot;sec:&quot; &amp; left(str(time % 60), 5)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -114,7 +114,15 @@
                                     <actions>
                                         <action id="-9" name="Set value" sid="644554557833006" type="System">
                                             <param id="0" name="Variable">textURL</param>
-                                            <param id="1" name="Value">&quot;//facebook.com/sharer.php?s=100&quot; &#x0D;&#x0A;&amp; &quot;&amp;p[url]=&quot; &amp; Browser.URL &#x0D;&#x0A;&amp; &quot;&amp;p[title]=Arkahold&quot; &#x0D;&#x0A;  &amp; &quot;  time: &quot; &amp; GameTime &#x0D;&#x0A;  &amp; &quot;;  My points: &quot; &amp; Function.Call(&quot;GetGlobalPoints&quot;)&#x0D;&#x0A;  &amp; CheatCode &lt;&gt; &quot;&quot; ? &quot;; With Cheat Code: &quot; &amp; CheatCode : &quot;&quot;</param>
+                                            <param id="1" name="Value">&quot;//facebook.com/sharer.php?s=100&quot; &#x0D;&#x0A;&amp; &quot;&amp;p[url]=&quot; &amp; Browser.URL &#x0D;&#x0A;&amp; &quot;&amp;p[title]=Arkahold&quot; &#x0D;&#x0A;  &amp; &quot;&amp;p[summary]=&quot;&#x0D;&#x0A;  &amp; &quot; time:&quot; &amp; GameTime &#x0D;&#x0A;  &amp; &quot;;points:&quot; &amp; Function.Call(&quot;GetGlobalPoints&quot;)</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="2776255126440144" type="System">
+                                            <param id="0" name="Variable">textURL</param>
+                                            <param id="1" name="Value">CheatCode = &quot;&quot; ? &quot;&quot; : str(&quot;; With Cheat Code: &quot; &amp; CheatCode)</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="7370305114880531" type="System">
+                                            <param id="0" name="Variable">textURL</param>
+                                            <param id="1" name="Value">URLDecode(textURL)</param>
                                         </action>
                                         <action id="8" name="Open URL in new window" sid="1660279067908011" type="Browser">
                                             <param id="0" name="URL">textURL</param>
@@ -132,7 +140,19 @@
                                     <actions>
                                         <action id="-9" name="Set value" sid="3702023085120959" type="System">
                                             <param id="0" name="Variable">textURL</param>
-                                            <param id="1" name="Value">&quot;//vk.com/share.php?url=&quot; &amp; Browser.URL&#x0D;&#x0A;&amp; &quot;&amp;title=Arkahold WebGL record!&quot; &#x0D;&#x0A;&amp; &quot;&amp;description=&quot; &#x0D;&#x0A;  &amp; &quot;  time: &quot; &amp; GameTime &#x0D;&#x0A;  &amp; &quot;;  My points: &quot; &amp; Function.Call(&quot;GetGlobalPoints&quot;)&#x0D;&#x0A;&amp; &quot;&amp;noparse=true&quot;&#x0D;&#x0A;&amp; CheatCode &lt;&gt; &quot;&quot; ? &quot;; With Cheat Code: &quot; &amp; CheatCode : &quot;&quot;</param>
+                                            <param id="1" name="Value">&quot;//vk.com/share.php?url=&quot; &amp; Browser.URL&#x0D;&#x0A;&amp; &quot;&amp;title=Arkahold WebGL record!&quot; &#x0D;&#x0A;&amp; &quot;&amp;description=&quot; &#x0D;&#x0A;  &amp; &quot;  time: &quot; &amp; GameTime &#x0D;&#x0A;  &amp; &quot;;  points: &quot; &amp; Function.Call(&quot;GetGlobalPoints&quot;)</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="8587807170760976" type="System">
+                                            <param id="0" name="Variable">textURL</param>
+                                            <param id="1" name="Value">CheatCode = &quot;&quot; ? &quot;&quot; : str(&quot;; With Cheat Code: &quot; &amp; CheatCode)</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="6226042878078219" type="System">
+                                            <param id="0" name="Variable">textURL</param>
+                                            <param id="1" name="Value">&quot;&amp;noparse=true&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="2888385165599641" type="System">
+                                            <param id="0" name="Variable">textURL</param>
+                                            <param id="1" name="Value">URLDecode(textURL)</param>
                                         </action>
                                         <action id="8" name="Open URL in new window" sid="8761135985291477" type="Browser">
                                             <param id="0" name="URL">textURL</param>

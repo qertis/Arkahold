@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Controls</name>
     <events>
-        <event-group description="Управление в меню" inactive="1" sid="3832131130592746" title="MenuKey">
+        <event-group collapsed="1" description="Управление в меню" inactive="1" sid="3832131130592746" title="MenuKey">
             <sub-events>
                 <event-block any="1" sid="4583720583695985">
                     <conditions>
@@ -91,9 +91,7 @@
                 <comment>mouse</comment>
                 <event-block sid="2163614987242446">
                     <conditions>
-                        <condition id="2" inverted="1" name="Is playing" sid="5348328242135991" type="Cursor">
-                            <param id="0" name="Animation">&quot;Game&quot;</param>
-                        </condition>
+                        <condition id="-3" name="Is on-screen" sid="8495663173572546" type="Cursor" />
                     </conditions>
                     <actions>
                         <action id="-3" name="Set position" sid="575561129967534" type="Cursor">
@@ -102,9 +100,11 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="2946645385234466">
+                <event-block disabled="1" sid="2946645385234466">
                     <conditions>
-                        <condition id="-22" name="Else" sid="8814350757171426" type="System" />
+                        <condition id="2" name="Is playing" sid="5348328242135991" type="Cursor">
+                            <param id="0" name="Animation">&quot;Game&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-3" name="Set position" sid="6903670695992674" type="Cursor">

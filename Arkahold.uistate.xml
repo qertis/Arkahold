@@ -12,43 +12,27 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout>PreLoading</layout>
         <layout>Objects</layout>
-        <layout>10</layout>
-        <layout>1</layout>
-        <layout>2</layout>
-        <layout>3</layout>
-        <layout>4</layout>
-        <layout>5</layout>
-        <layout>6</layout>
-        <layout>7</layout>
-        <layout>8</layout>
-        <layout>9</layout>
-        <layout>11</layout>
-        <layout>12</layout>
-        <layout>13</layout>
-        <layout>14</layout>
-        <layout>15</layout>
-        <layout>16</layout>
-        <layout>17</layout>
-        <layout>18</layout>
         <layout>19</layout>
-        <layout>20</layout>
-        <event-sheet>Ball</event-sheet>
-        <event-sheet>Pause</event-sheet>
+        <layout>MainMenu</layout>
+        <layout>Info</layout>
+        <layout>18</layout>
+        <layout>1</layout>
+        <event-sheet>Cheats</event-sheet>
         <event-sheet>MainMenu</event-sheet>
-        <event-sheet>Loading</event-sheet>
-        <event-sheet>TheEnd</event-sheet>
-        <event-sheet>Links</event-sheet>
         <event-sheet>MENU</event-sheet>
+        <event-sheet>GameEffects</event-sheet>
+        <event-sheet>TheEnd</event-sheet>
+        <event-sheet>MenuEffects</event-sheet>
+        <event-sheet>GameControls</event-sheet>
         <event-sheet>Controls</event-sheet>
+        <event-sheet>Ball</event-sheet>
+        <event-sheet>Lifes</event-sheet>
+        <event-sheet>Points</event-sheet>
         <event-sheet>Player</event-sheet>
         <event-sheet>Global</event-sheet>
-        <event-sheet>GameOver</event-sheet>
-        <event-sheet>Info</event-sheet>
-        <event-sheet>GAME</event-sheet>
-        <event-sheet>PreLoading</event-sheet>
-        <event-sheet>TEST</event-sheet>
-        <event-sheet>Cheats</event-sheet>
-        <event-sheet active="1">GameEffects</event-sheet>
+        <event-sheet>Audio</event-sheet>
+        <event-sheet>Block</event-sheet>
+        <event-sheet active="1">GAME</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

@@ -1816,7 +1816,7 @@
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>1</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <collisions>Disabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1824,8 +1824,8 @@
                         <x>88</x>
                         <y>319</y>
                         <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
+                        <width>45.333332062</width>
+                        <height>45.333332062</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1838,7 +1838,7 @@
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <collisions>Disabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1846,8 +1846,8 @@
                         <x>88</x>
                         <y>165</y>
                         <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
+                        <width>45.333332062</width>
+                        <height>45.333332062</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1860,7 +1860,7 @@
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>2</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <collisions>Disabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1868,10 +1868,10 @@
                         <x>88</x>
                         <y>242</y>
                         <z>0</z>
-                        <width>132</width>
-                        <height>64</height>
+                        <width>84.173912048</width>
+                        <height>44.408164978</height>
                         <depth>0</depth>
-                        <hotspotX>0.502415478</hotspotX>
+                        <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
