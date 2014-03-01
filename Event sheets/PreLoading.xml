@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>PreLoading</name>
     <events>
-        <event-group description="" sid="7326609307529562" title="Init">
+        <event-group collapsed="1" description="" sid="7326609307529562" title="Init">
             <sub-events>
                 <variable constant="1" name="InfoText" sid="4523699395393778" static="1" type="text">Loading</variable>
                 <variable constant="0" name="Counter" sid="431448442404548" static="1" type="number">0</variable>
@@ -22,10 +22,21 @@
                                 <action id="0" name="Alert" sid="8857188040645162" type="Browser">
                                     <param id="0" name="Message">&quot;Your browser don&apos;t support WebGL!&quot; &amp; newline&#x0D;&#x0A;&amp; &quot;Please use Firefox or Chrome&quot;</param>
                                 </action>
-                                <action id="7" name="Go to URL" sid="6197759357373075" type="Browser">
-                                    <param id="0" name="URL">&quot;http://www.mozilla.org/ru/firefox/&quot;</param>
+                                <action id="12" name="Vibrate" sid="7015368697570547" type="Browser">
+                                    <param id="0" name="Pattern">&quot;200,100,200&quot;</param>
                                 </action>
-                                <action id="1" name="Close" sid="7499454902567987" type="Browser" />
+                                <action id="3" name="Blur" sid="9989465396447425" type="Browser" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="763246621672793">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="2952024393653098" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Focus" sid="6824660777860751" type="Browser" />
+                                <action id="0" name="Set cursor style" sid="6648041174433513" type="Mouse">
+                                    <param id="0" name="Cursor style">7</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="924213932302037">
@@ -33,12 +44,16 @@
                                 <condition id="-4" name="Trigger once while true" sid="1037070136597653" type="System" />
                             </conditions>
                             <actions>
-                                <action id="0" name="Set cursor style" sid="6648041174433513" type="Mouse">
-                                    <param id="0" name="Cursor style">7</param>
-                                </action>
                                 <action id="0" name="Set text" sid="5858487512823433" type="Text">
                                     <param id="0" name="Text">INFOTEXT</param>
                                 </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8950456463833908">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="3105046794101381" type="System" />
+                            </conditions>
+                            <actions>
                                 <action id="-3" name="Set position" sid="6491387458827506" type="PauseFon">
                                     <param id="0" name="X">0</param>
                                     <param id="1" name="Y">0</param>
@@ -59,16 +74,9 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="2464212314203558">
-                            <conditions>
-                                <condition id="-4" name="Trigger once while true" sid="3252118710364323" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="2" name="Focus" sid="4713296459208106" type="Browser" />
-                            </actions>
-                        </event-block>
                     </sub-events>
                 </event-block>
+                <comment>эффект загрузки</comment>
                 <event-block sid="5231068285276989">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="1445109012567282" type="System">
@@ -114,13 +122,21 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="7414821052051769" title="Complete">
+        <event-group collapsed="1" description="" sid="7414821052051769" title="Complete">
             <sub-events>
                 <event-block sid="5586904489308846">
                     <conditions>
                         <condition id="-25" name="On loader layout complete" sid="7566483755849124" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-12" name="Set group active" sid="1234411435187414" type="System">
+                            <param id="0" name="Group name">&quot;Complete&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="355627897274455" type="System">
+                            <param id="0" name="Group name">&quot;Init&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="4674771156217781" type="System">
                             <param id="0" name="Layout">MainMenu</param>
                         </action>

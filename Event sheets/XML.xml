@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>XML</name>
+    <events>
+        <event-group description="" sid="7319488293099331" title="XML">
+            <sub-events>
+                <event-block collapsed="1" sid="4468110324161785">
+                    <conditions>
+                        <condition id="0" name="On function" sid="2797192634825005" type="Function">
+                            <param id="0" name="Name">&quot;XMLaboutInit&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Load" sid="961045264799612" type="XMLabout">
+                            <param id="0" name="XML">&quot;&lt;?xml version=&quot;&quot;1.0&quot;&quot; encoding=&quot;&quot;UTF-8&quot;&quot;?&gt;&#x0D;&#x0A;&lt;about&gt;&#x0D;&#x0A;  &lt;developer url=&quot;&quot;//site.baskovsky.ru/&quot;&quot;&gt;Denis Baskovsky&#x0D;&#x0A;  &lt;/developer&gt;&#x0D;&#x0A;  &lt;game year=&quot;&quot;[2014]&quot;&quot;&gt;Arkahold WebGL&lt;/game&gt;&#x0D;&#x0A;  &lt;framework url=&quot;&quot;//www.scirra.com/&quot;&quot;&gt;Construct 2&lt;/framework&gt;&#x0D;&#x0A;&lt;/about&gt;&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="7087168214691801">
+                            <conditions>
+                                <condition id="0" name="For each node" sid="7000235165991411" type="XMLabout">
+                                    <param id="0" name="XPath">&quot;developer&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="2071939846116745">
+                                    <conditions />
+                                    <actions>
+                                        <action id="1" name="Append text" sid="2255456783598888" type="Info">
+                                            <param id="0" name="Text">&quot;Developer: &quot; &amp;&#x0D;&#x0A;  XMLabout.StringValue(&quot;text()&quot;)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="4061242650292395">
+                            <conditions>
+                                <condition id="0" name="For each node" sid="4105590216719365" type="XMLabout">
+                                    <param id="0" name="XPath">&quot;framework&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="5527128189499477">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="6417372256354672" type="Info">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="4686883763952803" type="Info">
+                                            <param id="0" name="Text">&quot;Create with &quot; &amp; &#x0D;&#x0A;  XMLabout.StringValue(&quot;text()&quot;)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="2071355528962264">
+                            <conditions>
+                                <condition id="0" name="For each node" sid="5028403623850434" type="XMLabout">
+                                    <param id="0" name="XPath">&quot;game&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="6763235660060172">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="2286560322998348" type="Info">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="8439504978392879" type="Info">
+                                            <param id="0" name="Text">newline &amp; XMLabout.StringValue(&quot;text()&quot;) &amp; &#x0D;&#x0A;  &quot; v&quot; &amp; projectversion </param>
+                                        </action>
+                                        <action id="1" name="Append text" sid="6026451468869868" type="Info">
+                                            <param id="0" name="Text">&quot; &quot; &amp; XMLabout.StringValue(&quot;@year&quot;)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4745626570899566">
+                    <conditions>
+                        <condition id="0" name="On function" sid="1272371709899618" type="Function">
+                            <param id="0" name="Name">&quot;XMLkeysDescr&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Load" sid="6292621448319238" type="XMLkeys">
+                            <param id="0" name="XML">&quot;&lt;?xml version=&quot;&quot;1.0&quot;&quot; encoding=&quot;&quot;UTF-8&quot;&quot;?&gt;&#x0D;&#x0A;&lt;keys_descr&gt;&#x0D;&#x0A;&#x09;&lt;descr key=&quot;&quot;sound&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;keyboard&gt;S&lt;/keyboard&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;gamepad&gt;Y&lt;/gamepad&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;eng_text&gt;Sound&lt;/eng_text&gt;&#x0D;&#x0A;&#x09;&lt;/descr&gt;&#x0D;&#x0A;&#x09;&lt;descr key=&quot;&quot;more games&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;keyboard&gt;M&lt;/keyboard&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;gamepad&gt;X&lt;/gamepad&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;eng_text&gt;more games&lt;/eng_text&gt;&#x0D;&#x0A;&#x09;&lt;/descr&gt;&#x0D;&#x0A;&#x09;&lt;descr key=&quot;&quot;play&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;keyboard&gt;P&lt;/keyboard&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;gamepad&gt;START&lt;/gamepad&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;eng_text&gt;PLAY&lt;/eng_text&gt;&#x0D;&#x0A;&#x09;&lt;/descr&gt;&#x0D;&#x0A;&#x09;&lt;descr key=&quot;&quot;how to play&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;keyboard&gt;H&lt;/keyboard&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;gamepad&gt;B&lt;/gamepad&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;eng_text&gt;how to play&lt;/eng_text&gt;&#x0D;&#x0A;&#x09;&lt;/descr&gt;&#x0D;&#x0A;&#x09;&lt;descr key=&quot;&quot;back&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;keyboard&gt;B&lt;/keyboard&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;gamepad&gt;B&lt;/gamepad&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;eng_text&gt;back&lt;/eng_text&gt;&#x0D;&#x0A;&#x09;&lt;/descr&gt;&#x0D;&#x0A;&#x09;&#x0D;&#x0A;&lt;/keys_descr&gt;&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block collapsed="1" sid="8282546582506445">
+                            <conditions>
+                                <condition id="0" name="For each node" sid="4912225696330997" type="XMLkeys">
+                                    <param id="0" name="XPath">&quot;descr&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="3294564820923156">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="6957105735978559" type="System">
+                                            <param id="0" name="Object">Links</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="4596989795423671" type="Links">
+                                            <param id="0" name="Instance variable">keyDescr</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">&quot;&quot;</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="1333031243538955" type="System">
+                                            <param id="0" name="First value">XMLkeys.StringValue(&quot;@key&quot;)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">Links.keyDescr</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="9159689436242302">
+                                            <conditions>
+                                                <condition id="0" name="For each node" sid="6040637370954736" type="XMLkeys">
+                                                    <param id="0" name="XPath">&quot;eng_text&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="8483309612903823" type="Links">
+                                                    <param id="0" name="Text">&quot;&quot;</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="2330246163487386" type="Links">
+                                                    <param id="0" name="Text">XMLkeys.StringValue(&quot;node()&quot;) &amp; newline</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="7136326327664647">
+                                            <conditions>
+                                                <condition id="-15" name="Is group active" sid="8037301976763471" type="System">
+                                                    <param id="0" name="Group name">&quot;KeyboardGame&quot;</param>
+                                                </condition>
+                                                <condition id="0" name="For each node" sid="8952032985819524" type="XMLkeys">
+                                                    <param id="0" name="XPath">&quot;keyboard&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="1" name="Append text" sid="342555176920091" type="Links">
+                                                    <param id="0" name="Text">&quot;[&quot; &#x0D;&#x0A;  &amp; XMLkeys.StringValue(&quot;node()&quot;)&#x0D;&#x0A;  &amp; &quot;]&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="1460229711434425">
+                                            <conditions>
+                                                <condition id="-15" name="Is group active" sid="2568943293298223" type="System">
+                                                    <param id="0" name="Group name">&quot;GamePadGame&quot;</param>
+                                                </condition>
+                                                <condition id="0" name="For each node" sid="4377995379732636" type="XMLkeys">
+                                                    <param id="0" name="XPath">&quot;gamepad&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="1" name="Append text" sid="2625436068386265" type="Links">
+                                                    <param id="0" name="Text">&quot;[&quot; &#x0D;&#x0A;  &amp; XMLkeys.StringValue(&quot;node()&quot;)&#x0D;&#x0A;  &amp; &quot;]&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="2411461328238809">
+                    <conditions>
+                        <condition id="0" name="On function" sid="1233462587138116" type="Function">
+                            <param id="0" name="Name">&quot;XMLCheatsLoad&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Load" sid="8314100460110534" type="XMLCheats">
+                            <param id="0" name="XML">&quot;&lt;?xml version=&quot;&quot;1.0&quot;&quot; encoding=&quot;&quot;UTF-8&quot;&quot;?&gt;&#x0D;&#x0A;&lt;cheats&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;LVLTW&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;2&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;RNDWD&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;3&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;MNYBL&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;4&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;SMLBS&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;5&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;TTRIS&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;6&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;HNYAN&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;7&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;MARIO&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;8&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;DBLPL&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;9&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;BIGBS&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;10&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;DAODA&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;11&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;RACIN&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;12&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;MYLOV&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;13&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;KOLON&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;14&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;FUUCK&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;15&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;REMIT&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;16&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;SFISH&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;17&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;OLOLO&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;18&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&#x09;&lt;cheat keys=&quot;&quot;UTKRA&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;level&gt;19&lt;/level&gt;&#x0D;&#x0A;&#x09;&lt;/cheat&gt;&#x0D;&#x0A;&lt;/cheats&gt;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Block</name>
     <events>
-        <event-group collapsed="1" description="" sid="2821068537602053" title="BlocksInit">
+        <event-group description="" sid="2821068537602053" title="BlocksInit">
             <sub-events>
                 <variable comment="количество блоков на уровне" constant="0" name="BlockCount" sid="2958337952286063" static="1" type="number">0</variable>
                 <event-block sid="8193097524030829">
@@ -31,7 +31,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block collapsed="1" sid="6310530394551787">
+                <event-block sid="6310530394551787">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="4269100013771889" type="System" />
                     </conditions>
@@ -42,11 +42,11 @@
                                 <condition id="-12" name="Repeat" sid="4229325907515461" type="System">
                                     <param id="0" name="Count">BONUSCOUNT</param>
                                 </condition>
-                                <condition id="-16" name="Pick random instance" sid="3329877114111824" type="System">
-                                    <param id="0" name="Object">block</param>
-                                </condition>
                                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="9775880848092171" type="block">
                                     <param id="0" name="Instance variable">isBonus</param>
+                                </condition>
+                                <condition id="-16" name="Pick random instance" sid="3329877114111824" type="System">
+                                    <param id="0" name="Object">block</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -180,7 +180,6 @@
                 <comment>анимация загрузки блоков</comment>
                 <event-block sid="2200340708975707">
                     <conditions>
-                        <condition id="-23" name="While" sid="2964878651860651" type="System" />
                         <condition id="-7" name="Compare instance variable" sid="4860579245876149" type="block">
                             <param id="0" name="Instance variable">animatedTime</param>
                             <param id="1" name="Comparison">2</param>
@@ -201,21 +200,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="5938636814478972" title="BlocksExit">
-            <sub-events>
-                <event-block disabled="1" sid="3140229747681552">
-                    <conditions>
-                        <condition id="-3" name="On end of layout" sid="3805215715084828" type="System" />
-                    </conditions>
-                    <actions />
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-block sid="3255964214301309">
-            <conditions>
-                <condition id="11" name="Collisions enabled" sid="1989632926434725" type="block" />
-            </conditions>
-            <actions />
-        </event-block>
     </events>
 </c2eventsheet>

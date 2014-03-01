@@ -51,7 +51,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="Управление клавиатурой" inactive="1" sid="6104087573860702" title="KeyboardGame">
+        <event-group description="Управление клавиатурой" inactive="1" sid="6104087573860702" title="KeyboardGame">
             <sub-events>
                 <event-block sid="115">
                     <conditions>
@@ -94,9 +94,10 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="Управление геймпадом (xbox 360)" inactive="1" sid="6184650560304404" title="GamePadGame">
+        <event-group description="Управление геймпадом (xbox 360)" inactive="1" sid="6184650560304404" title="GamePadGame">
             <sub-events>
                 <comment>LEFT</comment>
+                <variable constant="1" name="PlayerSpeed" sid="6018666516688472" static="1" type="number">100</variable>
                 <event-block any="1" sid="9826463481818341">
                     <conditions>
                         <condition id="3" name="Is button down" sid="8744373380320261" type="Gamepad">
@@ -107,7 +108,7 @@
                     <actions>
                         <action id="0" name="Call function" sid="7268727538968567" type="Function">
                             <param id="0" name="Name">&quot;PlayerLeft&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
+                            <param id="1" name="Parameter {n}">PLAYERSPEED</param>
                         </action>
                     </actions>
                 </event-block>
@@ -139,7 +140,7 @@
                     <actions>
                         <action id="0" name="Call function" sid="912255292096071" type="Function">
                             <param id="0" name="Name">&quot;PlayerRight&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
+                            <param id="1" name="Parameter {n}">PLAYERSPEED</param>
                         </action>
                     </actions>
                 </event-block>
@@ -242,7 +243,7 @@
                     </sub-events>
                 </event-block>
                 <comment>шаг влево</comment>
-                <event-block collapsed="1" sid="4805098805118544">
+                <event-block sid="4805098805118544">
                     <conditions>
                         <condition id="0" name="On function" sid="2738331251329781" type="Function">
                             <param id="0" name="Name">&quot;PlayerLeft&quot;</param>
@@ -280,7 +281,7 @@
                     </sub-events>
                 </event-block>
                 <comment>шаг вправо</comment>
-                <event-block collapsed="1" sid="4124734915202042">
+                <event-block sid="4124734915202042">
                     <conditions>
                         <condition id="0" name="On function" sid="3972968672452599" type="Function">
                             <param id="0" name="Name">&quot;PlayerRight&quot;</param>

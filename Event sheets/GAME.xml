@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GAME</name>
     <events>
+        <include>Tooltip</include>
         <include>Pause</include>
         <include>GameControls</include>
         <include>Global</include>
@@ -53,12 +54,14 @@
                             </actions>
                         </event-block>
                         <event-block sid="7660167030586494">
-                            <conditions>
-                                <condition id="-3" name="Is on-screen" sid="821313384211444" type="TextCheat" />
-                            </conditions>
+                            <conditions />
                             <actions>
-                                <action id="-15" name="Set visible" sid="8975824272154781" type="TextCheat">
-                                    <param id="0" name="Visibility">0</param>
+                                <action id="0" name="Set text" sid="3865556564852384" type="TextCheat">
+                                    <param id="0" name="Text">&quot;Level Cheat-Code: &quot; &amp; newline &amp; Self.Text</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="4035417740113016" type="TextCheat">
+                                    <param id="0" name="X">LayoutWidth / 2</param>
+                                    <param id="1" name="Y">ViewportBottom(Self.LayerNumber) - 100</param>
                                 </action>
                             </actions>
                         </event-block>

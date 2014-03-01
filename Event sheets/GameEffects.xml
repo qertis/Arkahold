@@ -37,7 +37,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="4439008932082915" title="Tiled">
+        <event-group description="" sid="4439008932082915" title="Tiled">
             <sub-events>
                 <event-block sid="4168582775702655">
                     <conditions>
@@ -72,7 +72,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="3059559455478436" title="FadeLines">
+        <event-group description="" sid="3059559455478436" title="FadeLines">
             <sub-events>
                 <event-block sid="6390272955796266">
                     <conditions>
@@ -116,7 +116,7 @@
         </event-group>
         <event-group description="" sid="2800154197089732" title="BackgroundEffect">
             <sub-events>
-                <variable comment="число анимаций" constant="1" name="ANIMATIONSCOUNT" sid="8070171693835447" static="1" type="number">3</variable>
+                <variable comment="число анимаций" constant="1" name="ANIMATIONSCOUNT" sid="8070171693835447" static="1" type="number">5</variable>
                 <event-block sid="2597910738546338">
                     <conditions>
                         <condition behavior="Timer" id="0" name="On timer" sid="206236475316514" type="BackgroundEffect">
@@ -210,7 +210,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="7550001064385214" title="LevelFloor">
+        <event-group description="" sid="7550001064385214" title="LevelFloor">
             <sub-events>
                 <variable constant="1" name="LVLFloorHeight" sid="3076953775876643" static="0" type="number">30</variable>
                 <event-block sid="4513110750661687">

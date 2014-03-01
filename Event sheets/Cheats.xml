@@ -76,7 +76,7 @@
                             </actions>
                         </event-block>
                         <comment>переход по уровням</comment>
-                        <event-block collapsed="1" sid="1094138760751193">
+                        <event-block sid="1094138760751193">
                             <conditions>
                                 <condition id="-22" name="Else" sid="2418933061863167" type="System" />
                                 <condition id="0" name="For each node" sid="4979587318917053" type="XMLCheats">
@@ -108,7 +108,7 @@
                                                 </action>
                                                 <action id="0" name="Call function" sid="8759559099788325" type="Function">
                                                     <param id="0" name="Name">&quot;OnCheat&quot;</param>
-                                                    <param id="1" name="Parameter {n}">&quot;BIGBS&quot;</param>
+                                                    <param id="1" name="Parameter {n}">XMLCheats.StringValue(&quot;node()&quot;)</param>
                                                 </action>
                                             </actions>
                                         </event-block>

@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>TextInfo</name>
     <events>
-        <event-group collapsed="1" description="" sid="6064134714861906" title="TextInfoInit">
+        <event-group description="" sid="6064134714861906" title="TextInfoInit">
             <sub-events>
                 <event-block sid="5226319090108434">
                     <conditions>
@@ -16,6 +16,13 @@
                             <param id="2" name="X">LayoutWidth / 2</param>
                             <param id="3" name="Y">LayoutHeight / 2</param>
                         </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4172855176204552">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="4052951016344489" type="Text" />
+                    </conditions>
+                    <actions>
                         <action id="4" name="Set font color" sid="6873800112736067" type="Text">
                             <param id="0" name="Color">rgb(255, 255, 255)</param>
                         </action>

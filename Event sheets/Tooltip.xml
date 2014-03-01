@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Tooltip</name>
+    <events>
+        <event-group description="" sid="7591601917230754" title="Tooltip">
+            <sub-events>
+                <event-block sid="6533937078920609">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="5430660771115994" type="Tooltip" />
+                    </conditions>
+                    <actions>
+                        <action id="-27" name="Set effect enabled" sid="5530634699125456" type="Tooltip">
+                            <param id="0" name="Mode">1</param>
+                            <param id="1" name="Effect">&quot;HighlightShadow&quot;</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="1739015337475301" type="Tooltip">
+                            <param id="0" name="Mode">1</param>
+                            <param id="1" name="Effect">&quot;Difference&quot;</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="6361413577386476" type="Tooltip">
+                            <param id="0" name="Width">LayoutWidth * 1.5</param>
+                            <param id="1" name="Height">LayoutHeight * 1.5</param>
+                        </action>
+                        <action behavior="Fade" id="0" name="Restart fade" sid="8733113262580932" type="Tooltip" />
+                    </actions>
+                </event-block>
+                <event-block sid="9835291142708246">
+                    <conditions>
+                        <condition id="0" name="On function" sid="8936402771269883" type="Function">
+                            <param id="0" name="Name">&quot;TooltipText&quot;</param>
+                        </condition>
+                        <condition id="1" name="Compare parameter" sid="2373099711376775" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="3302379633975277" type="System">
+                            <param id="0" name="Object to create">Tooltip</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="X">Function.ParamCount &gt; 1 &#x0D;&#x0A;  ? Function.Param(1)&#x0D;&#x0A;  :   Function.Call(&quot;cx&quot;)</param>
+                            <param id="3" name="Y">Function.ParamCount &gt; 1 &#x0D;&#x0A;  ? Function.Param(2)&#x0D;&#x0A;  :   Function.Call(&quot;cy&quot;)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="2790746836977161" type="Tooltip">
+                            <param id="0" name="Text">uppercase(str(Function.Param(0)))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2358569446087963">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="8741064592366583" type="Tooltip" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set scale" sid="477468291984247" type="Tooltip">
+                            <param id="0" name="Scale">lerp(self.CharacterScale, 1, dt*2)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

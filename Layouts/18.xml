@@ -75,11 +75,11 @@
                         <x>250</x>
                         <y>465</y>
                         <z>0</z>
-                        <width>65</width>
-                        <height>13</height>
+                        <width>51</width>
+                        <height>11</height>
                         <depth>0</depth>
-                        <hotspotX>0.507692337</hotspotX>
-                        <hotspotY>0.538461566</hotspotY>
+                        <hotspotX>0.509803951</hotspotX>
+                        <hotspotY>0.545454562</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -6041,26 +6041,26 @@
                 <instance type="TextCheat" uid="2175">
                     <properties>
                         <text>OLOLO</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-24,400,0</font>
                         <color>255,255,255</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-96</x>
-                        <y>372</y>
+                        <x>-60</x>
+                        <y>36</y>
                         <z>0</z>
-                        <width>96</width>
-                        <height>36</height>
+                        <width>500</width>
+                        <height>100</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

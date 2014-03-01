@@ -4,28 +4,28 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>300.257</position-x>
-        <position-y>298.482</position-y>
-        <position-z>117.301</position-z>
-        <lookat-x>300.257</lookat-x>
-        <lookat-y>298.482</lookat-y>
+        <position-x>359.53</position-x>
+        <position-y>237.252</position-y>
+        <position-z>130.442</position-z>
+        <lookat-x>359.53</lookat-x>
+        <lookat-y>237.252</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
-    <show-grid>1</show-grid>
+    <show-grid>0</show-grid>
     <snap-width>12</snap-width>
     <snap-height>12</snap-height>
     <show-collision-polys>0</show-collision-polys>
     <translucent-inactive-layers>0</translucent-inactive-layers>
     <properties>
         <property expanded="1" name="Layout properties" />
-        <property expanded="1" name="Layout Size" />
-        <property expanded="1" name="Margins" />
+        <property expanded="0" name="Layout Size" />
+        <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
     <active-layer name="ui" />
     <layers>
-        <layer locked="0" name="back" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="back" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="game" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="blocks" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="ui" parallax-in-editor="0" visible="1" />

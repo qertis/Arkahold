@@ -18,7 +18,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" inactive="1" sid="1935630841217072" title="Ball">
+        <event-group description="" inactive="1" sid="1935630841217072" title="Ball">
             <sub-events>
                 <variable comment="скорость шара" constant="1" name="BALLSPEED" sid="64" static="1" type="number">150</variable>
                 <variable comment="гравитация шара" constant="1" name="BALLGRAVITY" sid="426347581381694" static="1" type="number">5</variable>
@@ -204,7 +204,9 @@
                                 </event-block>
                                 <comment>эффект затенения </comment>
                                 <event-block sid="2227408401508526">
-                                    <conditions />
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="4086224331253078" type="System" />
+                                    </conditions>
                                     <actions>
                                         <action id="0" name="Call function" sid="8684459344469234" type="Function">
                                             <param id="0" name="Name">&quot;ShowBackDark&quot;</param>
@@ -212,13 +214,30 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <comment>показ оставшихся жизней</comment>
+                                <comment>сообщение оставшихся жизней</comment>
                                 <event-block sid="7936160786706644">
-                                    <conditions />
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="764893524432881" type="System">
+                                            <param id="0" name="First value">Function.Call(&quot;GetLifes&quot;)</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
                                     <actions>
                                         <action id="0" name="Call function" sid="4054003432146565" type="Function">
                                             <param id="0" name="Name">&quot;TooltipText&quot;</param>
-                                            <param id="1" name="Parameter {n}">Function.Call(&quot;GetLifes&quot;) &amp; newline &amp; &quot; lfs!&quot;</param>
+                                            <param id="1" name="Parameter {n}">Function.Call(&quot;GetLifes&quot;) &amp; newline &amp; &quot;lifes!&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="9033992098010791">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="4438554312484644" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="9940616564307083" type="Function">
+                                            <param id="0" name="Name">&quot;FreezeObj&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
                                 </event-block>
