@@ -1985,7 +1985,7 @@
                 <instance type="block" uid="280">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Big</initial-animation>
+                        <initial-animation>small</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -2046,11 +2046,11 @@
                         <x>336</x>
                         <y>348</y>
                         <z>0</z>
-                        <width>35</width>
-                        <height>35</height>
+                        <width>20.416666031</width>
+                        <height>20.416666031</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.523809552</hotspotX>
+                        <hotspotY>0.523809552</hotspotY>
                         <angle>0</angle>
                         <opacity>0.899999976</opacity>
                     </world>

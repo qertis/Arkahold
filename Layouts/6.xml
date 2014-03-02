@@ -3793,8 +3793,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>396</x>
-                        <y>96</y>
+                        <x>360</x>
+                        <y>132</y>
                         <z>0</z>
                         <width>36</width>
                         <height>36</height>
@@ -3870,7 +3870,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>396</x>
-                        <y>60</y>
+                        <y>96</y>
                         <z>0</z>
                         <width>36</width>
                         <height>36</height>

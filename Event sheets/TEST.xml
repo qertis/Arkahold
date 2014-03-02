@@ -3,9 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>TEST</name>
     <events>
-        <event-group description="" sid="3464561530984937" title="TEST">
+        <event-group bookmark="1" collapsed="1" description="" disabled="1" sid="3464561530984937" title="TEST">
             <sub-events>
-                <event-block sid="5879681738730643">
+                <event-block disabled="1" sid="5879681738730643">
                     <conditions>
                         <condition id="-3" name="On end of layout" sid="8034451406665322" type="System" />
                     </conditions>
@@ -17,7 +17,7 @@
                     </actions>
                 </event-block>
                 <comment>TEST ONLY</comment>
-                <event-block sid="1219709148354795">
+                <event-block disabled="1" sid="1219709148354795">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="7538788855833164" type="Keyboard">
                             <param id="0" name="Key">57 (9)</param>
@@ -30,7 +30,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="9081140209055745">
+                <event-block disabled="1" sid="9081140209055745">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="4941397145624275" type="Keyboard">
                             <param id="0" name="Key">50 (2)</param>
@@ -40,7 +40,7 @@
                         <action behavior="FadeDestroy" id="1" name="Start fade" sid="4939812570895589" type="block" />
                     </actions>
                 </event-block>
-                <event-block sid="7626265232704034">
+                <event-block disabled="1" sid="7626265232704034">
                     <conditions>
                         <condition id="3" name="On key released" sid="1883729840746536" type="Keyboard">
                             <param id="0" name="Key">9 (Tab)</param>
@@ -52,7 +52,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="7759835614706178">
+                <event-block disabled="1" sid="7759835614706178">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="2946014219477958" type="Keyboard">
                             <param id="0" name="Key">16 (Shift)</param>

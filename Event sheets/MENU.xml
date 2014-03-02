@@ -12,7 +12,7 @@
         <include>Camera</include>
         <include>Cosmos</include>
         <include>Loading</include>
-        <event-group description="" sid="7962437702440751" title="MenuInit">
+        <event-group collapsed="1" description="" sid="7962437702440751" title="MenuInit">
             <sub-events>
                 <event-block sid="5792703236058518">
                     <conditions>

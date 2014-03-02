@@ -83,7 +83,7 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use iOS retina display">All devices</prop>
     </configuration-settings>
-    <object-folder expanded="1">
+    <object-folder expanded="0">
         <object-folder expanded="0" name="Control">
             <object-type name="Keyboard" sid="0">
                 <plugin id="Keyboard" />
@@ -109,8 +109,8 @@
                         <frame duration="1" hotspotX="0" hotspotY="0">
                             <collision-poly>
                                 <point x="0" y="0" />
-                                <point x="1" y="0.263393" />
-                                <point x="0.236111" y="0.986607" />
+                                <point x="0.546296" y="0.191964" />
+                                <point x="0.226852" y="0.46875" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -564,7 +564,7 @@
                 <texture />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="Other">
+        <object-folder expanded="0" name="Other">
             <object-type global="1" name="Camera" sid="50">
                 <plugin id="Sprite" />
                 <behaviors>
@@ -920,9 +920,9 @@
         </object-type>
     </object-folder>
     <families />
-    <layout-folder expanded="1">
-        <layout-folder expanded="1" name="Levels">
-            <layout-folder expanded="1" name="1-10">
+    <layout-folder expanded="0">
+        <layout-folder expanded="0" name="Levels">
+            <layout-folder expanded="0" name="1-10">
                 <layout>1.xml</layout>
                 <layout>2.xml</layout>
                 <layout>3.xml</layout>

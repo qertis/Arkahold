@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Controls</name>
     <events>
-        <event-group collapsed="1" description="Управление в меню" inactive="1" sid="3832131130592746" title="MenuKey">
+        <event-group description="Управление в меню" inactive="1" sid="3832131130592746" title="MenuKey">
             <sub-events>
                 <event-block any="1" sid="4583720583695985">
                     <conditions>
@@ -50,24 +50,11 @@
                                     <param id="0" name="Name">&quot;ToggleSounds&quot;</param>
                                     <param id="1" name="Parameter {n}">PlayPauseBtn.UID</param>
                                 </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="3946146601663323">
-                            <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="4251475025181453" type="Cursor">
-                                    <param id="0" name="Object">Links</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="4510143317748069" type="Links">
-                                    <param id="0" name="Instance variable">keyDescr</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;sound&quot;</param>
-                                </condition>
-                                <condition id="-9" name="Is visible" sid="4957842475776956" type="PlayPauseBtn" />
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Call function" sid="8986618957490271" type="Function">
-                                    <param id="0" name="Name">&quot;ToggleSounds&quot;</param>
-                                    <param id="1" name="Parameter {n}">PlayPauseBtn.UID</param>
+                                <action id="0" name="Play" sid="21898681661133" type="Audio">
+                                    <param id="0" name="Audio file">button</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

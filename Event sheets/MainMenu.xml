@@ -150,7 +150,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="текст" inactive="1" sid="5352166729458236" title="Timer">
+        <event-group description="текст" inactive="1" sid="5352166729458236" title="Timer">
             <sub-events>
                 <variable constant="0" name="Timer" sid="409505064658076" static="1" type="number">2</variable>
                 <comment>исчезание основываясь на таймере</comment>
@@ -184,6 +184,18 @@
                                     <param id="2" name="Loop">0</param>
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="6431789708199606" type="Links">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="9176245681722921" type="PlayPauseBtn">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="1154761161296191" type="Cursor">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="4417736696151249" type="wall">
+                                    <param id="0" name="Visibility">0</param>
                                 </action>
                             </actions>
                         </event-block>

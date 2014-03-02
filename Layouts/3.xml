@@ -4026,62 +4026,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Eye" uid="835">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>384</x>
-                        <y>60</y>
-                        <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>0.100000001</opacity>
-                    </world>
-                </instance>
-                <instance type="Pupil" uid="836">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <dx>0</dx>
-                        <dy>0</dy>
-                        <mlen>0</mlen>
-                        <endX>0</endX>
-                        <endY>0</endY>
-                        <PupilRadius>0</PupilRadius>
-                        <EyeRadius>0</EyeRadius>
-                        <EyeX>0</EyeX>
-                        <EyeY>0</EyeY>
-                        <isFindBall>false</isFindBall>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>384</x>
-                        <y>60</y>
-                        <z>0</z>
-                        <width>42</width>
-                        <height>42</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
             </instances>
             <effects>
                 <effect-type name="Toon">
