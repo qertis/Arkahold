@@ -2,10 +2,10 @@
 <c2project>
     <name>Arkahold</name>
     <description>Arkahold WebGL</description>
-    <version>0.9</version>
+    <version>1.0</version>
     <author>qertis</author>
     <author-email></author-email>
-    <author-website>site.baskovsky.ru</author-website>
+    <author-website>http://site.baskovsky.ru/projects/games/arkanoid-webgl</author-website>
     <app-id></app-id>
     <unique-id>3om4fqck6p5en</unique-id>
     <saved-with-version>16300</saved-with-version>
@@ -216,27 +216,27 @@
                     </effect-type>
                 </effects>
                 <animation-folder expanded="1">
-                    <animation framecount="3" loop="1" name="Effect0" pingpong="0" repeatcount="1" repeatto="0" sid="2047857142478356" speed="3">
+                    <animation framecount="3" loop="0" name="Effect0" pingpong="0" repeatcount="1" repeatto="0" sid="2047857142478356" speed="3">
                         <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
                         <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
                         <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
                     </animation>
-                    <animation framecount="3" loop="0" name="Effect1" pingpong="0" repeatcount="1" repeatto="0" sid="5156652290126137" speed="5">
+                    <animation framecount="3" loop="0" name="Effect1" pingpong="0" repeatcount="1" repeatto="0" sid="5156652290126137" speed="3">
                         <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
                         <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
                         <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
                     </animation>
-                    <animation framecount="3" loop="0" name="Effect2" pingpong="0" repeatcount="1" repeatto="0" sid="8176948191916909" speed="5">
+                    <animation framecount="3" loop="0" name="Effect2" pingpong="0" repeatcount="1" repeatto="0" sid="8176948191916909" speed="3">
                         <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
                         <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
                         <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
                     </animation>
-                    <animation framecount="3" loop="0" name="Effect3" pingpong="0" repeatcount="1" repeatto="0" sid="7735051337969979" speed="5">
+                    <animation framecount="3" loop="0" name="Effect3" pingpong="0" repeatcount="1" repeatto="0" sid="7735051337969979" speed="3">
                         <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
                         <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
                         <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
                     </animation>
-                    <animation framecount="3" loop="0" name="Effect4" pingpong="0" repeatcount="1" repeatto="0" sid="6119702541191186" speed="5">
+                    <animation framecount="3" loop="0" name="Effect4" pingpong="0" repeatcount="1" repeatto="0" sid="6119702541191186" speed="3">
                         <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
                         <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
                         <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
@@ -454,6 +454,7 @@
                     <instance-variable name="isBonus" sid="8829009031486799" type="boolean" />
                     <instance-variable comment="происходит анимация" name="animatedTime" sid="8823275928295297" type="number" />
                     <instance-variable comment="количество ударов шара по нему" name="kickCount" sid="3992841808829119" type="number" />
+                    <instance-variable name="activeSin" sid="886675195641953" type="boolean" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="Solid" sid="27">
@@ -767,6 +768,7 @@
                     <instance-variable name="color0" sid="6012343649197711" type="number" />
                     <instance-variable name="color1" sid="4656561908259522" type="number" />
                     <instance-variable name="color2" sid="9073125640476848" type="number" />
+                    <instance-variable name="sangle" sid="8923178795929828" type="number" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="Bullet" sid="20">
@@ -920,9 +922,9 @@
         </object-type>
     </object-folder>
     <families />
-    <layout-folder expanded="0">
+    <layout-folder expanded="1">
         <layout-folder expanded="0" name="Levels">
-            <layout-folder expanded="0" name="1-10">
+            <layout-folder expanded="1" name="1-10">
                 <layout>1.xml</layout>
                 <layout>2.xml</layout>
                 <layout>3.xml</layout>

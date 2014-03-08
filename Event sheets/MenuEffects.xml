@@ -20,10 +20,13 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="394715524819263" title="MenuEffects">
+        <event-group description="" sid="394715524819263" title="MenuEffects">
             <sub-events>
                 <event-block sid="6767533584579787">
                     <conditions>
+                        <condition id="-9" name="Layer is visible" sid="9368460838306905" type="System">
+                            <param id="0" name="Layer">&quot;blocks&quot;</param>
+                        </condition>
                         <condition id="-6" name="Every X seconds" sid="3228964219500556" type="System">
                             <param id="0" name="Interval (seconds)">0.2</param>
                         </condition>

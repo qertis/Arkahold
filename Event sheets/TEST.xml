@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>TEST</name>
     <events>
-        <event-group bookmark="1" collapsed="1" description="" disabled="1" sid="3464561530984937" title="TEST">
+        <event-group bookmark="1" description="" disabled="1" sid="3464561530984937" title="TEST">
             <sub-events>
                 <event-block disabled="1" sid="5879681738730643">
                     <conditions>
@@ -38,6 +38,19 @@
                     </conditions>
                     <actions>
                         <action behavior="FadeDestroy" id="1" name="Start fade" sid="4939812570895589" type="block" />
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="6542899053410858">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3690877057055178" type="Keyboard">
+                            <param id="0" name="Key">56 (8)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6302160359979254" type="ball">
+                            <param id="0" name="Animation">&quot;Super&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block disabled="1" sid="7626265232704034">

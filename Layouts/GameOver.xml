@@ -74,6 +74,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -147,6 +148,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -220,6 +222,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -293,6 +296,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -366,6 +370,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -439,6 +444,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -512,6 +518,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -585,6 +592,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -658,6 +666,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -731,6 +740,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -804,6 +814,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -877,6 +888,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -950,6 +962,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1023,6 +1036,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1096,6 +1110,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1169,6 +1184,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1242,6 +1258,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1315,6 +1332,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1388,6 +1406,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1461,6 +1480,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1534,6 +1554,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1607,6 +1628,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1680,6 +1702,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1753,6 +1776,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1826,6 +1850,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1899,6 +1924,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1972,6 +1998,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -2045,6 +2072,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -2118,6 +2146,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -2191,6 +2220,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -2264,6 +2294,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -2337,6 +2368,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -2410,6 +2442,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -2483,6 +2516,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -2556,6 +2590,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -2629,6 +2664,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -2702,6 +2738,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -2775,6 +2812,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -2848,6 +2886,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -2921,6 +2960,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -2994,6 +3034,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -3067,6 +3108,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -3140,6 +3182,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -3213,6 +3256,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -3286,6 +3330,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -3359,6 +3404,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -3432,6 +3478,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -3505,6 +3552,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -3578,6 +3626,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -3651,6 +3700,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -3724,6 +3774,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -3797,6 +3848,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -3870,6 +3922,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -3943,6 +3996,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -4016,6 +4070,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -4089,6 +4144,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -4162,6 +4218,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -4235,6 +4292,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -4308,6 +4366,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -4381,6 +4440,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -4454,6 +4514,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -4527,6 +4588,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -4600,6 +4662,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -4673,6 +4736,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -4746,6 +4810,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -4819,6 +4884,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -4892,6 +4958,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -4965,6 +5032,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -5038,6 +5106,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -5111,6 +5180,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -5184,6 +5254,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -5257,6 +5328,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -5330,6 +5402,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -5403,6 +5476,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -5476,6 +5550,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -5549,6 +5624,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -5622,6 +5698,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -5695,6 +5772,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -5768,6 +5846,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -5841,6 +5920,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -5914,6 +5994,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -5987,6 +6068,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -6060,6 +6142,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -6133,6 +6216,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -6206,6 +6290,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -6279,6 +6364,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -6352,6 +6438,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -6425,6 +6512,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -6498,6 +6586,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -6571,6 +6660,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -6644,6 +6734,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -6717,6 +6808,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -6790,6 +6882,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -6863,6 +6956,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -6936,6 +7030,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -7009,6 +7104,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -7082,6 +7178,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -7155,6 +7252,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -7228,6 +7326,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -7301,6 +7400,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -7374,6 +7474,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -7447,6 +7548,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -7520,6 +7622,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -7593,6 +7696,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -7666,6 +7770,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -7739,6 +7844,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -7812,6 +7918,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -7885,6 +7992,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -7958,6 +8066,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -8031,6 +8140,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -8104,6 +8214,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -8177,6 +8288,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -8250,6 +8362,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -8323,6 +8436,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -8396,6 +8510,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -8469,6 +8584,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -8542,6 +8658,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -8615,6 +8732,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -8688,6 +8806,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -8761,6 +8880,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -8834,6 +8954,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -8907,6 +9028,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -8980,6 +9102,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -9053,6 +9176,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -9126,6 +9250,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -9199,6 +9324,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -9272,6 +9398,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -9345,6 +9472,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -9418,6 +9546,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -9491,6 +9620,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -9564,6 +9694,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -9637,6 +9768,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -9710,6 +9842,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -9783,6 +9916,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -9856,6 +9990,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -9929,6 +10064,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -10002,6 +10138,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -10075,6 +10212,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -10148,6 +10286,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -10221,6 +10360,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -10294,6 +10434,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -10367,6 +10508,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -10440,6 +10582,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -10513,6 +10656,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -10586,6 +10730,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -10659,6 +10804,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -10732,6 +10878,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -10805,6 +10952,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -10878,6 +11026,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -10951,6 +11100,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -11024,6 +11174,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -11097,6 +11248,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -11170,6 +11322,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -11243,6 +11396,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -11316,6 +11470,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -11389,6 +11544,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -11462,6 +11618,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -11535,6 +11692,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -11608,6 +11766,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -11681,6 +11840,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -11754,6 +11914,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -11827,6 +11988,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -11900,6 +12062,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -11973,6 +12136,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -12046,6 +12210,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -12119,6 +12284,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -12192,6 +12358,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -12265,6 +12432,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -12338,6 +12506,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -12411,6 +12580,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -12484,6 +12654,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -12557,6 +12728,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -12630,6 +12802,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -12703,6 +12876,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -12776,6 +12950,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -12849,6 +13024,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -12922,6 +13098,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -12995,6 +13172,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -13068,6 +13246,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -13141,6 +13320,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -13214,6 +13394,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -13287,6 +13468,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -13360,6 +13542,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -13433,6 +13616,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -13506,6 +13690,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -13579,6 +13764,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -13652,6 +13838,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -13725,6 +13912,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -13798,6 +13986,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -13871,6 +14060,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">

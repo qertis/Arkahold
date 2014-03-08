@@ -87,7 +87,7 @@
                                     <param id="1" name="Parameter {n}">Function.Call(&quot;Life!&quot;)</param>
                                 </action>
                                 <action id="0" name="Set text" sid="4920545834831375" type="Text">
-                                    <param id="0" name="Text">&quot;Left &quot; &amp; tempLifes &amp; &quot; lifes&quot; &amp; newline</param>
+                                    <param id="0" name="Text">&quot;Lives left: &quot; &amp; tempLifes &amp; &quot;  &quot;</param>
                                 </action>
                             </actions>
                             <sub-events>

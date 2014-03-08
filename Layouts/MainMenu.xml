@@ -4528,7 +4528,7 @@
                         <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Right</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
+                        <vertical-alignment>Bottom</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <character-spacing>-1</character-spacing>
@@ -4555,11 +4555,11 @@
                     <blend-mode>6</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>77</x>
-                        <y>429</y>
+                        <x>0</x>
+                        <y>407</y>
                         <z>0</z>
-                        <width>418</width>
-                        <height>66</height>
+                        <width>473</width>
+                        <height>77</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

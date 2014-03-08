@@ -411,6 +411,7 @@
                         <isBonus>false</isBonus>
                         <animatedTime>0</animatedTime>
                         <kickCount>0</kickCount>
+                        <activeSin>false</activeSin>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -539,6 +540,7 @@
                         <color0>0</color0>
                         <color1>0</color1>
                         <color2>0</color2>
+                        <sangle>0</sangle>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">

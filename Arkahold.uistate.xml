@@ -10,16 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout>Objects</layout>
-        <layout>PreLoading</layout>
-        <layout>MainMenu</layout>
-        <event-sheet>Links</event-sheet>
-        <event-sheet>MainMenu</event-sheet>
-        <event-sheet>MENU</event-sheet>
-        <event-sheet>Global</event-sheet>
-        <event-sheet>Audio</event-sheet>
-        <event-sheet>Controls</event-sheet>
-        <event-sheet active="1">TEST</event-sheet>
+        <layout active="1">PreLoading</layout>
+        <event-sheet>Block</event-sheet>
+        <event-sheet>Ball</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

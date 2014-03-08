@@ -5,7 +5,7 @@
     <events>
         <event-group description="" sid="7319488293099331" title="XML">
             <sub-events>
-                <event-block collapsed="1" sid="4468110324161785">
+                <event-block sid="4468110324161785">
                     <conditions>
                         <condition id="0" name="On function" sid="2797192634825005" type="Function">
                             <param id="0" name="Name">&quot;XMLaboutInit&quot;</param>
@@ -13,7 +13,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Load" sid="961045264799612" type="XMLabout">
-                            <param id="0" name="XML">&quot;&lt;?xml version=&quot;&quot;1.0&quot;&quot; encoding=&quot;&quot;UTF-8&quot;&quot;?&gt;&#x0D;&#x0A;&lt;about&gt;&#x0D;&#x0A;  &lt;developer url=&quot;&quot;//site.baskovsky.ru/&quot;&quot;&gt;Denis Baskovsky&#x0D;&#x0A;  &lt;/developer&gt;&#x0D;&#x0A;  &lt;game year=&quot;&quot;[2014]&quot;&quot;&gt;Arkahold WebGL&lt;/game&gt;&#x0D;&#x0A;  &lt;framework url=&quot;&quot;//www.scirra.com/&quot;&quot;&gt;Construct 2&lt;/framework&gt;&#x0D;&#x0A;&lt;/about&gt;&quot;</param>
+                            <param id="0" name="XML">&quot;&lt;?xml version=&quot;&quot;1.0&quot;&quot; encoding=&quot;&quot;UTF-8&quot;&quot;?&gt;&#x0D;&#x0A;&lt;about&gt;&#x0D;&#x0A;  &lt;developer url=&quot;&quot;//site.baskovsky.ru/&quot;&quot;&gt;DENIS BASKOVSKY&lt;/developer&gt;&#x0D;&#x0A;  &lt;game year=&quot;&quot;[2014]&quot;&quot;&gt;Arkahold WebGL&lt;/game&gt;&#x0D;&#x0A;  &lt;framework url=&quot;&quot;//www.scirra.com/&quot;&quot;&gt;Construct 2&lt;/framework&gt;&#x0D;&#x0A;&lt;/about&gt;&quot;</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -29,7 +29,7 @@
                                     <conditions />
                                     <actions>
                                         <action id="1" name="Append text" sid="2255456783598888" type="Info">
-                                            <param id="0" name="Text">&quot;Developer: &quot; &amp;&#x0D;&#x0A;  XMLabout.StringValue(&quot;text()&quot;)</param>
+                                            <param id="0" name="Text">&quot;Developer: &quot; &amp;&#x0D;&#x0A;  XMLabout.StringValue(&quot;text()&quot;)&#x0D;&#x0A;  &amp; newline</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -53,7 +53,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="1" name="Append text" sid="4686883763952803" type="Info">
-                                            <param id="0" name="Text">&quot;Create with &quot; &amp; &#x0D;&#x0A;  XMLabout.StringValue(&quot;text()&quot;)</param>
+                                            <param id="0" name="Text">&quot;Created with &quot; &amp; &#x0D;&#x0A;  XMLabout.StringValue(&quot;text()&quot;)&#x0D;&#x0A;  &amp; newline</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -77,7 +77,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="1" name="Append text" sid="8439504978392879" type="Info">
-                                            <param id="0" name="Text">newline &amp; XMLabout.StringValue(&quot;text()&quot;) &amp; &#x0D;&#x0A;  &quot; v&quot; &amp; projectversion </param>
+                                            <param id="0" name="Text">XMLabout.StringValue(&quot;text()&quot;) &amp; &#x0D;&#x0A;  &quot; v&quot; &amp; projectversion </param>
                                         </action>
                                         <action id="1" name="Append text" sid="6026451468869868" type="Info">
                                             <param id="0" name="Text">&quot; &quot; &amp; XMLabout.StringValue(&quot;@year&quot;)</param>
@@ -96,7 +96,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Load" sid="6292621448319238" type="XMLkeys">
-                            <param id="0" name="XML">&quot;&lt;?xml version=&quot;&quot;1.0&quot;&quot; encoding=&quot;&quot;UTF-8&quot;&quot;?&gt;&#x0D;&#x0A;&lt;keys_descr&gt;&#x0D;&#x0A;&#x09;&lt;descr key=&quot;&quot;sound&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;keyboard&gt;S&lt;/keyboard&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;gamepad&gt;Y&lt;/gamepad&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;eng_text&gt;Sound&lt;/eng_text&gt;&#x0D;&#x0A;&#x09;&lt;/descr&gt;&#x0D;&#x0A;&#x09;&lt;descr key=&quot;&quot;more games&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;keyboard&gt;M&lt;/keyboard&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;gamepad&gt;X&lt;/gamepad&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;eng_text&gt;more games&lt;/eng_text&gt;&#x0D;&#x0A;&#x09;&lt;/descr&gt;&#x0D;&#x0A;&#x09;&lt;descr key=&quot;&quot;play&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;keyboard&gt;P&lt;/keyboard&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;gamepad&gt;START&lt;/gamepad&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;eng_text&gt;PLAY&lt;/eng_text&gt;&#x0D;&#x0A;&#x09;&lt;/descr&gt;&#x0D;&#x0A;&#x09;&lt;descr key=&quot;&quot;how to play&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;keyboard&gt;H&lt;/keyboard&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;gamepad&gt;B&lt;/gamepad&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;eng_text&gt;how to play&lt;/eng_text&gt;&#x0D;&#x0A;&#x09;&lt;/descr&gt;&#x0D;&#x0A;&#x09;&lt;descr key=&quot;&quot;back&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;keyboard&gt;B&lt;/keyboard&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;gamepad&gt;B&lt;/gamepad&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;eng_text&gt;back&lt;/eng_text&gt;&#x0D;&#x0A;&#x09;&lt;/descr&gt;&#x0D;&#x0A;&#x09;&#x0D;&#x0A;&lt;/keys_descr&gt;&quot;</param>
+                            <param id="0" name="XML">&quot;&lt;?xml version=&quot;&quot;1.0&quot;&quot; encoding=&quot;&quot;UTF-8&quot;&quot;?&gt;&#x0D;&#x0A;&lt;keys_descr&gt;&#x0D;&#x0A;&#x09;&lt;descr key=&quot;&quot;sound&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;keyboard&gt;S&lt;/keyboard&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;gamepad&gt;Y&lt;/gamepad&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;eng_text&gt;sound&lt;/eng_text&gt;&#x0D;&#x0A;&#x09;&lt;/descr&gt;&#x0D;&#x0A;&#x09;&lt;descr key=&quot;&quot;more games&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;keyboard&gt;M&lt;/keyboard&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;gamepad&gt;X&lt;/gamepad&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;eng_text&gt;more games&lt;/eng_text&gt;&#x0D;&#x0A;&#x09;&lt;/descr&gt;&#x0D;&#x0A;&#x09;&lt;descr key=&quot;&quot;play&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;keyboard&gt;P&lt;/keyboard&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;gamepad&gt;START&lt;/gamepad&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;eng_text&gt;PLAY&lt;/eng_text&gt;&#x0D;&#x0A;&#x09;&lt;/descr&gt;&#x0D;&#x0A;&#x09;&lt;descr key=&quot;&quot;how to play&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;keyboard&gt;H&lt;/keyboard&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;gamepad&gt;B&lt;/gamepad&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;eng_text&gt;how to play&lt;/eng_text&gt;&#x0D;&#x0A;&#x09;&lt;/descr&gt;&#x0D;&#x0A;&#x09;&lt;descr key=&quot;&quot;back&quot;&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;keyboard&gt;B&lt;/keyboard&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;gamepad&gt;B&lt;/gamepad&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;eng_text&gt;back&lt;/eng_text&gt;&#x0D;&#x0A;&#x09;&lt;/descr&gt;&#x0D;&#x0A;&#x09;&#x0D;&#x0A;&lt;/keys_descr&gt;&quot;</param>
                         </action>
                     </actions>
                     <sub-events>

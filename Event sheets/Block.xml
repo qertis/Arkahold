@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Block</name>
     <events>
-        <event-group description="" sid="2821068537602053" title="BlocksInit">
+        <event-group collapsed="1" description="" sid="2821068537602053" title="BlocksInit">
             <sub-events>
                 <variable comment="количество блоков на уровне" constant="0" name="BlockCount" sid="2958337952286063" static="1" type="number">0</variable>
                 <event-block sid="8193097524030829">
@@ -71,7 +71,22 @@
         </event-group>
         <event-group description="" sid="5072101667892949" title="Blocks">
             <sub-events>
-                <event-block sid="2317429303885951">
+                <event-block sid="6083225522634592">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="9804334310648406" type="block" />
+                        <condition behavior="Sine" id="0" name="Is active" sid="9437931984624632" type="block" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="0" name="Set active" sid="6113153518440703" type="block">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="1426904499371935" type="block">
+                            <param id="0" name="Instance variable">activeSin</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block collapsed="1" sid="2317429303885951">
                     <conditions>
                         <condition id="-19" name="On destroyed" sid="9794486999320709" type="block" />
                     </conditions>
@@ -197,6 +212,41 @@
                             <param id="2" name="Value">Self.animatedTime</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="6553151198339883">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="7414425742486944" type="block">
+                                    <param id="0" name="Instance variable">animatedTime</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1.00</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="1219805244527837" type="block">
+                                    <param id="0" name="Instance variable">animatedTime</param>
+                                    <param id="1" name="Value">999</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="1377981607391032">
+                                    <conditions>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="3022951644114132" type="block">
+                                            <param id="0" name="Instance variable">activeSin</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Sine" id="0" name="Set active" sid="291162590847623" type="block">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="8468682719069671" type="block">
+                                            <param id="0" name="Instance variable">activeSin</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

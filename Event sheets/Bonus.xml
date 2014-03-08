@@ -86,7 +86,7 @@
                             <actions>
                                 <action id="0" name="Call function" sid="7815691078235093" type="Function">
                                     <param id="0" name="Name">&quot;SpawnBackgroundEffect&quot;</param>
-                                    <param id="1" name="Parameter {n}">player.X{###}player.Y</param>
+                                    <param id="1" name="Parameter {n}">int(player.X){###}int(player.Y)</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -108,7 +108,7 @@
                     </actions>
                     <sub-events>
                         <comment>увеличение игрока</comment>
-                        <event-block collapsed="1" sid="7391147600138269">
+                        <event-block sid="7391147600138269">
                             <conditions>
                                 <condition id="1" name="Compare parameter" sid="3177125678150162" type="Function">
                                     <param id="0" name="Index">0</param>
@@ -123,7 +123,6 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <comment>встроить анимацию small&#x0D;&#x0A;refactor</comment>
                                 <event-block sid="9509401175119228">
                                     <conditions>
                                         <condition id="-3" name="Is on-screen" sid="7134886109096394" type="player" />
@@ -186,7 +185,8 @@
                             </sub-events>
                         </event-block>
                         <comment>супер шар -пробивает блок сразу. </comment>
-                        <event-block collapsed="1" sid="7831673346934183">
+                        <comment></comment>
+                        <event-block sid="7831673346934183">
                             <conditions>
                                 <condition id="-22" name="Else" sid="8404556654700004" type="System" />
                                 <condition id="1" name="Compare parameter" sid="9979335536281612" type="Function">
@@ -198,7 +198,7 @@
                             <actions>
                                 <action id="0" name="Call function" sid="8800454521102347" type="Function">
                                     <param id="0" name="Name">&quot;TooltipText&quot;</param>
-                                    <param id="1" name="Parameter {n}">&quot;Super!&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;Sball!&quot;</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -214,7 +214,7 @@
                             </sub-events>
                         </event-block>
                         <comment>замедление скорости шара</comment>
-                        <event-block collapsed="1" sid="2053967127436948">
+                        <event-block sid="2053967127436948">
                             <conditions>
                                 <condition id="-22" name="Else" sid="4270464846624113" type="System" />
                                 <condition id="1" name="Compare parameter" sid="924288935729611" type="Function">
@@ -244,7 +244,7 @@
                                             <param id="1" name="Value">ball.Bullet.Speed</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="115126584391275" type="ball">
-                                            <param id="0" name="Speed">speedState * 0.5</param>
+                                            <param id="0" name="Speed">speedState * 0.7</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="5103157398059754" type="System">
                                             <param id="0" name="Seconds">5.0</param>
@@ -284,7 +284,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <comment>увеличение скорости перемещения ракетки</comment>
+                        <comment>рандомное уничтожение блоков</comment>
                         <event-block sid="5524435933649725">
                             <conditions>
                                 <condition id="-22" name="Else" sid="8955890404747869" type="System" />
@@ -297,29 +297,26 @@
                             <actions>
                                 <action id="0" name="Call function" sid="5385197638365948" type="Function">
                                     <param id="0" name="Name">&quot;TooltipText&quot;</param>
-                                    <param id="1" name="Parameter {n}">&quot;Move!&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;Destroy!&quot;</param>
                                 </action>
                             </actions>
                             <sub-events>
                                 <event-block sid="2842768615567627">
                                     <conditions>
-                                        <condition id="-3" name="Is on-screen" sid="5337934992241962" type="player" />
+                                        <condition id="-12" name="Repeat" sid="2954234228805892" type="System">
+                                            <param id="0" name="Count">8</param>
+                                        </condition>
+                                        <condition id="-16" name="Pick random instance" sid="4996809028145565" type="System">
+                                            <param id="0" name="Object">block</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="8Direction" id="4" name="Set max speed" sid="6551732423223291" type="player">
-                                            <param id="0" name="Max Speed">self.8Direction.Speed * 1.5</param>
-                                        </action>
-                                        <action id="-16" name="Wait" sid="9991682001442605" type="System">
-                                            <param id="0" name="Seconds">2.0</param>
-                                        </action>
-                                        <action behavior="8Direction" id="4" name="Set max speed" sid="1583122062378813" type="player">
-                                            <param id="0" name="Max Speed">Function.Call(&quot;GetPlayerDefaultSpeed&quot;)</param>
-                                        </action>
+                                        <action behavior="FadeDestroy" id="1" name="Start fade" sid="9834375208976431" type="block" />
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <comment>прилипают шары</comment>
+                        <comment>прилипание шаров к ракетке</comment>
                         <event-block sid="8501694845309658">
                             <conditions>
                                 <condition id="-22" name="Else" sid="2410379242426086" type="System" />
@@ -336,7 +333,6 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <comment>думаю нужно обнулять какую-то переменную внутри плеера</comment>
                                 <event-block sid="1202762892850051">
                                     <conditions>
                                         <condition id="-19" name="Pick all" sid="2299300650182884" type="System">

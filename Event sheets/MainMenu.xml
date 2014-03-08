@@ -185,16 +185,10 @@
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="6431789708199606" type="Links">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="9176245681722921" type="PlayPauseBtn">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
                                 <action id="-15" name="Set visible" sid="1154761161296191" type="Cursor">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
-                                <action id="-15" name="Set visible" sid="4417736696151249" type="wall">
+                                <action id="-15" name="Set visible" sid="6431789708199606" type="Links">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
                             </actions>
@@ -295,7 +289,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" inactive="1" sid="8194908107586159" title="InfoDestroy">
+        <event-group description="" inactive="1" sid="8194908107586159" title="InfoDestroy">
             <sub-events>
                 <event-block sid="8680356701062223">
                     <conditions>
@@ -329,7 +323,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="Выбор управления" sid="7636553625374258" title="SelectControl">
+        <event-group description="Выбор управления" sid="7636553625374258" title="SelectControl">
             <sub-events>
                 <event-block sid="7186281269264141">
                     <conditions>
@@ -553,7 +547,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="1536679390656628" type="Info">
-                                    <param id="0" name="Text">&quot;Gamepad&quot;</param>
+                                    <param id="0" name="Text">&quot;GamePad&quot;</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -589,7 +583,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Set text" sid="6406784337942895" type="Info">
-                                    <param id="0" name="Text">&quot;Select control type&quot;</param>
+                                    <param id="0" name="Text">&quot;SELECT Control Type&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

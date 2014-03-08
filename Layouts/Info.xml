@@ -1672,7 +1672,7 @@
                         <character-width>16</character-width>
                         <character-height>16</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>Start Ball</text>
+                        <text>START BALL</text>
                         <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -1720,7 +1720,7 @@
                         <character-width>16</character-width>
                         <character-height>16</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>Player Move </text>
+                        <text>PLAYER MOVE</text>
                         <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -1768,7 +1768,7 @@
                         <character-width>16</character-width>
                         <character-height>16</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>Pause/Resume</text>
+                        <text>PAUSE/RESUME</text>
                         <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -1920,10 +1920,10 @@
                         <character-width>16</character-width>
                         <character-height>16</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>Press cheats in loading menu</text>
+                        <text>PRESS CHEAT-CODE IN MAIN MENU</text>
                         <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
-                        <horizontal-alignment>Left</horizontal-alignment>
+                        <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
@@ -1951,10 +1951,10 @@
                     <blend-mode>6</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>11</x>
+                        <x>0</x>
                         <y>451</y>
                         <z>0</z>
-                        <width>473</width>
+                        <width>500</width>
                         <height>44</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>

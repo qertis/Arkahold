@@ -348,9 +348,39 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="4978060428886365">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="888693499229252" type="System">
+                            <param id="0" name="Layer">&quot;blocks&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Set layer opacity" sid="8623914184845687" type="System">
+                            <param id="0" name="Layer">&quot;blocks&quot;</param>
+                            <param id="1" name="Opacity">LayerOpacity(&quot;blocks&quot;) - 1.5</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="4767967704427259">
+                            <conditions>
+                                <condition id="-17" name="Compare opacity" sid="359841258452865" type="System">
+                                    <param id="0" name="Layer">&quot;blocks&quot;</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Opacity">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="6409312840783708" type="System">
+                                    <param id="0" name="Layer">&quot;blocks&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" inactive="1" sid="4331677629614402" title="FadeOut">
+        <event-group description="" inactive="1" sid="4331677629614402" title="FadeOut">
             <sub-events>
                 <event-block collapsed="1" sid="211296876210546">
                     <conditions>

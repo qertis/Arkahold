@@ -48,7 +48,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="5501166076847036">
+                <event-block collapsed="1" sid="5501166076847036">
                     <conditions>
                         <condition id="0" name="On function" sid="7814025380809973" type="Function">
                             <param id="0" name="Name">&quot;UpdatePoints&quot;</param>

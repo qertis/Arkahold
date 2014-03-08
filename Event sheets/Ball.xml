@@ -21,7 +21,7 @@
         <event-group description="" inactive="1" sid="1935630841217072" title="Ball">
             <sub-events>
                 <variable comment="скорость шара" constant="1" name="BALLSPEED" sid="64" static="1" type="number">150</variable>
-                <variable comment="гравитация шара" constant="1" name="BALLGRAVITY" sid="426347581381694" static="1" type="number">5</variable>
+                <variable comment="гравитация шара" constant="1" name="BALLGRAVITY" sid="426347581381694" static="1" type="number">0.2</variable>
                 <event-block sid="4729158524012856">
                     <conditions>
                         <condition id="0" name="On function" sid="5020194215962577" type="Function">
@@ -55,7 +55,7 @@
                                             <param id="2" name="X">Function.Param(0)</param>
                                             <param id="3" name="Y">Function.Param(1)</param>
                                         </action>
-                                        <action id="-13" name="Set boolean" sid="1061915169720787" type="ball">
+                                        <action id="-13" name="Set boolean" sid="9731942452081996" type="ball">
                                             <param id="0" name="Instance variable">isFly</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
@@ -108,8 +108,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <comment>создание шара</comment>
-                <event-block collapsed="1" sid="3823937883385042">
+                <event-block sid="3823937883385042">
                     <conditions>
                         <condition id="-18" name="On created" sid="9108402188291378" type="ball" />
                     </conditions>
@@ -129,6 +128,10 @@
                                 </action>
                                 <action id="-8" name="Set angle" sid="5747645012597308" type="ball">
                                     <param id="0" name="Angle">self.Y &lt; player.Y ? 270 : 90</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="3539504199184536" type="ball">
+                                    <param id="0" name="Instance variable">sangle</param>
+                                    <param id="1" name="Value">Self.Angle</param>
                                 </action>
                                 <action behavior="Bullet" id="0" name="Set speed" sid="5502954742551274" type="ball">
                                     <param id="0" name="Speed">BALLSPEED</param>
@@ -281,22 +284,14 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="7600821491419715">
-                                    <conditions />
-                                    <actions>
-                                        <action id="0" name="Call function" sid="2895272398271311" type="Function">
-                                            <param id="0" name="Name">&quot;SpawnBackgroundEffect&quot;</param>
-                                            <param id="1" name="Parameter {n}">ball.X{###}ball.Y</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block collapsed="1" sid="1132">
+                        <event-block sid="1132">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="1133" type="ball">
                                     <param id="0" name="Object">block</param>
                                 </condition>
+                                <condition id="11" name="Collisions enabled" sid="2267095773294895" type="block" />
                             </conditions>
                             <actions>
                                 <action id="24" name="Play at position" sid="872406893677583" type="Audio">
@@ -313,83 +308,112 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block collapsed="1" sid="4931466285547836">
-                                    <conditions>
-                                        <condition id="3" name="Compare frame" sid="5017712672419446" type="block">
-                                            <param id="0" name="Comparison">0</param>
-                                            <param id="1" name="Number">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="11" name="Set collisions enabled" sid="3125651865087605" type="block">
-                                            <param id="0" name="Collisions">0</param>
-                                        </action>
-                                        <action behavior="Sine" id="0" name="Set active" sid="3169827021159742" type="block">
-                                            <param id="0" name="State">1</param>
-                                        </action>
-                                        <action behavior="FadeDestroy" id="1" name="Start fade" sid="6554007284724948" type="block" />
-                                        <action id="0" name="Spawn another object" sid="745932120626614" type="block">
-                                            <param id="0" name="Object">BlockEffect</param>
-                                            <param id="1" name="Layer">Self.LayerNumber</param>
-                                            <param id="2" name="Image point">0</param>
-                                        </action>
-                                    </actions>
-                                    <sub-events>
-                                        <comment>создание бонуса</comment>
-                                        <event-block sid="9511748210187666">
-                                            <conditions>
-                                                <condition id="-8" name="Is boolean instance variable set" sid="9839627722013912" type="block">
-                                                    <param id="0" name="Instance variable">isBonus</param>
-                                                </condition>
-                                                <condition id="-8" name="Compare two values" sid="4892572913448171" type="System">
-                                                    <param id="0" name="First value">block.Count</param>
-                                                    <param id="1" name="Comparison">4</param>
-                                                    <param id="2" name="Second value">1</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="0" name="Spawn another object" sid="2292842086387514" type="block">
-                                                    <param id="0" name="Object">Bonus</param>
-                                                    <param id="1" name="Layer">self.LayerNumber</param>
-                                                    <param id="2" name="Image point">0</param>
-                                                </action>
-                                                <action id="-11" name="Add to" sid="6461911795939328" type="block">
-                                                    <param id="0" name="Instance variable">kickCount</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                                <comment>супер шар - сбивает любой блок сразу</comment>
-                                <event-block sid="2719881554737115">
-                                    <conditions>
-                                        <condition id="2" name="Is playing" sid="2509267661699963" type="ball">
-                                            <param id="0" name="Animation">&quot;Super&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="5" name="Set frame" sid="6879307254921577" type="block">
-                                            <param id="0" name="Frame number">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
                                 <comment>обычный шар - уменьшаем его анимацию</comment>
-                                <event-block sid="4796415499118176">
+                                <event-block sid="8324385942932273">
                                     <conditions>
                                         <condition id="2" name="Is playing" sid="1429183562003474" type="ball">
                                             <param id="0" name="Animation">&quot;Normal&quot;</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="5" name="Set frame" sid="4004400179661826" type="block">
-                                            <param id="0" name="Frame number">self.AnimationFrame-1</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block any="1" collapsed="1" sid="4931466285547836">
+                                            <conditions>
+                                                <condition id="3" name="Compare frame" sid="5017712672419446" type="block">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Number">0</param>
+                                                </condition>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="5435971894884394" type="block">
+                                                    <param id="0" name="Instance variable">activeSin</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="11" name="Set collisions enabled" sid="3125651865087605" type="block">
+                                                    <param id="0" name="Collisions">0</param>
+                                                </action>
+                                                <action behavior="Sine" id="0" name="Set active" sid="3169827021159742" type="block">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                                <action behavior="FadeDestroy" id="1" name="Start fade" sid="6554007284724948" type="block" />
+                                                <action id="0" name="Spawn another object" sid="745932120626614" type="block">
+                                                    <param id="0" name="Object">BlockEffect</param>
+                                                    <param id="1" name="Layer">Self.LayerNumber</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <comment>создание бонуса</comment>
+                                                <event-block sid="9511748210187666">
+                                                    <conditions>
+                                                        <condition id="-8" name="Is boolean instance variable set" sid="9839627722013912" type="block">
+                                                            <param id="0" name="Instance variable">isBonus</param>
+                                                        </condition>
+                                                        <condition id="-8" name="Compare two values" sid="4892572913448171" type="System">
+                                                            <param id="0" name="First value">block.Count</param>
+                                                            <param id="1" name="Comparison">4</param>
+                                                            <param id="2" name="Second value">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Spawn another object" sid="2292842086387514" type="block">
+                                                            <param id="0" name="Object">Bonus</param>
+                                                            <param id="1" name="Layer">self.LayerNumber</param>
+                                                            <param id="2" name="Image point">0</param>
+                                                        </action>
+                                                        <action id="-11" name="Add to" sid="6461911795939328" type="block">
+                                                            <param id="0" name="Instance variable">kickCount</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="4796415499118176">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="6462688061795299" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="5" name="Set frame" sid="4004400179661826" type="block">
+                                                    <param id="0" name="Frame number">self.AnimationFrame-1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <comment>super </comment>
+                                <event-block collapsed="1" sid="1978217790117202">
+                                    <conditions>
+                                        <condition id="2" name="Is playing" sid="2509267661699963" type="ball">
+                                            <param id="0" name="Animation">&quot;Super&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="1624374097531893">
+                                            <conditions />
+                                            <actions>
+                                                <action id="11" name="Set collisions enabled" sid="7029372968087564" type="block">
+                                                    <param id="0" name="Collisions">0</param>
+                                                </action>
+                                                <action behavior="Sine" id="0" name="Set active" sid="4680536147635461" type="block">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                                <action behavior="FadeDestroy" id="1" name="Start fade" sid="4053851304802099" type="block" />
+                                                <action id="0" name="Spawn another object" sid="7816725216720216" type="block">
+                                                    <param id="0" name="Object">BlockEffect</param>
+                                                    <param id="1" name="Layer">Self.LayerNumber</param>
+                                                    <param id="2" name="Image point">0</param>
+                                                </action>
+                                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="5134869548748471" type="ball">
+                                                    <param id="0" name="Angle">ball.sangle</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block any="1" sid="1105">
+                        <event-block any="1" collapsed="1" sid="1105">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="1106" type="ball">
                                     <param id="0" name="Object">player</param>
@@ -398,7 +422,24 @@
                                     <param id="0" name="Object">Enemy</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="24" name="Play at position" sid="7135703126496831" type="Audio">
+                                    <param id="0" name="Audio file">wall_collision</param>
+                                    <param id="1" name="Loop">0</param>
+                                    <param id="2" name="Volume">0</param>
+                                    <param id="3" name="X">ball.X</param>
+                                    <param id="4" name="Y">ball.Y</param>
+                                    <param id="5" name="Angle">0</param>
+                                    <param id="6" name="Inner angle">360</param>
+                                    <param id="7" name="Outer angle">360</param>
+                                    <param id="8" name="Outer gain">0</param>
+                                    <param id="9" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Call function" sid="1065980852273931" type="Function">
+                                    <param id="0" name="Name">&quot;SpawnBackgroundEffect&quot;</param>
+                                    <param id="1" name="Parameter {n}">ball.X{###}ball.Y</param>
+                                </action>
+                            </actions>
                             <sub-events>
                                 <event-block sid="6432061872600809">
                                     <conditions>
@@ -428,23 +469,6 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="5932380207556006">
-                                    <conditions />
-                                    <actions>
-                                        <action id="24" name="Play at position" sid="7135703126496831" type="Audio">
-                                            <param id="0" name="Audio file">wall_collision</param>
-                                            <param id="1" name="Loop">0</param>
-                                            <param id="2" name="Volume">0</param>
-                                            <param id="3" name="X">ball.X</param>
-                                            <param id="4" name="Y">ball.Y</param>
-                                            <param id="5" name="Angle">0</param>
-                                            <param id="6" name="Inner angle">360</param>
-                                            <param id="7" name="Outer angle">360</param>
-                                            <param id="8" name="Outer gain">0</param>
-                                            <param id="9" name="Tag (optional)">&quot;&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
                             </sub-events>
                         </event-block>
                         <event-block sid="6216612071639354">
@@ -453,66 +477,57 @@
                                     <param id="0" name="Object">wall</param>
                                 </condition>
                             </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="7024396844784553">
-                                    <conditions />
-                                    <actions>
-                                        <action id="24" name="Play at position" sid="8396681356805414" type="Audio">
-                                            <param id="0" name="Audio file">wall_collision</param>
-                                            <param id="1" name="Loop">0</param>
-                                            <param id="2" name="Volume">0</param>
-                                            <param id="3" name="X">ball.X</param>
-                                            <param id="4" name="Y">ball.Y</param>
-                                            <param id="5" name="Angle">0</param>
-                                            <param id="6" name="Inner angle">360</param>
-                                            <param id="7" name="Outer angle">360</param>
-                                            <param id="8" name="Outer gain">0</param>
-                                            <param id="9" name="Tag (optional)">&quot;&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="1938881735984932">
-                                    <conditions />
-                                    <actions>
-                                        <action behavior="Bullet" disabled="1" id="3" name="Set angle of motion" sid="7152113920626292" type="ball">
-                                            <param id="0" name="Angle">angle(wall.X, wall.Y, Self.X, Self.Y) - 90</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
+                            <actions>
+                                <action id="24" name="Play at position" sid="8396681356805414" type="Audio">
+                                    <param id="0" name="Audio file">wall_collision</param>
+                                    <param id="1" name="Loop">0</param>
+                                    <param id="2" name="Volume">0</param>
+                                    <param id="3" name="X">ball.X</param>
+                                    <param id="4" name="Y">ball.Y</param>
+                                    <param id="5" name="Angle">0</param>
+                                    <param id="6" name="Inner angle">360</param>
+                                    <param id="7" name="Outer angle">360</param>
+                                    <param id="8" name="Outer gain">0</param>
+                                    <param id="9" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Call function" sid="2120184424749796" type="Function">
+                                    <param id="0" name="Name">&quot;SpawnBackgroundEffect&quot;</param>
+                                    <param id="1" name="Parameter {n}">ball.X{###}ball.Y</param>
+                                </action>
+                            </actions>
                         </event-block>
                         <comment>меняем направление шара</comment>
-                        <event-block sid="5760525938396111">
+                        <event-block collapsed="1" sid="5760525938396111">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="4345478274173001" type="Pupil">
                                     <param id="0" name="Object">ball</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="24" name="Play at position" sid="9117497680422062" type="Audio">
+                                    <param id="0" name="Audio file">block_collision</param>
+                                    <param id="1" name="Loop">0</param>
+                                    <param id="2" name="Volume">0</param>
+                                    <param id="3" name="X">ball.X</param>
+                                    <param id="4" name="Y">ball.Y</param>
+                                    <param id="5" name="Angle">0</param>
+                                    <param id="6" name="Inner angle">360</param>
+                                    <param id="7" name="Outer angle">360</param>
+                                    <param id="8" name="Outer gain">0</param>
+                                    <param id="9" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
                             <sub-events>
                                 <event-block sid="7763962318156401">
                                     <conditions />
                                     <actions>
                                         <action behavior="Flash" id="0" name="Flash" sid="846351099601966" type="ball">
-                                            <param id="0" name="&apos;On&apos; time">0.2</param>
-                                            <param id="1" name="&apos;Off&apos; time">0.4</param>
-                                            <param id="2" name="Duration">0.4</param>
+                                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                                            <param id="1" name="&apos;Off&apos; time">0.2</param>
+                                            <param id="2" name="Duration">0.3</param>
                                         </action>
                                         <action behavior="Bullet" id="3" name="Set angle of motion" sid="7103464239665171" type="ball">
                                             <param id="0" name="Angle">angle(Pupil.X, Pupil.Y, Self.X, Self.Y)</param>
-                                        </action>
-                                        <action id="24" name="Play at position" sid="9117497680422062" type="Audio">
-                                            <param id="0" name="Audio file">block_collision</param>
-                                            <param id="1" name="Loop">0</param>
-                                            <param id="2" name="Volume">0</param>
-                                            <param id="3" name="X">ball.X</param>
-                                            <param id="4" name="Y">ball.Y</param>
-                                            <param id="5" name="Angle">0</param>
-                                            <param id="6" name="Inner angle">360</param>
-                                            <param id="7" name="Outer angle">360</param>
-                                            <param id="8" name="Outer gain">0</param>
-                                            <param id="9" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -536,13 +551,13 @@
                 </event-group>
                 <event-group collapsed="1" description="" sid="1318724470905156" title="BallFly">
                     <sub-events>
-                        <comment>TODO optimize</comment>
                         <event-block sid="362738020167952">
                             <conditions>
                                 <condition id="-8" name="Is boolean instance variable set" sid="5022213516155405" type="ball">
                                     <param id="0" name="Instance variable">isFly</param>
                                 </condition>
-                                <condition disabled="1" id="-4" name="Trigger once while true" sid="4634496593257535" type="System" />
+                                <condition id="11" inverted="1" name="Collisions enabled" sid="4634496593257535" type="ball" />
+                                <condition id="-4" name="Trigger once while true" sid="6815449960767316" type="System" />
                             </conditions>
                             <actions>
                                 <action id="11" name="Set collisions enabled" sid="9872417813719341" type="ball">
@@ -586,6 +601,10 @@
                                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="4431224529689058" type="ball">
                                     <param id="0" name="Angle">int(angle(player.X, player.Y, Self.X + cos(self.Angle*(pi/180)), Self.Y + sin(self.Angle*(pi/180))))</param>
                                 </action>
+                                <action id="-10" name="Set value" sid="6240155154277633" type="ball">
+                                    <param id="0" name="Instance variable">sangle</param>
+                                    <param id="1" name="Value">Self.Bullet.AngleOfMotion</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="1435286215878871">
@@ -601,8 +620,13 @@
                                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="250066389566518" type="ball">
                                     <param id="0" name="Angle">angle(Enemy.X, Enemy.Y, Self.X + cos(self.Angle*(pi/180)), Self.Y + sin(self.Angle*(pi/180)))</param>
                                 </action>
+                                <action id="-10" name="Set value" sid="3459143892397698" type="ball">
+                                    <param id="0" name="Instance variable">sangle</param>
+                                    <param id="1" name="Value">Self.Bullet.AngleOfMotion</param>
+                                </action>
                             </actions>
                         </event-block>
+                        <comment>FIXME</comment>
                         <event-block sid="8413808502058818">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="9071599834020054" type="ball">
@@ -623,6 +647,9 @@
                                 <condition id="0" name="On collision with another object" sid="2896567268058918" type="ball">
                                     <param id="0" name="Object">block</param>
                                 </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="3433854465337161" type="ball">
+                                    <param id="0" name="Animation">&quot;Super&quot;</param>
+                                </condition>
                                 <condition id="-8" name="Is boolean instance variable set" sid="6600151949901433" type="ball">
                                     <param id="0" name="Instance variable">isFly</param>
                                 </condition>
@@ -631,8 +658,13 @@
                                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="8856750185197425" type="ball">
                                     <param id="0" name="Angle">int(self.Bullet.AngleOfMotion  + sin(sqrt(Self.Angle^2 + block.Angle^2) * pi/2))</param>
                                 </action>
+                                <action id="-10" name="Set value" sid="173110299168029" type="ball">
+                                    <param id="0" name="Instance variable">sangle</param>
+                                    <param id="1" name="Value">Self.Bullet.AngleOfMotion</param>
+                                </action>
                             </actions>
                         </event-block>
+                        <comment>FIXME</comment>
                         <event-block sid="9180805998058724">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="1893986728761759" type="ball">
@@ -645,6 +677,10 @@
                             <actions>
                                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="3405501453587462" type="ball">
                                     <param id="0" name="Angle">int(self.Bullet.AngleOfMotion  + sin(sqrt(Self.Angle^2 + wall.Angle^2) * pi/2))</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="8333366469663572" type="ball">
+                                    <param id="0" name="Instance variable">sangle</param>
+                                    <param id="1" name="Value">Self.Bullet.AngleOfMotion</param>
                                 </action>
                             </actions>
                         </event-block>
