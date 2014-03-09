@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>TEST</name>
     <events>
-        <event-group bookmark="1" description="" disabled="1" sid="3464561530984937" title="TEST">
+        <event-group description="" disabled="1" sid="3464561530984937" title="TEST">
             <sub-events>
                 <event-block disabled="1" sid="5879681738730643">
                     <conditions>

@@ -923,7 +923,7 @@
     </object-folder>
     <families />
     <layout-folder expanded="1">
-        <layout-folder expanded="0" name="Levels">
+        <layout-folder expanded="1" name="Levels">
             <layout-folder expanded="1" name="1-10">
                 <layout>1.xml</layout>
                 <layout>2.xml</layout>
