@@ -12,6 +12,4 @@ Features:
 
 <a href="https://www.youtube.com/watch?v=W4sdkyspz-c">Trailer</a>
 
-<a href="http://www.scirra.com/arcade/addicting-action-games/13793/arkahold-webgl">Play Online</a>
-
 <a href="kongregate.com/games/Baskovsky/arkahold">Play on Kongregate</a>
