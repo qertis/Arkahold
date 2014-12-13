@@ -2,24 +2,26 @@
 <c2project>
     <name>Arkahold</name>
     <description>Arkahold WebGL</description>
-    <version>1.0</version>
+    <version>1.1</version>
     <author>qertis</author>
     <author-email></author-email>
     <author-website>http://site.baskovsky.ru/projects/games/arkanoid-webgl</author-website>
     <app-id></app-id>
     <unique-id>3om4fqck6p5en</unique-id>
-    <saved-with-version>16300</saved-with-version>
+    <saved-with-version>19000</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Kongregate" version="1">Kongregate</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Scirra" id="XML" version="1">XML</plugin>
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
@@ -68,6 +70,7 @@
         <height>500</height>
     </window-size>
     <pixel-rounding>1</pixel-rounding>
+    <preview-effects>1</preview-effects>
     <first-layout>PreLoading</first-layout>
     <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
@@ -83,8 +86,8 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use iOS retina display">All devices</prop>
     </configuration-settings>
-    <object-folder expanded="0">
-        <object-folder expanded="0" name="Control">
+    <object-folder>
+        <object-folder name="Control">
             <object-type name="Keyboard" sid="0">
                 <plugin id="Keyboard" />
             </object-type>
@@ -104,7 +107,7 @@
                         <behavior id="scrollto" />
                     </behavior-type>
                 </behaviors>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4375977916304066" speed="0">
                         <frame duration="1" hotspotX="0" hotspotY="0">
                             <collision-poly>
@@ -120,7 +123,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Font">
+        <object-folder name="Font">
             <object-type name="Links" sid="9246716129869429">
                 <plugin id="Spritefont2" />
                 <instance-variables>
@@ -179,7 +182,7 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="Backgrounds">
+        <object-folder name="Backgrounds">
             <object-type name="LoadingLevel" sid="48">
                 <plugin id="Sprite" />
                 <effects>
@@ -190,7 +193,7 @@
                         <effect id="tintmask" />
                     </effect-type>
                 </effects>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="49" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
@@ -215,7 +218,7 @@
                         <effect id="overlay" />
                     </effect-type>
                 </effects>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="3" loop="0" name="Effect0" pingpong="0" repeatcount="1" repeatto="0" sid="2047857142478356" speed="3">
                         <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
                         <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
@@ -258,7 +261,7 @@
                         <effect id="screen" />
                     </effect-type>
                 </effects>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.53125" />
                     </animation>
@@ -269,7 +272,7 @@
                 <texture />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Particles">
+        <object-folder name="Particles">
             <object-type name="CollisionEffect" sid="38">
                 <plugin id="Particles" />
                 <texture />
@@ -298,7 +301,7 @@
                         <effect id="highlightshadow" />
                     </effect-type>
                 </effects>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5826254273203688" speed="0">
                         <frame duration="1" hotspotX="0" hotspotY="0.5" />
                     </animation>
@@ -308,7 +311,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Boss">
+        <object-folder name="Boss">
             <object-type name="Pupil" sid="609">
                 <plugin id="Sprite" />
                 <instance-variables>
@@ -323,7 +326,7 @@
                     <instance-variable name="EyeY" sid="768" type="number" />
                     <instance-variable comment="Следит за шаром" name="isFindBall" sid="790" type="boolean" />
                 </instance-variables>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="615" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
@@ -342,14 +345,14 @@
             </object-type>
             <object-type name="Eye" sid="607">
                 <plugin id="Sprite" />
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="608" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Player">
+        <object-folder name="Player">
             <object-type name="player" sid="9">
                 <plugin id="Sprite" />
                 <instance-variables>
@@ -376,7 +379,7 @@
                         <effect id="grayscale" />
                     </effect-type>
                 </effects>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Small" pingpong="0" repeatcount="1" repeatto="0" sid="1369180253047999" speed="0">
                         <frame duration="1" hotspotX="0.509804" hotspotY="0.545455">
                             <image-point name="Ball" x="0.509804" y="-0.727273" />
@@ -402,17 +405,17 @@
             </object-type>
             <object-type name="PlayerBorn" sid="5580995918731863">
                 <plugin id="Sprite" />
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7449113705897898" speed="5">
                         <frame duration="1" hotspotX="0.509804" hotspotY="0.545455" />
                     </animation>
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Enemy">
+        <object-folder name="Enemy">
             <object-type name="EnemyBorn" sid="4899924789908651">
                 <plugin id="Sprite" />
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6964794130511157" speed="0">
                         <frame duration="1" hotspotX="0.509804" hotspotY="0.545455" />
                     </animation>
@@ -433,7 +436,7 @@
                         <effect id="grayscale" />
                     </effect-type>
                 </effects>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Small" pingpong="0" repeatcount="1" repeatto="0" sid="9175289149322763" speed="0">
                         <frame duration="1" hotspotX="0.509804" hotspotY="0.545455" />
                     </animation>
@@ -446,7 +449,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Block">
+        <object-folder name="Block">
             <object-type name="block" sid="25">
                 <plugin id="Sprite" />
                 <instance-variables>
@@ -475,7 +478,7 @@
                         <effect id="gamma" />
                     </effect-type>
                 </effects>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="4" loop="0" name="Small" pingpong="0" repeatcount="1" repeatto="0" sid="6284718669040204" speed="0">
                         <frame duration="1" hotspotX="0.52381" hotspotY="0.52381" />
                         <frame duration="1" hotspotX="0.52381" hotspotY="0.52381" />
@@ -504,7 +507,7 @@
                 <texture />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Mask">
+        <object-folder name="Mask">
             <object-type name="FadeMask" sid="3808008819163664">
                 <plugin id="Sprite" />
                 <behaviors>
@@ -512,7 +515,7 @@
                         <behavior id="Fade" />
                     </behavior-type>
                 </behaviors>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="6708540478100006" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -533,14 +536,14 @@
                         <effect id="setcolor" />
                     </effect-type>
                 </effects>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4067368192020281" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Tileds">
+        <object-folder name="Tileds">
             <object-type name="TiledBackground" sid="1997958769578163">
                 <plugin id="TiledBg" />
                 <behaviors>
@@ -565,7 +568,7 @@
                 <texture />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Other">
+        <object-folder name="Other">
             <object-type global="1" name="Camera" sid="50">
                 <plugin id="Sprite" />
                 <behaviors>
@@ -576,7 +579,7 @@
                         <behavior id="Pin" />
                     </behavior-type>
                 </behaviors>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="52" speed="0">
                         <frame duration="1" hotspotX="0.507692" hotspotY="0.507692" />
                     </animation>
@@ -609,7 +612,7 @@
                         <effect id="glowvertical" />
                     </effect-type>
                 </effects>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="537582372373652" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -628,7 +631,7 @@
                         <behavior id="Rotate" />
                     </behavior-type>
                 </behaviors>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7225328674669959" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
@@ -636,7 +639,7 @@
             </object-type>
             <object-type name="KeyInfo" sid="4019278805352543">
                 <plugin id="Sprite" />
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="3" loop="0" name="Keyboard" pingpong="0" repeatcount="1" repeatto="0" sid="8260276861188832" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
@@ -741,7 +744,7 @@
                         <behavior id="Sin" />
                     </behavior-type>
                 </behaviors>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="47" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
@@ -754,7 +757,7 @@
                         <behavior id="Sin" />
                     </behavior-type>
                 </behaviors>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4063859074707764" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
@@ -789,7 +792,7 @@
                         <effect id="noise" />
                     </effect-type>
                 </effects>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Normal" pingpong="0" repeatcount="1" repeatto="0" sid="24" speed="0">
                         <frame duration="1" hotspotX="0.545455" hotspotY="0.545455">
                             <collision-poly>
@@ -839,7 +842,7 @@
                 <texture />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="XML">
+        <object-folder name="XML">
             <object-type global="1" name="XMLabout" sid="1199829573723512">
                 <plugin id="XML" />
             </object-type>
@@ -850,7 +853,7 @@
                 <plugin id="XML" />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="Buttons">
+        <object-folder name="Buttons">
             <object-type name="SpriteControls" sid="3042822345838087">
                 <plugin id="Sprite" />
                 <effects>
@@ -858,7 +861,7 @@
                         <effect id="highlightshadow" />
                     </effect-type>
                 </effects>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Keyboard" pingpong="0" repeatcount="1" repeatto="0" sid="3891753195921667" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
@@ -872,7 +875,7 @@
             </object-type>
             <object-type name="SocialBtn" sid="8067669892252318">
                 <plugin id="Sprite" />
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="vk" pingpong="0" repeatcount="1" repeatto="0" sid="4923137997303747" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
@@ -883,7 +886,7 @@
             </object-type>
             <object-type name="PlayPauseBtn" sid="1503952726793689">
                 <plugin id="Sprite" />
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="On" pingpong="0" repeatcount="1" repeatto="0" sid="1405539511458252" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="1">
                             <collision-poly>
@@ -920,11 +923,17 @@
         <object-type name="Function" sid="8290992443833365">
             <plugin id="Function" />
         </object-type>
+        <object-type name="Kongregate" sid="2873880223914863">
+            <plugin id="Kongregate" />
+        </object-type>
+        <object-type name="Touch" sid="2321598030422416">
+            <plugin id="Touch" />
+        </object-type>
     </object-folder>
     <families />
-    <layout-folder expanded="1">
-        <layout-folder expanded="1" name="Levels">
-            <layout-folder expanded="1" name="1-10">
+    <layout-folder>
+        <layout-folder name="Levels">
+            <layout-folder name="1-10">
                 <layout>1.xml</layout>
                 <layout>2.xml</layout>
                 <layout>3.xml</layout>
@@ -936,7 +945,7 @@
                 <layout>9.xml</layout>
                 <layout>10.xml</layout>
             </layout-folder>
-            <layout-folder expanded="1" name="11-20">
+            <layout-folder name="11-20">
                 <layout>11.xml</layout>
                 <layout>12.xml</layout>
                 <layout>13.xml</layout>
@@ -951,15 +960,15 @@
             <layout>TheEnd.xml</layout>
             <layout>GameOver.xml</layout>
         </layout-folder>
-        <layout-folder expanded="1" name="Main">
+        <layout-folder name="Main">
             <layout>MainMenu.xml</layout>
             <layout>Info.xml</layout>
             <layout>Objects.xml</layout>
         </layout-folder>
         <layout>PreLoading.xml</layout>
     </layout-folder>
-    <event-folder expanded="1">
-        <event-folder expanded="1" name="Objects">
+    <event-folder>
+        <event-folder name="Objects">
             <event-sheet>Boss.xml</event-sheet>
             <event-sheet>Bonus.xml</event-sheet>
             <event-sheet>Player.xml</event-sheet>
@@ -978,7 +987,7 @@
             <event-sheet>Tooltip.xml</event-sheet>
             <event-sheet>XML.xml</event-sheet>
         </event-folder>
-        <event-folder expanded="1" name="Effects">
+        <event-folder name="Effects">
             <event-sheet>Cosmos.xml</event-sheet>
             <event-sheet>Loading.xml</event-sheet>
             <event-sheet>GameEffects.xml</event-sheet>
@@ -986,7 +995,7 @@
             <event-sheet>MenuEffects.xml</event-sheet>
             <event-sheet>Pause.xml</event-sheet>
         </event-folder>
-        <event-folder expanded="1" name="Layout">
+        <event-folder name="Layout">
             <event-sheet>GameOver.xml</event-sheet>
             <event-sheet>MainMenu.xml</event-sheet>
             <event-sheet>PreLoading.xml</event-sheet>
@@ -1003,6 +1012,7 @@
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
                 <positioned-audio></positioned-audio>
                 <panning-model>HRTF</panning-model>
                 <distance-model>Inverse</distance-model>
@@ -1022,23 +1032,29 @@
                 <analog-deadzone>25</analog-deadzone>
             </properties>
         </global-instance>
+        <global-instance type="Kongregate" uid="574" />
+        <global-instance type="Touch" uid="4">
+            <properties>
+                <use-mouse-input>No</use-mouse-input>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder expanded="0">
-        <file-folder expanded="0" name="ball">
+    <sounds-folder>
+        <sound-folder name="ball">
             <file name="ball_collision.m4a" />
             <file name="ball_collision.ogg" />
             <file name="ball_collision.wav" />
-        </file-folder>
-        <file-folder expanded="0" name="wall">
+        </sound-folder>
+        <sound-folder name="wall">
             <file name="wall_collision.m4a" />
             <file name="wall_collision.ogg" />
             <file name="wall_collision.wav" />
-        </file-folder>
-        <file-folder expanded="0" name="block">
+        </sound-folder>
+        <sound-folder name="block">
             <file name="block_collision.m4a" />
             <file name="block_collision.ogg" />
             <file name="block_collision.wav" />
-        </file-folder>
+        </sound-folder>
         <file name="ball-collision-2.m4a" />
         <file name="ball-collision-2.ogg" />
         <file name="ball-collision-2.wav" />
@@ -1067,28 +1083,28 @@
         <file name="player-collision.ogg" />
         <file name="player-collision.wav" />
     </sounds-folder>
-    <music-folder expanded="0">
-        <file-folder expanded="0" name="GameOver">
+    <music-folder>
+        <music-folder name="GameOver">
             <file name="game_over.m4a" />
             <file name="game_over.ogg" />
             <file name="game_over.wav" />
-        </file-folder>
-        <file-folder expanded="0" name="GameStart">
+        </music-folder>
+        <music-folder name="GameStart">
             <file name="start-background.m4a" />
             <file name="start-background.ogg" />
             <file name="start-background.wav" />
-        </file-folder>
-        <file-folder expanded="1" name="Loops">
+        </music-folder>
+        <music-folder name="Loops">
             <file name="out-game.m4a" />
             <file name="out-game.ogg" />
             <file name="out-game.wav" />
             <file name="game-background.m4a" />
             <file name="game-background.ogg" />
             <file name="game-background.wav" />
-        </file-folder>
+        </music-folder>
     </music-folder>
-    <files-folder expanded="0">
-        <file-folder expanded="0" name="Icons">
+    <files-folder>
+        <file-folder name="Icons">
             <file name="icon-16.png" />
             <file name="icon-32.png" />
             <file name="icon-114.png" />

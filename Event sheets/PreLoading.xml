@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>PreLoading</name>
     <events>
-        <event-group collapsed="1" description="" sid="7326609307529562" title="Init">
+        <event-group description="" sid="7326609307529562" title="Init">
             <sub-events>
                 <variable constant="1" name="InfoText" sid="4523699395393778" static="1" type="text">Loading</variable>
                 <variable constant="0" name="Counter" sid="431448442404548" static="1" type="number">0</variable>
@@ -122,7 +122,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="7414821052051769" title="Complete">
+        <event-group description="" sid="7414821052051769" title="Complete">
             <sub-events>
                 <event-block sid="5586904489308846">
                     <conditions>

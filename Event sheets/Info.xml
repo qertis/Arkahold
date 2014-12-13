@@ -4,7 +4,7 @@
     <name>Info</name>
     <events>
         <include>MENU</include>
-        <event-group collapsed="1" description="" sid="8407901303174222" title="InfoInit">
+        <event-group description="" sid="8407901303174222" title="InfoInit">
             <sub-events>
                 <event-block sid="5687808467504027">
                     <conditions>

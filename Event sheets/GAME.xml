@@ -31,6 +31,12 @@
                     </conditions>
                     <actions />
                     <sub-events>
+                        <event-block sid="7769234846219572">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="1213045653935247" type="System" />
+                            </conditions>
+                            <actions />
+                        </event-block>
                         <event-block sid="372546317804331">
                             <conditions>
                                 <condition id="-4" name="Trigger once while true" sid="3391157426458227" type="System" />

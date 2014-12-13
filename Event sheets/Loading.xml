@@ -113,7 +113,7 @@
                             </actions>
                         </event-block>
                         <comment>эффект</comment>
-                        <event-block collapsed="1" sid="7660030465184771">
+                        <event-block sid="7660030465184771">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="5910697866767232" type="System">
                                     <param id="0" name="First value">Function.ParamCount</param>
@@ -239,7 +239,7 @@
         </event-group>
         <event-group description="" inactive="1" sid="7310392314145114" title="FadeIn">
             <sub-events>
-                <event-block collapsed="1" sid="3567619040257678">
+                <event-block sid="3567619040257678">
                     <conditions>
                         <condition id="-3" name="Is on-screen" sid="7925686765056788" type="LoadingLevel" />
                     </conditions>
@@ -382,7 +382,7 @@
         </event-group>
         <event-group description="" inactive="1" sid="4331677629614402" title="FadeOut">
             <sub-events>
-                <event-block collapsed="1" sid="211296876210546">
+                <event-block sid="211296876210546">
                     <conditions>
                         <condition id="-3" name="Is on-screen" sid="3125335968384194" type="LoadingLevel" />
                     </conditions>
@@ -411,7 +411,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block collapsed="1" sid="1972540670496876">
+                <event-block sid="1972540670496876">
                     <conditions>
                         <condition id="-22" name="Else" sid="6577582217131053" type="System" />
                     </conditions>

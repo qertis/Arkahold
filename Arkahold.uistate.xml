@@ -10,8 +10,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout>PreLoading</layout>
-        <event-sheet active="1">TEST</event-sheet>
+        <layout active="1">PreLoading</layout>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -20,4 +19,63 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="0" path="object-folder/" />
+        <folder expanded="0" path="object-folder/Control/" />
+        <folder expanded="0" path="object-folder/Font/" />
+        <folder expanded="1" path="object-folder/Backgrounds/" />
+        <folder expanded="0" path="object-folder/Particles/" />
+        <folder expanded="0" path="object-folder/Boss/" />
+        <folder expanded="0" path="object-folder/Player/" />
+        <folder expanded="0" path="object-folder/Enemy/" />
+        <folder expanded="0" path="object-folder/Block/" />
+        <folder expanded="0" path="object-folder/Mask/" />
+        <folder expanded="0" path="object-folder/Tileds/" />
+        <folder expanded="0" path="object-folder/Other/" />
+        <folder expanded="1" path="object-folder/XML/" />
+        <folder expanded="1" path="object-folder/Buttons/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/Levels/" />
+        <folder expanded="1" path="layout-folder/Levels/1-10/" />
+        <folder expanded="1" path="layout-folder/Levels/11-20/" />
+        <folder expanded="0" path="layout-folder/Main/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="event-folder/Objects/" />
+        <folder expanded="0" path="event-folder/Effects/" />
+        <folder expanded="1" path="event-folder/Layout/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="0" path="sound-folder/" />
+        <folder expanded="0" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="0" path="sound-folder/ball/" />
+        <folder expanded="0" path="sound-folder/wall/" />
+        <folder expanded="0" path="sound-folder/block/" />
+        <folder expanded="0" path="music-folder/GameOver/" />
+        <folder expanded="0" path="music-folder/GameStart/" />
+        <folder expanded="1" path="music-folder/Loops/" />
+        <folder expanded="1" path="animation-folder/Cursor/" />
+        <folder expanded="1" path="animation-folder/LoadingLevel/" />
+        <folder expanded="1" path="animation-folder/BackgroundEffect/" />
+        <folder expanded="1" path="animation-folder/wall/" />
+        <folder expanded="1" path="animation-folder/line/" />
+        <folder expanded="1" path="animation-folder/Pupil/" />
+        <folder expanded="1" path="animation-folder/Eye/" />
+        <folder expanded="1" path="animation-folder/player/" />
+        <folder expanded="1" path="animation-folder/PlayerBorn/" />
+        <folder expanded="1" path="animation-folder/EnemyBorn/" />
+        <folder expanded="1" path="animation-folder/Enemy/" />
+        <folder expanded="1" path="animation-folder/block/" />
+        <folder expanded="1" path="animation-folder/FadeMask/" />
+        <folder expanded="1" path="animation-folder/PlayerMask/" />
+        <folder expanded="1" path="animation-folder/Camera/" />
+        <folder expanded="1" path="animation-folder/Bonus/" />
+        <folder expanded="1" path="animation-folder/Orbita/" />
+        <folder expanded="1" path="animation-folder/KeyInfo/" />
+        <folder expanded="1" path="animation-folder/Stars/" />
+        <folder expanded="1" path="animation-folder/Sun/" />
+        <folder expanded="1" path="animation-folder/ball/" />
+        <folder expanded="1" path="animation-folder/SpriteControls/" />
+        <folder expanded="1" path="animation-folder/SocialBtn/" />
+        <folder expanded="1" path="animation-folder/PlayPauseBtn/" />
+    </folders-expanded>
 </c2uistate>

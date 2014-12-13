@@ -5,7 +5,7 @@
     <events>
         <event-group description="" sid="9672368698934245" title="PlayerInit">
             <sub-events>
-                <event-block collapsed="1" sid="970424618041259">
+                <event-block sid="970424618041259">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="4703631623024658" type="System" />
                     </conditions>
@@ -111,7 +111,7 @@
             <sub-events>
                 <variable constant="1" name="defaultspeed" sid="6762276654270074" static="1" type="number">200</variable>
                 <variable constant="1" name="PLAYER_ANIM_MOVE" sid="9220722373669635" static="0" type="number">2</variable>
-                <event-block collapsed="1" sid="2279749819265155">
+                <event-block sid="2279749819265155">
                     <conditions>
                         <condition id="0" name="On function" sid="6450907883317004" type="Function">
                             <param id="0" name="Name">&quot;PlayerKickAnim&quot;</param>
@@ -224,7 +224,7 @@
                     </actions>
                 </event-block>
                 <comment>ударение об ракетку</comment>
-                <event-block collapsed="1" sid="199">
+                <event-block sid="199">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="200" type="player">
                             <param id="0" name="Object">ball</param>

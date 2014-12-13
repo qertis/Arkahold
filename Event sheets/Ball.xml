@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Ball</name>
     <events>
-        <event-group collapsed="1" description="" sid="9791435482014037" title="BallInit">
+        <event-group description="" sid="9791435482014037" title="BallInit">
             <sub-events>
                 <event-block sid="7978122200502805">
                     <conditions>
@@ -151,7 +151,7 @@
                     </sub-events>
                 </event-block>
                 <comment>создание fade-шара</comment>
-                <event-block collapsed="1" sid="8214917840059118">
+                <event-block sid="8214917840059118">
                     <conditions>
                         <condition id="-18" name="On created" sid="7596032876285679" type="BallFade" />
                     </conditions>
@@ -317,7 +317,7 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block any="1" collapsed="1" sid="4931466285547836">
+                                        <event-block any="1" sid="4931466285547836">
                                             <conditions>
                                                 <condition id="3" name="Compare frame" sid="5017712672419446" type="block">
                                                     <param id="0" name="Comparison">0</param>
@@ -381,7 +381,7 @@
                                     </sub-events>
                                 </event-block>
                                 <comment>super </comment>
-                                <event-block collapsed="1" sid="1978217790117202">
+                                <event-block sid="1978217790117202">
                                     <conditions>
                                         <condition id="2" name="Is playing" sid="2509267661699963" type="ball">
                                             <param id="0" name="Animation">&quot;Super&quot;</param>
@@ -413,7 +413,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block any="1" collapsed="1" sid="1105">
+                        <event-block any="1" sid="1105">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="1106" type="ball">
                                     <param id="0" name="Object">player</param>
@@ -497,7 +497,7 @@
                             </actions>
                         </event-block>
                         <comment>меняем направление шара</comment>
-                        <event-block collapsed="1" sid="5760525938396111">
+                        <event-block sid="5760525938396111">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="4345478274173001" type="Pupil">
                                     <param id="0" name="Object">ball</param>
@@ -549,7 +549,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group collapsed="1" description="" sid="1318724470905156" title="BallFly">
+                <event-group description="" sid="1318724470905156" title="BallFly">
                     <sub-events>
                         <event-block sid="362738020167952">
                             <conditions>
@@ -686,9 +686,9 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group collapsed="1" description="анимация полет шара" sid="5733579177459988" title="BallAnim">
+                <event-group description="анимация полет шара" sid="5733579177459988" title="BallAnim">
                     <sub-events>
-                        <event-block collapsed="1" sid="2443536278567051">
+                        <event-block sid="2443536278567051">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="9363214989394181" type="System">
                                     <param id="0" name="Interval (seconds)">0.1</param>
@@ -764,7 +764,7 @@
                     </sub-events>
                 </event-group>
                 <comment>эффект шероховатости шара</comment>
-                <event-block collapsed="1" sid="7650867088248177">
+                <event-block sid="7650867088248177">
                     <conditions>
                         <condition behavior="Pin" id="0" name="Is pinned" sid="8328359672312296" type="ball" />
                         <condition id="11" name="Collisions enabled" sid="2421343310550446" type="ball" />
@@ -786,7 +786,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block collapsed="1" sid="1679675751191124">
+                <event-block sid="1679675751191124">
                     <conditions>
                         <condition id="-22" name="Else" sid="7526436666937472" type="System" />
                         <condition id="-4" name="Trigger once while true" sid="9426784658134851" type="System" />
@@ -806,7 +806,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="6395094091146767" title="BallExit">
+        <event-group description="" sid="6395094091146767" title="BallExit">
             <sub-events>
                 <event-block sid="4807352996371672">
                     <conditions>

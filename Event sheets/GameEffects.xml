@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GameEffects</name>
     <events>
-        <event-group collapsed="1" description="" sid="879410623448362" title="GameEffectsInit">
+        <event-group description="" sid="879410623448362" title="GameEffectsInit">
             <sub-events>
                 <event-block sid="893275885817096">
                     <conditions>

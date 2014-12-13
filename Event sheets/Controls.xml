@@ -15,6 +15,7 @@
                         <condition id="0" name="On key pressed" sid="1028418345950963" type="Keyboard">
                             <param id="0" name="Key">32 (Space)</param>
                         </condition>
+                        <condition id="1" name="On any touch end" sid="2903968772768882" type="Touch" />
                     </conditions>
                     <actions />
                     <sub-events>

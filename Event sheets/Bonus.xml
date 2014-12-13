@@ -153,7 +153,7 @@
                             </sub-events>
                         </event-block>
                         <comment>добавление ещё шаров на уровень</comment>
-                        <event-block collapsed="1" sid="3099026853698963">
+                        <event-block sid="3099026853698963">
                             <conditions>
                                 <condition id="-22" name="Else" sid="1535972588268732" type="System" />
                                 <condition id="1" name="Compare parameter" sid="3035456681572006" type="Function">

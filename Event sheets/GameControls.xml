@@ -3,14 +3,15 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GameControls</name>
     <events>
-        <event-group collapsed="1" description="Управление мышью" inactive="1" sid="9209006213200272" title="MouseGame">
+        <event-group description="Управление мышью" inactive="1" sid="9209006213200272" title="MouseGame">
             <sub-events>
-                <event-block sid="1477958093469799">
+                <event-block any="1" sid="1477958093469799">
                     <conditions>
                         <condition id="0" name="On click" sid="1049566278994807" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                         </condition>
+                        <condition id="1" name="On any touch end" sid="5203949856886388" type="Touch" />
                     </conditions>
                     <actions>
                         <action id="0" name="Call function" sid="1475444620558732" type="Function">

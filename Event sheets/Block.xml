@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Block</name>
     <events>
-        <event-group collapsed="1" description="" sid="2821068537602053" title="BlocksInit">
+        <event-group description="" sid="2821068537602053" title="BlocksInit">
             <sub-events>
                 <variable comment="количество блоков на уровне" constant="0" name="BlockCount" sid="2958337952286063" static="1" type="number">0</variable>
                 <event-block sid="8193097524030829">
@@ -86,7 +86,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block collapsed="1" sid="2317429303885951">
+                <event-block sid="2317429303885951">
                     <conditions>
                         <condition id="-19" name="On destroyed" sid="9794486999320709" type="block" />
                     </conditions>
@@ -98,7 +98,7 @@
                     </actions>
                     <sub-events>
                         <comment>Game win</comment>
-                        <event-block collapsed="1" sid="4980467870540534">
+                        <event-block sid="4980467870540534">
                             <conditions>
                                 <condition id="-8" name="Compare two values" sid="2566399120446106" type="System">
                                     <param id="0" name="First value">Function.Call(&quot;GetBlockCount&quot;)</param>

@@ -82,7 +82,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block collapsed="1" sid="4934716314157102">
+                        <event-block sid="4934716314157102">
                             <conditions>
                                 <condition id="4" inverted="1" name="Has gamepads" sid="2854284652889882" type="Gamepad" />
                             </conditions>
@@ -472,7 +472,7 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block collapsed="1" sid="3776452107048916">
+                        <event-block sid="3776452107048916">
                             <conditions>
                                 <condition id="2" name="Is playing" sid="5943221670639414" type="SpriteControls">
                                     <param id="0" name="Animation">&quot;Keyboard&quot;</param>
@@ -502,7 +502,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block collapsed="1" sid="1044019533873871">
+                        <event-block sid="1044019533873871">
                             <conditions>
                                 <condition id="-22" name="Else" sid="6616407986430348" type="System" />
                                 <condition id="2" name="Is playing" sid="4321147966707451" type="SpriteControls">
@@ -533,7 +533,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block collapsed="1" sid="1973682430271084">
+                        <event-block sid="1973682430271084">
                             <conditions>
                                 <condition id="-22" name="Else" sid="4697642106216002" type="System" />
                                 <condition id="2" name="Is playing" sid="771462165847633" type="SpriteControls">
@@ -591,7 +591,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="альтернативное управление" inactive="1" sid="4873995218015465" title="AlterNavigate">
+        <event-group description="альтернативное управление" inactive="1" sid="4873995218015465" title="AlterNavigate">
             <sub-events>
                 <comment>начать игру</comment>
                 <event-block any="1" sid="3973240755409328">
@@ -689,7 +689,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="6332313624024054" title="AboutInit">
+        <event-group description="" sid="6332313624024054" title="AboutInit">
             <sub-events>
                 <event-block sid="4510756918261203">
                     <conditions>

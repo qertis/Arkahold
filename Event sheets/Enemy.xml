@@ -102,7 +102,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="7929890455405426" title="EnemyExit">
+        <event-group description="" sid="7929890455405426" title="EnemyExit">
             <sub-events>
                 <event-block sid="1937029898722531">
                     <conditions>
