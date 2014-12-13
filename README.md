@@ -1,4 +1,4 @@
-Arkahold WebGL Game
+Arkahold WebGL
 ========
 Features:
 * HTML5
